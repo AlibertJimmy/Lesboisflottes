@@ -18,11 +18,15 @@ import Situation from './pages/Situation/situation'
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 5px; 
+  margin-top: 10px;
 `
 
 const ContentWrapper = styled.div`
-  margin-left: 20px;
+  margin-left: 10px;
+`
+
+const SidebarWrapper = styled.div`
+  align-self: stretch;
 `
 
 
@@ -32,7 +36,9 @@ root.render(
     <Router>
       <Header />
       <HomeWrapper>
-        <Sidebar />
+        <SidebarWrapper>
+          <Sidebar />
+        </SidebarWrapper>
         <ContentWrapper>
           <Routes>
             <Route path="/" element={<Home />} />
