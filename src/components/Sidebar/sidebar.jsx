@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+import Comment from '../../pages/Comment/comment'
+
 const SidebarWrapper = styled.div`
   height: 100%;
-  width: 200px;
   border-radius: 15px;
   border: 1px solid black;
 
@@ -23,12 +24,13 @@ function Sidebar() {
     return (
         <SidebarWrapper>
             <SidebarLinks>
-                <SideBarLink to="/">Situation</SideBarLink>
-                <SideBarLink to="/">Logement</SideBarLink>
-                <SideBarLink to="/">Galerie</SideBarLink>
-                <SideBarLink to="/">Commentaires</SideBarLink>
-                <SideBarLink to="/">Tarifs</SideBarLink>
-                <SideBarLink to="/">Contact</SideBarLink>
+                <SideBarLink to="/">Accueil</SideBarLink>
+                <SideBarLink to="/Situation">Situation</SideBarLink>
+                <SideBarLink to="/Housing">Logement</SideBarLink>
+                <SideBarLink to="/Galery">Galerie</SideBarLink>
+                <SideBarLink to="/Comment">Commentaires</SideBarLink>
+                <SideBarLink to="/Pricing">Tarifs</SideBarLink>
+                <SideBarLink to="/Contact">Contact</SideBarLink>
             </SidebarLinks>
         </SidebarWrapper>
     )

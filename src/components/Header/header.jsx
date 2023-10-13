@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const HomeLogo = styled.img`
-  height: 70px;
+const HeaderWrapper = styled.div`
+  text-align: center;
 `
 
 
 function Header() {
   return (
-      <div>
+      <HeaderWrapper>
         <Link to="/">Les bois flottés</Link>
         <p>Plage de la Verne</p>
         <p>Chez Julie et J.Manuel</p>
-      </div>
+      </HeaderWrapper>
   )
 }
 
