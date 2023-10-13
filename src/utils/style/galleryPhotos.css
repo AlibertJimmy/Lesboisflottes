@@ -1,0 +1,14 @@
+.galleryPhotos{
+    width: 70%;
+    height: auto;
+}
+
+.galleryPhotos img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+}

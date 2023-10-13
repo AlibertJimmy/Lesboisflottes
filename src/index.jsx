@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar/sidebar'
 import Home from './pages/Home'
 import Comment from './pages/Comment/comment'
 import Contact from './pages/Contact/contact'
-import Galery from './pages/Galery/galery'
+import Galleryx from './pages/Galery/gallery';
 import Housing from './pages/Housing/housing'
 import Pricing from './pages/Pricing/princing'
 import Situation from './pages/Situation/situation'
@@ -45,7 +45,7 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/Comment" element={<Comment />} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="/Galery" element={<Galery />} />
+            <Route path="/Galery" element={<Galleryx />} />
             <Route path="/Housing" element={<Housing />} />
             <Route path="/Pricing" element={<Pricing />} />
             <Route path="/Situation" element={<Situation />} />
