@@ -8,14 +8,14 @@ const HeaderWrapper = styled.div`
 `
 
 const StyledTitle = styled.h1`
-  fontsize: 20px;
+  font-size: 30px;
   font-style: italic;
   margin-top: 10px;
   margin-bottom: 5px;
 `
 
 const StyledSubtitle = styled.h2`
-  fontsize: 15px;
+  font-size: 20px;
   font-style: italic;
   margin: 5px;
 `

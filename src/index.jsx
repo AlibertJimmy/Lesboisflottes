@@ -23,10 +23,11 @@ const HomeWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   margin-left: 10px;
+  width: 100%;
 `
 
 const SidebarWrapper = styled.div`
-  align-self: stretch;
+  height: 100%;
 `
 
 
