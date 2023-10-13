@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar/sidebar'
 import Home from './pages/Home'
 import Comment from './pages/Comment/comment'
 import Contact from './pages/Contact/contact'
-import Galleryx from './pages/Galery/gallery';
+import Galleryx from './pages/Gallery/gallery';
 import Housing from './pages/Housing/housing'
 import Pricing from './pages/Pricing/princing'
 import Situation from './pages/Situation/situation'
