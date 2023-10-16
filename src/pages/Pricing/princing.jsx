@@ -7,6 +7,7 @@ import { format } from 'date-fns'
 
 import '../../utils/style/react-day-picker.css'
 
+
 import DateDisplay from '../../components/DateDisplay/datedisplay'
 import ToggleButton from '../../components/ToggleButton/toggleButton'
 
@@ -63,11 +64,62 @@ function Pricing() {
       }
     }
 
+    const disabledDays = [
+      { from: new Date(2024, 0, 1), to: new Date(2024, 4, 16) },
+      { from: new Date(2024, 9, 14), to: new Date(2024, 11, 31) }
+    ]
+
+    const modifiers = {
+      lowSeason: [
+        { from: new Date(2024, 4, 17), to: new Date(2024, 5, 13) },
+        { from: new Date(2024, 8, 15), to: new Date(2024, 9, 13) }
+      ],
+      mediumSeason: [
+        { from: new Date(2024, 5, 14), to: new Date(2024, 6, 4) },
+        { from: new Date(2024, 8, 2), to: new Date(2024, 8, 14) }
+      ],
+      highSeason: [
+        { from: new Date(2024, 6, 5), to: new Date(2024, 6, 11) },
+        { from: new Date(2024, 7, 26), to: new Date(2024, 8, 1) }
+      ],
+      veryHighSeason: [
+        { from: new Date(2024, 6, 12), to: new Date(2024, 7, 25) }
+      ],
+
+
+    }
+
+    const modifiersStyles = {
+      lowSeason: {
+        color: 'white',
+        backgroundColor: '#fcf25b',
+      },
+      mediumSeason: {
+        color: 'white',
+        backgroundColor: '#fac32a',
+      },
+      highSeason: {
+        color: 'white',
+        backgroundColor: '#f03535',
+      },
+      veryHighSeason: {
+        color: 'white',
+        backgroundColor: '#813afc',
+      },
+    }
+
+    const css = `
+      .my-selected:not([disabled]) { 
+        font-weight: bold; 
+        border: 2px solid #0c00fa;
+      }
+    `
 
   return (
       <PricingWrapper>
         <DateDisplay currentDate={currentDate}/>
         <ToggleButton onToggle={switchDaySelection} selection={selection}/>
+        <style>{css}</style>
         <DayPicker 
             mode={selection}
             //selected={selectedDay}
@@ -77,6 +129,15 @@ function Pricing() {
             //footer={footer}
             footer={selection === 'single' ? footer : footer2}
             defaultMonth={new Date(2024, 4)}
+            showOutsideDays
+            disabled = {disabledDays}
+            fromMonth={new Date(2024,4)}
+            toMonth={new Date(2024,9)}
+            modifiers={modifiers}
+            modifiersStyles={modifiersStyles}
+            modifiersClassNames={{
+              selected: 'my-selected'
+            }}
         />
       </PricingWrapper>
   )

@@ -3,8 +3,8 @@ import { parse, isBefore, addDays } from 'date-fns';
 
 const colorCode = [
     {
-        lowSeason: 'green',
-        middleSeason: 'orange',
+        lowSeason: 'yellow',
+        mediumSeason: 'orange',
         highSeason: 'red',
         veryHighSeason: 'violet'
     }
@@ -19,11 +19,11 @@ const pricingBySeasonList = [
         color: colorCode.lowSeason
 	},
     {
-		seasonType: 'middleSeason',
+		seasonType: 'mediumSeason',
 		startDate: '14/06/2024',
         endDate: '04/07/2024',
         price: 70,
-        color: colorCode.middleSeason
+        color: colorCode.mediumSeason
 	},
     {
 		seasonType: 'highSeason',
@@ -47,11 +47,11 @@ const pricingBySeasonList = [
         color: colorCode.highSeason
 	},
     {
-		seasonType: 'middleSeason',
+		seasonType: 'mediumSeason',
 		startDate: '02/09/2024',
         endDate: '14/09/2024',
         price: 70,
-        color: colorCode.middleSeason
+        color: colorCode.mediumSeason
 	},
     {
 		seasonType: 'lowSeason',
