@@ -2,7 +2,7 @@ import Gallery from "react-photo-gallery"
 import React, { useState, useCallback } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-import { photos } from '../../assets/pictures/photos'
+import { photos } from '../../assets/photos'
 
 
 function Galleryx() {
@@ -21,7 +21,7 @@ function Galleryx() {
 
   return (
     <div>
-      <Gallery photos={photos} onClick={openLightbox} />
+      <Gallery photos={photos} onClick={openLightbox} targetRowHeight={150} margin={5}/>
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
