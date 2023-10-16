@@ -10,6 +10,8 @@ import '../../utils/style/react-day-picker.css'
 import DateDisplay from '../../components/DateDisplay/datedisplay'
 import ToggleButton from '../../components/ToggleButton/toggleButton'
 
+import { getSeasonDatasForDate,getPriceForRangeDay } from '../../datas/pricing'
+
 const PricingWrapper = styled.div`
   text-align: center;
 `
@@ -36,7 +38,12 @@ function Pricing() {
     const [range, setRange] = useState();
 
     const footer = selectedDay ? (
-        <p>Vous avez choisis la nuit du {format(selectedDay, 'PPP')}.</p>
+        <div>
+          <p>Vous avez choisis la nuit du {format(selectedDay, 'dd/MM/yyyy')}.</p>
+          
+          {/*<p>Tarif : {getSeasonDatasForDate(format(selectedDay, 'dd/MM/yyyy')).price} euros</p>*/}
+          <p>Tarif : {getSeasonDatasForDate(selectedDay).price} euros</p>
+        </div>
       ) : (
         <p>Veuillez selectionner une nuit.</p>
       );
@@ -44,16 +51,18 @@ function Pricing() {
     let footer2 = <p>Veuillez choisir votre jour d'arrivée.</p>;
     if (range?.from) {
       if (!range.to) {
-        footer2 = <p>Arrivée le : {format(range.from, 'PPP')}</p>;
+        footer2 = <p>Arrivée le : {format(range.from, 'dd/MM/yyyy')}</p>;
       } else if (range.to) {
         footer2 = (
           <div>
-            <p>Arrivée le : {format(range.from, 'PPP')}.</p>
-            <p>Départ le : {format(range.to, 'PPP')}.</p>
+            <p>Arrivée le : {format(range.from, 'dd/MM/yyyy')}.</p>
+            <p>Départ le : {format(range.to, 'dd/MM/yyyy')}.</p>
+            <p>Prix pour le séjour : {getPriceForRangeDay(range)} euros</p>
           </div>
         );
       }
     }
+
 
   return (
       <PricingWrapper>
