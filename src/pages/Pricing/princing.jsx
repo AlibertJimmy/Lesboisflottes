@@ -10,13 +10,30 @@ import '../../utils/style/react-day-picker.css'
 
 import DateDisplay from '../../components/DateDisplay/datedisplay'
 import ToggleButton from '../../components/ToggleButton/toggleButton'
+import DayPickerFooter from '../../components/DayPickerFooter/dayPickerFooter'
 
-import { getSeasonDatasForDate,getPriceForRangeDay } from '../../datas/pricing'
 
 const PricingWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  justify-content: center;
+  //align-items: center;
 `
 
+const DatasWrapper = styled.div`
+  border: solid 1px black ;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right:20px;
+`
+
+const DayPickerWrapper = styled.div`
+  border: solid 1px black ;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left:20px;
+`
 
 function Pricing() {
     
@@ -38,31 +55,7 @@ function Pricing() {
     const [selectedDay, setSelectedDay] = useState();
     const [range, setRange] = useState();
 
-    const footer = selectedDay ? (
-        <div>
-          <p>Vous avez choisis la nuit du {format(selectedDay, 'dd/MM/yyyy')}.</p>
-          
-          {/*<p>Tarif : {getSeasonDatasForDate(format(selectedDay, 'dd/MM/yyyy')).price} euros</p>*/}
-          <p>Tarif : {getSeasonDatasForDate(selectedDay).price} euros</p>
-        </div>
-      ) : (
-        <p>Veuillez selectionner une nuit.</p>
-      );
-
-    let footer2 = <p>Veuillez choisir votre jour d'arrivée.</p>;
-    if (range?.from) {
-      if (!range.to) {
-        footer2 = <p>Arrivée le : {format(range.from, 'dd/MM/yyyy')}</p>;
-      } else if (range.to) {
-        footer2 = (
-          <div>
-            <p>Arrivée le : {format(range.from, 'dd/MM/yyyy')}.</p>
-            <p>Départ le : {format(range.to, 'dd/MM/yyyy')}.</p>
-            <p>Prix pour le séjour : {getPriceForRangeDay(range)} euros</p>
-          </div>
-        );
-      }
-    }
+  
 
     const disabledDays = [
       { from: new Date(2024, 0, 1), to: new Date(2024, 4, 16) },
@@ -117,28 +110,29 @@ function Pricing() {
 
   return (
       <PricingWrapper>
-        <DateDisplay currentDate={currentDate}/>
-        <ToggleButton onToggle={switchDaySelection} selection={selection}/>
-        <style>{css}</style>
-        <DayPicker 
-            mode={selection}
-            //selected={selectedDay}
-            selected={selection === 'single' ? selectedDay : range}
-            //onSelect={setSelectedDay}
-            onSelect={selection === 'single' ? setSelectedDay : setRange}
-            //footer={footer}
-            footer={selection === 'single' ? footer : footer2}
-            defaultMonth={new Date(2024, 4)}
-            showOutsideDays
-            disabled = {disabledDays}
-            fromMonth={new Date(2024,4)}
-            toMonth={new Date(2024,9)}
-            modifiers={modifiers}
-            modifiersStyles={modifiersStyles}
-            modifiersClassNames={{
-              selected: 'my-selected'
-            }}
-        />
+        <DatasWrapper>
+          <DateDisplay currentDate={currentDate}/>
+          <ToggleButton onToggle={switchDaySelection} selection={selection}/>
+          <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
+        </DatasWrapper>
+        <DayPickerWrapper>
+          <style>{css}</style>
+          <DayPicker 
+              mode={selection}
+              selected={selection === 'single' ? selectedDay : range}
+              onSelect={selection === 'single' ? setSelectedDay : setRange}
+              defaultMonth={new Date(2024, 4)}
+              showOutsideDays
+              disabled = {disabledDays}
+              fromMonth={new Date(2024,4)}
+              toMonth={new Date(2024,9)}
+              modifiers={modifiers}
+              modifiersStyles={modifiersStyles}
+              modifiersClassNames={{
+                selected: 'my-selected'
+              }}
+          />
+        </DayPickerWrapper>
       </PricingWrapper>
   )
 }
@@ -149,5 +143,10 @@ function Pricing() {
 // formatRelative(subDays(new Date(), 3), new Date(), { locale: es })
 //=> "el viernes pasado a las 19:26"
 
+
+/*
+export default function App() {
+  return <DayPicker defaultMonth={new Date(1979, 8)} />;
+}*/
 
 export default Pricing
