@@ -3,10 +3,12 @@ import { format } from 'date-fns'
 
 import { getSeasonDatasForDate,getPriceForRangeDay } from "../../datas/pricing";
 
-
+import { useTranslation } from "react-i18next";
 
 
 function DayPickerFooter({mode, daySelection}) {
+
+    const { t } = useTranslation();
 
     console.log(`mode : ${mode}`);
     console.log(`daySelection : ${daySelection}`);
@@ -18,33 +20,33 @@ function DayPickerFooter({mode, daySelection}) {
         }
     }
 
-    let footer = <p>Veuillez selectionner une nuit.</p>
+    let footer = <p>{t("pleaseSelectOneNight")}</p>
     if(mode === 'single'){
         if(daySelection){
             footer = 
             <div>
-            <p>Vous avez choisis la nuit du {format(daySelection, 'dd/MM/yyyy')}.</p>
+            <p>{t("youSelectedTheNightOfThe")} {format(daySelection, 'dd/MM/yyyy')}.</p>
             
-            <p>Tarif : {getSeasonDatasForDate(daySelection).price} euros</p>
+            <p>{t("pricing")} : {getSeasonDatasForDate(daySelection).price} euros</p>
         </div>
         }
     }
     
 
-    let footer2 = <p>Veuillez choisir votre jour d'arrivée.</p>;
+    let footer2 = <p>{t("pleaseSelectTheDayOfYourArrival")}</p>;
     if (daySelection?.from) {
         console.log('pass first condition');
       if (!daySelection.to) {
         console.log('pass second condition');
-        footer2 = <p>Arrivée le : {format(daySelection.from, 'dd/MM/yyyy')}</p>;
+        footer2 = <p>{t("arrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}</p>;
       }
       else if (daySelection.to) {
         console.log('pass third condition');
         footer2 = (
           <div>
-            <p>Arrivée le : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
-            <p>Départ le : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
-            <p>Prix pour le séjour : {getPriceForRangeDay(daySelection)} euros</p>
+            <p>{t("arrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
+            <p>{t("departureThe")} : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
+            <p>{t("priceOfTheJourney")} : {getPriceForRangeDay(daySelection)} euros</p>
           </div>
         );
       }

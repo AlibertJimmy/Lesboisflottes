@@ -1,0 +1,30 @@
+{
+    "//": "HEADER",
+    "mainTitle": "Les Bois Flottés",
+    "subtitle1": "Plage de la Verne",
+    "subtitle2": "Chez Julie & J.Manuel",
+
+    "//": "SIDEBAR",
+    "Reception": "Accueil",
+    "Location": "Emplacement",
+    "Housing": "Logement",
+    "Gallery": "Galerie",
+    "Comments": "Commentaires",
+    "Pricing": "Tarifs",
+    "Contact": "Contact",
+
+    "//": "PRICING",
+    "//": "DAY PICKER FOOTER",
+    "pleaseSelectOneNight": "Veuillez selectionner une nuit",
+    "pricing": "Tarif",
+    "youSelectedTheNightOfThe": "Vous avez choisis la nuit du",
+    "pleaseSelectTheDayOfYourArrival": "Veuillez choisir votre jour d'arrivé",
+    "arrivingThe": "Arrivée le",
+    "departureThe": "Départ le",
+    "priceOfTheJourney": "Prix du séjour",
+
+    "":"",
+    "selectNightTitle": "Choisir une ou plusieurs nuits",
+    "singleNight": "Une nuit",
+    "multipleNights": "Plusieurs nuits"
+}

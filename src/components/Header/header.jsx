@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+import { useTranslation } from "react-i18next";
+
+import { LanguageMenu } from '../LanguageMenu/languageMenu'
+
 const HeaderWrapper = styled.div`
   text-align: center;
   border-radius: 15px;
   border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `
 
 const StyledTitle = styled.h1`
@@ -20,14 +27,25 @@ const StyledSubtitle = styled.h2`
   margin: 5px;
 `
 
+const StyledMenu = styled.div`
+  margin-left: 0px;
+`
+
+
 function Header() {
+
+  const { t } = useTranslation();
+
   return (
       <HeaderWrapper>
-        <Link to="/">
-          <StyledTitle>Les bois flottés</StyledTitle>
-          <StyledSubtitle>Plage de la Verne</StyledSubtitle>
-          <StyledSubtitle>Chez Julie et J.Manuel</StyledSubtitle>
-        </Link>
+        <div>
+          <Link to="/">
+            <StyledTitle>{t("mainTitle")}</StyledTitle>
+            <StyledSubtitle>{t("subtitle1")}</StyledSubtitle>
+            <StyledSubtitle>{t("subtitle2")}</StyledSubtitle>
+          </Link>
+        </div>
+        <StyledMenu><LanguageMenu/></StyledMenu>
       </HeaderWrapper>
   )
 }

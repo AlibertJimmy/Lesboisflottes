@@ -14,6 +14,8 @@ import Housing from './pages/Housing/housing'
 import Pricing from './pages/Pricing/princing'
 import Situation from './pages/Situation/situation'
 
+import "./i18n"
+
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -30,10 +32,11 @@ const SidebarWrapper = styled.div`
   height: 100%;
 `
 
+function App(){
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+
+  return (
+    <React.StrictMode>
     <Router>
       <Header />
       <HomeWrapper>
@@ -54,6 +57,12 @@ root.render(
       </HomeWrapper>
     </Router>
   </React.StrictMode>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <App />
 );
 
 

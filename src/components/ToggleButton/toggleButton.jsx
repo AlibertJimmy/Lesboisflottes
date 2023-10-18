@@ -3,7 +3,12 @@ import Switch from 'react-switch'
 
 
 class MaterialDesignSwitch extends Component {
+
+    
+
     constructor() {
+
+
       super();
       this.state = { checked: false };
       this.handleChange = this.handleChange.bind(this);
@@ -19,9 +24,7 @@ class MaterialDesignSwitch extends Component {
     render() {
       return (
         <div className="example">
-          <h2>Choisir une ou plusieurs nuits</h2>
           <label htmlFor="material-switch">
-            <span>Une nuit   </span>
             <Switch
               checked={this.state.checked}
               onChange={this.handleChange}
@@ -38,15 +41,12 @@ class MaterialDesignSwitch extends Component {
               id="material-switch"
             />
           </label>
-          <span>   Plusieurs nuits</span>
         </div>
       )
     }
 }
 
 function ToggleButton({onToggle, selection}) {
-
-      
 
     return (
         <div>

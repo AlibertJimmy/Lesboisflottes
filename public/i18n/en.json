@@ -1,0 +1,30 @@
+{
+    "//": "HEADER",
+    "mainTitle": "Les Bois Flottés",
+    "subtitle1": "La Verne Beach",
+    "subtitle2": "At the house of Julie & J.Manuel",
+
+    "//": "SIDEBAR",
+    "Reception": "Reception",
+    "Location": "Location",
+    "Housing": "Housing",
+    "Gallery": "Gallery",
+    "Comments": "Comments",
+    "Pricing": "Pricing",
+    "Contact": "Contact",
+
+    "//": "PRICING",
+    "//": "DAY PICKER FOOTER",
+    "pleaseSelectOneNight": "Please select one night",
+    "pricing": "Pricing",
+    "youSelectedTheNightOfThe": "You selected the night of the",
+    "pleaseSelectTheDayOfYourArrival": "Please select the day of your arrival",
+    "arrivingThe": "Arriving the",
+    "departureThe": "Departure the",
+    "priceOfTheJourney": "Price of the journey",
+
+    "//": "",
+    "selectNightTitle": "Select one or multiple nights",
+    "singleNight": "One night",
+    "multipleNights": "Multiple nights"
+}

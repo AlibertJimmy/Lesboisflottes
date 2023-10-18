@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-import Comment from '../../pages/Comment/comment'
+import { useTranslation } from "react-i18next";
+
+
 
 const SidebarWrapper = styled.div`
   height: 100%;
@@ -21,16 +23,19 @@ const SideBarLink = styled(Link)`
 `
 
 function Sidebar() {
+
+    const { t } = useTranslation();
+
     return (
         <SidebarWrapper>
             <SidebarLinks>
-                <SideBarLink to="/">Accueil</SideBarLink>
-                <SideBarLink to="/Situation">Situation</SideBarLink>
-                <SideBarLink to="/Housing">Logement</SideBarLink>
-                <SideBarLink to="/Galery">Galerie</SideBarLink>
-                <SideBarLink to="/Comment">Commentaires</SideBarLink>
-                <SideBarLink to="/Pricing">Tarifs</SideBarLink>
-                <SideBarLink to="/Contact">Contact</SideBarLink>
+                <SideBarLink to="/">{t("Reception")}</SideBarLink>
+                <SideBarLink to="/Situation">{t("Location")}</SideBarLink>
+                <SideBarLink to="/Housing">{t("Housing")}</SideBarLink>
+                <SideBarLink to="/Galery">{t("Gallery")}</SideBarLink>
+                <SideBarLink to="/Comment">{t("Comments")}</SideBarLink>
+                <SideBarLink to="/Pricing">{t("Pricing")}</SideBarLink>
+                <SideBarLink to="/Contact">{t("Contact")}</SideBarLink>
             </SidebarLinks>
         </SidebarWrapper>
     )

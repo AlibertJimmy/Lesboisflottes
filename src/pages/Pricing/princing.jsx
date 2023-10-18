@@ -7,8 +7,9 @@ import { format } from 'date-fns'
 
 import '../../utils/style/react-day-picker.css'
 
+import { useTranslation } from "react-i18next";
 
-import DateDisplay from '../../components/DateDisplay/datedisplay'
+
 import ToggleButton from '../../components/ToggleButton/toggleButton'
 import DayPickerFooter from '../../components/DayPickerFooter/dayPickerFooter'
 
@@ -35,7 +36,21 @@ const DayPickerWrapper = styled.div`
   margin-left:20px;
 `
 
+const DaySelectorWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid black;
+`
+
+const InnerDiv = styled.div`
+  margin: 10px;
+`
+
 function Pricing() {
+
+    const { t } = useTranslation();
     
     const currentDate = format(new Date(), 'dd/MM/yyyy')
     console.log(`Current Date is ${currentDate}`);
@@ -111,8 +126,12 @@ function Pricing() {
   return (
       <PricingWrapper>
         <DatasWrapper>
-          <DateDisplay currentDate={currentDate}/>
-          <ToggleButton onToggle={switchDaySelection} selection={selection}/>
+          <h2>{t("selectNightTitle")}</h2>
+          <DaySelectorWrapper>
+            <InnerDiv>{t("singleNight")}</InnerDiv>
+            <ToggleButton onToggle={switchDaySelection} selection={selection}/>
+            <InnerDiv>{t("multipleNights")}</InnerDiv>
+          </DaySelectorWrapper>
           <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
         </DatasWrapper>
         <DayPickerWrapper>
@@ -122,7 +141,7 @@ function Pricing() {
               selected={selection === 'single' ? selectedDay : range}
               onSelect={selection === 'single' ? setSelectedDay : setRange}
               defaultMonth={new Date(2024, 4)}
-              showOutsideDays
+              
               disabled = {disabledDays}
               fromMonth={new Date(2024,4)}
               toMonth={new Date(2024,9)}
