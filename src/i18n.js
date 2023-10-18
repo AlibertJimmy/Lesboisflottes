@@ -20,7 +20,7 @@ i18n
     },
     backend: {
         //loadPath: `${getCurrentHost}/i18n/{{lng}}.json`,
-        loadPath: `http://localhost:3003/i18n/{{lng}}.json`,
+        loadPath: `http://localhost:3000/i18n/{{lng}}.json`,
     },
   });
 

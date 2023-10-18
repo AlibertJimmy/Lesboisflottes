@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
 import { LANGUAGES } from "../../constants/language";
 
-const isActive = ({ isActive }) => `link ${isActive ? "active" : ""}`;
 
 export const LanguageMenu = () => {
   const { i18n, t } = useTranslation();

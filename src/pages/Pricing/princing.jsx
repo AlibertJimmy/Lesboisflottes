@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import { DayPicker } from 'react-day-picker'
 import { format } from 'date-fns'
+//import { fr } from 'date-fns/locale'
+import { fr, enUS} from 'date-fns/locale'
 
 import '../../utils/style/react-day-picker.css'
 
@@ -49,8 +51,24 @@ const InnerDiv = styled.div`
 `
 
 function Pricing() {
+    
+    
 
-    const { t } = useTranslation();
+    //const { t } = useTranslation();
+    const { i18n, t } = useTranslation();
+    
+    console.log(`language : ${i18n.language}`)
+    /*
+    let choosenLanguage ;
+    if(i18n.language === 'en'){
+      //choosenLanguage = en
+      console.log('i18n.language = en')
+    }
+    else if(i18n.language === 'fr'){
+      //choosenLanguage = fr
+      console.log('i18n.language = fr')
+    }
+    */
     
     const currentDate = format(new Date(), 'dd/MM/yyyy')
     console.log(`Current Date is ${currentDate}`);
@@ -150,6 +168,7 @@ function Pricing() {
               modifiersClassNames={{
                 selected: 'my-selected'
               }}
+              locale={i18n.language === 'en' ? enUS : fr}
           />
         </DayPickerWrapper>
       </PricingWrapper>

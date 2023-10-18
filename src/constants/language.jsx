@@ -1,7 +1,7 @@
 
 
 export const LANGUAGES = [
-    { label: "French", code: "fr" },
+    { label: "Français", code: "fr" },
     { label: "English", code: "en" },
   ];
   
