@@ -1,16 +1,22 @@
-import styled from 'styled-components'
+//import styled from 'styled-components'
 
 
-const HousingWrapper = styled.div`
-  text-align: center;
-`
+// Import Components
+import HousingPresentation from '../../components/Housing/Housing';
+import EquipmentList from '../../components/Housing/Equipment';
+
 
 
 function Housing() {
+
+
+
   return (
-      <HousingWrapper>
-        <p>Housing</p>
-      </HousingWrapper>
+      <div>
+        <HousingPresentation/>
+        <EquipmentList/>
+      </div>
+      
   )
 }
 

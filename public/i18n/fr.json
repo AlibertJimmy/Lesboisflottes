@@ -6,7 +6,7 @@
 
     "//": "SIDEBAR",
     "Reception": "Accueil",
-    "Location": "Emplacement",
+    "Situation": "Emplacement",
     "Housing": "Logement",
     "Gallery": "Galerie",
     "Comments": "Commentaires",
@@ -26,5 +26,87 @@
     "":"",
     "selectNightTitle": "Choisir une ou plusieurs nuits",
     "singleNight": "Une nuit",
-    "multipleNights": "Plusieurs nuits"
+    "multipleNights": "Plusieurs nuits",
+
+    "//":"HOUSING",
+    "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussé d'une villa, ancienne batisse de caractère datant de 1949.",
+    "PresentationHousing2": "Orienté plein Ouest, il bénéficie d'une vue sur le jardin et d'un accès aux terasses.",
+    "PresentationHousing3": "L'hébergement comprend une salle de bain avec cabine de douche et lavabo, de toilettes indépendantes",
+    "PresentationHousing4": "Un coin cuisine et d'un coin nuit avec un lit queen size (160x200 [cm]).",
+
+    "//":"HOUSING EQUIPMENT",
+    "TheDifferentEquipments": "Les différents équipements",
+    "Indoor": "Intérieur",
+    "Coffeemaker": "Cafetière",
+    "ElectricKettle": "Bouilloire électrique",
+    "Refrigerator": "Réfrigérateur",
+    "Microwave": "Micro-ondes",
+    "HairDryer": "Sèche-cheveux",
+    "Wardrobe": "Penderie",
+    "Fan": "Ventilateur",
+    "MosquitoRepellentPlug": "Prise anti-moustique",
+
+    "Outdoor":"Extérieur",
+    "Sunshade": "Parasol",
+    "PetanqueBall": "Boules de pétanques",
+    "Molky": "Molky",
+    "VintageBicycle": "Vélo Vintage",
+
+    "//": "LOCATION",
+    "Location": "Localisation",
+    "PresentationSituation1": "L'hébergement est situé sur la commune de la Seyne sur Mer, se trouve dans un quartier résidentiel très calme,",
+    "PresentationSituation2": "tout proche de plusieurs plages et criques.",
+    "PresentationSituation3": "La plage de la Verne est accessible à pied en 3minutes et la plage de Fabregas en 10min.",
+
+    "Address": "Adresse",
+    "Adress1": "150 Boulevard Garnault",
+    "Adress2": "La Seyne sur Mer",
+    "Adress3": "83 500",
+    "Adress4": "'Les Bois Flottés' La Verne",
+
+    "ByCar": "En voiture",
+
+    "ByTrain": "En train",
+    "TrainTransportDescription1": "Plusieurs gares permettent d'accéder au logement.",
+    "TrainTransportDescription2": "La gare de la Seyne sur Mer / Six-Fours se trouve à 9km :",
+    "TrainTransportDescription3": "La ligne de bus n° X permet de rejoindre le logement;",
+    "TrainTransportDescription4": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
+
+    "TrainTransportDescription5": "La gare de Toulon est situé à 11km :",
+    "TrainTransportDescription6": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
+    "TrainTransportDescription7": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
+    "TrainTransportDescription8": "La ligne de transport maritime 18M se situe se sur le port de Toulon, accessible en 10/15min de marche depuis la gare",
+    "TrainTransportDescription9": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
+
+    "ByPlane": "En avion",
+    "PlaneTransportDescription1": "Aéroport de Toulon/Hyères :",
+    "PlaneTransportDescription2": "puis location de voiture ou taxis.",
+    "PlaneTransportDescription3": "Aéroport de Marignane :",
+    "PlaneTransportDescription4": "Bus vers la gare St Charles puis TER vers la gare de la Seyne sur Mer/ Six-Fours.",
+    "PlaneTransportDescription5": "Aéroport de Toulon/Hyères :",
+    "PlaneTransportDescription6": "Train jusqu'à Toulon.",
+
+    "GeneralTransportProposition": "Le transport depuis l'embarcadère des Sablettes ou depuis la gare de la Seyne sur Mer peut être organisé sur demande en fonction des disponibilités."
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 }

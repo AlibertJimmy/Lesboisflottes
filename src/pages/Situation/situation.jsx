@@ -1,16 +1,20 @@
-import styled from 'styled-components'
+//import styled from 'styled-components'
 
-
-const SituationWrapper = styled.div`
-  text-align: center;
-`
+// Import Components
+import LocationDisplay from '../../components/Situation/Location';
+import AddressDisplay from '../../components/Situation/Address';
+import AccessDisplay from '../../components/Situation/Access';
 
 
 function Situation() {
+  
+
   return (
-      <SituationWrapper>
-        <p>Situation</p>
-      </SituationWrapper>
+      <div>
+        <LocationDisplay/>
+        <AddressDisplay/>
+        <AccessDisplay/>
+      </div>
   )
 }
 

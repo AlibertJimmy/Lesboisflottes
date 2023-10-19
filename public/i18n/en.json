@@ -26,5 +26,64 @@
     "//": "",
     "selectNightTitle": "Select one or multiple nights",
     "singleNight": "One night",
-    "multipleNights": "Multiple nights"
+    "multipleNights": "Multiple nights",
+
+    "//":"HOUSING",
+    "PresentationHousing1": "The accommodation offered is on the ground floor of a villa, an old building of character dating from 1949.",
+    "PresentationHousing2": "Facing due west, it benefits from a view of the garden and access to the terraces.",
+    "PresentationHousing3": "The accommodation includes a bathroom with shower cubicle and sink, separate WC.",
+    "PresentationHousing4": "A kitchen area and a sleeping area with a queen size bed (160x200 [cm]).",
+
+    "//":"HOUSING EQUIPMENT",
+    "TheDifferentEquipments": "The different equipments",
+    "Indoor": "Indoor",
+    "Coffeemaker": "Coffeemaker",
+    "ElectricKettle": "Electric kettle",
+    "Refrigerator": "Refrigerator",
+    "Microwave": "Microwave",
+    "HairDryer": "Hair dryer",
+    "Wardrobe": "Wardrobe",
+    "Fan": "Fan",
+    "MosquitoRepellentPlug": "Mosquito repellent plug",
+
+    "Outdoor":"Outdoor",
+    "Sunshade": "Sunshade",
+    "PetanqueBall": "Petanque balls",
+    "Molky": "Molky",
+    "VintageBicycle": "Vintage bicycle",
+
+    "//": "LOCATION",
+    "Situation": "Location",
+    "PresentationSituation1": "The accommodation is located in the town of La Seyne sur Mer, in a very quiet residential area,",
+    "PresentationSituation2": "very close to several beaches and coves.",
+    "PresentationSituation3": "La Verne beach can be reached on foot in 3 minutes and Fabregas beach in 10 minutes.",
+
+    "Address": "Adresse",
+    "Adress1": "150 Boulevard Garnault",
+    "Adress2": "La Seyne sur Mer",
+    "Adress3": "83 500",
+    "Adress4": "'Les Bois Flottés' La Verne",
+
+    "ByCar": "By car",
+
+    "ByTrain": "By train",
+    "TrainTransportDescription1": "Several stations provide access to the accommodation.",
+    "TrainTransportDescription2": "The Seyne sur Mer / Six-Fours station is 9km away:",
+    "TrainTransportDescription3": "Bus line no. allows you to reach the accommodation;",
+    "TrainTransportDescription4": "Stop '' located at the exit of the station -> Stop '' located 5 minutes from the accommodation.",
+
+    "TrainTransportDescription5": "Toulon train station is located 11km away:",
+    "TrainTransportDescription6": "Stop '' located at the exit of the station -> Stop '' located 5 minutes from the accommodation.",
+    "TrainTransportDescription7": "The 18M maritime transport line is located in the port of Toulon, accessible in 10/15 minutes walk from the station",
+    "TrainTransportDescription8": "Stop '' located at the exit of the station -> Stop '' located 5 minutes from the accommodation.",
+
+    "ByPlane": "By plane",
+    "PlaneTransportDescription1": "Airport of Toulon/Hyères :",
+    "PlaneTransportDescription2": "then car rental or taxis.",
+    "PlaneTransportDescription3": "Airport of Marignane :",
+    "PlaneTransportDescription4": "Bus to St Charles station then TER to Seyne sur Mer/ Six-Fours station.",
+    "PlaneTransportDescription5": "Airport of Toulon/Hyères :",
+    "PlaneTransportDescription6": "Train to Toulon.",
+
+    "GeneralTransportProposition": "Transport from the Sablettes pier or from the Seyne sur Mer station can be organized on request depending on availability."
 }
