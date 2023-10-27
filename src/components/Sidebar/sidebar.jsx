@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { StyledLinkSidebar } from '../../utils/style/links';
 
 import { useTranslation } from "react-i18next";
+
 
 
 
@@ -18,9 +20,7 @@ const SidebarLinks = styled.div`
   padding: 10px; 
 `
 
-const SideBarLink = styled(Link)`
-    margin-bottom: 10px;
-`
+
 
 function Sidebar() {
 
@@ -29,13 +29,13 @@ function Sidebar() {
     return (
         <SidebarWrapper>
             <SidebarLinks>
-                <SideBarLink to="/">{t("Reception")}</SideBarLink>
-                <SideBarLink to="/Location">{t("Location")}</SideBarLink>
-                <SideBarLink to="/Housing">{t("Housing")}</SideBarLink>
-                <SideBarLink to="/Galery">{t("Gallery")}</SideBarLink>
-                <SideBarLink to="/Comment">{t("Comments")}</SideBarLink>
-                <SideBarLink to="/Pricing">{t("Pricing")}</SideBarLink>
-                <SideBarLink to="/Contact">{t("Contact")}</SideBarLink>
+                <StyledLinkSidebar to="/">{t("Reception")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Location">{t("Location")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Housing">{t("Housing")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Galery">{t("Gallery")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Comment">{t("Comments")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Pricing">{t("Pricing")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Contact">{t("Contact")}</StyledLinkSidebar>
             </SidebarLinks>
         </SidebarWrapper>
     )

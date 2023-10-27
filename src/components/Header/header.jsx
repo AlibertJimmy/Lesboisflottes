@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom'
+
 import styled from 'styled-components'
 
 import { useTranslation } from "react-i18next";
 
 import { LanguageMenu } from '../LanguageMenu/languageMenu'
+
+import { StyledLinkHeader } from '../../utils/style/links';
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -41,19 +43,7 @@ const StyledSubtitle = styled.h2`
   margin: 5px;
 `
 
-const StyledLink = styled(Link)`
-  font-family: "Bradley Hand",cursive;
-  font-style: italic;
-  text-decoration: none;
 
-  
-  
-  color: #B1B4B5 ;
-
-  &:hover {
-    color: #959a9c;
-  }
-`
 
 function Header() {
 
@@ -65,11 +55,11 @@ function Header() {
           <LanguageMenu/>
         </LanguagePickerDiv>
         <TitleDiv>
-          <StyledLink to="/">
+          <StyledLinkHeader to="/">
             <StyledTitle>{t("mainTitle")}</StyledTitle>
             <StyledSubtitle>{t("subtitle1")}</StyledSubtitle>
             <StyledSubtitle>{t("subtitle2")}</StyledSubtitle>
-          </StyledLink>
+          </StyledLinkHeader>
         </TitleDiv>
       </HeaderWrapper>
   )
