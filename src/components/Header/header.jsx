@@ -6,35 +6,53 @@ import { useTranslation } from "react-i18next";
 import { LanguageMenu } from '../LanguageMenu/languageMenu'
 
 const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border-radius: 15px;
   border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  algin-items: center;
 `
 
-const LeftDiv = styled.div`
+const TitleDiv = styled.div`
   text-align: center;
+
   border-radius: 15px;
   border: 1px solid black;
-  flex-grow: 1;
+`
 
+const LanguagePickerDiv = styled.div`
+  text-align: right;
+
+  border-radius: 15px;
+  border: 1px solid black;
 `
 
 const StyledTitle = styled.h1`
   font-size: 30px;
-  font-style: italic;
-  font-family: 'Tahoma';
-  color: #B1B4B5
-  margin-top: 10px;
+  
+  margin-top: 0px;
   margin-bottom: 5px;
 `
 
 const StyledSubtitle = styled.h2`
   font-size: 20px;
-  font-style: italic;
+  
   margin: 5px;
+`
+
+const StyledLink = styled(Link)`
+  font-family: "Bradley Hand",cursive;
+  font-style: italic;
+  text-decoration: none;
+
+  
+  
+  color: #B1B4B5 ;
+
+  &:hover {
+    color: #959a9c;
+  }
 `
 
 function Header() {
@@ -43,16 +61,16 @@ function Header() {
 
   return (
       <HeaderWrapper>
-        <LeftDiv>
-          <Link to="/">
+        <LanguagePickerDiv>
+          <LanguageMenu/>
+        </LanguagePickerDiv>
+        <TitleDiv>
+          <StyledLink to="/">
             <StyledTitle>{t("mainTitle")}</StyledTitle>
             <StyledSubtitle>{t("subtitle1")}</StyledSubtitle>
             <StyledSubtitle>{t("subtitle2")}</StyledSubtitle>
-          </Link>
-        </LeftDiv>
-        <div>
-          <LanguageMenu/>
-        </div>
+          </StyledLink>
+        </TitleDiv>
       </HeaderWrapper>
   )
 }

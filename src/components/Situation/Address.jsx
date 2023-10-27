@@ -21,23 +21,7 @@ const MapWarper = styled.div`
 
     flex-grow: 1;
 `
-/*
-const MapWarper = styled.div`
-  position: relative;
-  padding-bottom: 56.25%; 
-  height: 0;
-  overflow: hidden;
 
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-`
-*/
 
 const SituationWarper = styled.div`
   display: flex;
@@ -64,6 +48,7 @@ function AddressDisplay() {
         </AddressWrapper>
         <MapWarper>
         <iframe
+          title = "googleMap"
           src={googleMapUrl}
           width="100%"
           height="200"
