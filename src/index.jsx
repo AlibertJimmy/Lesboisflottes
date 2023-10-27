@@ -6,12 +6,12 @@ import styled from 'styled-components'
 import Header from './components/Header/header'
 import Sidebar from './components/Sidebar/sidebar'
 
-import Home from './pages/Home'
+import Home from './pages/Home/home'
 import Comment from './pages/Comment/comment'
 import Contact from './pages/Contact/contact'
 import Galleryx from './pages/Gallery/gallery';
 import Housing from './pages/Housing/housing'
-import Pricing from './pages/Pricing/princing'
+import Pricing from './pages/Pricing/pricing'
 import Situation from './pages/Situation/situation'
 
 import "./i18n"
