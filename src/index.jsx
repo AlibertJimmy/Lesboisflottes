@@ -27,6 +27,7 @@ const HomeWrapper = styled.div`
 const ContentWrapper = styled.div`
   margin-left: 10px;
   width: 100%;
+  padding: 20px 0 ;
   
 `
 

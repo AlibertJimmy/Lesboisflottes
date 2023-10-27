@@ -26,7 +26,6 @@ const PricingWrapper = styled.div`
   text-align: center;
   justify-content: center;
   //align-items: center;
-  padding: 20px;
 `
 
 const DataDisplayWrapper = styled.div`
