@@ -30,7 +30,7 @@ function Sidebar() {
         <SidebarWrapper>
             <SidebarLinks>
                 <SideBarLink to="/">{t("Reception")}</SideBarLink>
-                <SideBarLink to="/Situation">{t("Location")}</SideBarLink>
+                <SideBarLink to="/Location">{t("Location")}</SideBarLink>
                 <SideBarLink to="/Housing">{t("Housing")}</SideBarLink>
                 <SideBarLink to="/Galery">{t("Gallery")}</SideBarLink>
                 <SideBarLink to="/Comment">{t("Comments")}</SideBarLink>

@@ -12,7 +12,7 @@ import Contact from './pages/Contact/contact'
 import Galleryx from './pages/Gallery/gallery';
 import Housing from './pages/Housing/housing'
 import Pricing from './pages/Pricing/pricing'
-import Situation from './pages/Situation/situation'
+import Location from './pages/Location/location'
 
 import "./i18n"
 
@@ -27,6 +27,7 @@ const HomeWrapper = styled.div`
 const ContentWrapper = styled.div`
   margin-left: 10px;
   width: 100%;
+  
 `
 
 const SidebarWrapper = styled.div`
@@ -58,7 +59,7 @@ function App(){
               <Route path="/Galery" element={<Galleryx />} />
               <Route path="/Housing" element={<Housing />} />
               <Route path="/Pricing" element={<Pricing />} />
-              <Route path="/Situation" element={<Situation />} />
+              <Route path="/Location" element={<Location />} />
             </Routes>
           </ContentWrapper>
         </HomeWrapper>
