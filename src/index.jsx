@@ -21,6 +21,7 @@ const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+  
 `
 
 const ContentWrapper = styled.div`
@@ -32,29 +33,36 @@ const SidebarWrapper = styled.div`
   height: 100%;
 `
 
+const BackGround = styled.div`
+
+  margin: 0px;
+`
+//background-color: #414a4F;
 function App(){
 
 
   return (
     <React.StrictMode>
     <Router>
-      <Header />
-      <HomeWrapper>
-        <SidebarWrapper>
-          <Sidebar />
-        </SidebarWrapper>
-        <ContentWrapper>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Comment" element={<Comment />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Galery" element={<Galleryx />} />
-            <Route path="/Housing" element={<Housing />} />
-            <Route path="/Pricing" element={<Pricing />} />
-            <Route path="/Situation" element={<Situation />} />
-          </Routes>
-        </ContentWrapper>
-      </HomeWrapper>
+      <BackGround>
+        <Header />
+        <HomeWrapper>
+          <SidebarWrapper>
+            <Sidebar />
+          </SidebarWrapper>
+          <ContentWrapper>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Comment" element={<Comment />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/Galery" element={<Galleryx />} />
+              <Route path="/Housing" element={<Housing />} />
+              <Route path="/Pricing" element={<Pricing />} />
+              <Route path="/Situation" element={<Situation />} />
+            </Routes>
+          </ContentWrapper>
+        </HomeWrapper>
+      </BackGround>
     </Router>
   </React.StrictMode>
   )

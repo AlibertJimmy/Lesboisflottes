@@ -25,6 +25,8 @@ const LeftDiv = styled.div`
 const StyledTitle = styled.h1`
   font-size: 30px;
   font-style: italic;
+  font-family: 'Tahoma';
+  color: #B1B4B5
   margin-top: 10px;
   margin-bottom: 5px;
 `

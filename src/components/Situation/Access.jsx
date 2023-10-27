@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const AccessWrapper = styled.div`
     font-family: ;
+    fon-style: Optima;
     text-align: left;
     padding: 20px;
 

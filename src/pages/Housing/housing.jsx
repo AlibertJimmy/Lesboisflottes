@@ -1,21 +1,23 @@
-//import styled from 'styled-components'
+import styled from 'styled-components'
 
 
 // Import Components
 import HousingPresentation from '../../components/Housing/Housing';
 import EquipmentList from '../../components/Housing/Equipment';
 
-
+const HousingStyled = styled.div`
+  font-family: Avantgarde;
+`
 
 function Housing() {
 
 
 
   return (
-      <div>
+      <HousingStyled>
         <HousingPresentation/>
         <EquipmentList/>
-      </div>
+      </HousingStyled>
       
   )
 }

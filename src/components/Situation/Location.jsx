@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { useTranslation } from "react-i18next";
 
 const LocationWrapper = styled.div`
-    font-family: ;
     text-align: left;
     padding: 20px;
 

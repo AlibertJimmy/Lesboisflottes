@@ -9,8 +9,8 @@ const ListWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: Avantgarde;
 
-    font-family: ;
     text-align: left;
     padding: 20px;
 
