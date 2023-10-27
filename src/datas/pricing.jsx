@@ -1,112 +1,61 @@
+// Import custom colors
+import colors from '../utils/style/colors';
 
-import { parse, isBefore, addDays } from 'date-fns';
-
-const colorCode = [
-    {
-        lowSeason: 'yellow',
-        mediumSeason: 'orange',
-        highSeason: 'red',
-        veryHighSeason: 'violet'
-    }
+// Remember to substract 1 to the number of the month as date-fns months index start with January = 0
+// Days disabled in the calendar
+export const disabledDays = [
+  { from: new Date(2024, 0, 1), to: new Date(2024, 4, 16) },
+  { from: new Date(2024, 9, 14), to: new Date(2024, 11, 31) }
 ]
 
-const pricingBySeasonList = [
+// Period of the different seasons
+export const dateSeasonList = {
+  lowSeason: [
+    { from: new Date(2024, 4, 17), to: new Date(2024, 5, 13) },
+    { from: new Date(2024, 8, 15), to: new Date(2024, 9, 13) }
+  ],
+  mediumSeason: [
+    { from: new Date(2024, 5, 14), to: new Date(2024, 6, 4) },
+    { from: new Date(2024, 7, 30), to: new Date(2024, 8, 14) }
+  ],
+  highSeason: [
+    { from: new Date(2024, 6, 5), to: new Date(2024, 7, 29) }
+  ]
+}
+
+// Pricing and colors of the differents seasons
+export const pricingBySeasonList = [
 	{
-        seasonType: 'lowSeason',
-        startDate:'17/05/2024',
-        endDate: '13/06/2024',
-        price: 65,
-        color: colorCode.lowSeason
+    seasonType: 'lowSeason',
+    seasonDates: dateSeasonList.lowSeason,
+    price: 65
 	},
-    {
+  {
 		seasonType: 'mediumSeason',
-		startDate: '14/06/2024',
-        endDate: '04/07/2024',
-        price: 70,
-        color: colorCode.mediumSeason
+		seasonDates: dateSeasonList.mediumSeason,
+    price: 75
 	},
-    {
+  {
 		seasonType: 'highSeason',
-		startDate: '05/07/2024',
-        endDate: '11/07/2024',
-        price: 80,
-        color: colorCode.highSeason
-	},
-    {
-		seasonType: 'veryHighSeason',
-		startDate: '12/07/2024',
-        endDate: '25/08/2024',
-        price: 90,
-        color: colorCode.veryHighSeason
-	},
-    {
-		seasonType: 'highSeason',
-		startDate: '26/08/2024',
-        endDate: '01/09/2024',
-        price: 80,
-        color: colorCode.highSeason
-	},
-    {
-		seasonType: 'mediumSeason',
-		startDate: '02/09/2024',
-        endDate: '14/09/2024',
-        price: 70,
-        color: colorCode.mediumSeason
-	},
-    {
-		seasonType: 'lowSeason',
-		startDate: '15/09/2024',
-        endDate: '13/10/2024',
-        price: 65,
-        color: colorCode.lowSeason
+		seasonDates: dateSeasonList.highSeason,
+    price: 90
 	}
 ]
 
-export const getSeasonDatasForDate = (date) => {
-    
-    console.log(`date : ${date}`)
-  
-    for (const season of pricingBySeasonList) {
-      const startDate = parse(season.startDate, 'dd/MM/yyyy', new Date());
-      const endDate = parse(season.endDate, 'dd/MM/yyyy', new Date());
-      //console.log(`startDate : ${startDate}`)
-      //console.log(`endDate : ${endDate}`)
-  
-      if (date >= startDate && date <= endDate) {
-        
-        return season ;
-
-      }
-    }
-  
-    return 'Unknown Season'; // If no season matches the input date
-  };
-  
-export const getPriceForRangeDay = (range) => {
-
-    console.log(`range : ${range}`)
-    const dates = getDatesBetween(range.from, range.to)
-    let totalPrice = 0 ;
-    for( const day in dates){
-        //const date = parse(day, 'dd/MM/yyyy', new Date());
-        console.log(`day : ${dates[day]}`)
-        const dayPrice = getSeasonDatasForDate(dates[day]).price
-        console.log(`dayPrice : ${dayPrice}`)
-        totalPrice = totalPrice + dayPrice
-    }
-
-    return totalPrice ;
+export const modifiersStyles = {
+  lowSeason: {
+    color: 'white',
+    backgroundColor: colors.lowSeason,
+  },
+  mediumSeason: {
+    color: 'white',
+    backgroundColor: colors.mediumSeason,
+  },
+  highSeason: {
+    color: 'white',
+    backgroundColor: colors.highSeason,
+  }
 }
 
-function getDatesBetween(from, to) {
-    const dates = [];
-    let currentDate = from;
-  
-    while (isBefore(currentDate, to)) {
-      dates.push(currentDate);
-      currentDate = addDays(currentDate, 1);
-    }
-    console.log(dates);
-    return dates;
-  }
+
   

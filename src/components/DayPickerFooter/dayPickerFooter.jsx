@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { format } from 'date-fns'
 
-import { getSeasonDatasForDate,getPriceForRangeDay } from "../../datas/pricing";
+import { getSeasonDatasForDate,getPriceForRangeDay } from "../../functions/pricing";
 
 import { useTranslation } from "react-i18next";
 
@@ -28,7 +28,6 @@ function DayPickerFooter({mode, daySelection}) {
             footer = 
             <div>
             <p>{t("youSelectedTheNightOfThe")} {format(daySelection, 'dd/MM/yyyy')}.</p>
-            
             <p>{t("pricing")} : {getSeasonDatasForDate(daySelection).price} euros</p>
         </div>
         }
@@ -48,7 +47,8 @@ function DayPickerFooter({mode, daySelection}) {
           <div>
             <p>{t("arrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
             <p>{t("departureThe")} : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
-            <p>{t("priceOfTheJourney")} : {getPriceForRangeDay(daySelection)} euros</p>
+            <p>{t("youHaveSelected")} {getPriceForRangeDay(daySelection).totalNights} {getPriceForRangeDay(daySelection).totalNights === 1 ? t("night") : t("nights")}</p>
+            <p>{t("priceOfTheJourney")} : {getPriceForRangeDay(daySelection).totalPrice} euros</p>
           </div>
         );
       }
