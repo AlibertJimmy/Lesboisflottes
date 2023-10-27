@@ -6,6 +6,8 @@ import { getSeasonDatasForDate,getPriceForRangeDay } from "../../datas/pricing";
 import { useTranslation } from "react-i18next";
 
 
+
+
 function DayPickerFooter({mode, daySelection}) {
 
     const { t } = useTranslation();

@@ -9,7 +9,7 @@ const SidebarWrapper = styled.div`
   height: 100%;
   border-radius: 15px;
   border: 1px solid black;
-
+  
 `
 
 const SidebarLinks = styled.div`

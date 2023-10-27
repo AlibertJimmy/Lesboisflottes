@@ -8,6 +8,12 @@ const PictureContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 85vh;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 `
 
 const Picture = styled.img`
