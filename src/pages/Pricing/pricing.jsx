@@ -13,7 +13,8 @@ import { useTranslation } from "react-i18next";
 
 
 import ToggleButton from '../../components/ToggleButton/toggleButton'
-import DayPickerFooter from '../../components/DayPickerFooter/dayPickerFooter'
+import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter'
+import SeasonLegend from '../../components/Pricing/SeasonLegend/seasonLegend'
 
 // Import all the datas to customize the calendar
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing'
@@ -25,23 +26,16 @@ const PricingWrapper = styled.div`
   text-align: center;
   justify-content: center;
   //align-items: center;
+  padding: 20px;
 `
 
-const DatasWrapper = styled.div`
+const DataDisplayWrapper = styled.div`
   border: solid 1px black ;
   border-radius: 15px;
   padding: 10px;
-  margin-right:20px;
 `
 
-const DayPickerWrapper = styled.div`
-  border: solid 1px black ;
-  border-radius: 15px;
-  padding: 10px;
-  margin-left:20px;
-`
-
-const DaySelectorWrapper = styled.div`
+const ToggleButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,15 +43,25 @@ const DaySelectorWrapper = styled.div`
   border: 1px solid black;
 `
 
+const DayPickerContainer = styled.div`
+  border: solid 1px black ;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin:0 20px;
+`
+
 const InnerDiv = styled.div`
   margin: 10px;
 `
 
+const LegendDisplayContainer = styled.div`
+  border: solid 1px black ;
+  border-radius: 15px;
+  padding: 10px;
+`
+
 function Pricing() {
     
-    
-
-    //const { t } = useTranslation();
     const { i18n, t } = useTranslation();
     
     console.log(`language : ${i18n.language}`)
@@ -91,33 +95,26 @@ function Pricing() {
     const [selectedDay, setSelectedDay] = useState();
     const [range, setRange] = useState();
 
-  
-
-
-
-    
-
-
 
     const css = `
       .my-selected:not([disabled]) { 
         font-weight: bold; 
-        border: 2px solid #0c00fa;
+        border: 2px solid #000000;
       }
     `
 
   return (
       <PricingWrapper>
-        <DatasWrapper>
+        <DataDisplayWrapper>
           <h2>{t("selectNightTitle")}</h2>
-          <DaySelectorWrapper>
+          <ToggleButtonContainer>
             <InnerDiv>{t("singleNight")}</InnerDiv>
             <ToggleButton onToggle={switchDaySelection} selection={selection}/>
             <InnerDiv>{t("multipleNights")}</InnerDiv>
-          </DaySelectorWrapper>
+          </ToggleButtonContainer>
           <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
-        </DatasWrapper>
-        <DayPickerWrapper>
+        </DataDisplayWrapper>
+        <DayPickerContainer>
           <style>{css}</style>
           <DayPicker 
               mode={selection}
@@ -135,7 +132,11 @@ function Pricing() {
               }}
               locale={i18n.language === 'en' ? enUS : fr}
           />
-        </DayPickerWrapper>
+        </DayPickerContainer>
+        <LegendDisplayContainer>
+          <h2>{t("legend")}</h2>
+          <SeasonLegend/>
+        </LegendDisplayContainer>
       </PricingWrapper>
   )
 }

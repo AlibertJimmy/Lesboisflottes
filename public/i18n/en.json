@@ -22,9 +22,15 @@
     "arrivingThe": "Arriving the",
     "departureThe": "Departure the",
     "youHaveSelected": "You have selected",
-    "night": "night",
-    "nights": "nights",
+    "night": " night",
+    "nights": " nights",
     "priceOfTheJourney": "Price of the journey",
+    
+    "//": "LEGEND",
+    "legend": "Legend",
+    "lowSeason": "Low season",
+    "mediumSeason": "Medium season",
+    "hightSeason": "High season",
 
     "//": "",
     "selectNightTitle": "Select one or multiple nights",

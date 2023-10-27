@@ -22,9 +22,15 @@
     "arrivingThe": "Arrivée le",
     "departureThe": "Départ le",
     "youHaveSelected": "Vous avez choisis",
-    "night": "nuit",
-    "nights": "nuits",
+    "night": " nuit",
+    "nights": " nuits",
     "priceOfTheJourney": "Prix du séjour",
+
+    "//": "LEGEND",
+    "legend": "Legende",
+    "lowSeason": "Basse saison",
+    "mediumSeason": "Moyenne saison",
+    "hightSeason": "Haute saison",
 
     "":"",
     "selectNightTitle": "Choisir une ou plusieurs nuits",

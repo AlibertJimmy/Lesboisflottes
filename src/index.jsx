@@ -32,6 +32,7 @@ const ContentWrapper = styled.div`
 
 const SidebarWrapper = styled.div`
   height: 100%;
+  padding: 20px 0;
 `
 
 const BackGround = styled.div`
