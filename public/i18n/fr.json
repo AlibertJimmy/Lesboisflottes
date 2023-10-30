@@ -34,16 +34,17 @@
 
     "//":"PRINCING INCLUDE",
     "pricingIncludeTitle": "Les tarifs incluent",
-    "pricingIncludeText1": "Le linge de maison (draps et serviettes)",
+    "pricingIncludeText1": "Le linge de maison",
+    "pricingIncludeText1bis": "(draps et serviettes)",
     "pricingIncludeText2": "Thé/Café à disposition",
     "pricingIncludeText3": "Accès Wifi",
 
     "//":"CANCEL CONDITION",
     "cancelConditionTitle": "Condition d'annulation",
-    "cancelConditionText": "Toute réservation est annulable gratuitement jusqu'à 7 jours avant l'arrivée",
+    "cancelConditionText": "Toute réservation est annulable gratuitement jusqu'à 7 jours avant l'arrivée.",
 
     "//":"PAYMENT METHOD",
-    "paymentMethodTitle": "Méthode de paiment",
+    "paymentMethodTitle": "Méthodes de paiment",
     "paymentMethodText1": "Le réglement est possible par :",
     "paymentMethodText2": "Chèque",
     "paymentMethodText3": "Virement bancaire",
@@ -51,7 +52,7 @@
 
     "//":"HOSTING  HOURS",
     "hostingHoursTitle": "Horaires d'hébergement",
-    "hostingHoursText": "L'hébergement est disponible à partir de 15H00 le jour de l'arrivée et doit être libéré avant 11H00 le jour du départ",
+    "hostingHoursText": "L'hébergement est disponible à partir de 15H00 le jour de l'arrivée et doit être libéré avant 11H00 le jour du départ.",
 
     "":"NIGHTS SELECTION",
     "selectNightTitle": "Choisir une ou plusieurs nuits",

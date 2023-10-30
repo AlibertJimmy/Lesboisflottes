@@ -14,7 +14,7 @@ const InformationWrapper = styled.div`
 
     text-align: left;
 
-    margin: 10px;
+    margin: 20px;
 
     border-radius: 15px;
     border: 1px solid black;

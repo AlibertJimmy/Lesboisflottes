@@ -34,7 +34,8 @@
 
     "//":"PRINCING INCLUDE",
     "pricingIncludeTitle": "Prices include",
-    "pricingIncludeText1": "Household linen (sheets and towels)",
+    "pricingIncludeText1": "Household linen",
+    "pricingIncludeText1bis": "(sheets and towels)",
     "pricingIncludeText2": "Tea/Coffee available",
     "pricingIncludeText3": "Wifi access",
 
@@ -43,7 +44,7 @@
     "cancelConditionText": "All reservations can be canceled free of charge up to 7 days before arrival.",
 
     "//":"PAYMENT METHOD",
-    "paymentMethodTitle": "Payment method",
+    "paymentMethodTitle": "Payment methods",
     "paymentMethodText1": "Payment is possible by :",
     "paymentMethodText2": "Bank check",
     "paymentMethodText3": "Bank transfer",

@@ -3,8 +3,7 @@ import { useTranslation } from "react-i18next"
 
 const CancelConditionContainer = styled.div`
 
-    margin: 0px 10px;
-    margin-left: 0;
+    margin: 10px;
 
     border-radius: 15px;
     border: 1px solid black;

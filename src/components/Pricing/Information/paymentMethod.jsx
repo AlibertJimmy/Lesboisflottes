@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
 
 const PaymentMethodContainer = styled.div`
-    margin: 10px;
+    margin: 0 10px;
     min-width: 200px;
 
     border-radius: 15px;
@@ -18,7 +18,6 @@ function PaymentMethod() {
   return (
       <PaymentMethodContainer>
         <h3>{t("paymentMethodTitle")}</h3>
-        <p>{t("paymentMethodText1")}</p>
         <ul>
             <li>{t("paymentMethodText2")}</li>
             <li>{t("paymentMethodText3")}</li>

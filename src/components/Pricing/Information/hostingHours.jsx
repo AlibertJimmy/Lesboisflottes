@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
 
 const HostingHoursContainer = styled.div`
-    margin: 10px;
+    margin: 0 10px;
 
     border-radius: 15px;
     border: 1px solid black;
