@@ -1,26 +1,47 @@
 import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
 
-const CancelConditionContainer = styled.div`
+import CopyEmailLink from './copyMail';
 
-    margin: 10px;
+import { contactList } from '../../datas/contact';
+
+const ContactWrapper = styled.div`
+    text-align: left;
 
     border-radius: 15px;
     border: 1px solid black;
 `
 
+const ContactContainer = styled.div`
+    text-align: left;
+    margin: 10px 5px;
+
+    border-radius: 15px;
+    border: 1px solid black;
+`
+
+const StyledParagraph = styled.p`
+    margin: 5px 5px;
+`
 
 
-function CancelCondition() {
+function ContactInformation() {
 
     const { t } = useTranslation();
 
   return (
-      <CancelConditionContainer>
-        <h3>{t("cancelConditionTitle")}</h3>
-        <p>{t("cancelConditionText")}</p>
-      </CancelConditionContainer>
+      <ContactWrapper>
+        <h1>{t("Contact")}</h1>
+        {contactList.map(contact => (
+            <ContactContainer key={contact.name}>
+                <StyledParagraph>{contact.name}</StyledParagraph>
+                <StyledParagraph>Telephone: {contact.telephone}</StyledParagraph>
+                <StyledParagraph>Email: <CopyEmailLink email={contact.email} /></StyledParagraph>
+                
+            </ContactContainer>
+        ))}
+      </ContactWrapper>
   )
 }
 
-export default CancelCondition
+export default ContactInformation

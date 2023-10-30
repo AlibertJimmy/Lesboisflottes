@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import ContactInformation from '../../components/Contact/contact'
+
 
 const ContactWrapper = styled.div`
   text-align: center;
@@ -9,7 +11,7 @@ const ContactWrapper = styled.div`
 function Contact() {
   return (
       <ContactWrapper>
-        <p>Contact</p>
+        <ContactInformation/>
       </ContactWrapper>
   )
 }
