@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import ToggleButton from '../../components/ToggleButton/toggleButton'
 import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter'
 import SeasonLegend from '../../components/Pricing/SeasonLegend/seasonLegend'
+import InformationDisplay from '../../components/Pricing/Information/information'
 
 // Import all the datas to customize the calendar
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing'
@@ -103,40 +104,44 @@ function Pricing() {
     `
 
   return (
-      <PricingWrapper>
-        <DataDisplayWrapper>
-          <h2>{t("selectNightTitle")}</h2>
-          <ToggleButtonContainer>
-            <InnerDiv>{t("singleNight")}</InnerDiv>
-            <ToggleButton onToggle={switchDaySelection} selection={selection}/>
-            <InnerDiv>{t("multipleNights")}</InnerDiv>
-          </ToggleButtonContainer>
-          <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
-        </DataDisplayWrapper>
-        <DayPickerContainer>
-          <style>{css}</style>
-          <DayPicker 
-              mode={selection}
-              selected={selection === 'single' ? selectedDay : range}
-              onSelect={selection === 'single' ? setSelectedDay : setRange}
-              defaultMonth={new Date(2024, 4)}
-              
-              disabled = {disabledDays}
-              fromMonth={new Date(2024,4)}
-              toMonth={new Date(2024,9)}
-              modifiers={dateSeasonList}
-              modifiersStyles={modifiersStyles}
-              modifiersClassNames={{
-                selected: 'my-selected'
-              }}
-              locale={i18n.language === 'en' ? enUS : fr}
-          />
-        </DayPickerContainer>
-        <LegendDisplayContainer>
-          <h2>{t("legend")}</h2>
-          <SeasonLegend/>
-        </LegendDisplayContainer>
-      </PricingWrapper>
+      <><PricingWrapper>
+      <DataDisplayWrapper>
+        <h2>{t("selectNightTitle")}</h2>
+        <ToggleButtonContainer>
+          <InnerDiv>{t("singleNight")}</InnerDiv>
+          <ToggleButton onToggle={switchDaySelection} selection={selection} />
+          <InnerDiv>{t("multipleNights")}</InnerDiv>
+        </ToggleButtonContainer>
+        <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
+      </DataDisplayWrapper>
+      <DayPickerContainer>
+        <style>{css}</style>
+        <DayPicker
+          mode={selection}
+          selected={selection === 'single' ? selectedDay : range}
+          onSelect={selection === 'single' ? setSelectedDay : setRange}
+          defaultMonth={new Date(2024, 4)}
+
+          disabled={disabledDays}
+          fromMonth={new Date(2024, 4)}
+          toMonth={new Date(2024, 9)}
+          modifiers={dateSeasonList}
+          modifiersStyles={modifiersStyles}
+          modifiersClassNames={{
+            selected: 'my-selected'
+          }}
+          locale={i18n.language === 'en' ? enUS : fr} />
+      </DayPickerContainer>
+      <LegendDisplayContainer>
+        <h2>{t("legend")}</h2>
+        <SeasonLegend />
+      </LegendDisplayContainer>
+
+    </PricingWrapper>
+    <div>
+        <InformationDisplay />
+    </div></>
+      
   )
 }
 // defaultMonth -> Set the starting month of the calendar

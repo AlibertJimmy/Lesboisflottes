@@ -32,7 +32,28 @@
     "mediumSeason": "Medium season",
     "hightSeason": "High season",
 
-    "//": "",
+    "//":"PRINCING INCLUDE",
+    "pricingIncludeTitle": "Prices include",
+    "pricingIncludeText1": "Household linen (sheets and towels)",
+    "pricingIncludeText2": "Tea/Coffee available",
+    "pricingIncludeText3": "Wifi access",
+
+    "//":"CANCEL CONDITION",
+    "cancelConditionTitle": "Cancel condition",
+    "cancelConditionText": "All reservations can be canceled free of charge up to 7 days before arrival.",
+
+    "//":"PAYMENT METHOD",
+    "paymentMethodTitle": "Payment method",
+    "paymentMethodText1": "Payment is possible by :",
+    "paymentMethodText2": "Bank check",
+    "paymentMethodText3": "Bank transfer",
+    "paymentMethodText4": "Cash",
+
+    "//":"HOSTING  HOURS",
+    "hostingHoursTitle": "Hosting hours",
+    "hostingHoursText": "Accommodation is available from 3:00 p.m. on the day of arrival and must be vacated before 11:00 a.m. on the day of departure.",
+
+    "//": "NIGHTS SELECTION",
     "selectNightTitle": "Select one or multiple nights",
     "singleNight": "One night",
     "multipleNights": "Multiple nights",
