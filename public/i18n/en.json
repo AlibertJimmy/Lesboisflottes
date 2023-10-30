@@ -94,5 +94,13 @@
     "PlaneTransportDescription5": "Airport of Toulon/Hyères :",
     "PlaneTransportDescription6": "Train to Toulon.",
 
-    "GeneralTransportProposition": "Transport from the Sablettes pier or from the Seyne sur Mer station can be organized on request depending on availability."
+    "GeneralTransportProposition": "Transport from the Sablettes pier or from the Seyne sur Mer station can be organized on request depending on availability.",
+
+    "//": "LOCATION",
+    "OurComments": "Our comments",
+    "AverageRating": "Average rating",
+    "Guest": "Guest",
+    "Comment": "Comment",
+    "Rating": "Rating",
+    "Date": "Date"
 }

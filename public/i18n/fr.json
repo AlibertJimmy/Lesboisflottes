@@ -95,9 +95,15 @@
     "PlaneTransportDescription5": "Aéroport de Toulon/Hyères :",
     "PlaneTransportDescription6": "Train jusqu'à Toulon.",
 
-    "GeneralTransportProposition": "Le transport depuis l'embarcadère des Sablettes ou depuis la gare de la Seyne sur Mer peut être organisé sur demande en fonction des disponibilités."
+    "GeneralTransportProposition": "Le transport depuis l'embarcadère des Sablettes ou depuis la gare de la Seyne sur Mer peut être organisé sur demande en fonction des disponibilités.",
 
-
+    "//": "LOCATION",
+    "OurComments": "Nos commentaires",
+    "AverageRating": "Note moyenne",
+    "Guest": "Invité",
+    "Comment": "Commentaire",
+    "Rating": "Note",
+    "Date": "Date"
 
 
 

@@ -3,7 +3,7 @@ import { LANGUAGES } from "../../constants/language";
 
 
 export const LanguageMenu = () => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
 
   const onChangeLang = (e) => {
     const lang_code = e.target.value;
