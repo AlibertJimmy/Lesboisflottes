@@ -22,6 +22,8 @@ function CommentItem({comment}) {
 
   const { t } = useTranslation();
 
+
+
   return (
       <div>
         <CommentContainer>

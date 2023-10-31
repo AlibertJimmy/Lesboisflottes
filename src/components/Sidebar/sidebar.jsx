@@ -31,7 +31,7 @@ function Sidebar() {
                 <StyledLinkSidebar to="/">{t("Reception")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Location">{t("Location")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Housing">{t("Housing")}</StyledLinkSidebar>
-                <StyledLinkSidebar to="/Galery">{t("Gallery")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Gallery">{t("Gallery")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Comment">{t("Comments")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Pricing">{t("Prices")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Contact">{t("Contact")}</StyledLinkSidebar>

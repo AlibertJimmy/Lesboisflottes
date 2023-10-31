@@ -1,34 +1,50 @@
-import HomeIllustration from '../../assets/pictures/pic1.png'
+import MyGallery from '../../components/Gallery/myGallery';
+import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
+
+import { photosSample } from "../../assets/photos"
 
 import styled from 'styled-components'
+import { StyledWelcome } from '../../utils/style/jsx/titles&text';
 
-const PictureContainer = styled.div`
+import { borderWidth } from '../../utils/style/jsx/border';
+
+const HomeWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+const GalleryContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex: 0 0 550px;
+
+  margin: 0 20px;
   height: 85vh;
 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+  border: ${borderWidth}px solid black;
+  border-radius: 15px;
+
 `
 
-const Picture = styled.img`
-  border-radius: 15px;
-  max-width: 100%;
-  max-height: 100%;
+const WelcomeAndComments = styled.div`
+  justify-content: center;
+  flex: 1;
 `
 
 function Home() {
     return (
-        
-          <div>
-              <PictureContainer>
-                <Picture src={HomeIllustration} alt="Home Pic"/>
-              </PictureContainer>
-          </div>
-      
+          <HomeWrapper>
+            
+              <WelcomeAndComments>
+                <StyledWelcome>WELCOME</StyledWelcome>
+                <CommentScrollingBanner/>
+              </WelcomeAndComments>
+              
+            
+            <GalleryContainer>
+              <MyGallery photos={photosSample}/>
+            </GalleryContainer>
+          </HomeWrapper>
     )
   }
   

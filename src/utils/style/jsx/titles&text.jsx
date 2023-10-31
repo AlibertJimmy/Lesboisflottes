@@ -21,6 +21,16 @@ export const StyledH2 = styled.h2`
     color: ${colors.title} ;
 `
 
+export const StyledWelcome = styled.h1`
+    font-size: 40px;
+    font-family: "Bradley Hand",cursive;
+    font-style: italic;
+
+    text-align: center;
+
+    color: ${colors.title} ;
+`
+
 export const StyledP = styled.p`
     font-size: 15px;
     font-family: Candassa;
