@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next"
+
 import Gallery from "react-photo-gallery"
 import React, { useState, useCallback } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -8,6 +10,9 @@ import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
 
 function Galleryx() {
+
+  const { t } = useTranslation();
+
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -23,7 +28,7 @@ function Galleryx() {
 
   return (
     <div>
-      <StyledH1>Gallery</StyledH1>
+      <StyledH1>{t("Gallery")}</StyledH1>
       <Gallery photos={photos} onClick={openLightbox} targetRowHeight={150} margin={5}/>
       <ModalGateway>
         {viewerIsOpen ? (
