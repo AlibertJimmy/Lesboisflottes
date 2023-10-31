@@ -5,7 +5,8 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 import styled from 'styled-components'
-import { StyledH1 } from "../../utils/style/jsx/title";
+import { StyledH1 } from "../../utils/style/jsx/titles&text";
+import { StyledP } from "../../utils/style/jsx/titles&text";
 
 const ContactWrapper = styled.div`
     text-align: left;
@@ -23,9 +24,6 @@ const ContactContainer = styled.div`
     border: 1px solid black;
 `
 
-const StyledParagraph = styled.p`
-    margin: 5px 5px;
-`
 
 
 function ContactInformation() {
@@ -37,10 +35,9 @@ function ContactInformation() {
         <StyledH1>{t("Contact")}</StyledH1>
         {contactList.map(contact => (
             <ContactContainer key={contact.name}>
-                <StyledParagraph>{contact.name}</StyledParagraph>
-                <StyledParagraph>Telephone: {contact.telephone}</StyledParagraph>
-                <StyledParagraph>Email: <CopyEmailLink email={contact.email} /></StyledParagraph>
-                
+                <StyledP>{contact.name}</StyledP>
+                <StyledP>Telephone: {contact.telephone}</StyledP>
+                <StyledP>Email: <CopyEmailLink email={contact.email} /></StyledP>
             </ContactContainer>
         ))}
       </ContactWrapper>

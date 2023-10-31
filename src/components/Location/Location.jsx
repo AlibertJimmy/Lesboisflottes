@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 
 import styled from 'styled-components'
-import { StyledH1 } from '../../utils/style/jsx/title';
+import { StyledH1 } from '../../utils/style/jsx/titles&text';
+import { StyledP } from "../../utils/style/jsx/titles&text";
+
 
 const LocationWrapper = styled.div`
     text-align: left;
@@ -21,9 +23,9 @@ function LocationDisplay() {
   return (
       <LocationWrapper>
         <StyledH1>{t("Location")}</StyledH1>
-        <p>{t("PresentationSituation1")}</p>
-        <p>{t("PresentationSituation2")}</p>
-        <p>{t("PresentationSituation3")}</p>
+        <StyledP>{t("PresentationSituation1")}</StyledP>
+        <StyledP>{t("PresentationSituation2")}</StyledP>
+        <StyledP>{t("PresentationSituation3")}</StyledP>
       </LocationWrapper>
   )
 }

@@ -4,7 +4,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 import { photos } from '../../assets/photos'
 
-import { StyledH1 } from "../../utils/style/jsx/title";
+import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
 
 function Galleryx() {

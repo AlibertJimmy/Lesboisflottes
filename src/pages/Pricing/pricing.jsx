@@ -15,7 +15,7 @@ import InformationDisplay from '../../components/Pricing/Information/information
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing'
 
 import styled from 'styled-components'
-import { StyledH1 } from '../../utils/style/jsx/title'
+import { StyledH1 } from '../../utils/style/jsx/titles&text'
 
 import '../../utils/style/css/react-day-picker.css'
 

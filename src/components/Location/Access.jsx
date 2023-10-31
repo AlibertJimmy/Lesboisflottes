@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 
 import styled from 'styled-components'
-import { StyledH1 } from '../../utils/style/jsx/title';
+import { StyledH1 } from '../../utils/style/jsx/titles&text';
+import { StyledP } from "../../utils/style/jsx/titles&text";
 
 const AccessWrapper = styled.div`
     font-family: ;
@@ -21,25 +22,25 @@ function AccessDisplay() {
 
   return (
       <AccessWrapper>
-        <p>{t("GeneralTransportProposition")}</p>
+        <StyledP>{t("GeneralTransportProposition")}</StyledP>
         <StyledH1>{t("ByCar")}</StyledH1>
         <StyledH1>{t("ByTrain")}</StyledH1>
-        <p>{t("TrainTransportDescription1")}</p>
-        <p>{t("TrainTransportDescription2")}</p>
-        <p>{t("TrainTransportDescription3")}</p>
-        <p>{t("TrainTransportDescription4")}</p>
-        <p>{t("TrainTransportDescription5")}</p>
-        <p>{t("TrainTransportDescription6")}</p>
-        <p>{t("TrainTransportDescription7")}</p>
-        <p>{t("TrainTransportDescription8")}</p>
-        <p>{t("TrainTransportDescription9")}</p>
+        <StyledP>{t("TrainTransportDescription1")}</StyledP>
+        <StyledP>{t("TrainTransportDescription2")}</StyledP>
+        <StyledP>{t("TrainTransportDescription3")}</StyledP>
+        <StyledP>{t("TrainTransportDescription4")}</StyledP>
+        <StyledP>{t("TrainTransportDescription5")}</StyledP>
+        <StyledP>{t("TrainTransportDescription6")}</StyledP>
+        <StyledP>{t("TrainTransportDescription7")}</StyledP>
+        <StyledP>{t("TrainTransportDescription8")}</StyledP>
+        <StyledP>{t("TrainTransportDescription9")}</StyledP>
         <StyledH1>{t("ByPlane")}</StyledH1>
-        <p>{t("PlaneTransportDescription1")}</p>
-        <p>{t("PlaneTransportDescription2")}</p>
-        <p>{t("PlaneTransportDescription3")}</p>
-        <p>{t("PlaneTransportDescription4")}</p>
-        <p>{t("PlaneTransportDescription5")}</p>
-        <p>{t("PlaneTransportDescription6")}</p>
+        <StyledP>{t("PlaneTransportDescription1")}</StyledP>
+        <StyledP>{t("PlaneTransportDescription2")}</StyledP>
+        <StyledP>{t("PlaneTransportDescription3")}</StyledP>
+        <StyledP>{t("PlaneTransportDescription4")}</StyledP>
+        <StyledP>{t("PlaneTransportDescription5")}</StyledP>
+        <StyledP>{t("PlaneTransportDescription6")}</StyledP>
       </AccessWrapper>
   )
 }

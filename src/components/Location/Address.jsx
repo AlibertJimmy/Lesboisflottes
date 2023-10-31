@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 
 import styled from 'styled-components'
-import { StyledH1 } from '../../utils/style/jsx/title';
+import { StyledH1 } from '../../utils/style/jsx/titles&text';
+import { StyledP } from "../../utils/style/jsx/titles&text";
 
 const AddressWrapper = styled.div`
     text-align: left;
@@ -42,10 +43,10 @@ function AddressDisplay() {
       <SituationWarper>
         <AddressWrapper>
           <StyledH1>{t("Address")}</StyledH1>
-          <p>{t("Adress1")}</p>
-          <p>{t("Adress2")}</p>
-          <p>{t("Adress3")}</p>
-          <p>{t("Adress4")}</p>
+          <StyledP>{t("Adress1")}</StyledP>
+          <StyledP>{t("Adress2")}</StyledP>
+          <StyledP>{t("Adress3")}</StyledP>
+          <StyledP>{t("Adress4")}</StyledP>
         </AddressWrapper>
         <MapWarper>
         <iframe

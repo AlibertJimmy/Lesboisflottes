@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 
 import styled from 'styled-components'
-import { StyledH1 } from '../../utils/style/jsx/title';
+import { StyledH1 } from '../../utils/style/jsx/titles&text';
+import { StyledP } from "../../utils/style/jsx/titles&text";
 
 const HousingPresentationWrapper = styled.div`
     font-family: ;
@@ -13,10 +14,6 @@ const HousingPresentationWrapper = styled.div`
     border: 1px solid black;
 `
 
-const StyledParagraph = styled.p`
-    font-family: Candassa;
-`
-
 
 function HousingPresentation() {
 
@@ -25,10 +22,10 @@ function HousingPresentation() {
   return (
       <HousingPresentationWrapper>
         <StyledH1>{t("Housing")}</StyledH1>
-        <StyledParagraph>{t("PresentationHousing1")}</StyledParagraph>
-        <StyledParagraph>{t("PresentationHousing2")}</StyledParagraph>
-        <StyledParagraph>{t("PresentationHousing3")}</StyledParagraph>
-        <StyledParagraph>{t("PresentationHousing4")}</StyledParagraph>
+        <StyledP>{t("PresentationHousing1")}</StyledP>
+        <StyledP>{t("PresentationHousing2")}</StyledP>
+        <StyledP>{t("PresentationHousing3")}</StyledP>
+        <StyledP>{t("PresentationHousing4")}</StyledP>
       </HousingPresentationWrapper>
   )
 }
