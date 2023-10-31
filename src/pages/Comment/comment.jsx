@@ -1,10 +1,12 @@
-import styled from 'styled-components'
+import { useTranslation } from "react-i18next";
 
 import { commentList } from '../../datas/review_AirBNB'
 import CommentItem from '../../components/Comment/comment'
 import AverageRatingItem from '../../components/Comment/averageRating';
 
-import { useTranslation } from "react-i18next";
+import styled from 'styled-components'
+
+
 
 const CommentsWrapper = styled.div`
   text-align: center;
@@ -13,7 +15,7 @@ const CommentsWrapper = styled.div`
 
 function Comment() {
 
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
     
     console.log(`language : ${i18n.language}`)
 

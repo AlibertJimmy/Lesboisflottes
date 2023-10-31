@@ -1,6 +1,7 @@
-import styled from 'styled-components'
-
 import { useTranslation } from "react-i18next";
+
+import styled from 'styled-components'
+import { StyledH1 } from '../../utils/style/jsx/title';
 
 const AccessWrapper = styled.div`
     font-family: ;
@@ -21,8 +22,8 @@ function AccessDisplay() {
   return (
       <AccessWrapper>
         <p>{t("GeneralTransportProposition")}</p>
-        <h1>{t("ByCar")}</h1>
-        <h1>{t("ByTrain")}</h1>
+        <StyledH1>{t("ByCar")}</StyledH1>
+        <StyledH1>{t("ByTrain")}</StyledH1>
         <p>{t("TrainTransportDescription1")}</p>
         <p>{t("TrainTransportDescription2")}</p>
         <p>{t("TrainTransportDescription3")}</p>
@@ -32,7 +33,7 @@ function AccessDisplay() {
         <p>{t("TrainTransportDescription7")}</p>
         <p>{t("TrainTransportDescription8")}</p>
         <p>{t("TrainTransportDescription9")}</p>
-        <h1>{t("ByPlane")}</h1>
+        <StyledH1>{t("ByPlane")}</StyledH1>
         <p>{t("PlaneTransportDescription1")}</p>
         <p>{t("PlaneTransportDescription2")}</p>
         <p>{t("PlaneTransportDescription3")}</p>

@@ -1,8 +1,7 @@
-import styled from 'styled-components'
-
 import { useTranslation } from "react-i18next";
 
-
+import styled from 'styled-components'
+import { StyledH1 } from '../../utils/style/jsx/title';
 
 
 const ListWrapper = styled.div`
@@ -27,27 +26,31 @@ function EquipmentList() {
     const { t } = useTranslation();
 
   return (
-    <ListWrapper>
-    <StyledSubTitle>{t("Indoor")}</StyledSubTitle>
-    <ul>
-      <li>{t("Coffeemaker")}</li>
-      <li>{t("ElectricKettle")}</li>
-      <li>{t("Refrigerator")}</li>
-      <li>{t("Microwave")}</li>
-      <li>{t("HairDryer")}</li>
-      <li>{t("Wardrobe")}</li>
-      <li>{t("Fan")}</li>
-      <li>{t("MosquitoRepellentPlug")}</li>
-    </ul>
-    <StyledSubTitle>{t("Outdoor")}</StyledSubTitle>
-    <ul>
-      <li>{t("Sunshade")}</li>
-      <li>{t("ElectricKettle")}</li>
-      <li>{t("PetanqueBall")}</li>
-      <li>{t("Molky")}</li>
-      <li>{t("VintageBicycle")}</li>
-    </ul>
+    <div>
+      <StyledH1>{t("TheDifferentEquipments")}</StyledH1>
+      <ListWrapper>
+      <StyledSubTitle>{t("Indoor")}</StyledSubTitle>
+      <ul>
+        <li>{t("Coffeemaker")}</li>
+        <li>{t("ElectricKettle")}</li>
+        <li>{t("Refrigerator")}</li>
+        <li>{t("Microwave")}</li>
+        <li>{t("HairDryer")}</li>
+        <li>{t("Wardrobe")}</li>
+        <li>{t("Fan")}</li>
+        <li>{t("MosquitoRepellentPlug")}</li>
+      </ul>
+      <StyledSubTitle>{t("Outdoor")}</StyledSubTitle>
+      <ul>
+        <li>{t("Sunshade")}</li>
+        <li>{t("ElectricKettle")}</li>
+        <li>{t("PetanqueBall")}</li>
+        <li>{t("Molky")}</li>
+        <li>{t("VintageBicycle")}</li>
+      </ul>
     </ListWrapper>
+    </div>
+    
   )
 }
 

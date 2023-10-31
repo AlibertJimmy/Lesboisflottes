@@ -1,5 +1,6 @@
-import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
+
+import styled from 'styled-components'
 
 const PaymentMethodContainer = styled.div`
     margin: 0 10px;
@@ -17,11 +18,11 @@ function PaymentMethod() {
 
   return (
       <PaymentMethodContainer>
-        <h3>{t("paymentMethodTitle")}</h3>
+        <h3>{t("PaymentMethodTitle")}</h3>
         <ul>
-            <li>{t("paymentMethodText2")}</li>
-            <li>{t("paymentMethodText3")}</li>
-            <li>{t("paymentMethodText4")}</li>
+            <li>{t("PaymentMethodText2")}</li>
+            <li>{t("PaymentMethodText3")}</li>
+            <li>{t("PaymentMethodText4")}</li>
         </ul>
       </PaymentMethodContainer>
   )

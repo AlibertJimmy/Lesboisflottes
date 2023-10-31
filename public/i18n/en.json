@@ -4,84 +4,19 @@
     "subtitle1": "La Verne Beach",
     "subtitle2": "At the house of Julie & J.Manuel",
 
+
     "//": "SIDEBAR",
     "Reception": "Reception",
     "Location": "Location",
     "Housing": "Housing",
     "Gallery": "Gallery",
     "Comments": "Comments",
-    "Pricing": "Pricing",
+    "Prices": "Prices",
     "Contact": "Contact",
 
-    "//": "PRICING",
-    "//": "DAY PICKER FOOTER",
-    "pleaseSelectOneNight": "Please select one night",
-    "pricing": "Pricing",
-    "youSelectedTheNightOfThe": "You selected the night of the",
-    "pleaseSelectTheDayOfYourArrival": "Please select the day of your arrival",
-    "arrivingThe": "Arriving the",
-    "departureThe": "Departure the",
-    "youHaveSelected": "You have selected",
-    "night": " night",
-    "nights": " nights",
-    "priceOfTheJourney": "Price of the journey",
-    
-    "//": "LEGEND",
-    "legend": "Legend",
-    "lowSeason": "Low season",
-    "mediumSeason": "Medium season",
-    "hightSeason": "High season",
 
-    "//":"PRINCING INCLUDE",
-    "pricingIncludeTitle": "Prices include",
-    "pricingIncludeText1": "Household linen",
-    "pricingIncludeText1bis": "(sheets and towels)",
-    "pricingIncludeText2": "Tea/Coffee available",
-    "pricingIncludeText3": "Wifi access",
+    "//": "RECEPTION",
 
-    "//":"CANCEL CONDITION",
-    "cancelConditionTitle": "Cancel condition",
-    "cancelConditionText": "All reservations can be canceled free of charge up to 7 days before arrival.",
-
-    "//":"PAYMENT METHOD",
-    "paymentMethodTitle": "Payment methods",
-    "paymentMethodText1": "Payment is possible by :",
-    "paymentMethodText2": "Bank check",
-    "paymentMethodText3": "Bank transfer",
-    "paymentMethodText4": "Cash",
-
-    "//":"HOSTING  HOURS",
-    "hostingHoursTitle": "Hosting hours",
-    "hostingHoursText": "Accommodation is available from 3:00 p.m. on the day of arrival and must be vacated before 11:00 a.m. on the day of departure.",
-
-    "//": "NIGHTS SELECTION",
-    "selectNightTitle": "Select one or multiple nights",
-    "singleNight": "One night",
-    "multipleNights": "Multiple nights",
-
-    "//":"HOUSING",
-    "PresentationHousing1": "The accommodation offered is on the ground floor of a villa, an old building of character dating from 1949.",
-    "PresentationHousing2": "Facing due west, it benefits from a view of the garden and access to the terraces.",
-    "PresentationHousing3": "The accommodation includes a bathroom with shower cubicle and sink, separate WC.",
-    "PresentationHousing4": "A kitchen area and a sleeping area with a queen size bed (160x200 [cm]).",
-
-    "//":"HOUSING EQUIPMENT",
-    "TheDifferentEquipments": "The different equipments",
-    "Indoor": "Indoor",
-    "Coffeemaker": "Coffeemaker",
-    "ElectricKettle": "Electric kettle",
-    "Refrigerator": "Refrigerator",
-    "Microwave": "Microwave",
-    "HairDryer": "Hair dryer",
-    "Wardrobe": "Wardrobe",
-    "Fan": "Fan",
-    "MosquitoRepellentPlug": "Mosquito repellent plug",
-
-    "Outdoor":"Outdoor",
-    "Sunshade": "Sunshade",
-    "PetanqueBall": "Petanque balls",
-    "Molky": "Molky",
-    "VintageBicycle": "Vintage bicycle",
 
     "//": "LOCATION",
     "Situation": "Location",
@@ -118,11 +53,90 @@
 
     "GeneralTransportProposition": "Transport from the Sablettes pier or from the Seyne sur Mer station can be organized on request depending on availability.",
 
-    "//": "LOCATION",
+
+    "//":"HOUSING",
+    "PresentationHousing1": "The accommodation offered is on the ground floor of a villa, an old building of character dating from 1949.",
+    "PresentationHousing2": "Facing due west, it benefits from a view of the garden and access to the terraces.",
+    "PresentationHousing3": "The accommodation includes a bathroom with shower cubicle and sink, separate WC.",
+    "PresentationHousing4": "A kitchen area and a sleeping area with a queen size bed (160x200 [cm]).",
+
+    "//":"HOUSING EQUIPMENT",
+    "TheDifferentEquipments": "The different equipments",
+    "Indoor": "Indoor",
+    "Coffeemaker": "Coffeemaker",
+    "ElectricKettle": "Electric kettle",
+    "Refrigerator": "Refrigerator",
+    "Microwave": "Microwave",
+    "HairDryer": "Hair dryer",
+    "Wardrobe": "Wardrobe",
+    "Fan": "Fan",
+    "MosquitoRepellentPlug": "Mosquito repellent plug",
+
+    "Outdoor":"Outdoor",
+    "Sunshade": "Sunshade",
+    "PetanqueBall": "Petanque balls",
+    "Molky": "Molky",
+    "VintageBicycle": "Vintage bicycle",
+
+
+    "//": "GALLERY",
+
+    "//": "COMMENTS",
     "OurComments": "Our comments",
     "AverageRating": "Average rating",
     "Guest": "Guest",
     "Comment": "Comment",
     "Rating": "Rating",
-    "Date": "Date"
+    "Date": "Date",
+
+
+    "//": "PRICING",
+    "//": "DAY PICKER FOOTER",
+    "PleaseSelectOneNight": "Please select one night",
+    "YouSelectedTheNightOfThe": "You selected the night of the",
+    "PleaseSelectTheDayOfYourArrival": "Please select the day of your arrival",
+    "ArrivingThe": "Arriving the",
+    "DepartureThe": "Departure the",
+    "YouHaveSelected": "You have selected",
+    "Night": " night",
+    "Nights": " nights",
+    "PriceOfTheJourney": "Price of the journey",
+    
+    "//": "LEGEND",
+    "Legend": "Legend",
+    "LowSeason": "Low season",
+    "MediumSeason": "Medium season",
+    "HightSeason": "High season",
+
+    "//":"PRINCING INCLUDE",
+    "PricingIncludeTitle": "Prices include",
+    "PricingIncludeText1": "Household linen",
+    "PricingIncludeText1bis": "(sheets and towels)",
+    "PricingIncludeText2": "Tea/Coffee available",
+    "PricingIncludeText3": "Wifi access",
+
+    "//":"CANCEL CONDITION",
+    "CancelConditionTitle": "Cancel condition",
+    "CancelConditionText": "All reservations can be canceled free of charge up to 7 days before arrival.",
+
+    "//":"PAYMENT METHOD",
+    "PaymentMethodTitle": "Payment methods",
+    "PaymentMethodText1": "Payment is possible by :",
+    "PaymentMethodText2": "Bank check",
+    "PaymentMethodText3": "Bank transfer",
+    "PaymentMethodText4": "Cash",
+
+    "//":"HOSTING  HOURS",
+    "HostingHoursTitle": "Hosting hours",
+    "HostingHoursText": "Accommodation is available from 3:00 p.m. on the day of arrival and must be vacated before 11:00 a.m. on the day of departure.",
+
+    "//": "NIGHTS SELECTION",
+    "SelectNightTitle": "Select one or multiple nights",
+    "SingleNight": "One night",
+    "MultipleNights": "Multiple nights",
+
+
+    "//": "CONTACT",
+    "Phone": "Phone",
+    "Email": "Email"
 }

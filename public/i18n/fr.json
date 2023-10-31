@@ -4,84 +4,19 @@
     "subtitle1": "Plage de la Verne",
     "subtitle2": "Chez Julie & J.Manuel",
 
+
     "//": "SIDEBAR",
     "Reception": "Accueil",
     "Situation": "Emplacement",
     "Housing": "Logement",
     "Gallery": "Galerie",
     "Comments": "Commentaires",
-    "Pricing": "Tarifs",
+    "Prices": "Tarifs",
     "Contact": "Contact",
 
-    "//": "PRICING",
-    "//": "DAY PICKER FOOTER",
-    "pleaseSelectOneNight": "Veuillez selectionner une nuit",
-    "pricing": "Tarif",
-    "youSelectedTheNightOfThe": "Vous avez choisis la nuit du",
-    "pleaseSelectTheDayOfYourArrival": "Veuillez choisir votre jour d'arrivé",
-    "arrivingThe": "Arrivée le",
-    "departureThe": "Départ le",
-    "youHaveSelected": "Vous avez choisis",
-    "night": " nuit",
-    "nights": " nuits",
-    "priceOfTheJourney": "Prix du séjour",
 
-    "//": "LEGEND",
-    "legend": "Legende",
-    "lowSeason": "Basse saison",
-    "mediumSeason": "Moyenne saison",
-    "hightSeason": "Haute saison",
+    "//": "RECEPTION",
 
-    "//":"PRINCING INCLUDE",
-    "pricingIncludeTitle": "Les tarifs incluent",
-    "pricingIncludeText1": "Le linge de maison",
-    "pricingIncludeText1bis": "(draps et serviettes)",
-    "pricingIncludeText2": "Thé/Café à disposition",
-    "pricingIncludeText3": "Accès Wifi",
-
-    "//":"CANCEL CONDITION",
-    "cancelConditionTitle": "Condition d'annulation",
-    "cancelConditionText": "Toute réservation est annulable gratuitement jusqu'à 7 jours avant l'arrivée.",
-
-    "//":"PAYMENT METHOD",
-    "paymentMethodTitle": "Méthodes de paiment",
-    "paymentMethodText1": "Le réglement est possible par :",
-    "paymentMethodText2": "Chèque",
-    "paymentMethodText3": "Virement bancaire",
-    "paymentMethodText4": "Espèce",
-
-    "//":"HOSTING  HOURS",
-    "hostingHoursTitle": "Horaires d'hébergement",
-    "hostingHoursText": "L'hébergement est disponible à partir de 15H00 le jour de l'arrivée et doit être libéré avant 11H00 le jour du départ.",
-
-    "":"NIGHTS SELECTION",
-    "selectNightTitle": "Choisir une ou plusieurs nuits",
-    "singleNight": "Une nuit",
-    "multipleNights": "Plusieurs nuits",
-
-    "//":"HOUSING",
-    "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussé d'une villa, ancienne batisse de caractère datant de 1949.",
-    "PresentationHousing2": "Orienté plein Ouest, il bénéficie d'une vue sur le jardin et d'un accès aux terasses.",
-    "PresentationHousing3": "L'hébergement comprend une salle de bain avec cabine de douche et lavabo, de toilettes indépendantes",
-    "PresentationHousing4": "Un coin cuisine et d'un coin nuit avec un lit queen size (160x200 [cm]).",
-
-    "//":"HOUSING EQUIPMENT",
-    "TheDifferentEquipments": "Les différents équipements",
-    "Indoor": "Intérieur",
-    "Coffeemaker": "Cafetière",
-    "ElectricKettle": "Bouilloire électrique",
-    "Refrigerator": "Réfrigérateur",
-    "Microwave": "Micro-ondes",
-    "HairDryer": "Sèche-cheveux",
-    "Wardrobe": "Penderie",
-    "Fan": "Ventilateur",
-    "MosquitoRepellentPlug": "Prise anti-moustique",
-
-    "Outdoor":"Extérieur",
-    "Sunshade": "Parasol",
-    "PetanqueBall": "Boules de pétanques",
-    "Molky": "Molky",
-    "VintageBicycle": "Vélo Vintage",
 
     "//": "LOCATION",
     "Location": "Localisation",
@@ -119,31 +54,92 @@
 
     "GeneralTransportProposition": "Le transport depuis l'embarcadère des Sablettes ou depuis la gare de la Seyne sur Mer peut être organisé sur demande en fonction des disponibilités.",
 
-    "//": "LOCATION",
+
+    "//":"HOUSING",
+    "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussé d'une villa, ancienne batisse de caractère datant de 1949.",
+    "PresentationHousing2": "Orienté plein Ouest, il bénéficie d'une vue sur le jardin et d'un accès aux terasses.",
+    "PresentationHousing3": "L'hébergement comprend une salle de bain avec cabine de douche et lavabo, de toilettes indépendantes",
+    "PresentationHousing4": "Un coin cuisine et d'un coin nuit avec un lit queen size (160x200 [cm]).",
+
+    "//":"HOUSING EQUIPMENT",
+    "TheDifferentEquipments": "Les différents équipements",
+    "Indoor": "Intérieur",
+    "Coffeemaker": "Cafetière",
+    "ElectricKettle": "Bouilloire électrique",
+    "Refrigerator": "Réfrigérateur",
+    "Microwave": "Micro-ondes",
+    "HairDryer": "Sèche-cheveux",
+    "Wardrobe": "Penderie",
+    "Fan": "Ventilateur",
+    "MosquitoRepellentPlug": "Prise anti-moustique",
+
+    "Outdoor":"Extérieur",
+    "Sunshade": "Parasol",
+    "PetanqueBall": "Boules de pétanques",
+    "Molky": "Molky",
+    "VintageBicycle": "Vélo Vintage",
+
+
+    "//": "GALLERY",
+
+
+    "//": "COMMENTS",
     "OurComments": "Nos commentaires",
     "AverageRating": "Note moyenne",
     "Guest": "Invité",
     "Comment": "Commentaire",
     "Rating": "Note",
-    "Date": "Date"
+    "Date": "Date",
 
 
+    "//": "PRICING",
+    "//": "DAY PICKER FOOTER",
+    "PleaseSelectOneNight": "Veuillez selectionner une nuit",
+    "YouSelectedTheNightOfThe": "Vous avez choisis la nuit du",
+    "PleaseSelectTheDayOfYourArrival": "Veuillez choisir votre jour d'arrivé",
+    "ArrivingThe": "Arrivée le",
+    "DepartureThe": "Départ le",
+    "YouHaveSelected": "Vous avez choisis",
+    "Night": " nuit",
+    "Nights": " nuits",
+    "PriceOfTheJourney": "Prix du séjour",
+
+    "//": "LEGEND",
+    "Legend": "Legende",
+    "LowSeason": "Basse saison",
+    "MediumSeason": "Moyenne saison",
+    "HightSeason": "Haute saison",
+
+    "//":"PRINCING INCLUDE",
+    "PricingIncludeTitle": "Les tarifs incluent",
+    "PricingIncludeText1": "Le linge de maison",
+    "PricingIncludeText1bis": "(draps et serviettes)",
+    "PricingIncludeText2": "Thé/Café à disposition",
+    "PricingIncludeText3": "Accès Wifi",
+
+    "//":"CANCEL CONDITION",
+    "CancelConditionTitle": "Condition d'annulation",
+    "CancelConditionText": "Toute réservation est annulable gratuitement jusqu'à 7 jours avant l'arrivée.",
+
+    "//":"PAYMENT METHOD",
+    "PaymentMethodTitle": "Méthodes de paiment",
+    "PaymentMethodText1": "Le réglement est possible par :",
+    "PaymentMethodText2": "Chèque",
+    "PaymentMethodText3": "Virement bancaire",
+    "PaymentMethodText4": "Espèce",
+
+    "//":"HOSTING  HOURS",
+    "HostingHoursTitle": "Horaires d'hébergement",
+    "HostingHoursText": "L'hébergement est disponible à partir de 15H00 le jour de l'arrivée et doit être libéré avant 11H00 le jour du départ.",
+
+    "":"NIGHTS SELECTION",
+    "SelectNightTitle": "Choisir une ou plusieurs nuits",
+    "SingleNight": "Une nuit",
+    "MultipleNights": "Plusieurs nuits",
 
 
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
+    "//": "CONTACT",
+    "Phone": "Phone",
+    "Email": "Email"
 
 }

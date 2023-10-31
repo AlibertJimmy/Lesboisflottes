@@ -1,10 +1,9 @@
-
-import styled from 'styled-components'
-
 import { useTranslation } from "react-i18next";
+
 import StarScale from './starScale';
 
-
+import styled from 'styled-components'
+import { StyledH1 } from '../../utils/style/jsx/title';
 
 const AverageRatingContainer = styled.div`
     text-align: center;
@@ -22,6 +21,7 @@ function AverageRatingItem({commentList}) {
 
   return (
       <div>
+        <StyledH1>{t("OurComments")}</StyledH1>
         <AverageRatingContainer>
             <p>{t("AverageRating")} : <StarScale scaleValue={calculateAverageRating(commentList.reviews)}/></p>
         </AverageRatingContainer>

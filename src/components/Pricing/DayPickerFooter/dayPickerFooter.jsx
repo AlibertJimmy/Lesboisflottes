@@ -1,10 +1,7 @@
-import styled from "styled-components"
+import { useTranslation } from "react-i18next";
 import { format } from 'date-fns'
 
 import { getSeasonDatasForDate,getPriceForRangeDay } from "../../../functions/pricing";
-
-import { useTranslation } from "react-i18next";
-
 
 
 
@@ -22,34 +19,31 @@ function DayPickerFooter({mode, daySelection}) {
         }
     }
 
-    let footer = <p>{t("pleaseSelectOneNight")}</p>
+    let footer = <p>{t("PleaseSelectOneNight")}</p>
     if(mode === 'single'){
         if(daySelection){
             footer = 
             <div>
-            <p>{t("youSelectedTheNightOfThe")} {format(daySelection, 'dd/MM/yyyy')}.</p>
-            <p>{t("pricing")} : {getSeasonDatasForDate(daySelection).price} euros</p>
+            <p>{t("YouSelectedTheNightOfThe")} {format(daySelection, 'dd/MM/yyyy')}.</p>
+            <p>{t("Prices")} : {getSeasonDatasForDate(daySelection).price} euros</p>
         </div>
         }
     }
     
 
-    let footer2 = <p>{t("pleaseSelectTheDayOfYourArrival")}</p>;
+    let footer2 = <p>{t("PleaseSelectTheDayOfYourArrival")}</p>;
     if (daySelection?.from) {
-        console.log('pass first condition');
       if (!daySelection.to) {
-        console.log('pass second condition');
-        footer2 = <p>{t("arrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}</p>;
+        footer2 = <p>{t("ArrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}</p>;
       }
       else if (daySelection.to) {
-        console.log('pass third condition');
         footer2 = (
           <div>
-            <p>{t("arrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
-            <p>{t("departureThe")} : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
-            <p>{t("youHaveSelected")} {getPriceForRangeDay(daySelection).totalNights} 
-               {getPriceForRangeDay(daySelection).totalNights === 1 ? t("night") : t("nights")}</p>
-            <p>{t("priceOfTheJourney")} : {getPriceForRangeDay(daySelection).totalPrice} euros</p>
+            <p>{t("ArrivingThe")} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
+            <p>{t("DepartureThe")} : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
+            <p>{t("YouHaveSelected")} {getPriceForRangeDay(daySelection).totalNights} 
+               {getPriceForRangeDay(daySelection).totalNights === 1 ? t("Night") : t("Nights")}</p>
+            <p>{t("PriceOfTheJourney")} : {getPriceForRangeDay(daySelection).totalPrice} euros</p>
           </div>
         );
       }

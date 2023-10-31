@@ -1,9 +1,7 @@
+import { useTranslation } from "react-i18next";
 
 import styled from 'styled-components'
 import { StyledLinkSidebar } from '../../utils/style/jsx/links';
-
-import { useTranslation } from "react-i18next";
-
 
 
 
@@ -34,7 +32,7 @@ function Sidebar() {
                 <StyledLinkSidebar to="/Housing">{t("Housing")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Galery">{t("Gallery")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Comment">{t("Comments")}</StyledLinkSidebar>
-                <StyledLinkSidebar to="/Pricing">{t("Pricing")}</StyledLinkSidebar>
+                <StyledLinkSidebar to="/Pricing">{t("Prices")}</StyledLinkSidebar>
                 <StyledLinkSidebar to="/Contact">{t("Contact")}</StyledLinkSidebar>
             </SidebarLinks>
         </SidebarWrapper>

@@ -1,5 +1,6 @@
-import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
+
+import styled from 'styled-components'
 
 const HostingHoursContainer = styled.div`
     margin: 0 10px;
@@ -18,8 +19,8 @@ function HostingHours() {
 
   return (
       <HostingHoursContainer>
-        <h3>{t("hostingHoursTitle")}</h3>
-        <StyledParagraph>{t("hostingHoursText")}</StyledParagraph>
+        <h3>{t("HostingHoursTitle")}</h3>
+        <StyledParagraph>{t("HostingHoursText")}</StyledParagraph>
       </HostingHoursContainer>
   )
 }

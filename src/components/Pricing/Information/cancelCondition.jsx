@@ -1,6 +1,6 @@
-import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
 
+import styled from 'styled-components'
 const CancelConditionContainer = styled.div`
 
     margin: 0px 10px;
@@ -18,8 +18,8 @@ function CancelCondition() {
 
   return (
       <CancelConditionContainer>
-        <h3>{t("cancelConditionTitle")}</h3>
-        <p>{t("cancelConditionText")}</p>
+        <h3>{t("CancelConditionTitle")}</h3>
+        <p>{t("CancelConditionText")}</p>
       </CancelConditionContainer>
   )
 }

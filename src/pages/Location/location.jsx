@@ -1,5 +1,3 @@
-//import styled from 'styled-components'
-
 // Import Components
 import LocationDisplay from '../../components/Location/Location';
 import AddressDisplay from '../../components/Location/Address';

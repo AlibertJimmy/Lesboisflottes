@@ -1,7 +1,6 @@
-import styled from 'styled-components'
 import HomeIllustration from '../../assets/pictures/pic1.png'
 
-
+import styled from 'styled-components'
 
 const PictureContainer = styled.div`
   display: flex;

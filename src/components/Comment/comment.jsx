@@ -1,9 +1,8 @@
-
-import styled from 'styled-components'
-
 import { useTranslation } from "react-i18next";
 
 import StarScale from './starScale';
+
+import styled from 'styled-components'
 
 
 const CommentContainer = styled.div`
@@ -16,6 +15,7 @@ const CommentContainer = styled.div`
 
 const StyledParagraph = styled.p`
     margin: 5px;
+
 `
 
 

@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+
 
 import ContactInformation from '../../components/Contact/contact'
 
+import styled from 'styled-components'
 
 const ContactWrapper = styled.div`
   text-align: left;

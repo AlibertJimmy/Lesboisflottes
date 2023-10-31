@@ -1,9 +1,11 @@
-import styled from 'styled-components'
 import { useTranslation } from "react-i18next"
 
 import CopyEmailLink from './copyMail';
 
 import { contactList } from '../../datas/contact';
+
+import styled from 'styled-components'
+import { StyledH1 } from "../../utils/style/jsx/title";
 
 const ContactWrapper = styled.div`
     text-align: left;
@@ -32,7 +34,7 @@ function ContactInformation() {
 
   return (
       <ContactWrapper>
-        <h1>{t("Contact")}</h1>
+        <StyledH1>{t("Contact")}</StyledH1>
         {contactList.map(contact => (
             <ContactContainer key={contact.name}>
                 <StyledParagraph>{contact.name}</StyledParagraph>

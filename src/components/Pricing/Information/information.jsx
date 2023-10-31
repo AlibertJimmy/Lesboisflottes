@@ -1,10 +1,9 @@
-import styled from 'styled-components'
-
 import CancelCondition from './cancelCondition'
 import HostingHours from './hostingHours'
 import PaymentMethod from './paymentMethod'
 import PricingInclude from './pricingInclude'
 
+import styled from 'styled-components'
 
 const InformationWrapper = styled.div`
     display: flex;
