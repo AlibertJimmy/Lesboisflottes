@@ -4,6 +4,9 @@
 /src/assets/pictures
 /src/assets/profiles
 
+#datas
+/src/datas/contact.jsx
+
 # dependencies
 /node_modules
 /.pnp
