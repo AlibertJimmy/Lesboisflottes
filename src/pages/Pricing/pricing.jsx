@@ -7,7 +7,7 @@ import { format } from 'date-fns'
 
 import { fr, enUS} from 'date-fns/locale'
 
-import '../../utils/style/react-day-picker.css'
+import '../../utils/style/css/react-day-picker.css'
 
 import { useTranslation } from "react-i18next";
 

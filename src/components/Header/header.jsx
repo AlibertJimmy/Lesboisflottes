@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { LanguageMenu } from '../LanguageMenu/languageMenu'
 
-import { StyledLinkHeader } from '../../utils/style/links';
+import { StyledLinkHeader } from '../../utils/style/jsx/links';
 
 const HeaderWrapper = styled.div`
   display: flex;

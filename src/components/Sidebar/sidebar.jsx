@@ -1,6 +1,6 @@
 
 import styled from 'styled-components'
-import { StyledLinkSidebar } from '../../utils/style/links';
+import { StyledLinkSidebar } from '../../utils/style/jsx/links';
 
 import { useTranslation } from "react-i18next";
 

@@ -4,13 +4,15 @@ import ContactInformation from '../../components/Contact/contact'
 
 
 const ContactWrapper = styled.div`
-  text-align: center;
+  text-align: left;
 `
 
 
 function Contact() {
+
   return (
       <ContactWrapper>
+        
         <ContactInformation/>
       </ContactWrapper>
   )

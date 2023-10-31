@@ -7,6 +7,7 @@ import { contactList } from '../../datas/contact';
 
 const ContactWrapper = styled.div`
     text-align: left;
+    padding: 20px;
 
     border-radius: 15px;
     border: 1px solid black;
@@ -14,7 +15,7 @@ const ContactWrapper = styled.div`
 
 const ContactContainer = styled.div`
     text-align: left;
-    margin: 10px 5px;
+    margin: 10px 0px;
 
     border-radius: 15px;
     border: 1px solid black;
