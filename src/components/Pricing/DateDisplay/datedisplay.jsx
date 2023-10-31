@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { borderWidth } from '../../../utils/style/jsx/border'
 
 const DateWrapper = styled.div`
   text-align: center;
   border-radius: 15px;
-  border: 1px solid black;
+  border: ${borderWidth}px solid black;
 `
 
 

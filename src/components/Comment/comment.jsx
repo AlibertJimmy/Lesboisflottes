@@ -5,13 +5,14 @@ import StarScale from './starScale';
 import styled from 'styled-components'
 import { StyledP } from "../../utils/style/jsx/titles&text";
 
+import { borderWidth } from "../../utils/style/jsx/border";
 
 const CommentContainer = styled.div`
     text-align: left;
 
     padding: 5px;
     border-radius: 15px;
-    border: 1px solid black;
+    border: ${borderWidth}px solid black;
 `
 
 

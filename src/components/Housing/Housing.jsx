@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { StyledH1 } from '../../utils/style/jsx/titles&text';
 import { StyledP } from "../../utils/style/jsx/titles&text";
 
+import { borderWidth } from "../../utils/style/jsx/border";
+
 const HousingPresentationWrapper = styled.div`
     font-family: ;
     text-align: left;
@@ -11,7 +13,7 @@ const HousingPresentationWrapper = styled.div`
 
 
     border-radius: 15px;
-    border: 1px solid black;
+    border: ${borderWidth}px solid black;
 `
 
 

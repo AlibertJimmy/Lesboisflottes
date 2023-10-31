@@ -18,6 +18,8 @@ import styled from 'styled-components'
 import { StyledH1 } from '../../utils/style/jsx/titles&text'
 import { StyledH2 } from '../../utils/style/jsx/titles&text'
 
+import { borderWidth } from "../../utils/style/jsx/border";
+
 import '../../utils/style/css/react-day-picker.css'
 
 
@@ -30,7 +32,7 @@ const PricingWrapper = styled.div`
 `
 
 const DataDisplayWrapper = styled.div`
-  border: solid 1px black ;
+border: ${borderWidth}px solid black;
   border-radius: 15px;
   padding: 10px;
 `
@@ -40,11 +42,11 @@ const ToggleButtonContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   border-radius: 15px;
-  border: 1px solid black;
+  border: ${borderWidth}px solid black;
 `
 
 const DayPickerContainer = styled.div`
-  border: solid 1px black ;
+border: ${borderWidth}px solid black;
   border-radius: 15px;
   padding: 10px 20px;
   margin:0 20px;
@@ -55,7 +57,7 @@ const InnerDiv = styled.div`
 `
 
 const LegendDisplayContainer = styled.div`
-  border: solid 1px black ;
+border: ${borderWidth}px solid black;
   border-radius: 15px;
   padding: 10px;
 `

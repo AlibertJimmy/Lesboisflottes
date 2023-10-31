@@ -5,12 +5,14 @@ import StarScale from './starScale';
 import styled from 'styled-components'
 import { StyledH1 } from '../../utils/style/jsx/titles&text';
 
+import { borderWidth } from "../../utils/style/jsx/border";
+
 const AverageRatingContainer = styled.div`
     text-align: center;
 
     padding: 5px;
     border-radius: 15px;
-    border: 1px solid black;
+    border: ${borderWidth}px solid black;
 `
 
 

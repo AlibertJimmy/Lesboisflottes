@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 import styled from 'styled-components'
 import colors from '../../../utils/style/jsx/colors'
 
-
+import { borderWidth } from "../../../utils/style/jsx/border";
 
 const SeasonLegendWrapper = styled.div`
   text-align: center;
   border-radius: 15px;
-  border: 1px solid black;
+  border: ${borderWidth}px solid black;
 `
 
 const LegendTable = styled.table`
@@ -18,7 +18,7 @@ const LegendTable = styled.table`
 `
 const LegendTDCell = styled.td`
     padding: 5px;
-    border: 1px solid black;
+    border: ${borderWidth}px solid black;
     border-radius: 5px;
 `
 

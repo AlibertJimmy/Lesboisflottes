@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { StyledH1 } from '../../utils/style/jsx/titles&text';
 import { StyledP } from "../../utils/style/jsx/titles&text";
 
+import { borderWidth } from "../../utils/style/jsx/border";
+
 const AccessWrapper = styled.div`
     font-family: ;
     fon-style: Optima;
@@ -11,7 +13,7 @@ const AccessWrapper = styled.div`
     padding: 20px;
 
     border-radius: 15px;
-    border: 1px solid black;
+    border: ${borderWidth}px solid black;
 `
 
 
