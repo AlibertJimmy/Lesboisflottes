@@ -1,12 +1,14 @@
 import { useTranslation } from "react-i18next";
 
-import { commentListFr } from '../../datas/review_AirBNB_fr'
-import { commentListEn } from '../../datas/review_AirBNB_en'
+import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr'
+import { commentListEnAirBnB } from '../../datas/review_AirBNB_en'
+import { commentListFrBooking } from '../../datas/review_Booking_fr'
+import { commentListEnBooking } from '../../datas/review_Booking_en'
 import CommentItem from '../../components/Comment/comment'
 import AverageRatingItem from '../../components/Comment/averageRating';
 
 import styled from 'styled-components'
-
+import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
 
 const CommentsWrapper = styled.div`
@@ -16,27 +18,37 @@ const CommentsWrapper = styled.div`
 
 function Comment() {
 
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
     
     console.log(`language : ${i18n.language}`)
 
 
-    var reviews =[]
+    var reviewsAirBnB =[]
+    var reviewsBooking =[]
   if(i18n.language === 'fr'){
-    reviews = commentListFr.reviews
+    reviewsAirBnB = commentListFrAirBnB.reviews
+    reviewsBooking = commentListFrBooking.reviews
     console.log(`review in FRENCH`)
   }
   else if(i18n.language === 'en'){
-    reviews = commentListEn.reviews
+    reviewsAirBnB = commentListEnAirBnB.reviews
+    reviewsBooking = commentListEnBooking.reviews
     console.log(`review in ENGLISH`)
   }
 
 
   return (
       <CommentsWrapper>
-        <AverageRatingItem commentList={commentListFr}/>
+        <StyledH1>{t("OurComments")}</StyledH1>
+        <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
         <div>
-          {reviews.map((review, index) => (
+          {reviewsAirBnB.map((review, index) => (
+          <CommentItem key={index} comment={review} />
+          ))}
+        </div>
+        <AverageRatingItem commentList={commentListFrBooking} webSite={'Booking'}/>
+        <div>
+          {reviewsBooking.map((review, index) => (
           <CommentItem key={index} comment={review} />
           ))}
         </div>

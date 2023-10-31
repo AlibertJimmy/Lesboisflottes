@@ -2,31 +2,55 @@ import { useTranslation } from "react-i18next";
 
 import StarScale from './starScale';
 
+import colors from "../../utils/style/jsx/colors";
+
 import styled from 'styled-components'
-import { StyledH1 } from '../../utils/style/jsx/titles&text';
+import { StyledH3 } from "../../utils/style/jsx/titles&text";
+
 
 import { borderWidth } from "../../utils/style/jsx/border";
 
 const AverageRatingContainer = styled.div`
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 
     padding: 5px;
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 `
 
+const StyledP1 = styled.p`
+  font-size: 25px;
+  font-family: "Bradley Hand",cursive;
+  font-style: italic;
+
+  color: ${colors.title} ;
 
 
-function AverageRatingItem({commentList}) {
+  margin-left: 30px;
+  text-align: center;
+  flex:1;
+`
+
+function AverageRatingItem({commentList, webSite}) {
 
   const { t } = useTranslation();
 
   return (
-      <div>
-        <StyledH1>{t("OurComments")}</StyledH1>
-        <AverageRatingContainer>
-            <p>{t("AverageRating")} : <StarScale scaleValue={calculateAverageRating(commentList.reviews)}/></p>
-        </AverageRatingContainer>
+
+    <div>
+          <a 
+          href={webSite === 'AirBnB' ? 'https://www.airbnb.com/rooms/890437996290155577/reviews?_set_bev_on_new_domain=1697193598_OWU3MjQ0NWFmMzM3&locale=en&source_impression_id=p3_1698772055_msRHl3QjLZf%2Fqcso' 
+          : 'https://www.booking.com/hotel/fr/les-bois-flottes-plage-de-la-verne.fr.html#tab-reviews'} 
+          style={{ textDecoration: 'none', color: 'inherit' }}
+          target="_blank" rel="noopener noreferrer">
+          <AverageRatingContainer>
+              <StyledH3>{webSite}</StyledH3>
+              <StyledP1>{t("AverageRating")} : <StarScale scaleValue={calculateAverageRating(commentList.reviews)}/></StyledP1>
+          </AverageRatingContainer>
+        </a>
+
+        
       </div>
   )
 }

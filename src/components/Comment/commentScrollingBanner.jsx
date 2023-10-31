@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 import CommentItem from "./comment";
 
-import { commentListFr } from "../../datas/review_AirBNB_fr";
-import { commentListEn } from "../../datas/review_AirBNB_en";
+import { commentListFrAirBnB } from "../../datas/review_AirBNB_fr";
+import { commentListEnAirBnB } from "../../datas/review_AirBNB_en";
 
 import styled from 'styled-components'
 
@@ -35,10 +35,10 @@ function CommentScrollingBanner(){
   const reviews = useMemo(() => {
     if (i18n.language === 'fr') {
       console.log(`review in FRENCH`);
-      return commentListFr.reviews;
+      return commentListFrAirBnB.reviews;
     } else if (i18n.language === 'en') {
       console.log(`review in ENGLISH`);
-      return commentListEn.reviews;
+      return commentListEnAirBnB.reviews;
     } else {
       return [];
     }

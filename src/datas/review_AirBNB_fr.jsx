@@ -1,5 +1,5 @@
 
-export const commentListFr = {
+export const commentListFrAirBnB = {
 	"reviews": [
 		{
 			"comments": "Super, très bon accueil. Le logement nickel. Merci à Julie et JM de leurs accueil",

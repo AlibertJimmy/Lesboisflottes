@@ -1,5 +1,5 @@
 
-export const commentListEn = {
+export const commentListEnAirBnB = {
 	"reviews": [
 		{
 			"comments": "Great, very nice hosting. The accommodation is fine. Thanks to Julie and JM for hosting them.",
