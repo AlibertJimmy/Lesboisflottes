@@ -28,6 +28,10 @@ const ContactContainer = styled.div`
     border: ${borderWidth}px solid black;
 `
 
+const ContactInfoContainer = styled.div`
+    min-width: 200px;
+`
+
 const ProfilePicContainer = styled.img`
     max-width: 100px;
     max-height: 100px;
@@ -44,11 +48,11 @@ function ContactInformation() {
         {contactList.map(contact => (
             
             <ContactContainer key={contact.name}>
-                <div>
+                <ContactInfoContainer>
                     <StyledP>{contact.name}</StyledP>
-                    <StyledP>Telephone: {contact.telephone}</StyledP>
-                    <StyledP>Email: <CopyEmailLink email={contact.email} /></StyledP>
-                </div>
+                    <StyledP>{t("Phone")} : {contact.telephone}</StyledP>
+                    <StyledP>{t("Email")} : <CopyEmailLink email={contact.email} /></StyledP>
+                </ContactInfoContainer>
                 <div>
                     <ProfilePicContainer src={contact.profilePic} alt="PIC"></ProfilePicContainer>
                 </div>

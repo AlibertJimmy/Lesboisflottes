@@ -22,7 +22,7 @@ function CommentItem({comment}) {
 
   const { t } = useTranslation();
 
-
+  console.log(`CommentItem : comment : ${comment}`)
 
   return (
       <div>

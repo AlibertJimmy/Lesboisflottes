@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
-import { commentList } from '../../datas/review_AirBNB'
+import { commentListFr } from '../../datas/review_AirBNB_fr'
+import { commentListEn } from '../../datas/review_AirBNB_en'
 import CommentItem from '../../components/Comment/comment'
 import AverageRatingItem from '../../components/Comment/averageRating';
 
@@ -19,17 +20,23 @@ function Comment() {
     
     console.log(`language : ${i18n.language}`)
 
-    // Define a filter function to select reviews in the same language as the user's selection
-    const filteredReviews = commentList.reviews.filter(
-      (review) => review.language === i18n.language
-    );
+
+    var reviews =[]
+  if(i18n.language === 'fr'){
+    reviews = commentListFr.reviews
+    console.log(`review in FRENCH`)
+  }
+  else if(i18n.language === 'en'){
+    reviews = commentListEn.reviews
+    console.log(`review in ENGLISH`)
+  }
 
 
   return (
       <CommentsWrapper>
-        <AverageRatingItem commentList={commentList}/>
+        <AverageRatingItem commentList={commentListFr}/>
         <div>
-          {filteredReviews.map((review, index) => (
+          {reviews.map((review, index) => (
           <CommentItem key={index} comment={review} />
           ))}
         </div>

@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 import CommentItem from "./comment";
 
-import { commentList } from "../../datas/review_AirBNB";
+import { commentListFr } from "../../datas/review_AirBNB_fr";
+import { commentListEn } from "../../datas/review_AirBNB_en";
 
 import styled from 'styled-components'
 
@@ -29,26 +30,43 @@ function CommentScrollingBanner() {
   const { i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
+  console.log(`i18n : ${i18n.language}`);
 
-  // Define a filter function to select reviews in the same language as the user's selection
-  const filteredReviews = commentList.reviews.filter(
-    (review) => review.language === i18n.language
-  );
+  var reviews =[]
+  if(i18n.language === 'fr'){
+    reviews = commentListFr.reviews
+    console.log(`review in FRENCH`)
+  }
+  else if(i18n.language === 'en'){
+    reviews = commentListEn.reviews
+    console.log(`review in ENGLISH`)
+  }
+
+  console.log(`reviews : ${reviews}`)
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      // Update the current index to show the next comment
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredReviews.length);
-    }, 8000); // 8 seconds
-
-    return () => {
-        clearInterval(timer); // Clear the interval on component unmount
-      };
-    }, [filteredReviews]);
+    if( reviews.length > 0){
+      const timer = setInterval(() => {
+        // Update the current index to show the next comment
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+      }, 8000); // 8 seconds
+  
+      return () => {
+          clearInterval(timer); // Clear the interval on component unmount
+        };
+    }
+    
+    }, [reviews]);
 
     const redirectToComment = (comment) => {
         navigate(`/Comment`);
       };
+
+      console.log(`reviews index : ${reviews[currentIndex]}`)
+
+      if (reviews.length === 0) {
+        return null; // Return null or a loading indicator until reviews are available.
+      }
 
   return (
       <div>
@@ -57,7 +75,7 @@ function CommentScrollingBanner() {
             onClick={redirectToComment}
             style={{ cursor: "pointer", border: "none", background: "none", padding: 0, textDecoration: "none" }}
         >
-            <CommentItem comment={filteredReviews[currentIndex]} />
+            <CommentItem comment={reviews[currentIndex]} />
         </button>
 
         </CommentContainer>
