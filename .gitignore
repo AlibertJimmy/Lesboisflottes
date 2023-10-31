@@ -2,6 +2,7 @@
 
 # pictures
 /src/assets/pictures
+/src/assets/profiles
 
 # dependencies
 /node_modules

@@ -138,5 +138,6 @@
 
     "//": "CONTACT",
     "Phone": "Phone",
-    "Email": "Email"
+    "Email": "Email",
+    "EmailCopiedToClipboard": "Email address copied to clipboard"
 }

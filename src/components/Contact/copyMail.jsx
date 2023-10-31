@@ -1,5 +1,8 @@
 import React from 'react';
 
+import colors from '../../utils/style/jsx/colors';
+import { t } from 'i18next';
+
 class CopyEmailLink extends React.Component {
   constructor(props) {
     super(props);
@@ -43,14 +46,16 @@ class CopyEmailLink extends React.Component {
               bottom: '10px',
               left: '50%',
               transform: 'translateX(-50%)',
-              backgroundColor: 'rgba(0, 0, 0, 0.7)',
+              fontFamily: 'cursive',
+              fontStyle: 'italic',
+              backgroundColor: colors.title,
               color: '#fff',
               padding: '10px',
               borderRadius: '5px',
               zIndex: 1000,
             }}
           >
-            Email address copied to clipboard
+            {t("EmailCopiedToClipboard")}
           </div>
         )}
       </span>

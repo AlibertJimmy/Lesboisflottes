@@ -140,6 +140,7 @@
 
     "//": "CONTACT",
     "Phone": "Phone",
-    "Email": "Email"
+    "Email": "Email",
+    "EmailCopiedToClipboard": "Adresse mail copié dans le presse papier"
 
 }

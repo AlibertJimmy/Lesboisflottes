@@ -7,7 +7,7 @@ import { borderWidth } from "../../utils/style/jsx/border";
 
 const SidebarWrapper = styled.div`
   height: 100%;
-  min-width: 200px;
+  min-width: 125px;
   border-radius: 15px;
   border: ${borderWidth}px solid black;
   

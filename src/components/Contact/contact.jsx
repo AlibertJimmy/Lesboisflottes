@@ -19,6 +19,8 @@ const ContactWrapper = styled.div`
 `
 
 const ContactContainer = styled.div`
+    display: flex;
+    flex-direction: row;
     text-align: left;
     margin: 10px 0px;
 
@@ -26,7 +28,11 @@ const ContactContainer = styled.div`
     border: ${borderWidth}px solid black;
 `
 
-
+const ProfilePicContainer = styled.img`
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 30px;
+`
 
 function ContactInformation() {
 
@@ -36,11 +42,18 @@ function ContactInformation() {
       <ContactWrapper>
         <StyledH1>{t("Contact")}</StyledH1>
         {contactList.map(contact => (
+            
             <ContactContainer key={contact.name}>
-                <StyledP>{contact.name}</StyledP>
-                <StyledP>Telephone: {contact.telephone}</StyledP>
-                <StyledP>Email: <CopyEmailLink email={contact.email} /></StyledP>
+                <div>
+                    <StyledP>{contact.name}</StyledP>
+                    <StyledP>Telephone: {contact.telephone}</StyledP>
+                    <StyledP>Email: <CopyEmailLink email={contact.email} /></StyledP>
+                </div>
+                <div>
+                    <ProfilePicContainer src={contact.profilePic} alt="PIC"></ProfilePicContainer>
+                </div>
             </ContactContainer>
+            
         ))}
       </ContactWrapper>
   )
