@@ -31,6 +31,9 @@ function CommentItem({comment}) {
             <StyledP>{t("Comment")} : {removeHtmlTags(comment.comments)}</StyledP>
             <StyledP>{t("Rating")} : <StarScale scaleValue = {comment.rating}/></StyledP>
             <StyledP>{t("Date")} : {comment.localizedDate}</StyledP>
+            {comment.translatedFrom !== '' && (
+              <StyledP>{t("TranslatedFrom")} : {comment.translatedFrom}</StyledP>
+            )}
         </CommentContainer>
       </div>
   )

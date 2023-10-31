@@ -11,6 +11,7 @@ export const commentListFr = {
 			},
 			"localizedDate": "octobre 2023",
 			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Très bonne communication, julie et son époux ont été très accueillant.<br/>logement impeccable,<br/>proximité des plages à pieds, belle balade autour du logement.<br/>ravie !",
@@ -23,7 +24,8 @@ export const commentListFr = {
 			"localizedRespondedDate": null,
 			"localizedReviewerLocation": null,
 			"localizedReview": null,
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Super hôte,très bon accueil,cadre idyllique et paisible,avec un accès très rapide a la plage,studio très propre,reçu comme des amis,on adore également,la visite des chats,nous recommandons et y retournerons",
@@ -33,7 +35,8 @@ export const commentListFr = {
 				"firstName": "Patricia",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Au top",
@@ -43,7 +46,8 @@ export const commentListFr = {
 				"firstName": "Emilien",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Séjour absolument parfait grâce à l’accueil exceptionnel des hôtes et d’un logement idéalement situé dans un quartier paisible, à proximité de plusieurs plages à pied. Décoration très soignée, réalisée avec goût. Literie très confortable. Terrasse extérieure ombragée et agréable. Difficile de partir de chez Julie tellement ces quelques jours ont été idylliques. Une belle rencontre.",
@@ -53,7 +57,8 @@ export const commentListFr = {
 				"firstName": "Yann",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Le logement est super mignon, très agréable avec la petite terrasse et la vue sur le beau jardin. Julie est très arrangeante et disponible !",
@@ -63,7 +68,8 @@ export const commentListFr = {
 				"firstName": "Harmony"
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Tout parfait<br/>Merci Julie",
@@ -73,7 +79,8 @@ export const commentListFr = {
 				"firstName": "Jerome",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Super sur tous les plans !<br/>Très bien agencé & équipé, à côté de la plage et avec des petits plus très appréciables (masques, boules, parasol...). Et surtout un super accueil par Julie et JM ! Merci encore pour ce séjour chez vous.",
@@ -83,7 +90,8 @@ export const commentListFr = {
 				"firstName": "Melanie"
 			},
 			"localizedDate": "juillet 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Julie et José Manuel ont mis beaucoup de cœur pour retaper ce logement : c’est beau, très bien décoré, propre, cosy. Tout est fait pour qu’on s’y sente bien. L’accueil est extrêmement chaleureux et les hôtes très disponibles en cas de besoin. La jolie plage de la Verne est à quelques minutes à pieds. A tester aussi : le restaurant La Paillote, les pieds dans l’eau. Un seul regret ne pas avoir pu y rester plus longtemps !",
@@ -93,7 +101,8 @@ export const commentListFr = {
 				"firstName": "Iannis"
 			},
 			"localizedDate": "juillet 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Nous avons passé un super séjour dans le petit paradis de Julie. Une belle maison lovée entre deux plages. Une chambre super, non seulement hyper bien décorée mais en plus propre et fonctionnelle. Julie et son mari nous ont donné des conseils de resto et nous ont surtout mis à l’aise grâce à leurs sourires ! Seul regret: nous ne sommes restés qu’une seule nuit ;)",
@@ -103,7 +112,8 @@ export const commentListFr = {
 				"firstName": "Nicolas"
 			},
 			"localizedDate": "juillet 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "Le logement est super, le lit très confort, on peut faire la grasse matinée car la chambre est très fraîche, même sans clim !! <br/>Nous avons apprécié la proximité (3min) avec la première plage, nous avons bouquiné sur la terrasse ombragée, très stylée, un vrai plus. <br/>Julie et son mari José Manuel, très sympa et bienveillants, nous ont conseillé un super spot où dîner et regarder le coucher de soleil. <br/>Nous reviendrons en septembre assurément ! <br/>Je recommande",
@@ -113,7 +123,8 @@ export const commentListFr = {
 				"firstName": "Kim"
 			},
 			"localizedDate": "juillet 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "C’est effectivement un petit coin de paradis que propose Julie. Le logement est situé dans un quartier très agréable, à quelques pas de la plage.<br/>La chambre confortable est décorée avec goût et l’usage du jardin est un vrai plus. <br/>Vous pouvez compter sur la tranquillité proposée par les hôtes et bénéficier de leur cordialité si vous le souhaitez. <br/>Je recommande donc vivement ce logement.",
@@ -126,7 +137,8 @@ export const commentListFr = {
 				"firstName": "Monique",
 			},
 			"localizedDate": "juin 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "J'ai été bien accueuilli par José Manuel le compagnon de Julie, qui m'a bien presenté le logement et dépanné avec masque et tuba. J'ai ensuite été salué par Julie. Logement tout récemment renové, bien climatisé naturellement avec 2 terrasses ombragées. Endroit très calme. A ne pas louper pour un séjpur agréable. A refaire..",
@@ -136,7 +148,8 @@ export const commentListFr = {
 				"firstName": "Christian",
 			},
 			"localizedDate": "juin 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "hôtes chaleureux. <br/>l'appartement est décoré avec une attention aux détails. merveilleux !",
@@ -146,7 +159,8 @@ export const commentListFr = {
 				"firstName": "Natalie"
 			},
 			"localizedDate": "octobre 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Allemand"
 		},
 		{
 			"comments": "Julie et Jose-Manuel sont des hôtes très gentils, ouverts et flexibles qui ont de bons conseils pour la région à tout moment. Nous nous sommes sentis très à l'aise avec dans le logement et nous aimerions revenir.",
@@ -156,7 +170,8 @@ export const commentListFr = {
 			"reviewer": {
 				"firstName": "G",
 			},
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Allemand"
 		},
 		{
 			"comments": "La chambre ressemble plus à un appartement, avec sa propre salle de bain et même une petite cuisine avec tout ce dont vous avez besoin. Vous avez votre propre petite terrasse et beaucoup d'intimité. La plage est au coin de la rue et Julie fournit même un parasol et un équipement de snorkeling - elle a vraiment pensé à tout. Julie répond toujours très rapidement et a été très serviable et aimable. <br/>Nous avons passé un super séjour! :)",
@@ -166,7 +181,8 @@ export const commentListFr = {
 				"firstName": "Kyra"
 			},
 			"localizedDate": "septembre 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Anglais"
 		},
 		{
 			"comments": "Nous avons reçu un accueil extrêmement chaleureux de la part de Julie. Le logement dispose de sa propre entrée et aucun problème d'intimité. Plus comme un appartement plutôt que la chambre dans le logement locatif. Dans l'ensemble, un très bel hébergement et ça vaut chaque centime.",
@@ -175,7 +191,8 @@ export const commentListFr = {
 			"reviewer": {
 				"firstName": "Tanel"
 			},
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Anglais"
 		},
 		{
 			"comments": "Ce fut un plaisir de séjourner chez Julie ! Je recommande vivement les lieux et la Julie est super sympa",
@@ -185,7 +202,8 @@ export const commentListFr = {
 				"firstName": "Dominik",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Anglais"
 		},
 		{
 			"comments": "Nous avons passé une semaine de nos vacances en France ici et Julie et José Manuel étaient de très bons hôtes ! L'appartement est meublé avec une grande attention aux détails, récemment rénové et super propre. <br/>Le logement est équipé de tout ce dont vous avez besoin : un lit très confortable, une nouvelle salle de bain, une nouvelle cuisine avec possibilité de cuisiner, réfrigérateur, divers ustensiles de cuisine et une machine à café Dolce Gusto. La terrasse directement devant l'appartement est idéale pour le petit déjeuner ou le dîner. Et le meilleur : les chambres sont toujours fraîches, même en plein été, et ce, sans climatisation. La plage est à distance de marche en 5 minutes. <br/>Nous avons également reçu de Julie et José Manuel beaucoup de conseils pour des excursions et des événements dans la région. Un grand merci à tous les deux pour cela. <br/>Si nous devions nous rendre à nouveau sur la Côte d'Azur, nous réserverions certainement ici à nouveau. Des vacances au paradis - le logement a été au delà de nos attentes :-)",
@@ -195,7 +213,8 @@ export const commentListFr = {
 				"firstName": "Martin"
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Allemand"
 		},
 		{
 			"comments": "Julie était un hôte formidable. Elle nous a très gentiment accueillis et nous a tout expliqué. La région était magnifique et tout était très facilement accessible à pied. Lors de notre dernière soirée, Julie et son partenaire ont fait un petit apéritif pour nous et nous avons passé la soirée ensemble et nous nous sommes racontés des histoires. C'était magnifique et nous reviendrons certainement leur rendre visite à nouveau. Encore un grand merci, vous étiez super ! ❤️",
@@ -204,7 +223,8 @@ export const commentListFr = {
 			"reviewer": {
 				"firstName": "Naila",
 			},
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": "Allemand"
 		}
 	]
 }

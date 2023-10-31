@@ -79,7 +79,8 @@ export const commentListEn = {
 				"firstName": "Jerome",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5,"translatedFrom": "French"
+			"rating": 5,
+			"translatedFrom": "French"
 		},
 		{
 			"comments": "Great on all counts! Very well arranged & equipped, next to the beach and with very nice little extras (masks, balls, umbrella...). And above all, a great welcome by Julie and JM! Thank you again for staying with us.",
@@ -179,7 +180,9 @@ export const commentListEn = {
 				"firstName": "Kyra"
 			},
 			"localizedDate": "septembre 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
+
 		},
 		{
 			"comments": "We had an extremely warm welcome by Julie. The listing has its own entrance and no problem with privacy. More like an apartment instead of the room in the rental unit. Overall, very beautiful accommodation and worth every penny.",
@@ -189,7 +192,8 @@ export const commentListEn = {
 				"firstName": "Tanel"
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 			
 		},
 		{
@@ -200,7 +204,8 @@ export const commentListEn = {
 				"firstName": "Dominik",
 			},
 			"localizedDate": "août 2023",
-			"rating": 5
+			"rating": 5,
+			"translatedFrom": ""
 		},
 		{
 			"comments": "We spent a week of our vacation in France and Julie and José Manuel were great hosts! The apartment is furnished with a lot of love for detail, newly renovated and super clean. The accommodation is equipped with everything you need: a very comfortable bed, a new bathroom, a new kitchen with cooking facilities, fridge, various cooking utensils and a Dolce Gusto coffee machine. The terrace right in front of the apartment is ideal for breakfast or dinner. And best of all: The rooms are always nice and cool even in high summer, and all without air conditioning. The beach can be reached on foot in 5 minutes. We also got many tips from Julie and José Manuel for excursions and events in the area. Many thanks to the two of you for this. If we travel to the Côte d'Azur again, we would definitely book here again. A holiday in paradise - the accommodation exceeded our expectations :-)",

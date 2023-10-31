@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from 'react-router-dom';
 
 import CommentItem from "./comment";
@@ -25,22 +25,24 @@ const CommentContainer = styled.div`
 
 
 
-function CommentScrollingBanner() {
+function CommentScrollingBanner(){
 
   const { i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
   console.log(`i18n : ${i18n.language}`);
 
-  var reviews =[]
-  if(i18n.language === 'fr'){
-    reviews = commentListFr.reviews
-    console.log(`review in FRENCH`)
-  }
-  else if(i18n.language === 'en'){
-    reviews = commentListEn.reviews
-    console.log(`review in ENGLISH`)
-  }
+  const reviews = useMemo(() => {
+    if (i18n.language === 'fr') {
+      console.log(`review in FRENCH`);
+      return commentListFr.reviews;
+    } else if (i18n.language === 'en') {
+      console.log(`review in ENGLISH`);
+      return commentListEn.reviews;
+    } else {
+      return [];
+    }
+  }, [i18n.language]);
 
   console.log(`reviews : ${reviews}`)
 
