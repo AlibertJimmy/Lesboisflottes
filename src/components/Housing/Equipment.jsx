@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import styled from 'styled-components'
 import { StyledH1 } from '../../utils/style/jsx/titles&text';
+import { StyledH2 } from '../../utils/style/jsx/titles&text';
 
 
 const ListWrapper = styled.div`
@@ -17,9 +18,7 @@ const ListWrapper = styled.div`
     border: 1px solid black;
 `
 
-const StyledSubTitle = styled.h2`
-    font-family: Brordlay Hand;
-`
+
 
 function EquipmentList() {
 
@@ -29,7 +28,7 @@ function EquipmentList() {
     <div>
       <StyledH1>{t("TheDifferentEquipments")}</StyledH1>
       <ListWrapper>
-      <StyledSubTitle>{t("Indoor")}</StyledSubTitle>
+      <StyledH2>{t("Indoor")}</StyledH2>
       <ul>
         <li>{t("Coffeemaker")}</li>
         <li>{t("ElectricKettle")}</li>
@@ -40,7 +39,7 @@ function EquipmentList() {
         <li>{t("Fan")}</li>
         <li>{t("MosquitoRepellentPlug")}</li>
       </ul>
-      <StyledSubTitle>{t("Outdoor")}</StyledSubTitle>
+      <StyledH2>{t("Outdoor")}</StyledH2>
       <ul>
         <li>{t("Sunshade")}</li>
         <li>{t("ElectricKettle")}</li>

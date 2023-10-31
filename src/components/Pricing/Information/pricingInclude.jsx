@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import styled from 'styled-components'
+import { StyledH2 } from "../../../utils/style/jsx/titles&text";
 
 const PricingIncludeContainer = styled.div`
     margin: 0 10px;
@@ -19,7 +20,7 @@ function PricingInclude() {
 
   return (
       <PricingIncludeContainer>
-        <h3>{t("PricingIncludeTitle")}</h3>
+        <StyledH2>{t("PricingIncludeTitle")}</StyledH2>
         <ul>
             <li>{t("PricingIncludeText1")}<br></br>{t("PricingIncludeText1bis")}</li>
             <li>{t("PricingIncludeText2")}</li>

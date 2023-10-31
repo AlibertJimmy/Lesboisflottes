@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import styled from 'styled-components'
+import { StyledH2 } from "../../../utils/style/jsx/titles&text";
 import { StyledP } from "../../../utils/style/jsx/titles&text";
 
 const CancelConditionContainer = styled.div`
@@ -20,7 +21,7 @@ function CancelCondition() {
 
   return (
       <CancelConditionContainer>
-        <h3>{t("CancelConditionTitle")}</h3>
+        <StyledH2>{t("CancelConditionTitle")}</StyledH2>
         <StyledP>{t("CancelConditionText")}</StyledP>
       </CancelConditionContainer>
   )

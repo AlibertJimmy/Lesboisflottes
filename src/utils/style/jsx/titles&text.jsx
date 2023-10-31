@@ -3,18 +3,26 @@ import colors from './colors'
 
 
 export const StyledH1 = styled.h1`
-    text-align: left;
     font-size: 30px;
     font-family: "Bradley Hand",cursive;
     font-style: italic;
-    text-decoration: none;
 
+    text-align: left;
     padding-left: 20px;
 
     color: ${colors.title} ;
 `
 
+export const StyledH2 = styled.h2`
+    font-size: 25px;
+    font-family: "Bradley Hand",cursive;
+    font-style: italic;
+
+    color: ${colors.title} ;
+`
+
 export const StyledP = styled.p`
+    font-size: 15px;
     font-family: Candassa;
     margin: 5px;
 `
