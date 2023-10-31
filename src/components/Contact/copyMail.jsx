@@ -28,7 +28,7 @@ class CopyEmailLink extends React.Component {
 
   render() {
     return (
-      <div>
+      <span>
         <a
           href={`mailto:${this.props.email}`}
           ref={this.emailLinkRef}
@@ -53,7 +53,7 @@ class CopyEmailLink extends React.Component {
             Email address copied to clipboard
           </div>
         )}
-      </div>
+      </span>
     );
   }
 }
