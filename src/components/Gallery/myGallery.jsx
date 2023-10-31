@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Gallery from 'react-photo-gallery';
 
 
-const MyGallery = ({ photos }) => {
+const GallerySample = ({ photos }) => {
   const navigate = useNavigate();
 
   const redirectToGallery = (event) => {
@@ -16,4 +16,4 @@ const MyGallery = ({ photos }) => {
   );
 };
 
-export default MyGallery;
+export default GallerySample;

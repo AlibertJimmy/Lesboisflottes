@@ -1,4 +1,4 @@
-import MyGallery from '../../components/Gallery/myGallery';
+import GallerySample from '../../components/Gallery/myGallery';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
 import { photosSample } from "../../assets/photos"
@@ -42,7 +42,7 @@ function Home() {
               
             
             <GalleryContainer>
-              <MyGallery photos={photosSample}/>
+              <GallerySample photos={photosSample}/>
             </GalleryContainer>
           </HomeWrapper>
     )

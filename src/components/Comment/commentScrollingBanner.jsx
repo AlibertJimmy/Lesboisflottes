@@ -39,7 +39,7 @@ function CommentScrollingBanner() {
     const timer = setInterval(() => {
       // Update the current index to show the next comment
       setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredReviews.length);
-    }, 2000); // 8 seconds
+    }, 8000); // 8 seconds
 
     return () => {
         clearInterval(timer); // Clear the interval on component unmount
@@ -53,9 +53,13 @@ function CommentScrollingBanner() {
   return (
       <div>
         <CommentContainer>
-            <a onClick={redirectToComment} style={{ cursor: "pointer" }}>
-            <CommentItem comment={filteredReviews[currentIndex]}/>
-            </a>
+        <button
+            onClick={redirectToComment}
+            style={{ cursor: "pointer", border: "none", background: "none", padding: 0, textDecoration: "none" }}
+        >
+            <CommentItem comment={filteredReviews[currentIndex]} />
+        </button>
+
         </CommentContainer>
       </div>
   )

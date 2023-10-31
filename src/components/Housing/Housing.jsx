@@ -9,8 +9,6 @@ import { borderWidth } from "../../utils/style/jsx/border";
 const HousingPresentationWrapper = styled.div`
     font-family: ;
     text-align: left;
-    padding: 20px;
-
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
