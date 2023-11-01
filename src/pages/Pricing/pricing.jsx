@@ -1,3 +1,4 @@
+// Import react libraries
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from 'react'
 
@@ -6,15 +7,18 @@ import { fr, enUS} from 'date-fns/locale'
 
 import { DayPicker } from 'react-day-picker'
 
+// Import Component
 import ToggleButton from '../../components/ToggleButton/toggleButton'
 import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter'
 import SeasonLegend from '../../components/Pricing/SeasonLegend/seasonLegend'
 import InformationDisplay from '../../components/Pricing/Information/information'
 
-// Import all the datas to customize the calendar
+// Import Datas
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing'
 
+// Import Style
 import styled from 'styled-components'
+import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from '../../utils/style/jsx/titles&text'
 import { StyledH2 } from '../../utils/style/jsx/titles&text'
 
@@ -70,7 +74,7 @@ function Pricing() {
     /*
     let choosenLanguage ;
     if(i18n.language === 'en'){
-      //choosenLanguage = en
+      //choosenLanguage = enUS
       console.log('i18n.language = en')
     }
     else if(i18n.language === 'fr'){
@@ -107,7 +111,10 @@ function Pricing() {
 
   return (
       <div>
-        <StyledH1>{t("Prices")}</StyledH1>
+        <StyledContainer>
+          <StyledH1>{t("Prices")}</StyledH1>
+        </StyledContainer>
+        
         <PricingWrapper>
 
           <DataDisplayWrapper>

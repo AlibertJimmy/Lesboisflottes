@@ -9,6 +9,8 @@ import { commentListEnAirBnB } from "../../datas/review_AirBNB_en";
 
 import styled from 'styled-components'
 
+import colors from "../../utils/style/jsx/colors";
+
 import { borderWidth } from "../../utils/style/jsx/border";
 
 
@@ -16,6 +18,8 @@ import { borderWidth } from "../../utils/style/jsx/border";
 const CommentContainer = styled.div`
     text-align: left;
     width:100%;
+
+    background: ${colors.background};
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;

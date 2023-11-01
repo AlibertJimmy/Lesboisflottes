@@ -5,18 +5,12 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 import styled from 'styled-components'
+import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from "../../utils/style/jsx/titles&text";
 import { StyledP } from "../../utils/style/jsx/titles&text";
 
 import { borderWidth } from "../../utils/style/jsx/border";
 
-const ContactWrapper = styled.div`
-    text-align: left;
-    padding: 20px;
-
-    border-radius: 15px;
-    border: ${borderWidth}px solid black;
-`
 
 const ContactContainer = styled.div`
     display: flex;
@@ -29,6 +23,7 @@ const ContactContainer = styled.div`
 `
 
 const ContactInfoContainer = styled.div`
+    padding: 20px;
     min-width: 200px;
 `
 
@@ -43,7 +38,7 @@ function ContactInformation() {
     const { t } = useTranslation();
 
   return (
-      <ContactWrapper>
+      <StyledContainer>
         <StyledH1>{t("Contact")}</StyledH1>
         {contactList.map(contact => (
             
@@ -59,7 +54,7 @@ function ContactInformation() {
             </ContactContainer>
             
         ))}
-      </ContactWrapper>
+      </StyledContainer>
   )
 }
 

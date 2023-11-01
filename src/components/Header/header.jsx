@@ -5,6 +5,8 @@ import { LanguageMenu } from '../LanguageMenu/languageMenu'
 import styled from 'styled-components'
 import { StyledLinkHeader } from '../../utils/style/jsx/links';
 
+import colors from "../../utils/style/jsx/colors";
+
 import { borderWidth } from "../../utils/style/jsx/border";
 
 const HeaderWrapper = styled.div`
@@ -14,6 +16,8 @@ const HeaderWrapper = styled.div`
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;
+
+  background: ${colors.background};
 `
 
 const TitleDiv = styled.div`
@@ -25,6 +29,8 @@ const TitleDiv = styled.div`
 
 const LanguagePickerDiv = styled.div`
   text-align: right;
+
+  margin-right: 5px;
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;

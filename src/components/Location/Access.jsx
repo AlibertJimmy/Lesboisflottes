@@ -1,21 +1,10 @@
+// Import React Libraries
 import { useTranslation } from "react-i18next";
 
-import styled from 'styled-components'
+// Import Style
+import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from '../../utils/style/jsx/titles&text';
 import { StyledP } from "../../utils/style/jsx/titles&text";
-
-import { borderWidth } from "../../utils/style/jsx/border";
-
-const AccessWrapper = styled.div`
-    font-family: ;
-    fon-style: Optima;
-    text-align: left;
-    padding: 20px;
-
-    border-radius: 15px;
-    border: ${borderWidth}px solid black;
-`
-
 
 
 function AccessDisplay() {
@@ -23,7 +12,7 @@ function AccessDisplay() {
     const { t } = useTranslation();
 
   return (
-      <AccessWrapper>
+      <StyledContainer>
         <StyledP>{t("GeneralTransportProposition")}</StyledP>
         <StyledH1>{t("ByCar")}</StyledH1>
         <StyledH1>{t("ByTrain")}</StyledH1>
@@ -43,7 +32,7 @@ function AccessDisplay() {
         <StyledP>{t("PlaneTransportDescription4")}</StyledP>
         <StyledP>{t("PlaneTransportDescription5")}</StyledP>
         <StyledP>{t("PlaneTransportDescription6")}</StyledP>
-      </AccessWrapper>
+      </StyledContainer>
   )
 }
 

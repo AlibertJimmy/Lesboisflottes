@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import colors from './colors'
 
+import { borderWidth } from './border'
+
 
 export const StyledWelcome = styled.h1`
     font-size: 40px;
@@ -39,11 +41,16 @@ export const StyledH3 = styled.h2`
     color: ${colors.title} ;
 `
 
-
-
-
 export const StyledP = styled.p`
     font-size: 15px;
     font-family: Candassa;
     margin: 5px;
+`
+
+export const StyledContainer = styled.div`
+    text-align: left;
+    padding: 20px;
+
+    border-radius: 15px;
+    border: ${borderWidth}px solid black;
 `

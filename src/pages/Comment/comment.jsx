@@ -1,19 +1,21 @@
+// Import React Libraries
 import { useTranslation } from "react-i18next";
 
+// Import Components
+import CommentItem from '../../components/Comment/comment'
+import AverageRatingItem from '../../components/Comment/averageRating';
+
+// Import Datas
 import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr'
 import { commentListEnAirBnB } from '../../datas/review_AirBNB_en'
 import { commentListFrBooking } from '../../datas/review_Booking_fr'
 import { commentListEnBooking } from '../../datas/review_Booking_en'
-import CommentItem from '../../components/Comment/comment'
-import AverageRatingItem from '../../components/Comment/averageRating';
 
-import styled from 'styled-components'
+// Import Style
+import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
 
-const CommentsWrapper = styled.div`
-  text-align: center;
-`
 
 
 function Comment() {
@@ -38,21 +40,19 @@ function Comment() {
 
 
   return (
-      <CommentsWrapper>
-        <StyledH1>{t("OurComments")}</StyledH1>
+      <div>
+        <StyledContainer>
+          <StyledH1>{t("OurComments")}</StyledH1>
+        </StyledContainer>
         <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
-        <div>
-          {reviewsAirBnB.map((review, index) => (
-          <CommentItem key={index} comment={review} />
-          ))}
-        </div>
+        {reviewsAirBnB.map((review, index) => (
+        <CommentItem key={index} comment={review} index={index}/>
+        ))}
         <AverageRatingItem commentList={commentListFrBooking} webSite={'Booking'}/>
-        <div>
-          {reviewsBooking.map((review, index) => (
-          <CommentItem key={index} comment={review} />
-          ))}
-        </div>
-      </CommentsWrapper>
+        {reviewsBooking.map((review, index) => (
+        <CommentItem key={index} comment={review} index={index}/>
+        ))}
+      </div>
   )
 }
 

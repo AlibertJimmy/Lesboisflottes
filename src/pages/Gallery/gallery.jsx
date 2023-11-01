@@ -1,11 +1,14 @@
-import { useTranslation } from "react-i18next"
-
+// Import React Libraries
+import { useTranslation } from "react-i18next";
 import Gallery from "react-photo-gallery"
 import React, { useState, useCallback } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
+// Import Assets
 import { photos } from '../../assets/photos'
 
+// Import Style
+import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
 
@@ -28,7 +31,9 @@ function Galleryx() {
 
   return (
     <div>
-      <StyledH1>{t("Gallery")}</StyledH1>
+      <StyledContainer>
+        <StyledH1>{t("Gallery")}</StyledH1>
+      </StyledContainer>
       <Gallery photos={photos} onClick={openLightbox} targetRowHeight={150} margin={5}/>
       <ModalGateway>
         {viewerIsOpen ? (

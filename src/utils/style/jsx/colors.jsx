@@ -7,8 +7,13 @@ const colors =
       link: '#B1B4B5',
       linkHover: '#959a9c',
 
-      title: '#E0DA92',
-      text: '#959a9c'
+      title: '#B1B4B5',
+      text: '#959a9c',
+
+      background: '#f7f5d7',
+
+      commentBackground1: "#fcfcf5",
+      commentBackground2: "#edede8"
   }
   
   export default colors

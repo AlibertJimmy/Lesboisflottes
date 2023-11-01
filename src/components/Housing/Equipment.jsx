@@ -1,6 +1,9 @@
+// Import React Libraries
 import { useTranslation } from "react-i18next";
 
+// Import Style
 import styled from 'styled-components'
+import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from '../../utils/style/jsx/titles&text';
 import { StyledH2 } from '../../utils/style/jsx/titles&text';
 
@@ -14,7 +17,7 @@ const ListWrapper = styled.div`
     font-family: Avantgarde;
 
     text-align: left;
-    padding: 20px;
+    padding: 0 20px;
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
@@ -27,7 +30,7 @@ function EquipmentList() {
     const { t } = useTranslation();
 
   return (
-    <div>
+    <StyledContainer>
       <StyledH1>{t("TheDifferentEquipments")}</StyledH1>
       <ListWrapper>
       <StyledH2>{t("Indoor")}</StyledH2>
@@ -50,7 +53,7 @@ function EquipmentList() {
         <li>{t("VintageBicycle")}</li>
       </ul>
     </ListWrapper>
-    </div>
+    </StyledContainer>
     
   )
 }

@@ -3,14 +3,17 @@ import { useTranslation } from "react-i18next";
 import styled from 'styled-components'
 import { StyledLinkSidebar } from '../../utils/style/jsx/links';
 
+import colors from "../../utils/style/jsx/colors";
+
 import { borderWidth } from "../../utils/style/jsx/border";
 
 const SidebarWrapper = styled.div`
+  background: ${colors.background};
+
   height: 100%;
   min-width: 125px;
   border-radius: 15px;
   border: ${borderWidth}px solid black;
-  
 `
 
 const SidebarLinks = styled.div`
