@@ -30,7 +30,7 @@ const TitleDiv = styled.div`
 const LanguagePickerDiv = styled.div`
   text-align: right;
 
-  margin-right: 5px;
+  margin: 0px;
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;
