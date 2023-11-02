@@ -30,7 +30,7 @@ function CommentItem({comment, index}) {
   const { t } = useTranslation();
   const isEven = index % 2 === 0;
 
-  console.log(`CommentItem : comment : ${comment}`)
+  //console.log(`CommentItem : comment : ${comment}`)
 
   return (
       <div>

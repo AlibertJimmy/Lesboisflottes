@@ -38,7 +38,7 @@ function CommentScrollingBanner(){
   const { i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
-  console.log(`i18n : ${i18n.language}`);
+  //console.log(`i18n : ${i18n.language}`);
 
   const reviews = useMemo(() => {
     if (i18n.language === 'fr') {
@@ -50,7 +50,7 @@ function CommentScrollingBanner(){
     }
   }, [i18n.language]);
 
-  console.log(`reviews : ${reviews}`)
+  //console.log(`reviews : ${reviews}`)
 
   // Add temporisatin and randomize the picked review index
   useEffect(() => {
@@ -77,7 +77,7 @@ function CommentScrollingBanner(){
         navigate(`/Comment`);
       };
 
-      console.log(`reviews index : ${reviews[currentIndex]}`)
+      //console.log(`reviews index : ${reviews[currentIndex]}`)
 
       if (reviews.length === 0) {
         return null; // Return null or a loading indicator until reviews are available.

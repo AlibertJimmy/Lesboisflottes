@@ -70,7 +70,7 @@ function Pricing() {
     
     const { i18n, t } = useTranslation();
     
-    console.log(`language : ${i18n.language}`)
+    //console.log(`language : ${i18n.language}`)
     /*
     let choosenLanguage ;
     if(i18n.language === 'en'){
@@ -83,18 +83,18 @@ function Pricing() {
     }
     */
     
-    const currentDate = format(new Date(), 'dd/MM/yyyy')
-    console.log(`Current Date is ${currentDate}`);
+    //const currentDate = format(new Date(), 'dd/MM/yyyy')
+    //console.log(`Current Date is ${currentDate}`);
 
     const [selection, setAsSelection] = useState('single');
     
     const switchDaySelection = () => {
       setAsSelection(selection === 'single' ? 'range' : 'single');
-      console.log(`selection : ${selection}`)
+      //console.log(`selection : ${selection}`)
     }
 
     useEffect(() => {
-      console.log(`selection : ${selection}`);
+      //console.log(`selection : ${selection}`);
     }, [selection]);
     
 

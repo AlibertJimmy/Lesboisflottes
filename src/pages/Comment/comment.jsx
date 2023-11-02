@@ -22,7 +22,7 @@ function Comment() {
 
   const { i18n, t } = useTranslation();
     
-    console.log(`language : ${i18n.language}`)
+    //console.log(`language : ${i18n.language}`)
 
 
     var reviewsAirBnB =[]
@@ -30,12 +30,10 @@ function Comment() {
   if(i18n.language === 'fr'){
     reviewsAirBnB = commentListFrAirBnB.reviews
     reviewsBooking = commentListFrBooking.reviews
-    console.log(`review in FRENCH`)
   }
   else if(i18n.language === 'en'){
     reviewsAirBnB = commentListEnAirBnB.reviews
     reviewsBooking = commentListEnBooking.reviews
-    console.log(`review in ENGLISH`)
   }
 
 
