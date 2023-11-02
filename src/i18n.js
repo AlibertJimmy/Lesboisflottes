@@ -6,7 +6,7 @@ import { initReactI18next } from "react-i18next";
 const getCurrentHost =
   process.env.MODE === "development"
     ? "http://localhost:3000"
-    : "https://main.d2litbm81rf027.amplifyapp.com/";
+    : "https://main.d2litbm81rf027.amplifyapp.com";
 
 
 /*    const getCurrentHost =
