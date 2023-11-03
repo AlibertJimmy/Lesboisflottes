@@ -32,15 +32,15 @@ function SeasonLegend() {
             <LegendTable>
                 <tr>
                     <LegendTDCell style={{backgroundColor:colors.lowSeason , width:'40px'}}></LegendTDCell>
-                    <LegendTDCell>{t("lowSeason")}</LegendTDCell>
+                    <LegendTDCell>{t("LowSeason")}</LegendTDCell>
                 </tr>
                 <tr>
                     <LegendTDCell style={{backgroundColor:colors.mediumSeason , width:'40px'}}></LegendTDCell>
-                    <LegendTDCell>{t("mediumSeason")}</LegendTDCell>
+                    <LegendTDCell>{t("MediumSeason")}</LegendTDCell>
                 </tr>
                 <tr>
                     <LegendTDCell style={{backgroundColor:colors.highSeason , width:'40px'}}></LegendTDCell>
-                    <LegendTDCell>{t("highSeason")}</LegendTDCell>
+                    <LegendTDCell>{t("HighSeason")}</LegendTDCell>
                 </tr>
             </LegendTable>
         </div>
