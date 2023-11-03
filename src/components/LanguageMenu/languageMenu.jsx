@@ -9,10 +9,18 @@ import { LANGUAGES } from "../../constants/language";
 // Import Style
 import styled from "styled-components";
 
+// Import Constantes
+import { screenWidth } from "../../utils/style/jsx/constantes";
+
 const StyledSelect = styled.div`
   width: 100px;
   position: fixed;
-  right: 8px; ;
+  right:8px; 
+
+  @media (max-width: ${screenWidth}px){
+    position: fixed;
+    top: 10px;
+  }
 `
 
 export const LanguageMenu = () => {

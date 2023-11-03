@@ -3,6 +3,10 @@ import colors from './colors'
 
 import { borderWidth } from './constantes'
 
+export const PageWrapper = styled.div`
+  margin-top: 130px;
+`
+
 
 export const StyledWelcome = styled.h1`
     font-size: 40px;

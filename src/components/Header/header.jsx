@@ -18,12 +18,22 @@ import { screenWidth } from "../../utils/style/jsx/constantes";
 const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
 
-  border-radius: 15px;
   border: ${borderWidth}px solid black;
 
   background: ${colors.background};
+
+  @media (max-width: ${screenWidth}px){
+    position: fixed;
+    padding-top: 40px;
+    
+    
+    height: 120px;
+  }
 `
 
 const TitleDiv = styled.div`
@@ -32,9 +42,6 @@ const TitleDiv = styled.div`
   border-radius: 15px;
   border: ${borderWidth}px solid black;
 
-  @media (max-width:${screenWidth}px){
-    padding-top: 10px;
-  }
   
 `
 

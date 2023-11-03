@@ -1,21 +1,18 @@
-
-
+// Import Component
 import ContactInformation from '../../components/Contact/contact'
 
-import styled from 'styled-components'
+// Import Style
+import { PageWrapper } from '../../utils/style/jsx/titles&text'
 
-const ContactWrapper = styled.div`
-  text-align: left;
-`
+
 
 
 function Contact() {
 
   return (
-      <ContactWrapper>
-        
+      <PageWrapper> 
         <ContactInformation/>
-      </ContactWrapper>
+      </PageWrapper>
   )
 }
 

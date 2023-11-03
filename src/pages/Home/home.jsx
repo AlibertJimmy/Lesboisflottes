@@ -15,6 +15,7 @@ import { StyledWelcome } from '../../utils/style/jsx/titles&text';
 import { borderWidth } from '../../utils/style/jsx/constantes';
 
 const HomeWrapper = styled.div`
+  margin-top: 140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

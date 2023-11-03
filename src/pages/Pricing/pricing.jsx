@@ -17,6 +17,7 @@ import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/prici
 
 // Import Style
 import styled from 'styled-components'
+import { PageWrapper } from "../../utils/style/jsx/titles&text";
 import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from '../../utils/style/jsx/titles&text'
 import { StyledH2 } from '../../utils/style/jsx/titles&text'
@@ -109,7 +110,7 @@ function Pricing() {
     `
 
   return (
-      <div>
+      <PageWrapper>
         <StyledContainer>
           <StyledH1>{t("Prices")}</StyledH1>
         </StyledContainer>
@@ -155,7 +156,7 @@ function Pricing() {
         <div>
             <InformationDisplay />
         </div>
-      </div>
+      </PageWrapper>
       
   )
 }

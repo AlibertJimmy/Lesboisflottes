@@ -12,6 +12,7 @@ import { commentListFrBooking } from '../../datas/review_Booking_fr'
 import { commentListEnBooking } from '../../datas/review_Booking_en'
 
 // Import Style
+import { PageWrapper } from "../../utils/style/jsx/titles&text";
 import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
@@ -38,7 +39,7 @@ function Comment() {
 
 
   return (
-      <div>
+      <PageWrapper>
         <StyledContainer>
           <StyledH1>{t("OurComments")}</StyledH1>
         </StyledContainer>
@@ -50,7 +51,7 @@ function Comment() {
         {reviewsBooking.map((review, index) => (
         <CommentItem key={index} comment={review} index={index}/>
         ))}
-      </div>
+      </PageWrapper>
   )
 }
 

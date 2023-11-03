@@ -8,6 +8,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from '../../assets/photos'
 
 // Import Style
+import { PageWrapper } from "../../utils/style/jsx/titles&text";
 import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from "../../utils/style/jsx/titles&text";
 
@@ -30,7 +31,7 @@ function Galleryx() {
   };
 
   return (
-    <div>
+    <PageWrapper>
       <StyledContainer>
         <StyledH1>{t("Gallery")}</StyledH1>
       </StyledContainer>
@@ -49,7 +50,7 @@ function Galleryx() {
           </Modal>
         ) : null}
       </ModalGateway>
-    </div>
+    </PageWrapper>
   );
 }
 
