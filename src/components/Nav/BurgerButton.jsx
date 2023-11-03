@@ -1,5 +1,5 @@
 // Import React Libraries 
-import React, {useState} from "react";
+import React, {useState, useEffect,useRef} from "react";
 
 // Import Component
 import RightNav from "./LeftNav";
@@ -59,8 +59,8 @@ const StyledBurger = styled.div`
 
     }
 `
-//
 
+/*
 function Burger(){
     const [open, setOpen] = useState(false)
 
@@ -74,6 +74,40 @@ function Burger(){
             <RightNav open={open} />
         </>
     )
+}*/
+
+
+function Burger() {
+    const [open, setOpen] = useState(false);
+    const burgerRef = useRef(null);
+
+    useEffect(() => {
+        // Function to handle clicks outside the component
+        function handleClickOutside(event) {
+            if (burgerRef.current && !burgerRef.current.contains(event.target)) {
+                setOpen(false);
+            }
+        }
+        // Add event listener when the component mounts
+        document.addEventListener('click', handleClickOutside);
+
+        // Remove the event listener when the component unmounts
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+
+    return (
+        <div ref={burgerRef}>
+            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                <div />
+                <div />
+                <div />
+            </StyledBurger>
+            <RightNav open={open} />
+        </div>
+    );
 }
+
 
 export default Burger;
