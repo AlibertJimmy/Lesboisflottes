@@ -4,17 +4,11 @@ import { initReactI18next } from "react-i18next";
 
 
 const getCurrentHost =
-  process.env.MODE === "development"
+  process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
     : "https://main.d2litbm81rf027.amplifyapp.com";
 
-
-/*    const getCurrentHost =
-    import.meta.env.MODE === "development"
-      ? "http://localhost:3000"
-      : "https://main.d2litbm81rf027.amplifyapp.com/";
-*/
-console.log(`process.env.MODE : ${process.env.MODE}`)
+console.log(`process.env.NODE_ENV : ${process.env.NODE_ENV}`)
 console.log(`getCurrentHost : ${getCurrentHost}`)
 
 i18n
