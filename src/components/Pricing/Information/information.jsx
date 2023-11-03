@@ -4,7 +4,7 @@ import PaymentMethod from './paymentMethod'
 import PricingInclude from './pricingInclude'
 
 import styled from 'styled-components'
-import { borderWidth } from '../../../utils/style/jsx/constantes'
+import { borderWidth, screenWidth } from '../../../utils/style/jsx/constantes'
 
 const InformationWrapper = styled.div`
     display: flex;
@@ -18,6 +18,11 @@ const InformationWrapper = styled.div`
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
+
+    @media (max-width: ${screenWidth}px){
+      flex-direction:column;
+      margin:0;
+    }
 `
 
 

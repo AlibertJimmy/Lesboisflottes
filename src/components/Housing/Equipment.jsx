@@ -21,6 +21,10 @@ const ListWrapper = styled.div`
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 `
 
 

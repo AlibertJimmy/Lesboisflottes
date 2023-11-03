@@ -20,6 +20,10 @@ const ContactContainer = styled.div`
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+      }
 `
 
 const ContactInfoContainer = styled.div`
@@ -31,6 +35,7 @@ const ProfilePicContainer = styled.img`
     max-width: 100px;
     max-height: 100px;
     margin-left: 30px;
+
 `
 
 function ContactInformation() {

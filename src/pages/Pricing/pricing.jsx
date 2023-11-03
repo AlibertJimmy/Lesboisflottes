@@ -21,10 +21,13 @@ import { PageWrapper } from "../../utils/style/jsx/titles&text";
 import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from '../../utils/style/jsx/titles&text'
 import { StyledH2 } from '../../utils/style/jsx/titles&text'
-
-import { borderWidth } from "../../utils/style/jsx/constantes";
-
 import '../../utils/style/css/react-day-picker.css'
+
+// Import Constante
+import { borderWidth, screenWidth } from "../../utils/style/jsx/constantes";
+
+
+
 
 
 const PricingWrapper = styled.div`
@@ -32,7 +35,12 @@ const PricingWrapper = styled.div`
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  //align-items: center;
+  
+  @media (max-width: ${screenWidth}px){
+    flex-direction:column;
+  }
+
+
 `
 
 const DataDisplayWrapper = styled.div`
@@ -50,10 +58,16 @@ const ToggleButtonContainer = styled.div`
 `
 
 const DayPickerContainer = styled.div`
-border: ${borderWidth}px solid black;
+  border: ${borderWidth}px solid black;
   border-radius: 15px;
   padding: 10px 20px;
   margin:0 20px;
+
+  @media (max-width: ${screenWidth}px){
+    margin:0;
+    padding:0;
+  }
+
 `
 
 const InnerDiv = styled.div`

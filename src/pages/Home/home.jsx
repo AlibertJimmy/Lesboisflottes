@@ -35,6 +35,10 @@ const GalleryContainer = styled.div`
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
+  @media (max-width: 768px) {
+    margin:0;
+  }
+
 `
 
 const WelcomeAndComments = styled.div`
