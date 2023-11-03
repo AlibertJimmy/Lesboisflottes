@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import { StyledP } from "../../utils/style/jsx/titles&text";
 
 import colors from "../../utils/style/jsx/colors";
-import { borderWidth } from "../../utils/style/jsx/border";
+import { borderWidth } from "../../utils/style/jsx/constantes";
 
 const CommentContainer = styled.div`
     text-align: left;

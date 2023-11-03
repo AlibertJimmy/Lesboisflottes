@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import colors from './colors'
 
-import { borderWidth } from './border'
+import { borderWidth } from './constantes'
 
 
 export const StyledWelcome = styled.h1`

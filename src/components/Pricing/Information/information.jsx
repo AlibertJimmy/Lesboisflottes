@@ -4,7 +4,7 @@ import PaymentMethod from './paymentMethod'
 import PricingInclude from './pricingInclude'
 
 import styled from 'styled-components'
-import { borderWidth } from '../../../utils/style/jsx/border'
+import { borderWidth } from '../../../utils/style/jsx/constantes'
 
 const InformationWrapper = styled.div`
     display: flex;

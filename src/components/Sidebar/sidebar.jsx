@@ -5,7 +5,7 @@ import { StyledLinkSidebar } from '../../utils/style/jsx/links';
 
 import colors from "../../utils/style/jsx/colors";
 
-import { borderWidth } from "../../utils/style/jsx/border";
+import { borderWidth } from "../../utils/style/jsx/constantes";
 
 const SidebarWrapper = styled.div`
   background: ${colors.background};

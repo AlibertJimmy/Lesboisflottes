@@ -7,7 +7,7 @@ import colors from "../../utils/style/jsx/colors";
 import styled from 'styled-components'
 import { StyledH3 } from "../../utils/style/jsx/titles&text";
 
-import { borderWidth } from "../../utils/style/jsx/border";
+import { borderWidth } from "../../utils/style/jsx/constantes";
 
 const AverageRatingContainer = styled.div`
     display: flex;

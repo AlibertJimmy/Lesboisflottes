@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { StyledH2 } from "../../../utils/style/jsx/titles&text";
 import { StyledP } from "../../../utils/style/jsx/titles&text"
 
-import { borderWidth } from "../../../utils/style/jsx/border";
+import { borderWidth } from "../../../utils/style/jsx/constantes";
 
 const HostingHoursContainer = styled.div`
     margin: 0 10px;

@@ -1,12 +1,18 @@
+// Import React Libraries
+
+// Import Component
 import GallerySample from '../../components/Gallery/myGallery';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
+
+// Import Datas
 import { photosSample } from "../../assets/photos"
 
+// Import Style
 import styled from 'styled-components'
 import { StyledWelcome } from '../../utils/style/jsx/titles&text';
 
-import { borderWidth } from '../../utils/style/jsx/border';
+import { borderWidth } from '../../utils/style/jsx/constantes';
 
 const HomeWrapper = styled.div`
   display: flex;

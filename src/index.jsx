@@ -50,9 +50,11 @@ function App(){
       <BackGround>
         <Header />
         <HomeWrapper>
-          <SidebarWrapper>
+          {
+          /*<SidebarWrapper>
             <Sidebar />
-          </SidebarWrapper>
+            </SidebarWrapper>*/
+          }
           <ContentWrapper>
             <Routes>
               <Route path="/" element={<Home />} />

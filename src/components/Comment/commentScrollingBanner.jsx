@@ -15,7 +15,7 @@ import { commentListEnBooking } from "../../datas/review_Booking_en";
 import styled from 'styled-components'
 
 import colors from "../../utils/style/jsx/colors";
-import { borderWidth } from "../../utils/style/jsx/border";
+import { borderWidth } from "../../utils/style/jsx/constantes";
 
 
 

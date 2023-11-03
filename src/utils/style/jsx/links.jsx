@@ -18,6 +18,7 @@ export const StyledLinkHeader = styled(Link)`
 export const StyledLinkSidebar = styled(Link)`
   font-family: "Bradley Hand",cursive;
   font-style: italic;
+  font-size: 20px;
   text-decoration: none;
 
   margin-bottom: 10px;

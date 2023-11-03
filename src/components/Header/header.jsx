@@ -1,13 +1,19 @@
+// Import React Libraries
 import { useTranslation } from "react-i18next";
 
+// Import Component
 import { LanguageMenu } from '../LanguageMenu/languageMenu'
+import Navbar from "../Nav/Navbar";
 
+// Import Style
 import styled from 'styled-components'
 import { StyledLinkHeader } from '../../utils/style/jsx/links';
 
 import colors from "../../utils/style/jsx/colors";
 
-import { borderWidth } from "../../utils/style/jsx/border";
+// Import Constantes
+import { borderWidth } from "../../utils/style/jsx/constantes";
+import { screenWidth } from "../../utils/style/jsx/constantes";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -25,6 +31,11 @@ const TitleDiv = styled.div`
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;
+
+  @media (max-width:${screenWidth}px){
+    padding-top: 10px;
+  }
+  
 `
 
 const LanguagePickerDiv = styled.div`
@@ -67,8 +78,13 @@ function Header() {
             <StyledSubtitle>{t("subtitle2")}</StyledSubtitle>
           </StyledLinkHeader>
         </TitleDiv>
+        <div>
+          <Navbar/>       
+        </div>
+        
       </HeaderWrapper>
   )
 }
 
 export default Header
+// 

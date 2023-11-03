@@ -2,7 +2,6 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from 'react'
 
-import { format } from 'date-fns'
 import { fr, enUS} from 'date-fns/locale'
 
 import { DayPicker } from 'react-day-picker'
@@ -22,7 +21,7 @@ import { StyledContainer } from "../../utils/style/jsx/titles&text";
 import { StyledH1 } from '../../utils/style/jsx/titles&text'
 import { StyledH2 } from '../../utils/style/jsx/titles&text'
 
-import { borderWidth } from "../../utils/style/jsx/border";
+import { borderWidth } from "../../utils/style/jsx/constantes";
 
 import '../../utils/style/css/react-day-picker.css'
 

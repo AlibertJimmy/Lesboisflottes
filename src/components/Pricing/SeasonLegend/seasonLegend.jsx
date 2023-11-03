@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import styled from 'styled-components'
 import colors from '../../../utils/style/jsx/colors'
 
-import { borderWidth } from "../../../utils/style/jsx/border";
+import { borderWidth } from "../../../utils/style/jsx/constantes";
 
 const SeasonLegendWrapper = styled.div`
   text-align: center;
