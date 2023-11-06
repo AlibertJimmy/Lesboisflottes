@@ -13,7 +13,7 @@ const Nav = styled.nav`
     padding : 0 20px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 
 

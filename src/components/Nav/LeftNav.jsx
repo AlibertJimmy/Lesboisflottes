@@ -15,9 +15,7 @@ const StyledUl = styled.ul`
 
     list-style: none;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width:90%;
+    gap: 2.1rem;
 
 
     text-decoration: none;
@@ -35,6 +33,7 @@ const StyledUl = styled.ul`
         padding: 1rem 3rem;
         text-align: left;
         margin-top: 0;
+        gap:0;
         
 
         justify-content: space-evenly;
