@@ -27,7 +27,6 @@ import '../../utils/style/css/react-day-picker.css'
 import { 
   borderWidth, 
   marginBetweenPageComponent,
-  screenWidthMenu,
   screenWidthMobile, 
   screenWidthTablet 
 } from "../../utils/style/jsx/constantes";
@@ -123,7 +122,7 @@ function Pricing() {
     useEffect(() => {
       const handleResize = () => {
         const screenWidth = window.innerWidth;
-        setNumberOfMonthToDisplay(screenWidth >= screenWidthMenu ? 2 : 1);
+        setNumberOfMonthToDisplay(screenWidth >= 725 ? 2 : 1);
       };
   
       // Initial setup
