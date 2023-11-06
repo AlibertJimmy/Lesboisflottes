@@ -7,7 +7,7 @@ import { StyledH2 } from "../../../utils/style/jsx/titles&text";
 import colors from '../../../utils/style/jsx/colors'
 
 // Import Constante
-import { borderWidth } from "../../../utils/style/jsx/constantes";
+import { borderWidth, screenWidthMobile } from "../../../utils/style/jsx/constantes";
 
 const SeasonLegendWrapper = styled.div`
     display:flex;
@@ -23,6 +23,11 @@ const LegendTable = styled.table`
     border-spacing: 5px 10px;
     border: ${borderWidth}px solid black;
 
+    @media (max-width: ${screenWidthMobile}px){
+        padding:0;
+        border-spacing: 5px 5px;
+      }
+
 `
 
 const LegendTDCell = styled.td`
@@ -30,6 +35,7 @@ const LegendTDCell = styled.td`
     border: ${borderWidth}px solid black;
     border-radius: 5px;
     text-align:left;
+
 `
 
 function SeasonLegend() {

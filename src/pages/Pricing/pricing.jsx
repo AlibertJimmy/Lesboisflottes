@@ -27,8 +27,7 @@ import '../../utils/style/css/react-day-picker.css'
 import { 
   borderWidth, 
   marginBetweenPageComponent,
-  screenWidthMobile, 
-  screenWidthTablet 
+  screenWidthMobile
 } from "../../utils/style/jsx/constantes";
 
 
@@ -36,12 +35,10 @@ const InformationContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
+  align-items: center;
+
   margin: ${marginBetweenPageComponent}px 0;
 
-  @media (max-width: ${screenWidthTablet}px){
-    
-    
-  }
 
   @media (max-width: ${screenWidthMobile}px){
     flex-direction:column;
@@ -56,6 +53,10 @@ const DataDisplayWrapper = styled.div`
 
   padding: 10px;
   text-align: center;
+  height: 250px;
+
+  border-radius: 15px;
+  border: ${borderWidth}px solid black;
 `
 
 const ToggleButtonContainer = styled.div`
@@ -82,8 +83,13 @@ const InnerDiv = styled.div`
 `
 
 const LegendDisplayContainer = styled.div`
+  height: 250px;
   border: ${borderWidth}px solid black;
   border-radius: 15px;
+
+  @media (max-width: ${screenWidthMobile}px){
+    height: 210px;
+  }
   
 `
 
