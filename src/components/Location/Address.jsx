@@ -8,7 +8,7 @@ import { StyledH1 } from '../../utils/style/jsx/titles&text';
 import { StyledP } from "../../utils/style/jsx/titles&text";
 
 // Import Constante
-import { borderWidth, screenWidth } from "../../utils/style/jsx/constantes";
+import { borderWidth, screenWidthMobile } from "../../utils/style/jsx/constantes";
 
 
 
@@ -29,7 +29,7 @@ const LocationWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: ${screenWidth}px){
+  @media (max-width: ${screenWidthMobile}px){
 
     flex-direction: column;
   }

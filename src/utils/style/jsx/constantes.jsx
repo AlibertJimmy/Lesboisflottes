@@ -1,2 +1,3 @@
 export const borderWidth = 1 ;
-export const screenWidth = 756;
+export const screenWidthTablet = 1060;
+export const screenWidthMobile = 560;

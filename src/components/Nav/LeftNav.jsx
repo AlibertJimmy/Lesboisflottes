@@ -9,7 +9,7 @@ import { StyledLinkSidebar } from "../../utils/style/jsx/links";
 import colors from "../../utils/style/jsx/colors";
 
 // Import constantes
-import { screenWidth } from "../../utils/style/jsx/constantes";
+import { screenWidthMobile } from "../../utils/style/jsx/constantes";
 
 const StyledUl = styled.ul`
 
@@ -22,7 +22,7 @@ const StyledUl = styled.ul`
     color: ${colors.link};
 
 
-    @media (max-width: ${screenWidth}px){
+    @media (max-width: ${screenWidthMobile}px){
         flex-flow: column nowrap;
 
         position: fixed;

@@ -13,7 +13,7 @@ import colors from "../../utils/style/jsx/colors";
 
 // Import Constantes
 import { borderWidth } from "../../utils/style/jsx/constantes";
-import { screenWidth } from "../../utils/style/jsx/constantes";
+import { screenWidthMobile } from "../../utils/style/jsx/constantes";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ const HeaderWrapper = styled.div`
 
   background: ${colors.background};
 
-  @media (max-width: ${screenWidth}px){
+  @media (max-width: ${screenWidthMobile}px){
     position: fixed;
     padding-top: 40px;
     

@@ -3,7 +3,7 @@ import colors from './colors'
 
 // Import Constante
 import { borderWidth } from './constantes'
-import { screenWidth } from './constantes'
+import { screenWidthMobile } from './constantes'
 
 export const PageWrapper = styled.div`
   margin-top: 130px;
@@ -38,7 +38,7 @@ export const StyledH2 = styled.h2`
 
     color: ${colors.title} ;
 
-    @media (max-width: ${screenWidth}px){
+    @media (max-width: ${screenWidthMobile}px){
         text-align:center;
       }
     
@@ -57,7 +57,7 @@ export const StyledP = styled.p`
     font-family: Candassa;
     margin: 5px;
 
-    @media (max-width: ${screenWidth}px){
+    @media (max-width: ${screenWidthMobile}px){
         
         padding-left:10px;
       }

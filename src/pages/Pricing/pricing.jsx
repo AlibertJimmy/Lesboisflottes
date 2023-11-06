@@ -24,7 +24,7 @@ import { StyledH2 } from '../../utils/style/jsx/titles&text'
 import '../../utils/style/css/react-day-picker.css'
 
 // Import Constante
-import { borderWidth, screenWidth } from "../../utils/style/jsx/constantes";
+import { borderWidth, screenWidthMobile } from "../../utils/style/jsx/constantes";
 
 
 
@@ -34,8 +34,9 @@ const PricingWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items:center;
+  justify-content: center;
   
-  @media (max-width: ${screenWidth}px){
+  @media (max-width: ${screenWidthMobile}px){
     flex-direction:column;
   }
 `
@@ -62,7 +63,7 @@ const DayPickerContainer = styled.div`
   margin:0 20px;
 
 
-  @media (max-width: ${screenWidth}px){
+  @media (max-width: ${screenWidthMobile}px){
     margin:0;
     padding:0;
   }

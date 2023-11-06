@@ -9,7 +9,7 @@ import styled from "styled-components";
 import colors from "../../utils/style/jsx/colors";
 
 // Import Constante
-import { screenWidth } from "../../utils/style/jsx/constantes";
+import { screenWidthMobile } from "../../utils/style/jsx/constantes";
 
 
 const StyledBurger = styled.div`
@@ -28,7 +28,7 @@ const StyledBurger = styled.div`
 
     display: none;
 
-    @media (max-width: ${screenWidth}px){
+    @media (max-width: ${screenWidthMobile}px){
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
