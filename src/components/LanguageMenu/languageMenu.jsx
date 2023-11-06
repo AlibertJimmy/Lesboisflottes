@@ -16,10 +16,11 @@ const StyledSelect = styled.div`
   width: 100px;
   position: fixed;
   right:8px; 
+  top: 10px;
 
   @media (max-width: ${screenWidthMobile}px){
     position: fixed;
-    top: 10px;
+    
   }
 `
 

@@ -6,7 +6,7 @@ import { borderWidth } from './constantes'
 import { screenWidthMobile } from './constantes'
 
 export const PageWrapper = styled.div`
-  margin-top: 130px;
+  margin-top: 150px;
 `
 
 
@@ -35,6 +35,8 @@ export const StyledH2 = styled.h2`
     font-size: 25px;
     font-family: "Bradley Hand",cursive;
     font-style: italic;
+
+    text-align:center;
 
     color: ${colors.title} ;
 

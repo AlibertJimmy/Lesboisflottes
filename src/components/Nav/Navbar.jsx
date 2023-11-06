@@ -8,17 +8,13 @@ import Burger from './BurgerButton'
 import styled from 'styled-components'
 
 const Nav = styled.nav`
-    width : 100%;
+    
     height: 50px;
-    padding : 0 20px;
 
     display: flex;
-    justify-content: center;
-
-
-
+    justify-content: space-evenly;
 `
-
+//
 function Navbar(){
 
     return (

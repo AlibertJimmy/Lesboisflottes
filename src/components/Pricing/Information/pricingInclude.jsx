@@ -7,7 +7,9 @@ import { borderWidth, screenWidthMobile, screenWidthTablet } from "../../../util
 
 const PricingIncludeContainer = styled.div`
     margin: 0 10px;
-    min-width: 200px;
+
+    width: 350px;
+    height: 170px;
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
@@ -15,13 +17,29 @@ const PricingIncludeContainer = styled.div`
     @media (max-width: ${screenWidthTablet}px){
       
       margin:0;
+      width:100%;
       
     }
 
     @media (max-width: ${screenWidthMobile}px){
 
       margin:10px 0;
+      
     }
+`
+
+const InnerDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`
+
+const ListDiv = styled.div`
+    
+    width: 200px;
+    border-radius: 15px;
+    border: ${borderWidth}px solid black;
+
 `
 
 
@@ -33,11 +51,16 @@ function PricingInclude() {
   return (
       <PricingIncludeContainer>
         <StyledH2>{t("PricingIncludeTitle")}</StyledH2>
-        <ul>
-            <li>{t("PricingIncludeText1")}<br></br>{t("PricingIncludeText1bis")}</li>
-            <li>{t("PricingIncludeText2")}</li>
-            <li>{t("PricingIncludeText3")}</li>
-        </ul>
+          <InnerDiv>
+            <ListDiv>
+              <ul>
+                  <li>{t("PricingIncludeText1")}<br></br>{t("PricingIncludeText1bis")}</li>
+                  <li>{t("PricingIncludeText2")}</li>
+                  <li>{t("PricingIncludeText3")}</li>
+              </ul>
+            </ListDiv>
+          </InnerDiv>
+      
       </PricingIncludeContainer>
   )
 }

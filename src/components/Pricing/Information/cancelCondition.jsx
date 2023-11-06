@@ -13,17 +13,20 @@ const CancelConditionContainer = styled.div`
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
+    width: 350px;
+    height: 170px;
 
 
     @media (max-width: ${screenWidthTablet}px){
-      
       margin: 0;
+      width:100%;
+      text-align: center;
       
     }
 
     @media (max-width: ${screenWidthMobile}px){
-
-      margin:10px 0;
+      width:100%;
+      
       
     }
 `

@@ -24,26 +24,37 @@ import { StyledH2 } from '../../utils/style/jsx/titles&text'
 import '../../utils/style/css/react-day-picker.css'
 
 // Import Constante
-import { borderWidth, screenWidthMobile } from "../../utils/style/jsx/constantes";
+import { 
+  borderWidth, 
+  marginBetweenPageComponent,
+  screenWidthMenu,
+  screenWidthMobile, 
+  screenWidthTablet 
+} from "../../utils/style/jsx/constantes";
 
 
-
-
-
-const PricingWrapper = styled.div`
+const InformationContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  
+  justify-content:space-evenly;
+  margin: ${marginBetweenPageComponent}px 0;
+
+  @media (max-width: ${screenWidthTablet}px){
+    
+    
+  }
+
   @media (max-width: ${screenWidthMobile}px){
     flex-direction:column;
+    padding: 0;
   }
+
+  border: ${borderWidth}px solid black;
+  border-radius: 15px;
 `
 
 const DataDisplayWrapper = styled.div`
-border: ${borderWidth}px solid black;
-  border-radius: 15px;
+
   padding: 10px;
   text-align: center;
 `
@@ -57,16 +68,13 @@ const ToggleButtonContainer = styled.div`
 `
 
 const DayPickerContainer = styled.div`
+  display: flex;
+  justify-content:center;
+  margin: ${marginBetweenPageComponent}px 0;
+
+
   border: ${borderWidth}px solid black;
   border-radius: 15px;
-  padding: 10px 20px;
-  margin:0 20px;
-
-
-  @media (max-width: ${screenWidthMobile}px){
-    margin:0;
-    padding:0;
-  }
 
 `
 
@@ -75,9 +83,9 @@ const InnerDiv = styled.div`
 `
 
 const LegendDisplayContainer = styled.div`
-border: ${borderWidth}px solid black;
+  border: ${borderWidth}px solid black;
   border-radius: 15px;
-  padding: 10px;
+  
 `
 
 function Pricing() {
@@ -101,6 +109,7 @@ function Pricing() {
     //console.log(`Current Date is ${currentDate}`);
 
     const [selection, setAsSelection] = useState('single');
+    const [numberOfMonthToDisplay, setNumberOfMonthToDisplay] = useState (1);
     
     const switchDaySelection = () => {
       setAsSelection(selection === 'single' ? 'range' : 'single');
@@ -110,6 +119,24 @@ function Pricing() {
     useEffect(() => {
       //console.log(`selection : ${selection}`);
     }, [selection]);
+
+    useEffect(() => {
+      const handleResize = () => {
+        const screenWidth = window.innerWidth;
+        setNumberOfMonthToDisplay(screenWidth >= screenWidthMenu ? 2 : 1);
+      };
+  
+      // Initial setup
+      handleResize();
+  
+      // Add event listener to update on window resize
+      window.addEventListener('resize', handleResize);
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     
 
     const [selectedDay, setSelectedDay] = useState();
@@ -129,7 +156,7 @@ function Pricing() {
           <StyledH1>{t("Prices")}</StyledH1>
         </StyledContainer>
         
-        <PricingWrapper>
+        <InformationContainer>
 
           <DataDisplayWrapper>
             <StyledH2>{t("SelectNightTitle")}</StyledH2>
@@ -141,35 +168,33 @@ function Pricing() {
             <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
           </DataDisplayWrapper>
 
-          <DayPickerContainer>
-            <style>{css}</style>
-            <DayPicker
-              mode={selection}
-              selected={selection === 'single' ? selectedDay : range}
-              onSelect={selection === 'single' ? setSelectedDay : setRange}
-              defaultMonth={new Date(2024, 4)}
-
-              disabled={disabledDays}
-              fromMonth={new Date(2024, 4)}
-              toMonth={new Date(2024, 9)}
-              modifiers={dateSeasonList}
-              modifiersStyles={modifiersStyles}
-              modifiersClassNames={{
-                selected: 'my-selected'
-              }}
-              locale={i18n.language === 'en' ? enUS : fr} />
-          </DayPickerContainer>
-
           <LegendDisplayContainer>
-            
             <SeasonLegend />
           </LegendDisplayContainer>
 
-        </PricingWrapper>
+        </InformationContainer>
+        
+        <DayPickerContainer>
+          <style>{css}</style>
+          <DayPicker
+            mode={selection}
+            selected={selection === 'single' ? selectedDay : range}
+            onSelect={selection === 'single' ? setSelectedDay : setRange}
+            numberOfMonths={numberOfMonthToDisplay}
 
-        <div>
-            <InformationDisplay />
-        </div>
+            disabled={disabledDays}
+            fromMonth={new Date(2024, 4)}
+            toMonth={new Date(2024, 9)}
+            modifiers={dateSeasonList}
+            modifiersStyles={modifiersStyles}
+            modifiersClassNames={{
+              selected: 'my-selected'
+            }}
+            locale={i18n.language === 'en' ? enUS : fr} />
+        </DayPickerContainer>
+
+        <InformationDisplay />
+        
       </PageWrapper>
       
   )

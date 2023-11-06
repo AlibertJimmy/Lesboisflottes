@@ -9,7 +9,7 @@ import styled from "styled-components";
 import colors from "../../utils/style/jsx/colors";
 
 // Import Constante
-import { screenWidthMobile } from "../../utils/style/jsx/constantes";
+import { screenWidthMenu } from "../../utils/style/jsx/constantes";
 
 
 const StyledBurger = styled.div`
@@ -28,14 +28,14 @@ const StyledBurger = styled.div`
 
     display: none;
 
-    @media (max-width: ${screenWidthMobile}px){
+    @media (max-width: ${screenWidthMenu}px){
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
     }
 
     div{
-        width: 2rem;
+        
         height: 0.25rem;
         background-color: ${colors.link};
         border-radius: 10px;
@@ -81,6 +81,7 @@ function Burger() {
     const [open, setOpen] = useState(false);
     const burgerRef = useRef(null);
 
+    
     useEffect(() => {
         // Function to handle clicks outside the component
         function handleClickOutside(event) {
@@ -88,6 +89,8 @@ function Burger() {
                 setOpen(false);
             }
         }
+
+        
         // Add event listener when the component mounts
         document.addEventListener('click', handleClickOutside);
 
@@ -97,6 +100,12 @@ function Burger() {
         };
     }, []);
 
+    // Function to close the Burger component
+    function handleCloseBurger() {
+        setOpen(false);
+    }
+    
+
     return (
         <div ref={burgerRef}>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -104,7 +113,7 @@ function Burger() {
                 <div />
                 <div />
             </StyledBurger>
-            <RightNav open={open} />
+            <RightNav open={open} handleCloseBurger={handleCloseBurger}/>
         </div>
     );
 }

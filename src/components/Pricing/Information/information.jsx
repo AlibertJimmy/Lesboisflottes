@@ -10,18 +10,15 @@ const InformationWrapper = styled.div`
     display: flex;
     flex-direction: row;
 
-    justify-content:center;
+    justify-content:space-evenly;
     
-    gap: 0 1rem;
-
-    margin: 20px;
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
     @media (max-width: ${screenWidthTablet}px){
       flex-direction:column;
-      margin:0;
+      
     }
 
     @media (max-width: ${screenWidthMobile}px){
@@ -32,19 +29,9 @@ const InformationWrapper = styled.div`
 
 const InformationContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  padding:10px 0;
-  justify-content:space-around;
-
-  @media (max-width: ${screenWidthTablet}px){
-    
-    
-  }
-
-  @media (max-width: ${screenWidthMobile}px){
-    flex-direction:column;
-    padding: 0;
-  }
+  flex-direction: column;
+  justify-content:space-evenly;
+  
 
 `
 

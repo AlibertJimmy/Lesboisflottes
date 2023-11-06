@@ -9,20 +9,19 @@ import { StyledLinkSidebar } from "../../utils/style/jsx/links";
 import colors from "../../utils/style/jsx/colors";
 
 // Import constantes
-import { screenWidthMobile } from "../../utils/style/jsx/constantes";
-
+import { screenWidthMenu } from "../../utils/style/jsx/constantes";
 const StyledUl = styled.ul`
 
-    list-style: none;
+    
     display: flex;
-    gap: 2.1rem;
+    gap: 2rem;
 
-
+    list-style: none;
     text-decoration: none;
     color: ${colors.link};
 
 
-    @media (max-width: ${screenWidthMobile}px){
+    @media (max-width: ${screenWidthMenu}px){
         flex-flow: column nowrap;
 
         position: fixed;
@@ -51,19 +50,23 @@ const StyledUl = styled.ul`
 
 
 
-function RightNav({open}){
+function RightNav({open, handleCloseBurger}){
 
     const { t } = useTranslation();
 
+    function handleLinkClick() {
+        handleCloseBurger(); // Call the function passed as a prop from Burger component
+    }
+
     return(
         <StyledUl open={open}>
-            <li><StyledLinkSidebar to="/">{t("Reception")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Location">{t("Location")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Housing">{t("Housing")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Gallery">{t("Gallery")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Comment">{t("Comments")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Pricing">{t("Prices")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Contact">{t("Contact")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/" onClick={handleLinkClick}>{t("Reception")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Location" onClick={handleLinkClick}>{t("Location")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Housing" onClick={handleLinkClick}>{t("Housing")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Gallery" onClick={handleLinkClick}>{t("Gallery")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Comment" onClick={handleLinkClick}>{t("Comments")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Pricing" onClick={handleLinkClick}>{t("Prices")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Contact" onClick={handleLinkClick}>{t("Contact")}</StyledLinkSidebar></li>
         </StyledUl>
     )
 }
