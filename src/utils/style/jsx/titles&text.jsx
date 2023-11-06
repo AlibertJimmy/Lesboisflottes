@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import colors from './colors'
 
+// Import Constante
 import { borderWidth } from './constantes'
+import { screenWidth } from './constantes'
 
 export const PageWrapper = styled.div`
   margin-top: 130px;
@@ -35,6 +37,11 @@ export const StyledH2 = styled.h2`
     font-style: italic;
 
     color: ${colors.title} ;
+
+    @media (max-width: ${screenWidth}px){
+        text-align:center;
+      }
+    
 `
 
 export const StyledH3 = styled.h2`
@@ -49,6 +56,11 @@ export const StyledP = styled.p`
     font-size: 15px;
     font-family: Candassa;
     margin: 5px;
+
+    @media (max-width: ${screenWidth}px){
+        
+        padding-left:10px;
+      }
 `
 
 export const StyledContainer = styled.div`

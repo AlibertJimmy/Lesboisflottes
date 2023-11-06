@@ -17,6 +17,7 @@ const CancelConditionContainer = styled.div`
     @media (max-width: ${screenWidth}px){
 
       margin:0;
+      
     }
 `
 

@@ -1,2 +1,2 @@
-export const borderWidth = 0 ;
+export const borderWidth = 1 ;
 export const screenWidth = 756;
