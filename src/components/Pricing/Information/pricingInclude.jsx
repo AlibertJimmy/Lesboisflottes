@@ -35,7 +35,7 @@ const InnerDiv = styled.div`
 `
 
 const ListDiv = styled.div`
-    
+    text-align:left;
     width: 200px;
     border-radius: 15px;
     border: ${borderWidth}px solid black;
