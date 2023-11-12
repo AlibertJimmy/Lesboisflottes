@@ -38,7 +38,7 @@ const InformationContainer = styled.div`
 
 
   @media (max-width: ${screenWidthMobile}px){
-    flex-direction:column;
+    flex-direction:column-reverse;
     padding: 0;
   }
 

@@ -19,6 +19,7 @@ const StyledUl = styled.ul`
     list-style: none;
     text-decoration: none;
     color: ${colors.link};
+    padding:0;
 
 
     @media (max-width: ${screenWidthMenu}px){

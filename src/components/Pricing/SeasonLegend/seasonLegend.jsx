@@ -35,7 +35,12 @@ const LegendTDCell = styled.td`
     border: ${borderWidth}px solid black;
     border-radius: 5px;
     text-align:left;
+`
 
+const StyledH2Responsive = styled(StyledH2)`
+    @media (max-width: ${screenWidthMobile}px){
+        display:none;
+    }  
 `
 
 function SeasonLegend() {
@@ -44,7 +49,7 @@ function SeasonLegend() {
 
   return (
       <SeasonLegendWrapper>
-        <StyledH2>{t("Legend")}</StyledH2>
+        <StyledH2Responsive>{t("Legend")}</StyledH2Responsive>
         <div>
             <LegendTable>
                 <tr>

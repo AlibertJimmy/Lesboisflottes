@@ -67,8 +67,7 @@ export const StyledH2 = styled.h2`
 
     @media (max-width: ${screenWidthMobile}px){
         text-align:center;
-      }
-    
+      }  
 `
 
 
