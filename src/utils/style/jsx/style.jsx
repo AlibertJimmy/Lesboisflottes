@@ -3,11 +3,16 @@ import colors from './colors'
 import { Link } from 'react-router-dom'
 
 // Import Constante
-import { borderWidth } from './constantes'
+import { borderWidth, headerMargin } from './constantes'
 import { screenWidthMobile } from './constantes'
 
+export const ComponentBorder = css`
+    border: ${borderWidth}px solid black;
+`
+
 export const PageWrapper = styled.div`
-  margin-top: 150px;
+  margin: ${headerMargin}px 25px;
+  margin-bottom: 0;
 `
 
 const commonWriting = css`
@@ -37,6 +42,8 @@ export const StyledLinkSidebar = styled(Link)`
 
     margin-bottom: 10px;
 `
+
+
 
 export const StyledWelcome = styled.h1`
 
@@ -96,4 +103,51 @@ export const StyledContainer = styled.div`
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
+`
+// Header & Footer 
+const commonHeaderFooter = css`
+    ${ComponentBorder};
+    display: flex;
+    width: 100%;
+
+    background: ${colors.backgroundHeaderFooter};
+` 
+export const HeaderWrapper = styled.div`
+    ${commonHeaderFooter};
+
+    flex-direction: column;
+    
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index:9999;
+
+    @media (max-width: ${screenWidthMobile}px){
+        position: fixed;
+        padding-top: 40px;
+        
+        height: 120px;
+    }
+`
+
+export const StyledFooter = styled.div`
+    ${commonHeaderFooter};
+    
+    flex-direction: row;
+    align-items:center;
+    
+    justify-content: space-between;
+
+    height:55px;
+
+    margin: 0;
+
+    color: ${colors.link};
+
+    button#goToTopButton {
+        background-color: ${colors.backgroundHeaderFooter};
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
 `

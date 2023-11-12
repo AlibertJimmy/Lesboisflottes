@@ -10,7 +10,7 @@ const colors =
       title: '#B1B4B5',
       text: '#959a9c',
 
-      background: '#f7f5d7',
+      backgroundHeaderFooter: '#f7f5d7',
 
       commentBackground1: "#fcfcf5",
       commentBackground2: "#edede8"

@@ -6,7 +6,8 @@ import { LanguageMenu } from '../LanguageMenu/languageMenu'
 import Navbar from "../Nav/Navbar";
 
 // Import Style
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { HeaderWrapper } from "../../utils/style/jsx/style";
 import { StyledLinkHeader } from "../../utils/style/jsx/style";
 
 import colors from "../../utils/style/jsx/colors";
@@ -15,27 +16,7 @@ import colors from "../../utils/style/jsx/colors";
 import { borderWidth } from "../../utils/style/jsx/constantes";
 import { screenWidthMobile } from "../../utils/style/jsx/constantes";
 
-const HeaderWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left:0;
-  z-index:9999;
 
-  border: ${borderWidth}px solid black;
-
-  background: ${colors.background};
-
-  @media (max-width: ${screenWidthMobile}px){
-    position: fixed;
-    padding-top: 40px;
-    
-    
-    height: 120px;
-  }
-`
 
 const TitleDiv = styled.div`
   text-align: center;

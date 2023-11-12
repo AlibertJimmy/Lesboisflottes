@@ -6,6 +6,7 @@ import { BrowserRouter as Router,  Route, Routes } from 'react-router-dom'
 
 // Import Component
 import Header from './components/Header/header'
+import Footer from './components/Footer/Footer';
 //import Sidebar from './components/Sidebar/sidebar'
 import Home from './pages/Home/home'
 import Comment from './pages/Comment/comment'
@@ -69,6 +70,7 @@ function App(){
             </Routes>
           </ContentWrapper>
         </HomeWrapper>
+        <Footer />
     </Router>
   </React.StrictMode>
   )

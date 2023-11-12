@@ -1,6 +1,7 @@
 
 
 function StarScale({ scaleValue }) {
+	scaleValue = Math.round(scaleValue);
 	const stars = Array(scaleValue).fill(null);
   
 	return (

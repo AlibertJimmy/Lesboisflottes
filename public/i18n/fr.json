@@ -91,6 +91,7 @@
     "Rating": "Note",
     "Date": "Date",
     "TranslatedFrom": "Langue d'origine",
+    "AmountOfVotes": "Nombre de votes",
 
 
     "//": "PRICING",
@@ -142,6 +143,9 @@
     "//": "CONTACT",
     "Phone": "Téléphone",
     "Email": "Email",
-    "EmailCopiedToClipboard": "Adresse mail copié dans le presse papier"
+    "EmailCopiedToClipboard": "Adresse mail copié dans le presse papier",
+
+    "//": "FOOTER",
+    "WebSiteRealizedBy": "Site Web Réalisé par Alibert Jimmy"
 
 }

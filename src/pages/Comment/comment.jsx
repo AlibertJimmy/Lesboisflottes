@@ -2,8 +2,9 @@
 import { useTranslation } from "react-i18next";
 
 // Import Components
-import CommentItem from '../../components/Comment/comment'
+import CommentItem from '../../components/Comment/comment' ;
 import AverageRatingItem from '../../components/Comment/averageRating';
+import CommentPresentation from "../../components/Comment/commentPresentation";
 
 // Import Datas
 import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr'
@@ -12,11 +13,14 @@ import { commentListFrBooking } from '../../datas/review_Booking_fr'
 import { commentListEnBooking } from '../../datas/review_Booking_en'
 
 // Import Style
+import styled from "styled-components";
 import { PageWrapper } from "../../utils/style/jsx/style";
 import { StyledContainer, StyledH1 } from "../../utils/style/jsx/style"; 
 
+const CommentSitePresentation = styled.div`
+  display: flex;
 
-
+`
 
 function Comment() {
 
@@ -42,6 +46,11 @@ function Comment() {
         <StyledContainer>
           <StyledH1>{t("OurComments")}</StyledH1>
         </StyledContainer>
+        <CommentSitePresentation>
+              <CommentPresentation commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
+              <CommentPresentation commentList={commentListFrBooking} webSite={'Booking'}/>
+        </CommentSitePresentation>
+              
         <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
         {reviewsAirBnB.map((review, index) => (
         <CommentItem key={index} comment={review} index={index}/>

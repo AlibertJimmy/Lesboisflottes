@@ -89,6 +89,7 @@
     "Rating": "Rating",
     "Date": "Date",
     "TranslatedFrom": "Translated from",
+    "AmountOfVotes": "Amount of votes",
 
 
     "//": "PRICING",
@@ -140,5 +141,8 @@
     "//": "CONTACT",
     "Phone": "Phone",
     "Email": "Email",
-    "EmailCopiedToClipboard": "Email address copied to clipboard"
+    "EmailCopiedToClipboard": "Email address copied to clipboard",
+
+    "//": "FOOTER",
+    "WebSiteRealizedBy": "Website realized by Alibert Jimmy"
 }
