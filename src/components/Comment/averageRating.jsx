@@ -5,7 +5,7 @@ import StarScale from './starScale';
 import colors from "../../utils/style/jsx/colors";
 
 import styled from 'styled-components'
-import { StyledH3 } from "../../utils/style/jsx/titles&text";
+import { StyledH3 } from "../../utils/style/jsx/style";
 
 import { borderWidth } from "../../utils/style/jsx/constantes";
 

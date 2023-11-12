@@ -5,9 +5,7 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 import styled from 'styled-components'
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from "../../utils/style/jsx/titles&text";
-import { StyledP } from "../../utils/style/jsx/titles&text";
+import { StyledContainer, StyledH1, StyledP } from "../../utils/style/jsx/style";
 
 import { borderWidth } from "../../utils/style/jsx/constantes";
 

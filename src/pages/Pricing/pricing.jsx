@@ -16,11 +16,8 @@ import InformationDisplay from '../../components/Pricing/Information/information
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing'
 
 // Import Style
-import styled from 'styled-components'
-import { PageWrapper } from "../../utils/style/jsx/titles&text";
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from '../../utils/style/jsx/titles&text'
-import { StyledH2 } from '../../utils/style/jsx/titles&text'
+import styled from 'styled-components';
+import { PageWrapper, StyledH1, StyledH2, StyledContainer } from "../../utils/style/jsx/style";
 import '../../utils/style/css/react-day-picker.css'
 
 // Import Constante

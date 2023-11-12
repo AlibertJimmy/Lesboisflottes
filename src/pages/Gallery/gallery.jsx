@@ -8,9 +8,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from '../../assets/photos'
 
 // Import Style
-import { PageWrapper } from "../../utils/style/jsx/titles&text";
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from "../../utils/style/jsx/titles&text";
+import { PageWrapper, StyledH1, StyledContainer } from "../../utils/style/jsx/style";
 
 
 function Galleryx() {

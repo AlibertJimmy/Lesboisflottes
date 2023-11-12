@@ -2,9 +2,7 @@
 import { useTranslation } from "react-i18next";
 
 // Import Style
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from '../../utils/style/jsx/titles&text';
-import { StyledP } from "../../utils/style/jsx/titles&text";
+import { StyledH1, StyledP, StyledContainer } from "../../utils/style/jsx/style";
 
 
 function LocationDisplay() {

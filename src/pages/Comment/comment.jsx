@@ -12,9 +12,8 @@ import { commentListFrBooking } from '../../datas/review_Booking_fr'
 import { commentListEnBooking } from '../../datas/review_Booking_en'
 
 // Import Style
-import { PageWrapper } from "../../utils/style/jsx/titles&text";
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from "../../utils/style/jsx/titles&text";
+import { PageWrapper } from "../../utils/style/jsx/style";
+import { StyledContainer, StyledH1 } from "../../utils/style/jsx/style"; 
 
 
 

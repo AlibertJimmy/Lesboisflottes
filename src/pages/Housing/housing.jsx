@@ -3,7 +3,7 @@ import HousingPresentation from '../../components/Housing/Housing';
 import EquipmentList from '../../components/Housing/Equipment';
 
 // Import Style
-import { PageWrapper } from '../../utils/style/jsx/titles&text';
+import { PageWrapper } from '../../utils/style/jsx/style';
 
 function Housing() {
 

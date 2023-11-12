@@ -3,9 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // Import Style
 import styled from 'styled-components'
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from '../../utils/style/jsx/titles&text';
-import { StyledH2 } from '../../utils/style/jsx/titles&text';
+import { StyledContainer, StyledH1, StyledH2 } from "../../utils/style/jsx/style";
 
 import { borderWidth } from "../../utils/style/jsx/constantes";
 

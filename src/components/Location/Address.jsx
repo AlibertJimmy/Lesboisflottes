@@ -2,10 +2,8 @@
 import { useTranslation } from "react-i18next";
 
 // Import Style
-import styled from 'styled-components'
-import { StyledContainer } from "../../utils/style/jsx/titles&text";
-import { StyledH1 } from '../../utils/style/jsx/titles&text';
-import { StyledP } from "../../utils/style/jsx/titles&text";
+import styled from 'styled-components';
+import { StyledH1, StyledP, StyledContainer } from "../../utils/style/jsx/style";
 
 // Import Constante
 import { borderWidth, screenWidthMobile } from "../../utils/style/jsx/constantes";

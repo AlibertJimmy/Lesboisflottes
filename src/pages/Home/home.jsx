@@ -10,7 +10,7 @@ import { photosSample } from "../../assets/photos"
 
 // Import Style
 import styled from 'styled-components'
-import { StyledWelcome } from '../../utils/style/jsx/titles&text';
+import { StyledWelcome } from '../../utils/style/jsx/style';
 
 import { borderWidth } from '../../utils/style/jsx/constantes';
 

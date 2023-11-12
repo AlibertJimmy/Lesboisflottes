@@ -7,7 +7,7 @@ import Navbar from "../Nav/Navbar";
 
 // Import Style
 import styled from 'styled-components'
-import { StyledLinkHeader } from '../../utils/style/jsx/links';
+import { StyledLinkHeader } from "../../utils/style/jsx/style";
 
 import colors from "../../utils/style/jsx/colors";
 

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 // Import Style
 import styled from "styled-components";
-import { StyledLinkSidebar } from "../../utils/style/jsx/links";
+import { StyledLinkSidebar } from "../../utils/style/jsx/style";
 
 import colors from "../../utils/style/jsx/colors";
 

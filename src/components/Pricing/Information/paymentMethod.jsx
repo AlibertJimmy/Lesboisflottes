@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import styled from 'styled-components'
-import { StyledH2 } from "../../../utils/style/jsx/titles&text";
+import { StyledH2 } from "../../../utils/style/jsx/style"; 
 
 import { borderWidth, screenWidthMobile, screenWidthTablet } from "../../../utils/style/jsx/constantes";
 

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // Import Style
 import styled from 'styled-components'
-import { StyledH2 } from "../../../utils/style/jsx/titles&text";
+import { StyledH2 } from "../../../utils/style/jsx/style";
 import colors from '../../../utils/style/jsx/colors'
 
 // Import Constante
