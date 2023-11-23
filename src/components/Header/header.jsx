@@ -6,6 +6,9 @@ import { useTranslation } from 'react-i18next';
 import { LanguageMenu } from '../LanguageMenu/languageMenu';
 import Navbar from '../Nav/Navbar';
 
+// Import Function
+import { scrollToTop } from '../../utils/functions/functions';
+
 // Import Style
 import styled from 'styled-components';
 import { HeaderWrapper, StyledLinkHeader } from '../../utils/style/jsx/style';
@@ -47,13 +50,17 @@ const StyledSubtitle = styled.h2`
 function Header () {
   const { t } = useTranslation();
 
+  function handleOnClick () {
+    scrollToTop();
+  }
+
   return (
       <HeaderWrapper>
         <LanguagePickerDiv>
           <LanguageMenu/>
         </LanguagePickerDiv>
         <TitleDiv>
-          <StyledLinkHeader to="/">
+          <StyledLinkHeader to="/" onClick={handleOnClick}>
             <StyledTitle>{t('mainTitle')}</StyledTitle>
             <StyledSubtitle>{t('subtitle1')}</StyledSubtitle>
             <StyledSubtitle>{t('subtitle2')}</StyledSubtitle>

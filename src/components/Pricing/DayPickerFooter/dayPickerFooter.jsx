@@ -13,8 +13,8 @@ function DayPickerFooter ({ mode, daySelection }) {
   const { t } = useTranslation();
 
   // console.log(`mode : ${mode}`);
-  console.log(`daySelection : ${daySelection}`);
-  console.log(daySelection);
+  // console.log(`daySelection : ${daySelection}`);
+  // console.log(daySelection);
   if (mode === 'range') {
     // console.log('range selected');
     if (daySelection?.from) {

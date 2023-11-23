@@ -60,8 +60,8 @@ function RightNav ({ open, handleCloseBurger }) {
   const { t } = useTranslation();
 
   function handleLinkClick () {
-    handleCloseBurger(); // Call the function passed as a prop from Burger component
     scrollToTop();
+    handleCloseBurger();
   }
 
   return (
