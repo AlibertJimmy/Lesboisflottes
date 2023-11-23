@@ -1,6 +1,5 @@
 // Import React Libraries
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 // Import Functions
 import { scrollToTop } from '../../utils/functions/functions';
@@ -24,8 +23,6 @@ const StyledP = styled.p`
 `;
 
 function Footer () {
-  const { t } = useTranslation();
-
   const handleGoToTop = () => {
     scrollToTop();
   };
@@ -35,7 +32,6 @@ function Footer () {
         <div></div>
         <StyledText>
             <StyledP>Copyright © 2023 Les Bois Flottés</StyledP>
-            <StyledP>{t('WebSiteRealizedBy')}</StyledP>
         </StyledText>
         <div>
             <button id="goToTopButton" onClick={handleGoToTop}>

@@ -39,11 +39,12 @@ const StyledUl = styled.ul`
         width: 100px;
         padding: 1rem 3rem;
         text-align: left;
-        margin-top: 0;
-        gap:0;
+        margin-top:0;
+        padding-top: 3rem;
+        gap:1rem;
         
 
-        justify-content: space-evenly;
+        justify-content: top-start;
         
         
 

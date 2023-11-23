@@ -17,9 +17,8 @@ import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
 
 const ContactContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    text-align: left;
-    margin: 10px 0px;
+    margin-top: 40px;
+    align-items: center;
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
