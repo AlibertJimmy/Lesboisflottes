@@ -1,28 +1,25 @@
-import { Component } from "react";
-import Switch from 'react-switch'
+// Import React Libraries
+import React, { Component } from 'react';
+import Switch from 'react-switch';
 
+// Import PropType
+import PropTypes from 'prop-types';
 
 class MaterialDesignSwitch extends Component {
+  constructor () {
+    super();
+    this.state = { checked: false };
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-    
+  handleChange (checked) {
+    this.setState({ checked });
+    console.log('jfjfjfjf');
+    this.props.onChange(checked);
+  }
 
-    constructor() {
-
-
-      super();
-      this.state = { checked: false };
-      this.handleChange = this.handleChange.bind(this);
-    }
-  
-    handleChange(checked) {
-      this.setState({ checked });
-      console.log('jfjfjfjf')
-      this.props.onChange(checked);
-
-    }
-  
-    render() {
-      return (
+  render () {
+    return (
         <div className="example">
           <label htmlFor="material-switch">
             <Switch
@@ -42,20 +39,28 @@ class MaterialDesignSwitch extends Component {
             />
           </label>
         </div>
-      )
-    }
+    );
+  }
 }
 
-function ToggleButton({onToggle, selection}) {
+MaterialDesignSwitch.propTypes = {
+  onChange: PropTypes.func.isRequired
+};
 
-    return (
+function ToggleButton ({ onToggle, selection }) {
+  return (
         <div>
             <MaterialDesignSwitch
                 onChange={() => onToggle()}
                 checked={selection === 'multiple'}
             />
         </div>
-    )
-  }
-  
-  export default ToggleButton
+  );
+}
+
+ToggleButton.propTypes = {
+  onToggle: PropTypes.func.isRequired,
+  selection: PropTypes.string.isRequired
+};
+
+export default ToggleButton;

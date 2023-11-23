@@ -1,9 +1,11 @@
-import { useTranslation } from "react-i18next"
+// Import React Libraries
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-import styled from 'styled-components'
-import { StyledH2, StyledP } from "../../../utils/style/jsx/style"; 
+import styled from 'styled-components';
+import { StyledH2, StyledP } from '../../../utils/style/jsx/style';
 
-import { borderWidth, screenWidthMobile,screenWidthTablet } from "../../../utils/style/jsx/constantes";
+import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes';
 
 const HostingHoursContainer = styled.div`
     margin: 0 10px;
@@ -25,20 +27,17 @@ const HostingHoursContainer = styled.div`
 
       margin:10px 0;
     }
-`
+`;
 
-
-
-function HostingHours() {
-
-    const { t } = useTranslation();
+function HostingHours () {
+  const { t } = useTranslation();
 
   return (
       <HostingHoursContainer>
-        <StyledH2>{t("HostingHoursTitle")}</StyledH2>
-        <StyledP>{t("HostingHoursText")}</StyledP>
+        <StyledH2>{t('HostingHoursTitle')}</StyledH2>
+        <StyledP>{t('HostingHoursText')}</StyledP>
       </HostingHoursContainer>
-  )
+  );
 }
 
-export default HostingHours
+export default HostingHours;

@@ -1,11 +1,11 @@
 // Import React Libraries
-import React from 'react'
+import React from 'react';
 
-// Import Component 
-import Burger from './BurgerButton'
+// Import Component
+import Burger from './BurgerButton';
 
 // Import Style
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Nav = styled.nav`
     
@@ -13,16 +13,14 @@ const Nav = styled.nav`
 
     display: flex;
     justify-content: space-evenly;
-`
+`;
 //
-function Navbar(){
-
-    return (
+function Navbar () {
+  return (
         <Nav>
-            <Burger/> 
+            <Burger/>
         </Nav>
-    )
-
+  );
 }
 
 export default Navbar;

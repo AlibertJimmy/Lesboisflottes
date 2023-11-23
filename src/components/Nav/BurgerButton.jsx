@@ -1,16 +1,15 @@
-// Import React Libraries 
-import React, {useState, useEffect,useRef} from "react";
+// Import React Libraries
+import React, { useState, useEffect, useRef } from 'react';
 
 // Import Component
-import RightNav from "./LeftNav";
+import RightNav from './LeftNav';
 
 // Import Style
-import styled from "styled-components";
-import colors from "../../utils/style/jsx/colors";
+import styled from 'styled-components';
+import colors from '../../utils/style/jsx/colors';
 
 // Import Constante
-import { screenWidthMenu } from "../../utils/style/jsx/constantes";
-
+import { screenWidthMenu } from '../../utils/style/jsx/constantes';
 
 const StyledBurger = styled.div`
     width: 2rem;
@@ -43,70 +42,50 @@ const StyledBurger = styled.div`
         transform-origin: 1px;
 
         &:nth-child(1){
-            transform: ${( {open}) => open ? 'translate(14%) rotate(45deg)' : 'translate(0) rotate(0)'};
+            transform: ${({ open }) => open ? 'translate(14%) rotate(45deg)' : 'translate(0) rotate(0)'};
             
         }
 
         &:nth-child(2){
-            transform: ${( {open}) => open ? 'translate(100%)' : 'translate(0)'};
+            transform: ${({ open }) => open ? 'translate(100%)' : 'translate(0)'};
             opacity: ${({ open }) => open ? 0 : 1};
         }
 
         &:nth-child(3){
-            transform: ${( {open}) => open ? 'translate(14%) rotate(-45deg)' : 'translate(0) rotate(0)'};
+            transform: ${({ open }) => open ? 'translate(14%) rotate(-45deg)' : 'translate(0) rotate(0)'};
         }
 
 
     }
-`
+`;
 
-/*
-function Burger(){
-    const [open, setOpen] = useState(false)
+function Burger () {
+  const [open, setOpen] = useState(false);
+  const burgerRef = useRef(null);
 
-    return(
-        <>
-            <StyledBurger open={open} onClick={() => setOpen(!open)}>
-                <div/>
-                <div/>
-                <div/>
-            </StyledBurger>
-            <RightNav open={open} />
-        </>
-    )
-}*/
-
-
-function Burger() {
-    const [open, setOpen] = useState(false);
-    const burgerRef = useRef(null);
-
-    
-    useEffect(() => {
-        // Function to handle clicks outside the component
-        function handleClickOutside(event) {
-            if (burgerRef.current && !burgerRef.current.contains(event.target)) {
-                setOpen(false);
-            }
-        }
-
-        
-        // Add event listener when the component mounts
-        document.addEventListener('click', handleClickOutside);
-
-        // Remove the event listener when the component unmounts
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, []);
-
-    // Function to close the Burger component
-    function handleCloseBurger() {
+  useEffect(() => {
+    // Function to handle clicks outside the component
+    function handleClickOutside (event) {
+      if (burgerRef.current && !burgerRef.current.contains(event.target)) {
         setOpen(false);
+      }
     }
-    
 
-    return (
+    // Add event listener when the component mounts
+    document.addEventListener('click', handleClickOutside);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  // Function to close the Burger component
+  function handleCloseBurger () {
+    setOpen(false);
+  }
+
+  return (
         <div ref={burgerRef}>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
                 <div />
@@ -115,8 +94,7 @@ function Burger() {
             </StyledBurger>
             <RightNav open={open} handleCloseBurger={handleCloseBurger}/>
         </div>
-    );
+  );
 }
-
 
 export default Burger;

@@ -1,9 +1,11 @@
-import { useTranslation } from "react-i18next"
+// Import React Libraries
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-import styled from 'styled-components'
-import { StyledH2 } from "../../../utils/style/jsx/style"; 
+import styled from 'styled-components';
+import { StyledH2 } from '../../../utils/style/jsx/style';
 
-import { borderWidth, screenWidthMobile, screenWidthTablet } from "../../../utils/style/jsx/constantes";
+import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes';
 
 const PaymentMethodContainer = styled.div`
   
@@ -29,13 +31,13 @@ const PaymentMethodContainer = styled.div`
       margin:10px 0;
       
     }
-`
+`;
 
 const InnerDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-`
+`;
 
 const ListDiv = styled.div`
     text-align:left;
@@ -43,27 +45,24 @@ const ListDiv = styled.div`
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
-`
+`;
 
-
-
-function PaymentMethod() {
-
-    const { t } = useTranslation();
+function PaymentMethod () {
+  const { t } = useTranslation();
 
   return (
       <PaymentMethodContainer>
-        <StyledH2>{t("PaymentMethodTitle")}</StyledH2>
+        <StyledH2>{t('PaymentMethodTitle')}</StyledH2>
           <InnerDiv>
           <ListDiv>
             <ul>
-                <li>{t("PaymentMethodText3")}</li>
-                <li>{t("PaymentMethodText4")}</li>
+                <li>{t('PaymentMethodText3')}</li>
+                <li>{t('PaymentMethodText4')}</li>
             </ul>
           </ListDiv>
         </InnerDiv>
       </PaymentMethodContainer>
-  )
+  );
 }
 
-export default PaymentMethod
+export default PaymentMethod;

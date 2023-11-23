@@ -6,7 +6,7 @@ import colors from '../utils/style/jsx/colors';
 export const disabledDays = [
   { from: new Date(2024, 0, 1), to: new Date(2024, 4, 16) },
   { from: new Date(2024, 9, 14), to: new Date(2024, 11, 31) }
-]
+];
 
 // Period of the different seasons
 export const dateSeasonList = {
@@ -21,41 +21,38 @@ export const dateSeasonList = {
   highSeason: [
     { from: new Date(2024, 6, 5), to: new Date(2024, 7, 29) }
   ]
-}
+};
 
 // Pricing and colors of the differents seasons
 export const pricingBySeasonList = [
-	{
+  {
     seasonType: 'lowSeason',
     seasonDates: dateSeasonList.lowSeason,
     price: 65
-	},
+  },
   {
-		seasonType: 'mediumSeason',
-		seasonDates: dateSeasonList.mediumSeason,
+    seasonType: 'mediumSeason',
+    seasonDates: dateSeasonList.mediumSeason,
     price: 75
-	},
+  },
   {
-		seasonType: 'highSeason',
-		seasonDates: dateSeasonList.highSeason,
+    seasonType: 'highSeason',
+    seasonDates: dateSeasonList.highSeason,
     price: 90
-	}
-]
+  }
+];
 
 export const modifiersStyles = {
   lowSeason: {
     color: 'white',
-    backgroundColor: colors.lowSeason,
+    backgroundColor: colors.lowSeason
   },
   mediumSeason: {
     color: 'white',
-    backgroundColor: colors.mediumSeason,
+    backgroundColor: colors.mediumSeason
   },
   highSeason: {
     color: 'white',
-    backgroundColor: colors.highSeason,
+    backgroundColor: colors.highSeason
   }
-}
-
-
-  
+};

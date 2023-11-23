@@ -1,10 +1,14 @@
-import CancelCondition from './cancelCondition'
-import HostingHours from './hostingHours'
-import PaymentMethod from './paymentMethod'
-import PricingInclude from './pricingInclude'
+// Import React Libraries
+import React from 'react';
 
-import styled from 'styled-components'
-import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes'
+// Import Components
+import CancelCondition from './cancelCondition';
+import HostingHours from './hostingHours';
+import PaymentMethod from './paymentMethod';
+import PricingInclude from './pricingInclude';
+
+import styled from 'styled-components';
+import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes';
 
 const InformationWrapper = styled.div`
     display: flex;
@@ -25,7 +29,7 @@ const InformationWrapper = styled.div`
       flex-direction:column;
       margin:0;
     }
-`
+`;
 
 const InformationContainer = styled.div`
   display: flex;
@@ -33,12 +37,9 @@ const InformationContainer = styled.div`
   justify-content:space-evenly;
   
 
-`
+`;
 
-
-
-function InformationDisplay() {
-
+function InformationDisplay () {
   return (
       <InformationWrapper>
         <InformationContainer>
@@ -50,7 +51,7 @@ function InformationDisplay() {
           <PricingInclude/>
         </InformationContainer>
       </InformationWrapper>
-  )
+  );
 }
 
-export default InformationDisplay
+export default InformationDisplay;

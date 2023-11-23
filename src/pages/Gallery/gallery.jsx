@@ -1,18 +1,16 @@
 // Import React Libraries
-import { useTranslation } from "react-i18next";
-import Gallery from "react-photo-gallery"
-import React, { useState, useCallback } from "react";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import React, { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 // Import Assets
-import { photos } from '../../assets/photos'
+import { photos } from '../../datas/photos';
 
 // Import Style
-import { PageWrapper, StyledH1, StyledContainer } from "../../utils/style/jsx/style";
+import { PageWrapper, StyledH1, StyledContainer } from '../../utils/style/jsx/style';
 
-
-function Galleryx() {
-
+function Galleryx () {
   const { t } = useTranslation();
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -31,11 +29,12 @@ function Galleryx() {
   return (
     <PageWrapper>
       <StyledContainer>
-        <StyledH1>{t("Gallery")}</StyledH1>
+        <StyledH1>{t('Gallery')}</StyledH1>
       </StyledContainer>
       <Gallery photos={photos} onClick={openLightbox} targetRowHeight={150} margin={5}/>
       <ModalGateway>
-        {viewerIsOpen ? (
+        {viewerIsOpen
+          ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
@@ -46,12 +45,11 @@ function Galleryx() {
               }))}
             />
           </Modal>
-        ) : null}
+            )
+          : null}
       </ModalGateway>
     </PageWrapper>
   );
 }
 
-
-
-export default Galleryx
+export default Galleryx;

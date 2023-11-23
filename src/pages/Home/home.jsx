@@ -1,15 +1,15 @@
 // Import React Libraries
+import React from 'react';
 
 // Import Component
 import GallerySample from '../../components/Gallery/myGallery';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
-
 // Import Datas
-import { photosSample } from "../../assets/photos"
+import { photosSample } from '../../datas/photos';
 
 // Import Style
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { StyledWelcome } from '../../utils/style/jsx/style';
 
 import { borderWidth } from '../../utils/style/jsx/constantes';
@@ -23,7 +23,7 @@ const HomeWrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 const GalleryContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -39,29 +39,27 @@ const GalleryContainer = styled.div`
     margin:0;
   }
 
-`
+`;
 
 const WelcomeAndComments = styled.div`
   justify-content: center;
   flex: 1;
-`
+`;
 
-function Home() {
-    return (
+function Home () {
+  return (
           <HomeWrapper>
-            
+
               <WelcomeAndComments>
                 <StyledWelcome>WELCOME</StyledWelcome>
                 <CommentScrollingBanner/>
               </WelcomeAndComments>
-              
-            
+
             <GalleryContainer>
               <GallerySample photos={photosSample}/>
             </GalleryContainer>
           </HomeWrapper>
-    )
-  }
-  
-  export default Home
-  
+  );
+}
+
+export default Home;

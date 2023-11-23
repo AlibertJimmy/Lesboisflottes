@@ -1,19 +1,18 @@
+// Import React Libraries
+import React from 'react';
+
 // Import Component
-import ContactInformation from '../../components/Contact/contact'
+import ContactInformation from '../../components/Contact/contact';
 
 // Import Style
-import { PageWrapper } from '../../utils/style/jsx/style'
+import { PageWrapper } from '../../utils/style/jsx/style';
 
-
-
-
-function Contact() {
-
+function Contact () {
   return (
-      <PageWrapper> 
+      <PageWrapper>
         <ContactInformation/>
       </PageWrapper>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

@@ -1,14 +1,19 @@
-import { useTranslation } from "react-i18next"
+// Import React Libraries
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
+// Import Components
 import CopyEmailLink from './copyMail';
 
+// Import Datas
 import { contactList } from '../../datas/contact';
 
-import styled from 'styled-components'
-import { StyledContainer, StyledH1, StyledP } from "../../utils/style/jsx/style";
+// Import Style
+import styled from 'styled-components';
+import { StyledContainer, StyledH1, StyledP } from '../../utils/style/jsx/style';
 
-import { borderWidth } from "../../utils/style/jsx/constantes";
-
+// Import Constants
+import { borderWidth } from '../../utils/style/jsx/constantes';
 
 const ContactContainer = styled.div`
     display: flex;
@@ -22,43 +27,42 @@ const ContactContainer = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
       }
-`
+`;
 
 const ContactInfoContainer = styled.div`
     padding: 20px;
     min-width: 200px;
-`
+`;
 
 const ProfilePicContainer = styled.img`
     max-width: 100px;
     max-height: 100px;
     margin-left: 30px;
 
-`
+`;
 
-function ContactInformation() {
-
-    const { t } = useTranslation();
+function ContactInformation () {
+  const { t } = useTranslation();
 
   return (
       <StyledContainer>
-        <StyledH1>{t("Contact")}</StyledH1>
+        <StyledH1>{t('Contact')}</StyledH1>
         {contactList.map(contact => (
-            
+
             <ContactContainer key={contact.name}>
                 <ContactInfoContainer>
                     <StyledP>{contact.name}</StyledP>
-                    <StyledP>{t("Phone")} : {contact.telephone}</StyledP>
-                    <StyledP>{t("Email")} : <CopyEmailLink email={contact.email} /></StyledP>
+                    <StyledP>{t('Phone')} : {contact.telephone}</StyledP>
+                    <StyledP>{t('Email')} : <CopyEmailLink email={contact.email} /></StyledP>
                 </ContactInfoContainer>
                 <div>
                     <ProfilePicContainer src={contact.profilePic} alt="PIC"></ProfilePicContainer>
                 </div>
             </ContactContainer>
-            
+
         ))}
       </StyledContainer>
-  )
+  );
 }
 
-export default ContactInformation
+export default ContactInformation;

@@ -1,32 +1,31 @@
 // Import react libraries
-import { useTranslation } from "react-i18next";
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { fr, enUS} from 'date-fns/locale'
+import { fr, enUS } from 'date-fns/locale';
 
-import { DayPicker } from 'react-day-picker'
+import { DayPicker } from 'react-day-picker';
 
 // Import Component
-import ToggleButton from '../../components/ToggleButton/toggleButton'
-import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter'
-import SeasonLegend from '../../components/Pricing/SeasonLegend/seasonLegend'
-import InformationDisplay from '../../components/Pricing/Information/information'
+import ToggleButton from '../../components/ToggleButton/toggleButton';
+import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter';
+import SeasonLegend from '../../components/Pricing/SeasonLegend/seasonLegend';
+import InformationDisplay from '../../components/Pricing/Information/information';
 
 // Import Datas
-import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing'
+import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing';
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, StyledH1, StyledH2, StyledContainer } from "../../utils/style/jsx/style";
-import '../../utils/style/css/react-day-picker.css'
+import { PageWrapper, StyledH1, StyledH2, StyledContainer } from '../../utils/style/jsx/style';
+import '../../utils/style/css/react-day-picker.css';
 
 // Import Constante
-import { 
-  borderWidth, 
+import {
+  borderWidth,
   marginBetweenPageComponent,
   screenWidthMobile
-} from "../../utils/style/jsx/constantes";
-
+} from '../../utils/style/jsx/constantes';
 
 const InformationContainer = styled.div`
   display: flex;
@@ -44,7 +43,7 @@ const InformationContainer = styled.div`
 
   border: ${borderWidth}px solid black;
   border-radius: 15px;
-`
+`;
 
 const DataDisplayWrapper = styled.div`
 
@@ -54,7 +53,7 @@ const DataDisplayWrapper = styled.div`
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;
-`
+`;
 
 const ToggleButtonContainer = styled.div`
   display: flex;
@@ -62,7 +61,7 @@ const ToggleButtonContainer = styled.div`
   justify-content: center;
   border-radius: 15px;
   border: ${borderWidth}px solid black;
-`
+`;
 
 const DayPickerContainer = styled.div`
   display: flex;
@@ -73,11 +72,11 @@ const DayPickerContainer = styled.div`
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
-`
+`;
 
 const InnerDiv = styled.div`
   margin: 10px;
-`
+`;
 
 const LegendDisplayContainer = styled.div`
   height: 250px;
@@ -88,14 +87,13 @@ const LegendDisplayContainer = styled.div`
     height: 210px;
   }
   
-`
+`;
 
-function Pricing() {
-    
-    const { i18n, t } = useTranslation();
-    
-    //console.log(`language : ${i18n.language}`)
-    /*
+function Pricing () {
+  const { i18n, t } = useTranslation();
+
+  // console.log(`language : ${i18n.language}`)
+  /*
     let choosenLanguage ;
     if(i18n.language === 'en'){
       //choosenLanguage = enUS
@@ -106,66 +104,64 @@ function Pricing() {
       console.log('i18n.language = fr')
     }
     */
-    
-    //const currentDate = format(new Date(), 'dd/MM/yyyy')
-    //console.log(`Current Date is ${currentDate}`);
 
-    const [selection, setAsSelection] = useState('single');
-    const [numberOfMonthToDisplay, setNumberOfMonthToDisplay] = useState (1);
-    
-    const switchDaySelection = () => {
-      setAsSelection(selection === 'single' ? 'range' : 'single');
-      //console.log(`selection : ${selection}`)
-    }
+  // const currentDate = format(new Date(), 'dd/MM/yyyy')
+  // console.log(`Current Date is ${currentDate}`);
 
-    useEffect(() => {
-      //console.log(`selection : ${selection}`);
-    }, [selection]);
+  const [selection, setAsSelection] = useState('single');
+  const [numberOfMonthToDisplay, setNumberOfMonthToDisplay] = useState(1);
 
-    useEffect(() => {
-      const handleResize = () => {
-        const screenWidth = window.innerWidth;
-        setNumberOfMonthToDisplay(screenWidth >= 725 ? 2 : 1);
-      };
-  
-      // Initial setup
-      handleResize();
-  
-      // Add event listener to update on window resize
-      window.addEventListener('resize', handleResize);
-  
-      // Clean up the event listener on component unmount
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-    
+  const switchDaySelection = () => {
+    setAsSelection(selection === 'single' ? 'range' : 'single');
+    // console.log(`selection : ${selection}`)
+  };
 
-    const [selectedDay, setSelectedDay] = useState();
-    const [range, setRange] = useState();
+  useEffect(() => {
+    // console.log(`selection : ${selection}`);
+  }, [selection]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      setNumberOfMonthToDisplay(screenWidth >= 725 ? 2 : 1);
+    };
 
-    const css = `
+    // Initial setup
+    handleResize();
+
+    // Add event listener to update on window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const [selectedDay, setSelectedDay] = useState();
+  const [range, setRange] = useState();
+
+  const css = `
       .my-selected:not([disabled]) { 
         font-weight: bold; 
         border: 2px solid #000000;
       }
-    `
+    `;
 
   return (
       <PageWrapper>
         <StyledContainer>
-          <StyledH1>{t("Prices")}</StyledH1>
+          <StyledH1>{t('Prices')}</StyledH1>
         </StyledContainer>
-        
+
         <InformationContainer>
 
           <DataDisplayWrapper>
-            <StyledH2>{t("SelectNightTitle")}</StyledH2>
+            <StyledH2>{t('SelectNightTitle')}</StyledH2>
             <ToggleButtonContainer>
-              <InnerDiv>{t("SingleNight")}</InnerDiv>
+              <InnerDiv>{t('SingleNight')}</InnerDiv>
               <ToggleButton onToggle={switchDaySelection} selection={selection} />
-              <InnerDiv>{t("MultipleNights")}</InnerDiv>
+              <InnerDiv>{t('MultipleNights')}</InnerDiv>
             </ToggleButtonContainer>
             <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
           </DataDisplayWrapper>
@@ -175,7 +171,7 @@ function Pricing() {
           </LegendDisplayContainer>
 
         </InformationContainer>
-        
+
         <DayPickerContainer>
           <style>{css}</style>
           <DayPicker
@@ -196,22 +192,21 @@ function Pricing() {
         </DayPickerContainer>
 
         <InformationDisplay />
-        
+
       </PageWrapper>
-      
-  )
+
+  );
 }
 // defaultMonth -> Set the starting month of the calendar
 // if outside the season -> start at the begining of the the season
 
-// change language display date -> check 
+// change language display date -> check
 // formatRelative(subDays(new Date(), 3), new Date(), { locale: es })
-//=> "el viernes pasado a las 19:26"
-
+//= > "el viernes pasado a las 19:26"
 
 /*
 export default function App() {
   return <DayPicker defaultMonth={new Date(1979, 8)} />;
-}*/
+} */
 
-export default Pricing
+export default Pricing;

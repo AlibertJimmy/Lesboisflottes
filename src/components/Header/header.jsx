@@ -1,22 +1,17 @@
 // Import React Libraries
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Import Component
-import { LanguageMenu } from '../LanguageMenu/languageMenu'
-import Navbar from "../Nav/Navbar";
+import { LanguageMenu } from '../LanguageMenu/languageMenu';
+import Navbar from '../Nav/Navbar';
 
 // Import Style
 import styled from 'styled-components';
-import { HeaderWrapper } from "../../utils/style/jsx/style";
-import { StyledLinkHeader } from "../../utils/style/jsx/style";
-
-import colors from "../../utils/style/jsx/colors";
+import { HeaderWrapper, StyledLinkHeader } from '../../utils/style/jsx/style';
 
 // Import Constantes
-import { borderWidth } from "../../utils/style/jsx/constantes";
-import { screenWidthMobile } from "../../utils/style/jsx/constantes";
-
-
+import { borderWidth } from '../../utils/style/jsx/constantes';
 
 const TitleDiv = styled.div`
   text-align: center;
@@ -25,7 +20,7 @@ const TitleDiv = styled.div`
   border: ${borderWidth}px solid black;
 
   
-`
+`;
 
 const LanguagePickerDiv = styled.div`
   text-align: right;
@@ -34,25 +29,22 @@ const LanguagePickerDiv = styled.div`
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;
-`
+`;
 
 const StyledTitle = styled.h1`
   font-size: 30px;
   
   margin-top: 0px;
   margin-bottom: 5px;
-`
+`;
 
 const StyledSubtitle = styled.h2`
   font-size: 20px;
   
   margin: 5px;
-`
+`;
 
-
-
-function Header() {
-
+function Header () {
   const { t } = useTranslation();
 
   return (
@@ -62,18 +54,18 @@ function Header() {
         </LanguagePickerDiv>
         <TitleDiv>
           <StyledLinkHeader to="/">
-            <StyledTitle>{t("mainTitle")}</StyledTitle>
-            <StyledSubtitle>{t("subtitle1")}</StyledSubtitle>
-            <StyledSubtitle>{t("subtitle2")}</StyledSubtitle>
+            <StyledTitle>{t('mainTitle')}</StyledTitle>
+            <StyledSubtitle>{t('subtitle1')}</StyledSubtitle>
+            <StyledSubtitle>{t('subtitle2')}</StyledSubtitle>
           </StyledLinkHeader>
         </TitleDiv>
         <div>
-          <Navbar/>       
+          <Navbar/>
         </div>
-        
+
       </HeaderWrapper>
-  )
+  );
 }
 
-export default Header
-// 
+export default Header;
+//

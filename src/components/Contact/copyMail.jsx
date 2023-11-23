@@ -1,14 +1,19 @@
+// Import React Libraries
 import React from 'react';
-
-import colors from '../../utils/style/jsx/colors';
 import { t } from 'i18next';
 
+// Import PropType
+import PropTypes from 'prop-types';
+
+// Import Colors
+import colors from '../../utils/style/jsx/colors';
+
 class CopyEmailLink extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.emailLinkRef = React.createRef();
     this.state = {
-      isCopied: false,
+      isCopied: false
     };
   }
 
@@ -29,7 +34,7 @@ class CopyEmailLink extends React.Component {
     }, 2000);
   };
 
-  render() {
+  render () {
     return (
       <span>
         <a
@@ -52,15 +57,27 @@ class CopyEmailLink extends React.Component {
               color: '#fff',
               padding: '10px',
               borderRadius: '5px',
-              zIndex: 1000,
+              zIndex: 1000
             }}
           >
-            {t("EmailCopiedToClipboard")}
+            {t('EmailCopiedToClipboard')}
           </div>
         )}
       </span>
     );
   }
 }
+
+const MailPopUpStyleType = PropTypes.shape({
+  fontFamily: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  borderRadius: PropTypes.string.isRequired
+});
+
+CopyEmailLink.propTypes = {
+  email: PropTypes.string.isRequired,
+  style: MailPopUpStyleType.isRequired
+};
 
 export default CopyEmailLink;

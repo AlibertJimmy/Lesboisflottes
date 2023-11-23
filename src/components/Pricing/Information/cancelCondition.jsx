@@ -1,9 +1,13 @@
-import { useTranslation } from "react-i18next"
+// Import React Libraries
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-import styled from 'styled-components'
-import { StyledH2, StyledP } from "../../../utils/style/jsx/style";
+// Import Style
+import styled from 'styled-components';
+import { StyledH2, StyledP } from '../../../utils/style/jsx/style';
 
-import { borderWidth, screenWidthMobile, screenWidthTablet } from "../../../utils/style/jsx/constantes";
+// Import Constants
+import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes';
 
 const CancelConditionContainer = styled.div`
 
@@ -28,20 +32,17 @@ const CancelConditionContainer = styled.div`
       
       
     }
-`
+`;
 
-
-
-function CancelCondition() {
-
-    const { t } = useTranslation();
+function CancelCondition () {
+  const { t } = useTranslation();
 
   return (
       <CancelConditionContainer>
-        <StyledH2>{t("CancelConditionTitle")}</StyledH2>
-        <StyledP>{t("CancelConditionText")}</StyledP>
+        <StyledH2>{t('CancelConditionTitle')}</StyledH2>
+        <StyledP>{t('CancelConditionText')}</StyledP>
       </CancelConditionContainer>
-  )
+  );
 }
 
-export default CancelCondition
+export default CancelCondition;

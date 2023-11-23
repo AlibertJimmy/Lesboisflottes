@@ -1,15 +1,18 @@
 // Import React Libraries
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+// Import PropType
+import PropTypes from 'prop-types';
 
 // Import Style
-import styled from "styled-components";
-import { StyledLinkSidebar } from "../../utils/style/jsx/style";
+import styled from 'styled-components';
+import { StyledLinkSidebar } from '../../utils/style/jsx/style';
 
-import colors from "../../utils/style/jsx/colors";
+import colors from '../../utils/style/jsx/colors';
 
 // Import constantes
-import { screenWidthMenu } from "../../utils/style/jsx/constantes";
+import { screenWidthMenu } from '../../utils/style/jsx/constantes';
 const StyledUl = styled.ul`
 
     
@@ -42,34 +45,36 @@ const StyledUl = styled.ul`
 
         background: #ffffff;
 
-        transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)' };
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
        li{
             margin-bottom: 0px;
        }
     }
-`
+`;
 
+function RightNav ({ open, handleCloseBurger }) {
+  const { t } = useTranslation();
 
+  function handleLinkClick () {
+    handleCloseBurger(); // Call the function passed as a prop from Burger component
+  }
 
-function RightNav({open, handleCloseBurger}){
-
-    const { t } = useTranslation();
-
-    function handleLinkClick() {
-        handleCloseBurger(); // Call the function passed as a prop from Burger component
-    }
-
-    return(
+  return (
         <StyledUl open={open}>
-            <li><StyledLinkSidebar to="/" onClick={handleLinkClick}>{t("Reception")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Location" onClick={handleLinkClick}>{t("Location")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Housing" onClick={handleLinkClick}>{t("Housing")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Gallery" onClick={handleLinkClick}>{t("Gallery")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Comment" onClick={handleLinkClick}>{t("Comments")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Pricing" onClick={handleLinkClick}>{t("Prices")}</StyledLinkSidebar></li>
-            <li><StyledLinkSidebar to="/Contact" onClick={handleLinkClick}>{t("Contact")}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/" onClick={handleLinkClick}>{t('Reception')}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Location" onClick={handleLinkClick}>{t('Location')}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Housing" onClick={handleLinkClick}>{t('Housing')}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Gallery" onClick={handleLinkClick}>{t('Gallery')}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Comment" onClick={handleLinkClick}>{t('Comments')}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Pricing" onClick={handleLinkClick}>{t('Prices')}</StyledLinkSidebar></li>
+            <li><StyledLinkSidebar to="/Contact" onClick={handleLinkClick}>{t('Contact')}</StyledLinkSidebar></li>
         </StyledUl>
-    )
+  );
 }
 
-export default RightNav
+RightNav.propTypes = {
+  open: PropTypes.bool.isRequired,
+  handleCloseBurger: PropTypes.func.isRequired
+};
+
+export default RightNav;

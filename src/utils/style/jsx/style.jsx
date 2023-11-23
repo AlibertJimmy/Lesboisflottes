@@ -1,19 +1,18 @@
-import styled,{ css } from 'styled-components'
-import colors from './colors'
-import { Link } from 'react-router-dom'
+import styled, { css } from 'styled-components';
+import colors from './colors';
+import { Link } from 'react-router-dom';
 
 // Import Constante
-import { borderWidth, headerMargin } from './constantes'
-import { screenWidthMobile } from './constantes'
+import { borderWidth, headerMargin, screenWidthMobile } from './constantes';
 
 export const ComponentBorder = css`
     border: ${borderWidth}px solid black;
-`
+`;
 
 export const PageWrapper = styled.div`
   margin: ${headerMargin}px 25px;
   margin-bottom: 0;
-`
+`;
 
 const commonWriting = css`
   font-family: "Bradley Hand", cursive;
@@ -27,13 +26,12 @@ const commonLink = css`
     &:hover {
         color: ${colors.linkHover};
     }
-`
-
+`;
 
 export const StyledLinkHeader = styled(Link)`
     ${commonWriting};
     ${commonLink}
-`
+`;
 
 export const StyledLinkSidebar = styled(Link)`
     ${commonWriting};
@@ -41,9 +39,7 @@ export const StyledLinkSidebar = styled(Link)`
     font-size: 20px;    
 
     margin-bottom: 10px;
-`
-
-
+`;
 
 export const StyledWelcome = styled.h1`
 
@@ -53,7 +49,7 @@ export const StyledWelcome = styled.h1`
     color: ${colors.title} ;
 
     text-align: center;
-`
+`;
 
 export const StyledH1 = styled.h1`
 
@@ -62,7 +58,7 @@ export const StyledH1 = styled.h1`
 
     text-align: left;
     padding-left: 20px;
-`
+`;
 
 export const StyledH2 = styled.h2`
     ${commonWriting};    
@@ -75,16 +71,14 @@ export const StyledH2 = styled.h2`
     @media (max-width: ${screenWidthMobile}px){
         text-align:center;
       }  
-`
-
+`;
 
 export const StyledH3 = styled.h3`
     ${commonWriting};
     font-size: 25px;
 
     color: ${colors.title} ;
-`
-
+`;
 
 export const StyledP = styled.p`
     font-size: 15px;
@@ -95,7 +89,7 @@ export const StyledP = styled.p`
         
         padding-left:10px;
       }
-`
+`;
 
 export const StyledContainer = styled.div`
     text-align: left;
@@ -103,15 +97,15 @@ export const StyledContainer = styled.div`
 
     border-radius: 15px;
     border: ${borderWidth}px solid black;
-`
-// Header & Footer 
+`;
+// Header & Footer
 const commonHeaderFooter = css`
     ${ComponentBorder};
     display: flex;
     width: 100%;
 
     background: ${colors.backgroundHeaderFooter};
-` 
+`;
 export const HeaderWrapper = styled.div`
     ${commonHeaderFooter};
 
@@ -128,7 +122,7 @@ export const HeaderWrapper = styled.div`
         
         height: 120px;
     }
-`
+`;
 
 export const StyledFooter = styled.div`
     ${commonHeaderFooter};
@@ -150,4 +144,4 @@ export const StyledFooter = styled.div`
         padding: 10px 20px;
         cursor: pointer;
       }
-`
+`;
