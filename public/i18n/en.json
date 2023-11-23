@@ -33,19 +33,27 @@
     "ByCar": "By car",
 
     "ByTrain": "By train",
-    "TrainTransportDescription1": "Several stations provide access to the accommodation.",
-    "TrainTransportDescription2": "The Seyne sur Mer / Six-Fours station is 9km away:",
-    "TrainTransportDescription3": "Bus line no. allows you to reach the accommodation;",
-    "TrainTransportDescription4": "Stop '' located at the exit of the station -> Stop '' located 5 minutes from the accommodation.",
+    "TrainTransportDescription1": "La Seyne sur Mer / Six-Fours train station:",
+    "TrainTransportDescription2": "The station is located 9km from the accommodation.",
+    "TrainTransportDescription3": "Take bus line #82, stop at 'Gare Seyne Six-Fours' located outside the station to the 'Bonaparte' stop.",
+    "TrainTransportDescription4": "Transfer to bus line #81 to the 'La Verne' stop, which is 5 minutes from the accommodation.",
 
-    "TrainTransportDescription5": "Toulon train station is located 11km away:",
-    "TrainTransportDescription6": "Stop '' located at the exit of the station -> Stop '' located 5 minutes from the accommodation.",
-    "TrainTransportDescription7": "The 18M maritime transport line is located in the port of Toulon, accessible in 10/15 minutes walk from the station",
-    "TrainTransportDescription8": "Stop '' located at the exit of the station -> Stop '' located 5 minutes from the accommodation.",
+    "TrainTransportDescription5": "Toulon train station:",
+    "TrainTransportDescription6": "The station is located 11km from the accommodation, and you have two options.",
+
+    "TrainTransportDescription7": "Walk to the Toulon port (10/15 minutes on foot) or take bus line #15 to the 'Station Maritime' stop.",
+    "TrainTransportDescription8": "Take maritime line 8M to the 'Espace Marine' pontoon.",
+    "TrainTransportDescription9": "Go to the 'La Seyne' bus stop and take bus line #81 to the 'La Verne' stop.",
+
+    "TrainTransportDescription10": "Walk to the Toulon port (10/15 minutes on foot) or take bus line #15 to the 'Station Maritime' stop.",
+    "TrainTransportDescription11": "Take maritime line 18M to the 'Sablettes' pontoon.",
+    "TrainTransportDescription12": "Take bus line #18 to the 'Mar Vivo' stop.",
+    "TrainTransportDescription13": "Go to the 'Atalante' bus stop and take bus line #81 to the 'La Verne' stop.",
+
 
     "ByPlane": "By plane",
     "PlaneTransportDescription1": "Airport of Toulon/Hyères :",
-    "PlaneTransportDescription2": "then car rental or taxis.",
+    "PlaneTransportDescription2": "Car rental or taxis.",
     "PlaneTransportDescription3": "Airport of Marignane :",
     "PlaneTransportDescription4": "Bus to St Charles station then TER to Seyne sur Mer/ Six-Fours station.",
     "PlaneTransportDescription5": "Airport of Toulon/Hyères :",

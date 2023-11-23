@@ -11,24 +11,48 @@ function AccessDisplay () {
   return (
       <StyledContainer>
         <StyledP>{t('GeneralTransportProposition')}</StyledP>
-        <StyledH1>{t('ByCar')}</StyledH1>
         <StyledH1>{t('ByTrain')}</StyledH1>
-        <StyledP>{t('TrainTransportDescription1')}</StyledP>
-        <StyledP>{t('TrainTransportDescription2')}</StyledP>
-        <StyledP>{t('TrainTransportDescription3')}</StyledP>
-        <StyledP>{t('TrainTransportDescription4')}</StyledP>
-        <StyledP>{t('TrainTransportDescription5')}</StyledP>
-        <StyledP>{t('TrainTransportDescription6')}</StyledP>
-        <StyledP>{t('TrainTransportDescription7')}</StyledP>
-        <StyledP>{t('TrainTransportDescription8')}</StyledP>
-        <StyledP>{t('TrainTransportDescription9')}</StyledP>
+        <ul>
+          <li><StyledP>{t('TrainTransportDescription1')}</StyledP></li>
+          <li style={ { listStyle: 'none' } }><StyledP>{t('TrainTransportDescription2')}</StyledP></li>
+          <ul>
+          <li><StyledP>{t('TrainTransportDescription3')}</StyledP></li>
+          <li><StyledP>{t('TrainTransportDescription4')}</StyledP></li>
+          </ul>
+        </ul>
+        <ul>
+          <li><StyledP>{t('TrainTransportDescription5')}</StyledP></li>
+            <li style={ { listStyle: 'none' } }><StyledP>{t('TrainTransportDescription6')}</StyledP></li>
+            <ul>
+              <li><StyledP>{t('TrainTransportDescription7')}</StyledP></li>
+              <li><StyledP>{t('TrainTransportDescription8')}</StyledP></li>
+              <li><StyledP>{t('TrainTransportDescription9')}</StyledP></li>
+              <br></br>
+              <li><StyledP>{t('TrainTransportDescription10')}</StyledP></li>
+              <li><StyledP>{t('TrainTransportDescription11')}</StyledP></li>
+              <li><StyledP>{t('TrainTransportDescription12')}</StyledP></li>
+              <li><StyledP>{t('TrainTransportDescription13')}</StyledP></li>
+            </ul>
+        </ul>
         <StyledH1>{t('ByPlane')}</StyledH1>
-        <StyledP>{t('PlaneTransportDescription1')}</StyledP>
-        <StyledP>{t('PlaneTransportDescription2')}</StyledP>
-        <StyledP>{t('PlaneTransportDescription3')}</StyledP>
-        <StyledP>{t('PlaneTransportDescription4')}</StyledP>
-        <StyledP>{t('PlaneTransportDescription5')}</StyledP>
-        <StyledP>{t('PlaneTransportDescription6')}</StyledP>
+        <ul>
+          <li><StyledP>{t('PlaneTransportDescription1')}</StyledP></li>
+          <ul>
+            <li><StyledP>{t('PlaneTransportDescription2')}</StyledP></li>
+          </ul>
+        </ul>
+        <ul>
+          <li><StyledP>{t('PlaneTransportDescription3')}</StyledP></li>
+          <ul>
+            <li><StyledP>{t('PlaneTransportDescription4')}</StyledP></li>
+          </ul>
+        </ul>
+        <ul>
+          <li><StyledP>{t('PlaneTransportDescription5')}</StyledP></li>
+          <ul>
+            <li><StyledP>{t('PlaneTransportDescription6')}</StyledP></li>
+          </ul>
+        </ul>
       </StyledContainer>
   );
 }

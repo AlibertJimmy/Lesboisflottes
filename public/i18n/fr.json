@@ -30,23 +30,30 @@
     "Adress3": "83 500",
     "Adress4": "'Les Bois Flottés' La Verne",
 
-    "ByCar": "En voiture",
-
     "ByTrain": "En train",
-    "TrainTransportDescription1": "Plusieurs gares permettent d'accéder au logement.",
-    "TrainTransportDescription2": "La gare de la Seyne sur Mer / Six-Fours se trouve à 9km :",
-    "TrainTransportDescription3": "La ligne de bus n° X permet de rejoindre le logement;",
-    "TrainTransportDescription4": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
+    "TrainTransportDescription1": "La gare de la Seyne sur Mer / Six-Fours :",
+    "TrainTransportDescription2": "La gare se trouve à 9km du logement.",
+    "TrainTransportDescription3": "Emprunter la ligne de bus n°82, arrêt 'Gare Seyne Six-Fours' situé à la sortie de la gare jusqu'à l'arrêt 'Bonaparte'.",
+    "TrainTransportDescription4": "Prendre la correspondance avec la ligne de bus n° 81 jusqu'à l'arrêt 'La Verne' situé à 5min du logement.",
 
-    "TrainTransportDescription5": "La gare de Toulon est situé à 11km :",
-    "TrainTransportDescription6": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
-    "TrainTransportDescription7": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
-    "TrainTransportDescription8": "La ligne de transport maritime 18M se situe se sur le port de Toulon, accessible en 10/15min de marche depuis la gare",
-    "TrainTransportDescription9": "Arrêt '' situé à la sortie de la gare -> Arrêt '' situé à 5min du logement.",
+    "TrainTransportDescription5": "La gare de Toulon :",
+    "TrainTransportDescription6": "La gare se trouve à 11km du logement, deux options s'offrent à vous.",
+
+    "TrainTransportDescription7": "Rejoindre le port de Toulon à pied (10/15min de marche) ou en bus, ligne de bus n°15 jusqu'à l'arrêt 'Station Maritime'.",
+    "TrainTransportDescription8": "Emprunter la ligne maritime 8M jusqu'au ponton 'Espace Marine'.",
+    "TrainTransportDescription9": "Rejoindre l'arrêt de bus 'La Seyne' et emprunter la ligne de bus n°81 jusqu'à l'arrêt 'La Verne'",
+
+    "TrainTransportDescription10": "Rejoindre le port de Toulon à pied (10/15min de marche) ou en bus, ligne de bus n°15 jusqu'à l'arrêt 'Station Maritime'.",
+    "TrainTransportDescription11": "Emprunter la ligne maritime 18M jusqu'au ponton 'Sablettes'.",
+    "TrainTransportDescription12": "Emprunter la ligne de bus n°18 jusqu'à l'arrêt 'Mar Vivo'.",
+    "TrainTransportDescription13": "Rejoindre l'arrêt de bus 'Atalante' et emprunter la ligne de bus n°81 jusqu'à l'arrêt 'La Verne'.",
+
+
+
 
     "ByPlane": "En avion",
     "PlaneTransportDescription1": "Aéroport de Toulon/Hyères :",
-    "PlaneTransportDescription2": "puis location de voiture ou taxis.",
+    "PlaneTransportDescription2": "Location de voiture ou taxis.",
     "PlaneTransportDescription3": "Aéroport de Marignane :",
     "PlaneTransportDescription4": "Bus vers la gare St Charles puis TER vers la gare de la Seyne sur Mer/ Six-Fours.",
     "PlaneTransportDescription5": "Aéroport de Toulon/Hyères :",
@@ -56,7 +63,7 @@
 
 
     "//":"HOUSING",
-    "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussé d'une villa, ancienne batisse de caractère datant de 1949.",
+    "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussée d'une villa, ancienne batisse de caractère datant de 1949.",
     "PresentationHousing2": "Orienté plein Ouest, il bénéficie d'une vue sur le jardin et d'un accès aux terasses.",
     "PresentationHousing3": "L'hébergement comprend une salle de bain avec cabine de douche et lavabo, de toilettes indépendantes",
     "PresentationHousing4": "Un coin cuisine et d'un coin nuit avec un lit queen size (160x200 [cm]).",
@@ -97,8 +104,8 @@
     "//": "PRICING",
     "//": "DAY PICKER FOOTER",
     "PleaseSelectOneNight": "Veuillez selectionner une nuit",
-    "YouSelectedTheNightOfThe": "Vous avez choisis la nuit du",
-    "PleaseSelectTheDayOfYourArrival": "Veuillez choisir votre jour d'arrivé",
+    "YouSelectedTheNightOfThe": "Vous avez choisi la nuit du",
+    "PleaseSelectTheDayOfYourArrival": "Veuillez choisir votre jour d'arrivée",
     "ArrivingThe": "Arrivée le",
     "DepartureThe": "Départ le",
     "YouHaveSelected": "Vous avez choisis",
@@ -120,15 +127,15 @@
     "PricingIncludeText3": "Accès Wifi",
 
     "//":"CANCEL CONDITION",
-    "CancelConditionTitle": "Condition d'annulation",
+    "CancelConditionTitle": "Conditions d'annulation",
     "CancelConditionText": "Toute réservation est annulable gratuitement jusqu'à 7 jours avant l'arrivée.",
 
     "//":"PAYMENT METHOD",
-    "PaymentMethodTitle": "Méthodes de paiment",
+    "PaymentMethodTitle": "Méthodes de paiement",
     "PaymentMethodText1": "Le réglement est possible par :",
     "PaymentMethodText2": "Chèque",
     "PaymentMethodText3": "Virement bancaire",
-    "PaymentMethodText4": "Espèce",
+    "PaymentMethodText4": "Espèces",
 
     "//":"HOSTING  HOURS",
     "HostingHoursTitle": "Horaires d'hébergement",
