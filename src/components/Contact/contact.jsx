@@ -10,7 +10,7 @@ import { contactList } from '../../datas/contact';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledContainer, StyledH1, StyledP } from '../../utils/style/jsx/style';
+import { StyledContainer, StyledH1 } from '../../utils/style/jsx/style';
 
 // Import Constants
 import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
@@ -35,10 +35,16 @@ const ContactInfoContainer = styled.div`
 `;
 
 const ProfilePicContainer = styled.img`
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 300px;
+    max-height: 300px;
     margin-left: 30px;
 
+`;
+
+const StyledIntro = styled.p`
+    padding-left: 20px;
+    font-family: cursive;
+    font-size: 20px;
 `;
 
 function ContactInformation () {
@@ -47,17 +53,17 @@ function ContactInformation () {
   return (
       <StyledContainer>
         <StyledH1>{t('Contact')}</StyledH1>
+        <StyledIntro>{t('ContactUs')}</StyledIntro>
         {contactList.map(contact => (
 
             <ContactContainer key={contact.name}>
-                <ContactInfoContainer>
-                    <StyledP>{contact.name}</StyledP>
-                    <StyledP>{t('Phone')} : {contact.telephone}</StyledP>
-                    <StyledP>{t('Email')} : <CopyEmailLink email={contact.email} /></StyledP>
-                </ContactInfoContainer>
                 <div>
                     <ProfilePicContainer src={contact.profilePic} alt="PIC"></ProfilePicContainer>
                 </div>
+                <ContactInfoContainer>
+                    <StyledIntro style={ { fontFamily: 'cursive', fontSize: '20px' } }>{contact.name}</StyledIntro>
+                    <StyledIntro style={ { fontFamily: 'cursive', fontSize: '20px' } }>{t('Email')} : <CopyEmailLink email={contact.email} /></StyledIntro>
+                </ContactInfoContainer>
             </ContactContainer>
 
         ))}

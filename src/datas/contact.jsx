@@ -1,18 +1,10 @@
-import julie from '../assets/profiles/julie.png';
-import jm from '../assets/profiles/jm.png';
+import julieJM from '../assets/profiles/JulieJM.png';
 
 export const contactList = [
   {
-    name: 'Julie',
+    name: 'Julie & J.Manuel',
     telephone: '061abcd',
     email: 'email123',
-    profilePic: julie
-  },
-  {
-    name: 'J.Manuel',
-    telephone: '06123',
-    email: 'email123',
-    profilePic: jm
-
+    profilePic: julieJM
   }
 ];
