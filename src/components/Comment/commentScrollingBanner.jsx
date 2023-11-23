@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 // Import Component
 import CommentItem from './comment';
 
+// Import Functions
+import { scrollToTop } from '../../utils/functions/functions';
+
 // Import Datas
 import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr';
 import { commentListEnAirBnB } from '../../datas/review_AirBNB_en';
@@ -64,6 +67,7 @@ function CommentScrollingBanner () {
 
   const redirectToComment = (comment) => {
     navigate('/Comment');
+    scrollToTop();
   };
 
   if (reviews.length === 0) {

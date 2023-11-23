@@ -5,6 +5,9 @@ import { useTranslation } from 'react-i18next';
 // Import PropType
 import PropTypes from 'prop-types';
 
+// Import Functions
+import { scrollToTop } from '../../utils/functions/functions';
+
 // Import Style
 import styled from 'styled-components';
 import { StyledLinkSidebar } from '../../utils/style/jsx/style';
@@ -13,6 +16,7 @@ import colors from '../../utils/style/jsx/colors';
 
 // Import constantes
 import { screenWidthMenu } from '../../utils/style/jsx/constantes';
+
 const StyledUl = styled.ul`
 
     
@@ -57,6 +61,7 @@ function RightNav ({ open, handleCloseBurger }) {
 
   function handleLinkClick () {
     handleCloseBurger(); // Call the function passed as a prop from Burger component
+    scrollToTop();
   }
 
   return (

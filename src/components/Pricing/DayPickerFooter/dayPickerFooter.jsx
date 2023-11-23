@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 import PropTypes from 'prop-types';
 
 // Import Datas
-import { getSeasonDatasForDate, getPriceForRangeDay } from '../../../functions/functions';
+import { getSeasonDatasForDate, getPriceForRangeDay } from '../../../utils/functions/functions';
 
 function DayPickerFooter ({ mode, daySelection }) {
   const { t } = useTranslation();

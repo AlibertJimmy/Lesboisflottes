@@ -10,7 +10,7 @@ import { ReviewDataTypes } from '../../datas/reviewDataTypes';
 import StarScale from './starScale';
 
 // Import Function
-import { removeHtmlTags } from '../../functions/functions';
+import { removeHtmlTags } from '../../utils/functions/functions';
 
 // Import Style
 import styled from 'styled-components';

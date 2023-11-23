@@ -1,7 +1,9 @@
 // Import React Libraries
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-// Import Component
+
+// Import Functions
+import { scrollToTop } from '../../utils/functions/functions';
 
 // Import Assets
 import ArrowUp from '../../assets/icon/arrowUp.png';
@@ -25,7 +27,7 @@ function Footer () {
   const { t } = useTranslation();
 
   const handleGoToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   };
 
   return (

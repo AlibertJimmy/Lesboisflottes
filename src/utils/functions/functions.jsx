@@ -1,6 +1,6 @@
 import { isBefore, addDays } from 'date-fns';
 
-import { pricingBySeasonList } from '../datas/pricing';
+import { pricingBySeasonList } from '../../datas/pricing';
 
 export const getSeasonDatasForDate = (date) => {
   console.log(`date : ${date}`);
@@ -60,3 +60,10 @@ function getDatesBetween (from, to) {
 export function removeHtmlTags (input) {
   return input.replace(/<[^>]*>/g, '');
 }
+
+export function scrollToTop () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
