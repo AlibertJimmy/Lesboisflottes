@@ -56,6 +56,8 @@ export const StyledH1 = styled.h1`
     ${commonWriting};
     font-size: 30px;
 
+    color: ${colors.title} ;
+
     text-align: left;
     padding-left: 20px;
 `;
