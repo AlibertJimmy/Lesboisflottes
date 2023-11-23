@@ -67,3 +67,7 @@ export function scrollToTop () {
     behavior: 'auto'
   });
 }
+
+export function filterReviewLength () {
+
+}

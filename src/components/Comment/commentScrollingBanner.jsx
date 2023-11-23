@@ -35,17 +35,39 @@ const CommentContainer = styled.div`
 function CommentScrollingBanner () {
   const { i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const navigate = useNavigate();
 
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Attach the event listener when the component mounts
+    window.addEventListener('resize', handleResize);
+
+    // Detach the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const reviews = useMemo(() => {
+    let allReviews;
+
     if (i18n.language === 'fr') {
-      return commentListFrAirBnB.reviews.concat(commentListFrBooking.reviews);
+      allReviews = commentListFrAirBnB.reviews.concat(commentListFrBooking.reviews);
     } else if (i18n.language === 'en') {
-      return commentListEnAirBnB.reviews.concat(commentListEnBooking.reviews);
+      allReviews = commentListEnAirBnB.reviews.concat(commentListEnBooking.reviews);
     } else {
-      return [];
+      allReviews = [];
     }
-  }, [i18n.language]);
+
+    // Filter short comments only when screen width is below 768px
+    const shortComments = screenWidth < 768 ? allReviews.filter(comment => comment.comments.length < 150) : allReviews;
+
+    return shortComments;
+  }, [i18n.language, screenWidth]);
 
   // Add temporisatin and randomize the picked review index
   useEffect(() => {

@@ -26,7 +26,7 @@ const ContactContainer = styled.div`
 
     @media (max-width: 768px) {
         flex-direction: column;
-      }
+    }
 `;
 
 const ContactInfoContainer = styled.div`
