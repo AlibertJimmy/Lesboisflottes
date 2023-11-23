@@ -18,7 +18,9 @@ const GallerySample = ({ photos }) => {
   };
 
   return (
-    <Gallery photos={photos} onClick={redirectToGallery} targetRowHeight={200} margin={5}/>
+    <div>
+      <Gallery photos={photos} onClick={redirectToGallery} targetRowHeight={200} margin={5}/>
+    </div>
   );
 };
 

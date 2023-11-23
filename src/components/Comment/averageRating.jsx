@@ -20,7 +20,7 @@ import { StyledH3 } from '../../utils/style/jsx/style';
 import colors from '../../utils/style/jsx/colors';
 
 // Import Constants
-import { borderWidth, headerMargin } from '../../utils/style/jsx/constantes';
+import { borderWidth, headerMargin } from '../../utils/style/jsx/constants';
 
 const AverageRatingContainer = styled.div`
     display: flex;

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { StyledH1, StyledP, StyledContainer } from '../../utils/style/jsx/style';
 
 // Import Constante
-import { borderWidth, screenWidthMobile } from '../../utils/style/jsx/constantes';
+import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
 
 const MapWrapper = styled.div`
     text-align: center;
@@ -25,7 +25,7 @@ const LocationWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: ${screenWidthMobile}px){
+  @media (max-width: ${responsiveWidth}px){
 
     flex-direction: column;
   }

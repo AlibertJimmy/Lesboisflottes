@@ -3,7 +3,7 @@ import colors from './colors';
 import { Link } from 'react-router-dom';
 
 // Import Constante
-import { borderWidth, headerMargin, screenWidthMobile } from './constantes';
+import { borderWidth, headerMargin, responsiveWidth } from './constants';
 
 export const ComponentBorder = css`
     border: ${borderWidth}px solid black;
@@ -68,7 +68,7 @@ export const StyledH2 = styled.h2`
 
     text-align:center;
 
-    @media (max-width: ${screenWidthMobile}px){
+    @media (max-width: ${responsiveWidth}px){
         text-align:center;
       }  
 `;
@@ -85,7 +85,7 @@ export const StyledP = styled.p`
     font-family: Candassa;
     margin: 5px;
 
-    @media (max-width: ${screenWidthMobile}px){
+    @media (max-width: ${responsiveWidth}px){
         
         padding-left:10px;
       }
@@ -116,7 +116,7 @@ export const HeaderWrapper = styled.div`
     left:0;
     z-index:9999;
 
-    @media (max-width: ${screenWidthMobile}px){
+    @media (max-width: ${responsiveWidth}px){
         position: fixed;
         padding-top: 40px;
         

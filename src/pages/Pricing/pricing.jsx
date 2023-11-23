@@ -24,8 +24,8 @@ import '../../utils/style/css/react-day-picker.css';
 import {
   borderWidth,
   marginBetweenPageComponent,
-  screenWidthMobile
-} from '../../utils/style/jsx/constantes';
+  responsiveWidth
+} from '../../utils/style/jsx/constants';
 
 const InformationContainer = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ const InformationContainer = styled.div`
   margin: ${marginBetweenPageComponent}px 0;
 
 
-  @media (max-width: ${screenWidthMobile}px){
+  @media (max-width: ${responsiveWidth}px){
     flex-direction:column-reverse;
     padding: 0;
   }
@@ -83,7 +83,7 @@ const LegendDisplayContainer = styled.div`
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
-  @media (max-width: ${screenWidthMobile}px){
+  @media (max-width: ${responsiveWidth}px){
     height: 210px;
   }
   

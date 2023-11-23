@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { StyledH2 } from '../../../utils/style/jsx/style';
 
-import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes';
+import { borderWidth, responsiveWidth } from '../../../utils/style/jsx/constants';
 
 const PaymentMethodContainer = styled.div`
   
@@ -18,17 +18,11 @@ const PaymentMethodContainer = styled.div`
     width: 350px;
     height: 170px;
 
-    @media (max-width: ${screenWidthTablet}px){
+    @media (max-width: ${responsiveWidth}px){
       
       margin:0;
       width:100%;
       text-align: center;
-      
-    }
-
-    @media (max-width: ${screenWidthMobile}px){
-
-      margin:10px 0;
       
     }
 `;

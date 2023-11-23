@@ -12,7 +12,7 @@ import { photosSample } from '../../datas/photos';
 import styled from 'styled-components';
 import { StyledWelcome } from '../../utils/style/jsx/style';
 
-import { borderWidth } from '../../utils/style/jsx/constantes';
+import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
 
 const HomeWrapper = styled.div`
   margin-top: 140px;
@@ -20,7 +20,7 @@ const HomeWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${responsiveWidth}px) {
     flex-direction: column;
   }
 `;
@@ -30,12 +30,12 @@ const GalleryContainer = styled.div`
   flex: 0 0 550px;
 
   margin: 0 20px;
-  height: 85vh;
+
 
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${responsiveWidth}px) {
     margin:0;
   }
 

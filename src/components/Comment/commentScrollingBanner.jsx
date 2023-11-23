@@ -20,7 +20,7 @@ import styled from 'styled-components';
 
 // Import Colors
 import colors from '../../utils/style/jsx/colors';
-import { borderWidth } from '../../utils/style/jsx/constantes';
+import { borderWidth } from '../../utils/style/jsx/constants';
 
 const CommentContainer = styled.div`
     text-align: left;

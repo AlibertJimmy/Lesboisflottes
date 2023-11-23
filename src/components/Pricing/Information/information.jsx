@@ -8,7 +8,7 @@ import PaymentMethod from './paymentMethod';
 import PricingInclude from './pricingInclude';
 
 import styled from 'styled-components';
-import { borderWidth, screenWidthMobile, screenWidthTablet } from '../../../utils/style/jsx/constantes';
+import { borderWidth, responsiveWidth } from '../../../utils/style/jsx/constants';
 
 const InformationWrapper = styled.div`
     display: flex;
@@ -20,14 +20,9 @@ const InformationWrapper = styled.div`
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
-    @media (max-width: ${screenWidthTablet}px){
+    @media (max-width: ${responsiveWidth}px){
       flex-direction:column;
       
-    }
-
-    @media (max-width: ${screenWidthMobile}px){
-      flex-direction:column;
-      margin:0;
     }
 `;
 

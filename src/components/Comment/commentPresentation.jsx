@@ -15,7 +15,7 @@ import { calculateAverageRating } from './calculateAverage';
 // Import Style
 import styled from 'styled-components';
 import { StyledH3 } from '../../utils/style/jsx/style';
-import { borderWidth } from '../../utils/style/jsx/constantes';
+import { borderWidth } from '../../utils/style/jsx/constants';
 
 // Import Colors
 import colors from '../../utils/style/jsx/colors';

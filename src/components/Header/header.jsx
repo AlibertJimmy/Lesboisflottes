@@ -14,7 +14,7 @@ import styled from 'styled-components';
 import { HeaderWrapper, StyledLinkHeader } from '../../utils/style/jsx/style';
 
 // Import Constantes
-import { borderWidth } from '../../utils/style/jsx/constantes';
+import { borderWidth } from '../../utils/style/jsx/constants';
 
 const TitleDiv = styled.div`
   text-align: center;

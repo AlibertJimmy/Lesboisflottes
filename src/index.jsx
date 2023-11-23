@@ -1,63 +1,46 @@
 // Import React Libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router,  Route, Routes } from 'react-router-dom' 
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Import Component
-import Header from './components/Header/header'
+import Header from './components/Header/header';
 import Footer from './components/Footer/Footer';
-//import Sidebar from './components/Sidebar/sidebar'
-import Home from './pages/Home/home'
-import Comment from './pages/Comment/comment'
-import Contact from './pages/Contact/contact'
+// import Sidebar from './components/Sidebar/sidebar'
+import Home from './pages/Home/home';
+import Comment from './pages/Comment/comment';
+import Contact from './pages/Contact/contact';
 import Galleryx from './pages/Gallery/gallery';
-import Housing from './pages/Housing/housing'
-import Pricing from './pages/Pricing/pricing'
-import Location from './pages/Location/location'
+import Housing from './pages/Housing/housing';
+import Pricing from './pages/Pricing/pricing';
+import Location from './pages/Location/location';
 
-// Import Style 
-import styled from 'styled-components'
+// Import Style
+import styled from 'styled-components';
 
 // Import Translation index
-import "./i18n"
-
+import './i18n';
 
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 10px;
   
-`
+`;
 
 const ContentWrapper = styled.div`
   
   width: 100%;
   padding: 20px 0 ;
   
-`
-/*
-const SidebarWrapper = styled.div`
-  height: 100%;
-  padding: 20px 0;
-`
-*/
+`;
 
-//background-color: #414a4F;
-function App(){
-
-
+function App () {
   return (
     <React.StrictMode>
     <Router>
         <Header />
         <HomeWrapper>
-        
-          {
-          /*<SidebarWrapper>
-            <Sidebar />
-            </SidebarWrapper>*/
-          }
           <ContentWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -73,12 +56,10 @@ function App(){
         <Footer />
     </Router>
   </React.StrictMode>
-  )
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <App />
 );
-
-
