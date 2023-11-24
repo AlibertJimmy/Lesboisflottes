@@ -11,7 +11,7 @@ export const ComponentBorder = css`
 
 export const PageWrapper = styled.div`
   margin: ${headerMargin}px 25px;
-  margin-bottom: 0;
+  margin-bottom: 75px;;
 `;
 
 const commonWriting = css`
@@ -101,7 +101,7 @@ export const StyledContainer = styled.div`
     border: ${borderWidth}px solid black;
 `;
 // Header & Footer
-const commonHeaderFooter = css`
+export const commonHeaderFooter = css`
     ${ComponentBorder};
     display: flex;
     width: 100%;
@@ -124,26 +124,4 @@ export const HeaderWrapper = styled.div`
         
         height: 120px;
     }
-`;
-
-export const StyledFooter = styled.div`
-    ${commonHeaderFooter};
-    
-    flex-direction: row;
-    align-items:center;
-    
-    justify-content: space-between;
-
-    height:55px;
-
-    margin: 0;
-
-    color: ${colors.link};
-
-    button#goToTopButton {
-        background-color: ${colors.backgroundHeaderFooter};
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-      }
 `;

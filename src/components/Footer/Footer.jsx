@@ -9,7 +9,34 @@ import ArrowUp from '../../assets/icon/arrowUp.png';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledFooter } from '../../utils/style/jsx/style';
+import { commonHeaderFooter } from '../../utils/style/jsx/style';
+
+// Import Colors
+import colors from '../../utils/style/jsx/colors';
+
+const StyledFooter = styled.div`
+    ${commonHeaderFooter};
+    
+    flex-direction: row;
+    align-items:center;
+
+    position: fixed;
+    bottom:0;
+
+    justify-content: space-between;
+
+    height:55px;
+
+
+    color: ${colors.link};
+
+    button#goToTopButton {
+        background-color: ${colors.backgroundHeaderFooter};
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+`;
 
 const StyledText = styled.div`
       display:flex;
