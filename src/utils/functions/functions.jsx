@@ -59,9 +59,4 @@ function getDatesBetween (from, to) {
   return dates;
 }
 
-export function scrollToTop () {
-  window.scrollTo({
-    top: 0,
-    behavior: 'auto'
-  });
-}
+

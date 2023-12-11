@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Functions
-import { scrollToTop } from '../../utils/functions/functions';
+import { scrollToTop } from '../../utils/functions/General';
 
 // Import Assets
 import ArrowUp from '../../assets/icon/arrowUp.png';

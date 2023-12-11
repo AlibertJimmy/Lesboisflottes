@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
 // Import Functions
-import { scrollToTop } from '../../utils/functions/functions';
+import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
 import styled from 'styled-components';

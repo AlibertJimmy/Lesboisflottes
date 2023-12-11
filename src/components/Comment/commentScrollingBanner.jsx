@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import CommentItem from './comment';
 
 // Import Functions
-import { scrollToTop } from '../../utils/functions/functions';
+import { scrollToTop } from '../../utils/functions/General';
 
 // Import Datas
 import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr';

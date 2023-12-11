@@ -7,7 +7,7 @@ import { LanguageMenu } from '../LanguageMenu/languageMenu';
 import Navbar from '../Nav/Navbar';
 
 // Import Function
-import { scrollToTop } from '../../utils/functions/functions';
+import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
 import { HeaderWrapper, LanguagePickerDiv, StyledLinkHeader, StyledSubtitle, StyledTitle, TitleDiv } from '../../utils/style/jsx/Header';
