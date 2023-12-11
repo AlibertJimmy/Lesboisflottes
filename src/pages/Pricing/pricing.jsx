@@ -122,10 +122,24 @@ function Pricing () {
   }, [range]);
 
   const setNewRange = (date) => {
+    console.log('setNewRange');
     if (range !== undefined) {
       if (range.from !== undefined && range.to !== undefined) {
         // Reset the range
-        setRange(undefined);
+        console.log('reset the range');
+        const dateToSave = {
+          from: undefined,
+          to: undefined
+        };
+        if (date !== undefined) {
+          if (date.from < range.from) {
+            dateToSave.from = date.from;
+          } else if (date.to > range.to) {
+            dateToSave.from = date.to;
+          }
+        }
+        // setRange(undefined);
+        setRange(dateToSave);
       } else {
         // Set the range
         setRange(date);
