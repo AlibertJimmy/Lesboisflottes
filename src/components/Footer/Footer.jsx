@@ -6,48 +6,7 @@ import { scrollToTop } from '../../utils/functions/functions';
 
 // Import Assets
 import ArrowUp from '../../assets/icon/arrowUp.png';
-
-// Import Style
-import styled from 'styled-components';
-import { commonHeaderFooter } from '../../utils/style/jsx/style';
-
-// Import Colors
-import colors from '../../utils/style/jsx/colors';
-
-const StyledFooter = styled.div`
-    ${commonHeaderFooter};
-    
-    flex-direction: row;
-    align-items:center;
-
-    position: fixed;
-    bottom:0;
-
-    justify-content: space-between;
-
-    height:55px;
-
-
-    color: ${colors.link};
-
-    button#goToTopButton {
-        background-color: ${colors.backgroundHeaderFooter};
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-      }
-`;
-
-const StyledText = styled.div`
-      display:flex;
-      flex-direction: column;
-      text-align:center;
-`;
-
-const StyledP = styled.p`
-    font-size: 15px;
-    margin: 5px;
-`;
+import { StyledFooter, StyledP, StyledText } from '../../utils/style/jsx/Footer';
 
 function Footer () {
   const handleGoToTop = () => {
