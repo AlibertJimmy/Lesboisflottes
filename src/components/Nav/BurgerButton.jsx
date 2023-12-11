@@ -19,7 +19,7 @@ const StyledBurger = styled.div`
     top: 10px;
     left: 10px;
 
-    border: 1px solid ${colors.link};
+    border: 0px solid ${colors.link};
     border-radius: 5px;
     padding: 2px;
 
