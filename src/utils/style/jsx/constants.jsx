@@ -8,6 +8,7 @@ export const headerHeightResponsive = 50;
 
 // Margin between the header and the page content
 export const headerMargin = 150;
-export const headerMarginResponsive = 50;
+export const headerMarginResponsiveMobile = 50;
+export const headerMarginResponsiveTablet = 10;
 
 export const marginBetweenPageComponent = 5;

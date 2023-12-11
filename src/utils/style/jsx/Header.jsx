@@ -53,18 +53,19 @@ export const HeaderWrapper = styled.div`
     z-index:9999;
 
     height: ${headerHeight}px;
-
+    
     @media (max-width: ${responsiveWidthTablet}px){
-        padding-top: 50px;
+      padding-top: 5px;
     }
-
     @media (max-width: ${responsiveWidthMobile}px){
-        height: ${headerHeightResponsive}px;
-    }
+      height: ${headerHeightResponsive}px;
+      padding-top: 50px;
+  }
 `;
 
 export const TitleDiv = styled.div`
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   border-radius: 15px;
   border: ${borderWidth}px solid black;  

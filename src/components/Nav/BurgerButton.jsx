@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import colors from '../../utils/style/jsx/colors';
 
 // Import Constante
-import { responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { responsiveWidthTablet } from '../../utils/style/jsx/constants';
 
 const StyledBurger = styled.div`
     width: 2rem;
@@ -17,7 +17,7 @@ const StyledBurger = styled.div`
 
     position: fixed;
     top: 10px;
-    left: 15px;
+    left: 10px;
 
     border: 1px solid ${colors.link};
     border-radius: 5px;
@@ -27,7 +27,7 @@ const StyledBurger = styled.div`
 
     display: none;
 
-    @media (max-width: ${responsiveWidthMobile}px){
+    @media (max-width: ${responsiveWidthTablet}px){
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;

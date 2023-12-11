@@ -8,8 +8,7 @@ import styled, { css } from 'styled-components';
 import colors from './colors';
 
 // Import Constants
-import { borderWidth, headerMargin, headerMarginResponsive, responsiveWidthMobile, responsiveWidthTablet } from './constants';
-// import { borderWidth, responsiveWidthMobile } from './constants';
+import { borderWidth, headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile, responsiveWidthTablet } from './constants';
 
 export const ComponentBorder = css`
     border: ${borderWidth}px solid black;
@@ -20,7 +19,11 @@ export const PageWrapper = styled.div`
     margin-bottom: 75px;
 
     @media (max-width: ${responsiveWidthTablet}px){
-        margin: ${headerMarginResponsive}px 25px;
+        margin: ${headerMarginResponsiveTablet}px 25px;
+    }
+
+    @media (max-width: ${responsiveWidthMobile}px){
+        margin: ${headerMarginResponsiveMobile}px 25px;
     }
 `;
 

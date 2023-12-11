@@ -12,7 +12,7 @@ import { photosSample } from '../../datas/photos';
 import styled from 'styled-components';
 import { StyledWelcome } from '../../utils/style/jsx/style';
 
-import { borderWidth, headerMargin, headerMarginResponsive, responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { borderWidth, headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const HomeWrapper = styled.div`
   margin-top: ${headerMargin + 30}px ;
@@ -22,7 +22,11 @@ const HomeWrapper = styled.div`
 
   @media (max-width: ${responsiveWidthMobile}px) {
     flex-direction: column;
-    margin-top: ${headerMarginResponsive}px ;
+    margin-top: ${headerMarginResponsiveTablet}px ;
+  }
+
+  @media (max-width: ${responsiveWidthMobile}px) {
+    margin-top: ${headerMarginResponsiveMobile}px ;
   }
 `;
 const GalleryContainer = styled.div`
