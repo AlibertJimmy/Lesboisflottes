@@ -89,15 +89,38 @@ function Pricing () {
   const { i18n, t } = useTranslation();
   const [selection, setAsSelection] = useState('single');
   const [numberOfMonthToDisplay, setNumberOfMonthToDisplay] = useState(1);
+  const [selectedDay, setSelectedDay] = useState();
+  const [range, setRange] = useState();
 
+  // Ajouter une condition pour check si la valeur à copier est valide
+  // Conserver le range dans un coin, si la date selectedDay est différente du range conservé
+  // alors réinitialiser le range avec pour date de départ le selectedDay
+  // sinon le garder
   const switchDaySelection = () => {
+    if (selection === 'single') {
+      // transfer the selectedDay to the first day of the range
+      if (selectedDay !== undefined) {
+        const newRange = {
+          from: new Date(selectedDay)
+        };
+        setRange(newRange);
+        console.log(range);
+      }
+    } else if (selection === 'range') {
+      if (range !== undefined) {
+        // copy the starting day of the range into selectedDay
+        setSelectedDay(range.from);
+      }
+    }
     setAsSelection(selection === 'single' ? 'range' : 'single');
-    // console.log(`selection : ${selection}`)
   };
 
   useEffect(() => {
-    // console.log(`selection : ${selection}`);
-  }, [selection]);
+    console.log('range');
+    console.log(range);
+    // If range is already set (from && to) then
+    // the next click will reset the range before to initialize it with the seletec date
+  }, [range]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -117,11 +140,9 @@ function Pricing () {
     };
   }, []);
 
-  const [selectedDay, setSelectedDay] = useState();
-  const [range, setRange] = useState();
-
-  console.log('range');
-  console.log(range);
+  useEffect(() => {
+    //
+  }, [range]);
 
   const css = `
       .my-selected:not([disabled]) { 

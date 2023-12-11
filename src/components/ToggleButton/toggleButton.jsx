@@ -14,7 +14,6 @@ class MaterialDesignSwitch extends Component {
 
   handleChange (checked) {
     this.setState({ checked });
-    console.log('jfjfjfjf');
     this.props.onChange(checked);
   }
 

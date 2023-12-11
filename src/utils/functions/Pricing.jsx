@@ -5,7 +5,7 @@ import { isBefore, addDays } from 'date-fns';
 import { pricingBySeasonList } from '../../datas/pricing';
 
 export const getSeasonDatasForDate = (date) => {
-  console.log(`date : ${date}`);
+  // console.log(`date : ${date}`);
 
   // Each season listed
   for (const season of pricingBySeasonList) {
@@ -28,15 +28,18 @@ export const getSeasonDatasForDate = (date) => {
 };
 
 export const getPriceForRangeDay = (range) => {
-  console.log(`range : ${range}`);
+  // console.log(`range : ${range}`);
+  console.log('function getPriceForRangeDay');
+  console.log('range : ');
+  console.log(range);
   const dates = getDatesBetween(range.from, range.to);
   let totalPrice = 0;
   let totalNights = 0;
   for (const day in dates) {
     // const date = parse(day, 'dd/MM/yyyy', new Date());
-    console.log(`day : ${dates[day]}`);
+    // console.log(`day : ${dates[day]}`);
     const dayPrice = getSeasonDatasForDate(dates[day]).price;
-    console.log(`dayPrice : ${dayPrice}`);
+    // console.log(`dayPrice : ${dayPrice}`);
     totalPrice = totalPrice + dayPrice;
     totalNights = totalNights + 1;
   }
@@ -55,6 +58,6 @@ function getDatesBetween (from, to) {
     dates.push(currentDate);
     currentDate = addDays(currentDate, 1);
   }
-  console.log(dates);
+  // console.log(dates);
   return dates;
 }
