@@ -50,7 +50,7 @@ export const HeaderWrapper = styled.div`
     position: fixed;
     top: 0;
     left:0;
-    z-index:9999;
+    z-index:99;
 
     height: ${headerHeight}px;
     
@@ -60,7 +60,7 @@ export const HeaderWrapper = styled.div`
     @media (max-width: ${responsiveWidthMobile}px){
       height: ${headerHeightResponsive}px;
       padding-top: 50px;
-  }
+    }
 `;
 
 export const TitleDiv = styled.div`

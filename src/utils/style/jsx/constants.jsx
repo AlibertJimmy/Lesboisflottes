@@ -1,7 +1,7 @@
 export const borderWidth = 0;
 
-export const responsiveWidthMobile = 400;
-export const responsiveWidthTablet = 900;
+export const responsiveWidthMobile = 450;
+export const responsiveWidthTablet = 950;
 
 export const headerHeight = 160;
 export const headerHeightResponsive = 50;

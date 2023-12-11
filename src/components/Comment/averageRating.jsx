@@ -20,16 +20,18 @@ import { StyledH3 } from '../../utils/style/jsx/style';
 import colors from '../../utils/style/jsx/colors';
 
 // Import Constants
-import { borderWidth, headerMargin } from '../../utils/style/jsx/constants';
+import { borderWidth, headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/style/jsx/constants';
 
 const AverageRatingContainer = styled.div`
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    background: ${colors.background};
-    padding: 5px;
-    border-radius: 15px;
-    border: ${borderWidth}px solid black;
+  background: ${colors.background};
+  padding: 5px;
+  border-radius: 15px;
+  border: ${borderWidth}px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
 `;
 
 const StyledP1 = styled.p`
@@ -41,12 +43,23 @@ const StyledP1 = styled.p`
   text-align: center;
   flex:1;
 `;
+
+const AnchorDiv = styled.div`
+  height: ${headerMargin}px;
+  
+  @media (max-width: ${responsiveWidthTablet}px){
+    height: ${headerMarginResponsiveTablet + 25}px;
+  }
+  @media (max-width: ${responsiveWidthMobile}px){
+    height: ${headerMarginResponsiveMobile + 25}px;
+  }
+`;
 function AverageRatingItem ({ commentList, webSite }) {
   const { t } = useTranslation();
 
   return (
     <div>
-      <div id={webSite === 'AirBnB' ? 'anchorAirBnB' : 'anchorBooking'} style={{ height: headerMargin + 25 + 'px' }}></div>
+      <AnchorDiv id={webSite === 'AirBnB' ? 'anchorAirBnB' : 'anchorBooking'}></AnchorDiv>
       <div>
             <a
             href={webSite === 'AirBnB'

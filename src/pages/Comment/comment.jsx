@@ -16,10 +16,16 @@ import { commentListEnBooking } from '../../datas/review_Booking_en';
 // Import Style
 import styled from 'styled-components';
 import { PageWrapper, StyledContainer, StyledH1 } from '../../utils/style/jsx/style';
+import { responsiveWidthMobile, responsiveWidthTablet } from '../../utils/style/jsx/constants';
 
 const CommentSitePresentation = styled.div`
   display: flex;
 
+  @media (max-width: ${responsiveWidthTablet}px){
+  }
+  @media (max-width: ${responsiveWidthMobile}px){
+    flex-direction: column;
+  }
 `;
 
 function Comment () {
