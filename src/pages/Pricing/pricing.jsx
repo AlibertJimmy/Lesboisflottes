@@ -75,12 +75,14 @@ const InnerDiv = styled.div`
 `;
 
 const LegendDisplayContainer = styled.div`
+  display: flex;
   height: 250px;
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
   @media (max-width: ${responsiveWidthMobile}px){
     height: 210px;
+    align-items: center;
   }
   
 `;
@@ -92,10 +94,6 @@ function Pricing () {
   const [selectedDay, setSelectedDay] = useState();
   const [range, setRange] = useState();
 
-  // Ajouter une condition pour check si la valeur à copier est valide
-  // Conserver le range dans un coin, si la date selectedDay est différente du range conservé
-  // alors réinitialiser le range avec pour date de départ le selectedDay
-  // sinon le garder
   const switchDaySelection = () => {
     if (selection === 'single') {
       // transfer the selectedDay to the first day of the range
@@ -115,12 +113,6 @@ function Pricing () {
     setAsSelection(selection === 'single' ? 'range' : 'single');
   };
 
-  useEffect(() => {
-    console.log('useEffect depending on range');
-    console.log('range');
-    console.log(range);
-  }, [range]);
-
   const setNewRange = (date) => {
     console.log('setNewRange');
     if (range !== undefined) {
@@ -138,7 +130,6 @@ function Pricing () {
             dateToSave.from = date.to;
           }
         }
-        // setRange(undefined);
         setRange(dateToSave);
       } else {
         // Set the range

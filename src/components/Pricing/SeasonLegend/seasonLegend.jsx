@@ -27,7 +27,7 @@ const LegendTable = styled.table`
     @media (max-width: ${responsiveWidthMobile}px){
         padding:0;
         border-spacing: 5px 5px;
-      }
+    }
 
 `;
 
