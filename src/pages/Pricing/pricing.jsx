@@ -116,11 +116,25 @@ function Pricing () {
   };
 
   useEffect(() => {
+    console.log('useEffect depending on range');
     console.log('range');
     console.log(range);
-    // If range is already set (from && to) then
-    // the next click will reset the range before to initialize it with the seletec date
   }, [range]);
+
+  const setNewRange = (date) => {
+    if (range !== undefined) {
+      if (range.from !== undefined && range.to !== undefined) {
+        // Reset the range
+        setRange(undefined);
+      } else {
+        // Set the range
+        setRange(date);
+      }
+    } else if (range === undefined) {
+      // Set the range
+      setRange(date);
+    }
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -139,10 +153,6 @@ function Pricing () {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  useEffect(() => {
-    //
-  }, [range]);
 
   const css = `
       .my-selected:not([disabled]) { 
@@ -180,7 +190,7 @@ function Pricing () {
           <DayPicker
             mode={selection}
             selected={selection === 'single' ? selectedDay : range}
-            onSelect={selection === 'single' ? setSelectedDay : setRange}
+            onSelect={selection === 'single' ? setSelectedDay : setNewRange}
             numberOfMonths={numberOfMonthToDisplay}
 
             disabled={disabledDays}
@@ -200,16 +210,5 @@ function Pricing () {
 
   );
 }
-// defaultMonth -> Set the starting month of the calendar
-// if outside the season -> start at the begining of the the season
-
-// change language display date -> check
-// formatRelative(subDays(new Date(), 3), new Date(), { locale: es })
-//= > "el viernes pasado a las 19:26"
-
-/*
-export default function App() {
-  return <DayPicker defaultMonth={new Date(1979, 8)} />;
-} */
 
 export default Pricing;

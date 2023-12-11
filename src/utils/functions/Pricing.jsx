@@ -29,9 +29,9 @@ export const getSeasonDatasForDate = (date) => {
 
 export const getPriceForRangeDay = (range) => {
   // console.log(`range : ${range}`);
-  console.log('function getPriceForRangeDay');
-  console.log('range : ');
-  console.log(range);
+  // console.log('function getPriceForRangeDay');
+  // console.log('range : ');
+  // console.log(range);
   const dates = getDatesBetween(range.from, range.to);
   let totalPrice = 0;
   let totalNights = 0;
