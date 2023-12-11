@@ -58,5 +58,3 @@ function getDatesBetween (from, to) {
   console.log(dates);
   return dates;
 }
-
-

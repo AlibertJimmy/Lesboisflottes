@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Gallery from 'react-photo-gallery';
 
 // Import Functions
-import { scrollToTop } from '../../utils/functions/functions';
+import { scrollToTop } from '../../utils/functions/General';
 
 // Import Proptypes
 import { PhotosPropTypes } from '../../datas/photos';
