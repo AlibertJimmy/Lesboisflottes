@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { StyledH2 } from '../../../utils/style/jsx/style';
 
-import { borderWidth, responsiveWidth } from '../../../utils/style/jsx/constants';
+import { borderWidth, responsiveWidthMobile } from '../../../utils/style/jsx/constants';
 
 const PricingIncludeContainer = styled.div`
     margin: 0 10px;
@@ -16,7 +16,7 @@ const PricingIncludeContainer = styled.div`
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
-    @media (max-width: ${responsiveWidth}px){
+    @media (max-width: ${responsiveWidthMobile}px){
       
       margin:0;
       width:100%; 

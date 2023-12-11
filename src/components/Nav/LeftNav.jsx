@@ -15,7 +15,7 @@ import { StyledLinkSidebar } from '../../utils/style/jsx/style';
 import colors from '../../utils/style/jsx/colors';
 
 // Import constantes
-import { responsiveWidth } from '../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const StyledUl = styled.ul`
 
@@ -29,7 +29,7 @@ const StyledUl = styled.ul`
     padding:0;
 
 
-    @media (max-width: ${responsiveWidth}px){
+    @media (max-width: ${responsiveWidthMobile}px){
         flex-flow: column nowrap;
 
         position: fixed;

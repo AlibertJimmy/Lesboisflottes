@@ -10,7 +10,7 @@ import { LANGUAGES } from '../../constants/language';
 import styled from 'styled-components';
 
 // Import Constantes
-import { responsiveWidth } from '../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const StyledSelect = styled.div`
   width: 100px;
@@ -18,7 +18,7 @@ const StyledSelect = styled.div`
   right:8px; 
   top: 10px;
 
-  @media (max-width: ${responsiveWidth}px){
+  @media (max-width: ${responsiveWidthMobile}px){
     position: fixed;
     
   }

@@ -8,44 +8,10 @@ import Navbar from '../Nav/Navbar';
 
 // Import Function
 import { scrollToTop } from '../../utils/functions/functions';
+import { shouldRenderSubtitles } from '../../utils/functions/Header';
 
 // Import Style
-import styled from 'styled-components';
-import { HeaderWrapper, StyledLinkHeader } from '../../utils/style/jsx/style';
-
-// Import Constantes
-import { borderWidth } from '../../utils/style/jsx/constants';
-
-const TitleDiv = styled.div`
-  text-align: center;
-
-  border-radius: 15px;
-  border: ${borderWidth}px solid black;
-
-  
-`;
-
-const LanguagePickerDiv = styled.div`
-  text-align: right;
-
-  margin: 0px;
-
-  border-radius: 15px;
-  border: ${borderWidth}px solid black;
-`;
-
-const StyledTitle = styled.h1`
-  font-size: 30px;
-  
-  margin-top: 0px;
-  margin-bottom: 5px;
-`;
-
-const StyledSubtitle = styled.h2`
-  font-size: 20px;
-  
-  margin: 5px;
-`;
+import { HeaderWrapper, LanguagePickerDiv, StyledLinkHeader, StyledSubtitle, StyledTitle, TitleDiv } from '../../utils/style/jsx/Header';
 
 function Header () {
   const { t } = useTranslation();
@@ -62,8 +28,12 @@ function Header () {
         <TitleDiv>
           <StyledLinkHeader to="/" onClick={handleOnClick}>
             <StyledTitle>{t('mainTitle')}</StyledTitle>
-            <StyledSubtitle>{t('subtitle1')}</StyledSubtitle>
-            <StyledSubtitle>{t('subtitle2')}</StyledSubtitle>
+            {shouldRenderSubtitles() && (
+            <>
+              <StyledSubtitle>{t('subtitle1')}</StyledSubtitle>
+              <StyledSubtitle>{t('subtitle2')}</StyledSubtitle>
+            </>
+            )}
           </StyledLinkHeader>
         </TitleDiv>
         <div>
@@ -75,4 +45,3 @@ function Header () {
 }
 
 export default Header;
-//

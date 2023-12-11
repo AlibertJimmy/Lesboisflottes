@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { StyledContainer, StyledH1, StyledH2 } from '../../utils/style/jsx/style';
 
-import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
+import { borderWidth, responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const ListWrapper = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ const ListWrapper = styled.div`
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
-    @media (max-width: ${responsiveWidth}px) {
+    @media (max-width: ${responsiveWidthMobile}px) {
       flex-direction: column;
     }
 `;

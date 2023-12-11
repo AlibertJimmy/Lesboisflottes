@@ -1,36 +1,40 @@
-import styled, { css } from 'styled-components';
-import colors from './colors';
+// Import React Libraries
 import { Link } from 'react-router-dom';
 
-// Import Constante
-import { borderWidth, headerMargin, responsiveWidth } from './constants';
+// Import Style
+import styled, { css } from 'styled-components';
+
+// Import Colors
+import colors from './colors';
+
+// Import Constants
+import { borderWidth, headerMargin, headerMarginResponsive, responsiveWidthMobile, responsiveWidthTablet } from './constants';
 
 export const ComponentBorder = css`
     border: ${borderWidth}px solid black;
 `;
 
 export const PageWrapper = styled.div`
-  margin: ${headerMargin}px 25px;
-  margin-bottom: 75px;;
+    margin: ${headerMargin}px 25px;
+    margin-bottom: 75px;
+
+    @media (max-width: ${responsiveWidthTablet}px){
+        margin: ${headerMarginResponsive}px 25px;
+    }
 `;
 
-const commonWriting = css`
+export const commonWriting = css`
   font-family: "Bradley Hand", cursive;
   font-style: italic;
 `;
 
-const commonLink = css`
+export const commonLink = css`
     color: ${colors.link} ;
     text-decoration: none;
 
     &:hover {
         color: ${colors.linkHover};
     }
-`;
-
-export const StyledLinkHeader = styled(Link)`
-    ${commonWriting};
-    ${commonLink}
 `;
 
 export const StyledLinkSidebar = styled(Link)`
@@ -70,9 +74,9 @@ export const StyledH2 = styled.h2`
 
     text-align:center;
 
-    @media (max-width: ${responsiveWidth}px){
+    @media (max-width: ${responsiveWidthMobile}px){
         text-align:center;
-      }  
+    }  
 `;
 
 export const StyledH3 = styled.h3`
@@ -87,7 +91,7 @@ export const StyledP = styled.p`
     font-family: Candassa;
     margin: 5px;
 
-    @media (max-width: ${responsiveWidth}px){
+    @media (max-width: ${responsiveWidthMobile}px){
         
         padding-left:10px;
       }
@@ -107,21 +111,4 @@ export const commonHeaderFooter = css`
     width: 100%;
 
     background: ${colors.backgroundHeaderFooter};
-`;
-export const HeaderWrapper = styled.div`
-    ${commonHeaderFooter};
-
-    flex-direction: column;
-    
-    position: fixed;
-    top: 0;
-    left:0;
-    z-index:9999;
-
-    @media (max-width: ${responsiveWidth}px){
-        position: fixed;
-        padding-top: 40px;
-        
-        height: 120px;
-    }
 `;

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { StyledH2, StyledP } from '../../../utils/style/jsx/style';
 
 // Import Constants
-import { borderWidth, responsiveWidth } from '../../../utils/style/jsx/constants';
+import { borderWidth, responsiveWidthMobile } from '../../../utils/style/jsx/constants';
 
 const CancelConditionContainer = styled.div`
 
@@ -20,7 +20,7 @@ const CancelConditionContainer = styled.div`
     height: 170px;
 
 
-    @media (max-width: ${responsiveWidth}px){
+    @media (max-width: ${responsiveWidthMobile}px){
       margin: 0;
       width:100%;
       text-align: center; 

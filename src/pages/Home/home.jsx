@@ -12,16 +12,17 @@ import { photosSample } from '../../datas/photos';
 import styled from 'styled-components';
 import { StyledWelcome } from '../../utils/style/jsx/style';
 
-import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
+import { borderWidth, headerMargin, headerMarginResponsive, responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const HomeWrapper = styled.div`
-  margin-top: 140px;
+  margin-top: ${headerMargin}px ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: ${responsiveWidth}px) {
+  @media (max-width: ${responsiveWidthMobile}px) {
     flex-direction: column;
+    margin-top: ${headerMarginResponsive}px ;
   }
 `;
 const GalleryContainer = styled.div`
@@ -35,7 +36,7 @@ const GalleryContainer = styled.div`
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
-  @media (max-width: ${responsiveWidth}px) {
+  @media (max-width: ${responsiveWidthMobile}px) {
     margin:0;
   }
 

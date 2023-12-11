@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import { StyledContainer, StyledH1 } from '../../utils/style/jsx/style';
 
 // Import Constants
-import { borderWidth, responsiveWidth } from '../../utils/style/jsx/constants';
+import { borderWidth, responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const ContactContainer = styled.div`
     display: flex;
@@ -23,7 +23,7 @@ const ContactContainer = styled.div`
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
-    @media (max-width: ${responsiveWidth}px) {
+    @media (max-width: ${responsiveWidthMobile}px) {
         flex-direction: column;
     }
 `;

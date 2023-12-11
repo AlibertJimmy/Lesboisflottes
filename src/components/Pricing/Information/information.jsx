@@ -8,7 +8,7 @@ import PaymentMethod from './paymentMethod';
 import PricingInclude from './pricingInclude';
 
 import styled from 'styled-components';
-import { borderWidth, responsiveWidth } from '../../../utils/style/jsx/constants';
+import { borderWidth, responsiveWidthMobile } from '../../../utils/style/jsx/constants';
 
 const InformationWrapper = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ const InformationWrapper = styled.div`
     border-radius: 15px;
     border: ${borderWidth}px solid black;
 
-    @media (max-width: ${responsiveWidth}px){
+    @media (max-width: ${responsiveWidthMobile}px){
       flex-direction:column;
       
     }

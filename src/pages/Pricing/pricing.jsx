@@ -20,12 +20,8 @@ import styled from 'styled-components';
 import { PageWrapper, StyledH1, StyledH2, StyledContainer } from '../../utils/style/jsx/style';
 import '../../utils/style/css/react-day-picker.css';
 
-// Import Constante
-import {
-  borderWidth,
-  marginBetweenPageComponent,
-  responsiveWidth
-} from '../../utils/style/jsx/constants';
+// Import Constants
+import { borderWidth, marginBetweenPageComponent, responsiveWidthMobile } from '../../utils/style/jsx/constants';
 
 const InformationContainer = styled.div`
   display: flex;
@@ -36,7 +32,7 @@ const InformationContainer = styled.div`
   margin: ${marginBetweenPageComponent}px 0;
 
 
-  @media (max-width: ${responsiveWidth}px){
+  @media (max-width: ${responsiveWidthMobile}px){
     flex-direction:column-reverse;
     padding: 0;
   }
@@ -83,7 +79,7 @@ const LegendDisplayContainer = styled.div`
   border: ${borderWidth}px solid black;
   border-radius: 15px;
 
-  @media (max-width: ${responsiveWidth}px){
+  @media (max-width: ${responsiveWidthMobile}px){
     height: 210px;
   }
   
