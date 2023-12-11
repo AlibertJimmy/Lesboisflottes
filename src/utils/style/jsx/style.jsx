@@ -9,6 +9,7 @@ import colors from './colors';
 
 // Import Constants
 import { borderWidth, headerMargin, headerMarginResponsive, responsiveWidthMobile, responsiveWidthTablet } from './constants';
+// import { borderWidth, responsiveWidthMobile } from './constants';
 
 export const ComponentBorder = css`
     border: ${borderWidth}px solid black;

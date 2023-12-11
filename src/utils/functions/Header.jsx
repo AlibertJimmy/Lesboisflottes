@@ -1,16 +1,9 @@
 // import React Libraries
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Import Constantes
 import { responsiveWidthTablet } from '../style/jsx/constants';
 
-export function shouldRenderSubtitles () {
-  const screenWidth = window.innerWidth;
-
-  return screenWidth > responsiveWidthTablet;
-}
-
-/*
 export function shouldRenderSubtitles () {
   const screenWidth = window.innerWidth;
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -30,4 +23,3 @@ export function shouldRenderSubtitles () {
 
   return screenWidth < responsiveWidthTablet || scrollPosition < scrollThreshold;
 }
-*/
