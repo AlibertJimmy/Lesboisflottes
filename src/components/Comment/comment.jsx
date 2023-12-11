@@ -10,13 +10,16 @@ import { ReviewDataTypes } from '../../datas/reviewDataTypes';
 import StarScale from './starScale';
 
 // Import Function
-import { removeHtmlTags } from '../../utils/functions/functions';
+import { removeHtmlTags } from '../../utils/functions/Comment';
 
 // Import Style
 import styled from 'styled-components';
 import { StyledP } from '../../utils/style/jsx/style';
 
+// Import Colors
 import colors from '../../utils/style/jsx/colors';
+
+// Import Constants
 import { borderWidth } from '../../utils/style/jsx/constants';
 
 const CommentContainer = styled.div`

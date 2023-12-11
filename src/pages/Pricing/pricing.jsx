@@ -87,23 +87,6 @@ const LegendDisplayContainer = styled.div`
 
 function Pricing () {
   const { i18n, t } = useTranslation();
-
-  // console.log(`language : ${i18n.language}`)
-  /*
-    let choosenLanguage ;
-    if(i18n.language === 'en'){
-      //choosenLanguage = enUS
-      console.log('i18n.language = en')
-    }
-    else if(i18n.language === 'fr'){
-      //choosenLanguage = fr
-      console.log('i18n.language = fr')
-    }
-    */
-
-  // const currentDate = format(new Date(), 'dd/MM/yyyy')
-  // console.log(`Current Date is ${currentDate}`);
-
   const [selection, setAsSelection] = useState('single');
   const [numberOfMonthToDisplay, setNumberOfMonthToDisplay] = useState(1);
 
@@ -136,6 +119,9 @@ function Pricing () {
 
   const [selectedDay, setSelectedDay] = useState();
   const [range, setRange] = useState();
+
+  console.log('range');
+  console.log(range);
 
   const css = `
       .my-selected:not([disabled]) { 

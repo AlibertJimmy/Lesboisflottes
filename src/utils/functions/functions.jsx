@@ -1,5 +1,7 @@
+// Import React Libraries
 import { isBefore, addDays } from 'date-fns';
 
+// Import Datas
 import { pricingBySeasonList } from '../../datas/pricing';
 
 export const getSeasonDatasForDate = (date) => {
@@ -57,17 +59,9 @@ function getDatesBetween (from, to) {
   return dates;
 }
 
-export function removeHtmlTags (input) {
-  return input.replace(/<[^>]*>/g, '');
-}
-
 export function scrollToTop () {
   window.scrollTo({
     top: 0,
     behavior: 'auto'
   });
-}
-
-export function filterReviewLength () {
-
 }
