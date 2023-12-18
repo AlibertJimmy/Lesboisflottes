@@ -52,10 +52,13 @@ const WelcomeAndComments = styled.div`
 `;
 
 function Home () {
+  const screenHeight = window.innerHeight;
+  const screenWidth = window.innerWidth;
   return (
           <HomeWrapper>
 
               <WelcomeAndComments>
+              <div>{`screenWidth : ${screenWidth} |screenHeight : ${screenHeight} `}</div>
                 <StyledWelcome>WELCOME</StyledWelcome>
                 <CommentScrollingBanner/>
               </WelcomeAndComments>
