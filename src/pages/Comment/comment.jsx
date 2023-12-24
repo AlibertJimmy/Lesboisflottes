@@ -28,6 +28,12 @@ const CommentSitePresentation = styled.div`
   }
 `;
 
+const CommentListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
 function Comment () {
   const { i18n, t } = useTranslation();
 
@@ -54,13 +60,17 @@ function Comment () {
         </CommentSitePresentation>
 
         <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
-        {reviewsAirBnB.map((review, index) => (
-        <CommentItem key={index} comment={review} index={index}/>
-        ))}
-        <AverageRatingItem commentList={commentListFrBooking} webSite={'Booking'}/>
-        {reviewsBooking.map((review, index) => (
-        <CommentItem key={index} comment={review} index={index}/>
-        ))}
+        <CommentListWrapper id='commentListWrapperAirBnB'>
+          {reviewsAirBnB.map((review, index) => (
+          <CommentItem key={index} comment={review} index={index}/>
+          ))}
+        </CommentListWrapper>
+        <CommentListWrapper id='commentListWrapperAirBooking'>
+          <AverageRatingItem commentList={commentListFrBooking} webSite={'Booking'}/>
+          {reviewsBooking.map((review, index) => (
+          <CommentItem key={index} comment={review} index={index}/>
+          ))}
+        </CommentListWrapper>
       </PageWrapper>
   );
 }

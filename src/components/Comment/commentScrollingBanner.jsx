@@ -1,7 +1,7 @@
 // Import React Libraries
 import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Import Component
 import CommentItem from './comment';
@@ -18,23 +18,21 @@ import { commentListEnBooking } from '../../datas/review_Booking_en';
 // Import Style
 import styled from 'styled-components';
 
-// Import Colors
-import colors from '../../utils/style/colors';
+const CommentScrollingBannerContainer = styled.div`
+  height: fit-content;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px rgba(0.1, 0, 0.1, 0.2);
+`;
 
-const CommentContainer = styled.div`
-    text-align: left;
-    width:100%;
-
-    background: ${colors.background};
-
-    border-radius: 15px;
+const StyldLink = styled(Link)`
+  text-decoration: none;
 `;
 
 function CommentScrollingBanner () {
   const { i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const navigate = useNavigate();
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -85,8 +83,7 @@ function CommentScrollingBanner () {
     }
   }, [reviews]);
 
-  const redirectToComment = (comment) => {
-    navigate('/Comment');
+  const handleOnClick = () => {
     scrollToTop();
   };
 
@@ -95,17 +92,11 @@ function CommentScrollingBanner () {
   }
 
   return (
-      <div>
-        <CommentContainer>
-        <button
-            onClick={redirectToComment}
-            style={{ cursor: 'pointer', border: 'none', background: 'none', padding: 0, textDecoration: 'none' }}
-        >
-            <CommentItem comment={reviews[currentIndex]} />
-        </button>
-
-        </CommentContainer>
-      </div>
+    <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
+      <StyldLink onClick={handleOnClick} to='/Comment'>
+          <CommentItem comment={reviews[currentIndex]}/>
+      </StyldLink>
+    </CommentScrollingBannerContainer>
   );
 }
 

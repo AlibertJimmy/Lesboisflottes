@@ -19,14 +19,22 @@ import { StyledP } from '../../utils/style/js/style';
 // Import Colors
 import colors from '../../utils/style/colors';
 
-const CommentContainer = styled.div`
+const CommentWrapper = styled.div`
     text-align: left;
 
-    padding: 5px;
-    margin: 5px 0;
-    border-radius: 15px;
+    padding: 10px;
+    width: fit-container;
 
-    background-color: ${(props) => (props.even ? colors.commentBackground2 : 'inherit')};
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px rgba(0.1, 0, 0.1, 0.2);
+
+    background-color: ${(props) => (props.even ? colors.backgroundHeaderFooter : 'inherit')};
+`;
+
+const CommentContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
 `;
 
 function CommentItem ({ comment, index }) {
@@ -34,17 +42,21 @@ function CommentItem ({ comment, index }) {
   const isEven = index % 2 === 0;
 
   return (
-      <div>
-        <CommentContainer even={isEven}>
+        <CommentWrapper id='commentWrapper' even={isEven}>
+          <CommentContainer>
             <StyledP>{t('Guest')} : {comment.reviewer.firstName}</StyledP>
-            <StyledP>{t('Comment')} : {removeHtmlTags(comment.comments)}</StyledP>
             <StyledP>{t('Rating')} : <StarScale scaleValue = {comment.rating}/></StyledP>
+          </CommentContainer>
+          <CommentContainer>
+            <StyledP>{t('Comment')} : {removeHtmlTags(comment.comments)}</StyledP>
+          </CommentContainer>
+          <CommentContainer>
             <StyledP>{t('Date')} : {comment.localizedDate}</StyledP>
             {comment.translatedFrom !== '' && (
               <StyledP>{t('TranslatedFrom')} : {comment.translatedFrom}</StyledP>
             )}
-        </CommentContainer>
-      </div>
+          </CommentContainer>
+        </CommentWrapper>
   );
 }
 

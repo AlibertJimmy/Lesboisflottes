@@ -35,9 +35,10 @@ const StyledWelcome = styled.h1`
     text-transform: uppercase;
 `;
 
-const CommentContainer = styled.div`
+const CommentScrollingBannerWrapper = styled.div`
   display: flex;
-  border: 1px solid blue;
+  justify-content: center;
+  
   width: 45%;
 
   @media (max-width: ${responsiveWidthTablet}px) {
@@ -63,9 +64,9 @@ function Home () {
         <StyledWelcome>Welcome</StyledWelcome>
       </WelcomeContainer>
       <HomeWrapper id='homeWrapper'>
-        <CommentContainer id='commentContainer'>
+        <CommentScrollingBannerWrapper id='commentScrollingBannerWrapper'>
           <CommentScrollingBanner/>
-        </CommentContainer>
+        </CommentScrollingBannerWrapper>
         <GalleryContainer id='galleryContainer'>
           <GallerySample photos={photosSample}/>
         </GalleryContainer>
