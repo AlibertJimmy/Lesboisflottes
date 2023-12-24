@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // Import Colors
-import colors from './colors';
+import colors from '../colors';
 import { commonHeaderFooter } from './style';
 
 export const StyledFooter = styled.div`

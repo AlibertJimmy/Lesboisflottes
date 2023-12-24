@@ -10,8 +10,8 @@ import Navbar from '../Nav/Navbar';
 import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
-import { HeaderWrapper, LanguagePickerDiv, StyledLinkHeader, StyledSubtitle, StyledTitle, TitleDiv } from '../../utils/style/jsx/Header';
-import { responsiveWidthMobile, responsiveWidthTablet } from '../../utils/style/jsx/constants';
+import { HeaderWrapper, LanguagePickerDiv, StyledLinkHeader, StyledSubtitle, StyledTitle, TitleDiv } from '../../utils/style/js/HeaderStyle';
+import { responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
 
 function Header () {
   const { t } = useTranslation();

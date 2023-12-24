@@ -10,7 +10,7 @@ import { LANGUAGES } from '../../constants/language';
 import styled from 'styled-components';
 
 // Import Constantes
-import { responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../utils/constants';
 
 const StyledSelect = styled.div`
   width: 100px;

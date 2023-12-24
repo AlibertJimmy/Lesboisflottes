@@ -6,7 +6,7 @@ import { scrollToTop } from '../../utils/functions/General';
 
 // Import Assets
 import ArrowUp from '../../assets/icon/arrowUp.png';
-import { StyledFooter, StyledP, StyledText } from '../../utils/style/jsx/Footer';
+import { StyledFooter, StyledP, StyledText } from '../../utils/style/js/FooterStyle';
 
 function Footer () {
   const handleGoToTop = () => {

@@ -8,7 +8,7 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photos } from '../../datas/photos';
 
 // Import Style
-import { PageWrapper, StyledH1, StyledContainer } from '../../utils/style/jsx/style';
+import { PageWrapper, StyledH1, StyledContainer } from '../../utils/style/js/style';
 
 function Galleryx () {
   const { t } = useTranslation();

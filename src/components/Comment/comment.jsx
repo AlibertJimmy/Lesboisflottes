@@ -14,13 +14,10 @@ import { removeHtmlTags } from '../../utils/functions/Comment';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledP } from '../../utils/style/jsx/style';
+import { StyledP } from '../../utils/style/js/style';
 
 // Import Colors
-import colors from '../../utils/style/jsx/colors';
-
-// Import Constants
-import { borderWidth } from '../../utils/style/jsx/constants';
+import colors from '../../utils/style/colors';
 
 const CommentContainer = styled.div`
     text-align: left;
@@ -28,7 +25,6 @@ const CommentContainer = styled.div`
     padding: 5px;
     margin: 5px 0;
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
 
     background-color: ${(props) => (props.even ? colors.commentBackground2 : 'inherit')};
 `;

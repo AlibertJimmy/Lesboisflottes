@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 // Import Style
 import styled, { css } from 'styled-components';
-import { ComponentBorder, commonLink, commonWriting } from './style';
+import { commonLink, commonWriting } from './style';
 
 // Import Colors
-import colors from './colors';
+import colors from '../colors';
 
 // Import Constants
-import { responsiveWidthMobile, responsiveWidthTablet, headerHeight, borderWidth, headerHeightResponsive } from './constants';
+import { responsiveWidthMobile, responsiveWidthTablet, headerHeight, headerHeightResponsive } from '../../constants';
 
 export const StyledLinkHeader = styled(Link)`
     ${commonWriting};
@@ -36,7 +36,6 @@ export const StyledWelcome = styled.h1`
 
 // Header & Footer
 export const commonHeaderFooter = css`
-    ${ComponentBorder};
     display: flex;
     width: 100%;
 
@@ -68,7 +67,6 @@ export const TitleDiv = styled.div`
   justify-content: center;
 
   border-radius: 15px;
-  border: ${borderWidth}px solid black;  
 `;
 
 export const LanguagePickerDiv = styled.div`
@@ -77,7 +75,6 @@ export const LanguagePickerDiv = styled.div`
   margin: 0px;
 
   border-radius: 15px;
-  border: ${borderWidth}px solid black;
 `;
 
 export const StyledTitle = styled.h1`

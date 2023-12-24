@@ -10,12 +10,12 @@ import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledLinkSidebar } from '../../utils/style/jsx/style';
+import { StyledLinkSidebar } from '../../utils/style/js/style';
 
-import colors from '../../utils/style/jsx/colors';
+import colors from '../../utils/style/colors';
 
 // Import constantes
-import { responsiveWidthTablet } from '../../utils/style/jsx/constants';
+import { responsiveWidthTablet } from '../../utils/constants';
 
 const StyledUl = styled.ul`
 

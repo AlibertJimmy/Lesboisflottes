@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledH1, StyledP, StyledContainer } from '../../utils/style/jsx/style';
+import { StyledH1, StyledP, StyledContainer } from '../../utils/style/js/style';
 
 // Import Constante
-import { borderWidth, responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../utils/constants';
 
 const MapWrapper = styled.div`
     text-align: center;
@@ -16,7 +16,6 @@ const MapWrapper = styled.div`
     position: relative;
 
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
 
     flex-grow: 1;
 `;

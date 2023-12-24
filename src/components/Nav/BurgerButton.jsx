@@ -6,10 +6,10 @@ import RightNav from './LeftNav';
 
 // Import Style
 import styled from 'styled-components';
-import colors from '../../utils/style/jsx/colors';
+import colors from '../../utils/style/colors';
 
 // Import Constante
-import { responsiveWidthTablet } from '../../utils/style/jsx/constants';
+import { responsiveWidthTablet } from '../../utils/constants';
 
 const StyledBurger = styled.div`
     width: 2rem;

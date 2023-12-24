@@ -5,14 +5,10 @@ import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 // Import Colors
-import colors from './colors';
+import colors from '../colors';
 
 // Import Constants
-import { borderWidth, headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile, responsiveWidthTablet } from './constants';
-
-export const ComponentBorder = css`
-    border: ${borderWidth}px solid black;
-`;
+import { headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile, responsiveWidthTablet } from '../../constants';
 
 export const PageWrapper = styled.div`
     margin: ${headerMargin}px 25px;
@@ -106,11 +102,9 @@ export const StyledContainer = styled.div`
     padding: 20px;
 
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
 `;
 // Header & Footer
 export const commonHeaderFooter = css`
-    ${ComponentBorder};
     display: flex;
     width: 100%;
 

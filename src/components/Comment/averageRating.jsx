@@ -14,13 +14,16 @@ import { calculateAverageRating } from './calculateAverage';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledH3 } from '../../utils/style/jsx/style';
+import { StyledH3 } from '../../utils/style/js/style';
 
 // Import Colors
-import colors from '../../utils/style/jsx/colors';
+import colors from '../../utils/style/colors';
 
 // Import Constants
-import { borderWidth, headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/style/jsx/constants';
+import {
+  headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet,
+  responsiveWidthMobile, responsiveWidthTablet
+} from '../../utils/constants';
 
 const AverageRatingContainer = styled.div`
   display: flex;
@@ -29,7 +32,6 @@ const AverageRatingContainer = styled.div`
   background: ${colors.background};
   padding: 5px;
   border-radius: 15px;
-  border: ${borderWidth}px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
 `;

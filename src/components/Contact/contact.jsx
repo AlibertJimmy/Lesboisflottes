@@ -10,10 +10,10 @@ import { contactList } from '../../datas/contact';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledContainer, StyledH1 } from '../../utils/style/jsx/style';
+import { StyledContainer, StyledH1 } from '../../utils/style/js/style';
 
 // Import Constants
-import { borderWidth, responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../utils/constants';
 
 const ContactContainer = styled.div`
     display: flex;
@@ -21,7 +21,6 @@ const ContactContainer = styled.div`
     align-items: center;
 
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
 
     @media (max-width: ${responsiveWidthMobile}px) {
         flex-direction: column;

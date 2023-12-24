@@ -4,25 +4,23 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledH2 } from '../../../utils/style/jsx/style';
-import colors from '../../../utils/style/jsx/colors';
+import { StyledH2 } from '../../../utils/style/js/style';
+import colors from '../../../utils/style/colors';
 
 // Import Constants
-import { borderWidth, responsiveWidthMobile } from '../../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../../utils/constants';
 
 const SeasonLegendWrapper = styled.div`
     display:flex;
     flex-direction: column;
     align-items:center;
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
 `;
 
 const LegendTable = styled.table`
     border-radius: 15px;
     padding: 10px;
     border-spacing: 5px 10px;
-    border: ${borderWidth}px solid black;
 
     @media (max-width: ${responsiveWidthMobile}px){
         padding:0;
@@ -33,7 +31,6 @@ const LegendTable = styled.table`
 
 const LegendTDCell = styled.td`
     padding: 5px;
-    border: ${borderWidth}px solid black;
     border-radius: 5px;
     text-align:left;
 `;

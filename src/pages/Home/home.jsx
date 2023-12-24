@@ -10,9 +10,9 @@ import { photosSample } from '../../datas/photos';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledWelcome } from '../../utils/style/jsx/style';
+import { StyledWelcome } from '../../utils/style/js/style';
 
-import { borderWidth, headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile } from '../../utils/constants';
 
 const HomeWrapper = styled.div`
   margin-top: ${headerMargin + 30}px ;
@@ -36,8 +36,6 @@ const GalleryContainer = styled.div`
 
   margin: 0 20px;
 
-
-  border: ${borderWidth}px solid black;
   border-radius: 15px;
 
   @media (max-width: ${responsiveWidthMobile}px) {
@@ -52,13 +50,10 @@ const WelcomeAndComments = styled.div`
 `;
 
 function Home () {
-  const screenHeight = window.innerHeight;
-  const screenWidth = window.innerWidth;
   return (
           <HomeWrapper>
 
               <WelcomeAndComments>
-              <div>{`screenWidth : ${screenWidth} |screenHeight : ${screenHeight} `}</div>
                 <StyledWelcome>WELCOME</StyledWelcome>
                 <CommentScrollingBanner/>
               </WelcomeAndComments>

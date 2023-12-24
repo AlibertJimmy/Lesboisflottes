@@ -3,15 +3,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styled from 'styled-components';
-import { StyledH2, StyledP } from '../../../utils/style/jsx/style';
+import { StyledH2, StyledP } from '../../../utils/style/js/style';
 
-import { borderWidth, responsiveWidthMobile } from '../../../utils/style/jsx/constants';
+import { responsiveWidthMobile } from '../../../utils/constants';
 
 const HostingHoursContainer = styled.div`
     margin: 0 10px;
 
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
     width: 350px;
     height: 170px;
 

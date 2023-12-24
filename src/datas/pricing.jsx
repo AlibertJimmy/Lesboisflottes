@@ -1,5 +1,5 @@
 // Import custom colors
-import colors from '../utils/style/jsx/colors';
+import colors from '../utils/style/colors';
 
 // Remember to substract 1 to the number of the month as date-fns months index start with January = 0
 // Days disabled in the calendar

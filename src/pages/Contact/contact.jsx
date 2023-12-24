@@ -5,7 +5,7 @@ import React from 'react';
 import ContactInformation from '../../components/Contact/contact';
 
 // Import Style
-import { PageWrapper } from '../../utils/style/jsx/style';
+import { PageWrapper } from '../../utils/style/js/style';
 
 function Contact () {
   return (

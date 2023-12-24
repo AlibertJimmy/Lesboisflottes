@@ -17,11 +17,11 @@ import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/prici
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, StyledH1, StyledH2, StyledContainer } from '../../utils/style/jsx/style';
+import { PageWrapper, StyledH1, StyledH2, StyledContainer } from '../../utils/style/js/style';
 import '../../utils/style/css/react-day-picker.css';
 
 // Import Constants
-import { borderWidth, marginBetweenPageComponent, responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { marginBetweenPageComponent, responsiveWidthMobile } from '../../utils/constants';
 
 const InformationContainer = styled.div`
   display: flex;
@@ -36,8 +36,6 @@ const InformationContainer = styled.div`
     flex-direction:column-reverse;
     padding: 0;
   }
-
-  border: ${borderWidth}px solid black;
   border-radius: 15px;
 `;
 
@@ -48,7 +46,6 @@ const DataDisplayWrapper = styled.div`
   height: 250px;
 
   border-radius: 15px;
-  border: ${borderWidth}px solid black;
 `;
 
 const ToggleButtonContainer = styled.div`
@@ -56,7 +53,6 @@ const ToggleButtonContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   border-radius: 15px;
-  border: ${borderWidth}px solid black;
 `;
 
 const DayPickerContainer = styled.div`
@@ -64,8 +60,6 @@ const DayPickerContainer = styled.div`
   justify-content:center;
   margin: ${marginBetweenPageComponent}px 0;
 
-
-  border: ${borderWidth}px solid black;
   border-radius: 15px;
 
 `;
@@ -77,7 +71,6 @@ const InnerDiv = styled.div`
 const LegendDisplayContainer = styled.div`
   display: flex;
   height: 250px;
-  border: ${borderWidth}px solid black;
   border-radius: 15px;
 
   @media (max-width: ${responsiveWidthMobile}px){

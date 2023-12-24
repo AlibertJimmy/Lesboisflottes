@@ -7,7 +7,7 @@ import AccessDisplay from '../../components/Location/Access';
 import React from 'react';
 
 // Import Style
-import { PageWrapper } from '../../utils/style/jsx/style';
+import { PageWrapper } from '../../utils/style/js/style';
 function Location () {
   return (
       <PageWrapper>

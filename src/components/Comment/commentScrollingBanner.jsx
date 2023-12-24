@@ -19,8 +19,7 @@ import { commentListEnBooking } from '../../datas/review_Booking_en';
 import styled from 'styled-components';
 
 // Import Colors
-import colors from '../../utils/style/jsx/colors';
-import { borderWidth } from '../../utils/style/jsx/constants';
+import colors from '../../utils/style/colors';
 
 const CommentContainer = styled.div`
     text-align: left;
@@ -29,7 +28,6 @@ const CommentContainer = styled.div`
     background: ${colors.background};
 
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
 `;
 
 function CommentScrollingBanner () {

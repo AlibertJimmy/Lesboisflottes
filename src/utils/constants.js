@@ -1,5 +1,3 @@
-export const borderWidth = 0;
-
 export const responsiveWidthMobile = 450;
 export const responsiveWidthTablet = 950;
 

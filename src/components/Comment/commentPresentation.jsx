@@ -14,11 +14,11 @@ import { calculateAverageRating } from './calculateAverage';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledH3 } from '../../utils/style/jsx/style';
-import { borderWidth, responsiveWidthMobile } from '../../utils/style/jsx/constants';
+import { StyledH3 } from '../../utils/style/js/style';
+import { responsiveWidthMobile } from '../../utils/constants';
 
 // Import Colors
-import colors from '../../utils/style/jsx/colors';
+import colors from '../../utils/style/colors';
 
 const CommentPresentationWrapper = styled.div`
   width:100%;
@@ -47,7 +47,6 @@ const CommentPresentationContainer = styled.div`
     background: ${colors.background};
     padding: 5px;
     border-radius: 15px;
-    border: ${borderWidth}px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     @media (max-width: ${responsiveWidthMobile}px){
