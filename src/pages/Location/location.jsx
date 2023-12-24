@@ -10,7 +10,7 @@ import React from 'react';
 import { PageWrapper } from '../../utils/style/js/style';
 function Location () {
   return (
-      <PageWrapper>
+      <PageWrapper id='locationPageWrapper'>
         <LocationDisplay/>
         <AddressDisplay/>
         <AccessDisplay/>

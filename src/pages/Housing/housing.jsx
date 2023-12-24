@@ -10,7 +10,7 @@ import { PageWrapper } from '../../utils/style/js/style';
 
 function Housing () {
   return (
-      <PageWrapper>
+      <PageWrapper id='housingPageWrapper'>
         <HousingPresentation/>
         <EquipmentList/>
       </PageWrapper>

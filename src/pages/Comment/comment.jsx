@@ -44,7 +44,7 @@ function Comment () {
   }
 
   return (
-      <PageWrapper>
+      <PageWrapper id='commentPageWrapper'>
         <StyledContainer>
           <StyledH1>{t('OurComments')}</StyledH1>
         </StyledContainer>

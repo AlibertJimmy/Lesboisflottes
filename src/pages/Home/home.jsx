@@ -45,7 +45,7 @@ const WelcomeAndComments = styled.div`
 
 function Home () {
   return (
-    <PageWrapper>
+    <PageWrapper id='homePageWrapper'>
       <HomeWrapper>
 
           <WelcomeAndComments>

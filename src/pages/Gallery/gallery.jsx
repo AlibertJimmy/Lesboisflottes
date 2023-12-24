@@ -27,7 +27,7 @@ function Galleryx () {
   };
 
   return (
-    <PageWrapper>
+    <PageWrapper id='galleryPageWrapper'>
       <StyledContainer>
         <StyledH1>{t('Gallery')}</StyledH1>
       </StyledContainer>

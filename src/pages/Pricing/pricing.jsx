@@ -160,7 +160,7 @@ function Pricing () {
     `;
 
   return (
-      <PageWrapper>
+      <PageWrapper id='pricingPageWrapper'>
         <StyledContainer>
           <StyledH1>{t('Prices')}</StyledH1>
         </StyledContainer>
