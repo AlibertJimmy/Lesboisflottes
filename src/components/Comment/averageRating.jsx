@@ -21,8 +21,8 @@ import colors from '../../utils/style/colors';
 
 // Import Constants
 import {
-  headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet,
-  responsiveWidthMobile, responsiveWidthTablet
+  headerHeight, headerHeightResponsive, verticalMargin,
+  responsiveWidthTablet
 } from '../../utils/constants';
 
 const AverageRatingContainer = styled.div`
@@ -47,13 +47,10 @@ const StyledP1 = styled.p`
 `;
 
 const AnchorDiv = styled.div`
-  height: ${headerMargin}px;
+height: ${headerHeight + verticalMargin}px;
   
   @media (max-width: ${responsiveWidthTablet}px){
-    height: ${headerMarginResponsiveTablet + 25}px;
-  }
-  @media (max-width: ${responsiveWidthMobile}px){
-    height: ${headerMarginResponsiveMobile + 25}px;
+    height: ${headerHeightResponsive + verticalMargin}px;
   }
 `;
 function AverageRatingItem ({ commentList, webSite }) {

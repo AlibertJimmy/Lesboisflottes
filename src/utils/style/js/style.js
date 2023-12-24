@@ -8,19 +8,24 @@ import styled, { css } from 'styled-components';
 import colors from '../colors';
 
 // Import Constants
-import { headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile, responsiveWidthTablet } from '../../constants';
+import {
+  horizontalMargin, verticalMargin,
+  responsiveWidthMobile, responsiveWidthTablet, headerHeight, headerHeightResponsive, horizontalMarginResponsive, footerHeight
+} from '../../constants';
 
 export const PageWrapper = styled.div`
-    margin: ${headerMargin}px 25px;
-    margin-bottom: 75px;
+    margin: ${headerHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
+    min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
 
     @media (max-width: ${responsiveWidthTablet}px){
-        margin: ${headerMarginResponsiveTablet}px 25px;
+        margin: ${headerHeightResponsive + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
+        min-height: ${window.innerHeight - (headerHeightResponsive + verticalMargin * 2 + footerHeight)}px;
     }
 
     @media (max-width: ${responsiveWidthMobile}px){
-        margin: ${headerMarginResponsiveMobile}px 25px;
+        margin: ${headerHeightResponsive + verticalMargin}px ${horizontalMarginResponsive}px ${verticalMargin}px ${horizontalMarginResponsive}px;
     }
+    border: 1px solid red;
 `;
 
 export const commonWriting = css`

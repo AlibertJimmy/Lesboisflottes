@@ -10,23 +10,17 @@ import { photosSample } from '../../datas/photos';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledWelcome } from '../../utils/style/js/style';
+import { PageWrapper, StyledWelcome } from '../../utils/style/js/style';
 
-import { headerMargin, headerMarginResponsiveMobile, headerMarginResponsiveTablet, responsiveWidthMobile } from '../../utils/constants';
+import { responsiveWidthMobile } from '../../utils/constants';
 
 const HomeWrapper = styled.div`
-  margin-top: ${headerMargin + 30}px ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   @media (max-width: ${responsiveWidthMobile}px) {
     flex-direction: column;
-    margin-top: ${headerMarginResponsiveTablet}px ;
-  }
-
-  @media (max-width: ${responsiveWidthMobile}px) {
-    margin-top: ${headerMarginResponsiveMobile}px ;
   }
 `;
 const GalleryContainer = styled.div`
@@ -51,17 +45,19 @@ const WelcomeAndComments = styled.div`
 
 function Home () {
   return (
-          <HomeWrapper>
+    <PageWrapper>
+      <HomeWrapper>
 
-              <WelcomeAndComments>
-                <StyledWelcome>WELCOME</StyledWelcome>
-                <CommentScrollingBanner/>
-              </WelcomeAndComments>
+          <WelcomeAndComments>
+            <StyledWelcome>WELCOME</StyledWelcome>
+            <CommentScrollingBanner/>
+          </WelcomeAndComments>
 
-            <GalleryContainer>
-              <GallerySample photos={photosSample}/>
-            </GalleryContainer>
-          </HomeWrapper>
+        <GalleryContainer>
+          <GallerySample photos={photosSample}/>
+        </GalleryContainer>
+      </HomeWrapper>
+    </PageWrapper>
   );
 }
 

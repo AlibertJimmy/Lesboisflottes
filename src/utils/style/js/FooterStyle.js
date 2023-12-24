@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Import Colors
 import colors from '../colors';
 import { commonHeaderFooter } from './style';
+import { footerHeight } from '../../constants';
 
 export const StyledFooter = styled.div`
     ${commonHeaderFooter};
@@ -13,7 +14,7 @@ export const StyledFooter = styled.div`
 
     justify-content: space-between;
 
-    height:55px;
+    height: ${footerHeight}px;
 
 
     color: ${colors.link};

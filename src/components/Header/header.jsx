@@ -11,12 +11,12 @@ import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
 import { HeaderWrapper, LanguagePickerDiv, StyledLinkHeader, StyledSubtitle, StyledTitle, TitleDiv } from '../../utils/style/js/HeaderStyle';
-import { responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
+import { headerHeight, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
 
 function Header () {
   const { t } = useTranslation();
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [headerHeight, setHeaderHeight] = useState(160);
+  const [headerHeightCurrent, setHeaderHeight] = useState(headerHeight);
   const scrollThreshold = 100;
 
   function handleOnClick () {
@@ -36,28 +36,28 @@ function Header () {
   }, []);
 
   useEffect(() => {
-    let newHeaderHeight;
+    let newHeaderHeightCurrent;
     if (window.innerWidth > responsiveWidthTablet) {
       // Display on a wide screen
       if (scrollPosition < scrollThreshold) {
-        newHeaderHeight = 160;
+        newHeaderHeightCurrent = 160;
       } else {
-        newHeaderHeight = 100;
+        newHeaderHeightCurrent = 100;
       }
     } else if ((responsiveWidthTablet > window.innerWidth) && (window.innerWidth > responsiveWidthMobile)) {
       // Display on a tablet
-      newHeaderHeight = 55;
+      newHeaderHeightCurrent = 55;
     } else if (window.innerWidth < responsiveWidthMobile) {
       // Display on a mobile
-      newHeaderHeight = 50;
+      newHeaderHeightCurrent = 50;
     }
-    setHeaderHeight(newHeaderHeight);
+    setHeaderHeight(newHeaderHeightCurrent);
   }, [scrollPosition]);
 
   const shouldRenderSubtitles = responsiveWidthTablet < window.innerWidth && scrollPosition < scrollThreshold;
 
   return (
-      <HeaderWrapper id='headerWrapper' style={{ height: `${headerHeight}px` }}>
+      <HeaderWrapper id='headerWrapper' style={{ height: `${headerHeightCurrent}px` }}>
         <LanguagePickerDiv>
           <LanguageMenu/>
         </LanguagePickerDiv>
