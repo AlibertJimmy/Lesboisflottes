@@ -23,14 +23,15 @@ export const PageWrapper = styled.div`
     }
 
     @media (max-width: ${responsiveWidthMobile}px){
-        margin: ${headerHeightResponsive + verticalMargin}px ${horizontalMarginResponsive}px ${verticalMargin}px ${horizontalMarginResponsive}px;
+        margin: ${headerHeightResponsive * 2 + verticalMargin}px ${horizontalMarginResponsive}px ${verticalMargin}px ${horizontalMarginResponsive}px;
     }
     border: 1px solid red;
 `;
 
-export const commonWriting = css`
-  font-family: "Bradley Hand", cursive;
+export const commonTitleStyle = css`
+  font-family: cursive;
   font-style: italic;
+  color: ${colors.title};
 `;
 
 export const commonLink = css`
@@ -43,26 +44,16 @@ export const commonLink = css`
 `;
 
 export const StyledLinkSidebar = styled(Link)`
-    ${commonWriting};
+    ${commonTitleStyle};
     ${commonLink};
     font-size: 20px;    
 
     margin-bottom: 10px;
 `;
 
-export const StyledWelcome = styled.h1`
-
-    ${commonWriting};
-    font-size: 40px;
-
-    color: ${colors.title} ;
-
-    text-align: center;
-`;
-
 export const StyledH1 = styled.h1`
 
-    ${commonWriting};
+    ${commonTitleStyle};
     font-size: 30px;
 
     color: ${colors.title} ;
@@ -72,7 +63,7 @@ export const StyledH1 = styled.h1`
 `;
 
 export const StyledH2 = styled.h2`
-    ${commonWriting};    
+    ${commonTitleStyle};    
     font-size: 25px;
 
     color: ${colors.title} ;
@@ -85,7 +76,7 @@ export const StyledH2 = styled.h2`
 `;
 
 export const StyledH3 = styled.h3`
-    ${commonWriting};
+    ${commonTitleStyle};
     font-size: 25px;
 
     color: ${colors.title} ;

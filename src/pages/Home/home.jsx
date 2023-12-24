@@ -10,50 +10,63 @@ import { photosSample } from '../../datas/photos';
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, StyledWelcome } from '../../utils/style/js/style';
+import { PageWrapper, commonTitleStyle } from '../../utils/style/js/style';
 
-import { responsiveWidthMobile } from '../../utils/constants';
+import { responsiveWidthTablet } from '../../utils/constants';
 
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  @media (max-width: ${responsiveWidthMobile}px) {
+  @media (max-width: ${responsiveWidthTablet}px) {
     flex-direction: column;
   }
 `;
+
+const WelcomeContainer = styled.div`
+  text-align: center;
+  width: 100%;
+`;
+
+const StyledWelcome = styled.h1`
+    ${commonTitleStyle};
+    font-size: 40px;
+    text-transform: uppercase;
+`;
+
+const CommentContainer = styled.div`
+  display: flex;
+  border: 1px solid blue;
+  width: 45%;
+
+  @media (max-width: ${responsiveWidthTablet}px) {
+    width: 100%;
+  }
+`;
+
 const GalleryContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex: 0 0 550px;
+  width: 45%;
 
-  margin: 0 20px;
-
-  border-radius: 15px;
-
-  @media (max-width: ${responsiveWidthMobile}px) {
-    margin:0;
+  @media (max-width: ${responsiveWidthTablet}px) {
+    width: 100%;
   }
 
-`;
-
-const WelcomeAndComments = styled.div`
-  justify-content: center;
-  flex: 1;
 `;
 
 function Home () {
   return (
     <PageWrapper id='homePageWrapper'>
-      <HomeWrapper>
-
-          <WelcomeAndComments>
-            <StyledWelcome>WELCOME</StyledWelcome>
-            <CommentScrollingBanner/>
-          </WelcomeAndComments>
-
-        <GalleryContainer>
+      <WelcomeContainer id='welcomeContainer'>
+        <StyledWelcome>Welcome</StyledWelcome>
+      </WelcomeContainer>
+      <HomeWrapper id='homeWrapper'>
+        <CommentContainer id='commentContainer'>
+          <CommentScrollingBanner/>
+        </CommentContainer>
+        <GalleryContainer id='galleryContainer'>
           <GallerySample photos={photosSample}/>
         </GalleryContainer>
       </HomeWrapper>

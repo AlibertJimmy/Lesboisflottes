@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Import Style
 import styled, { css } from 'styled-components';
-import { commonLink, commonWriting } from './style';
+import { commonLink, commonTitleStyle } from './style';
 
 // Import Colors
 import colors from '../colors';
@@ -12,12 +12,12 @@ import colors from '../colors';
 import { responsiveWidthMobile, responsiveWidthTablet, headerHeight, headerHeightResponsive } from '../../constants';
 
 export const StyledLinkHeader = styled(Link)`
-    ${commonWriting};
+    ${commonTitleStyle};
     ${commonLink}
 `;
 
 export const StyledLinkSidebar = styled(Link)`
-    ${commonWriting};
+    ${commonTitleStyle};
     ${commonLink};
     font-size: 20px;    
 
@@ -26,7 +26,7 @@ export const StyledLinkSidebar = styled(Link)`
 
 export const StyledWelcome = styled.h1`
 
-    ${commonWriting};
+    ${commonTitleStyle};
     font-size: 40px;
 
     color: ${colors.title} ;
