@@ -12,7 +12,7 @@ import { photosSample } from '../../datas/photos';
 import styled from 'styled-components';
 import { PageWrapper, commonTitleStyle } from '../../utils/style/js/style';
 
-import { responsiveWidthTablet } from '../../utils/constants';
+import { responsiveWidthTablet, verticalMargin } from '../../utils/constants';
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -21,6 +21,7 @@ const HomeWrapper = styled.div`
 
   @media (max-width: ${responsiveWidthTablet}px) {
     flex-direction: column;
+    gap: ${verticalMargin}px;
   }
 `;
 

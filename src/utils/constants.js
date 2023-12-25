@@ -8,7 +8,7 @@ export const responsiveWidthMobile = 450;
 export const responsiveWidthTablet = 950;
 
 // Header
-export const headerHeight = 160;
+export const headerHeight = 150;
 export const headerHeightResponsive = 50;
 
 export const footerHeight = 50;

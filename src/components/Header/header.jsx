@@ -10,7 +10,12 @@ import Navbar from '../Nav/Navbar';
 import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
-import { HeaderWrapper, LanguagePickerDiv, StyledLinkHeader, StyledSubtitle, StyledTitle, TitleDiv } from '../../utils/style/js/HeaderStyle';
+import {
+  HeaderWrapper,
+  TitleContainer, StyledLinkHeader, StyledTitle, StyledSubtitle
+} from '../../utils/style/js/HeaderStyle';
+
+// Import Constants
 import { headerHeight, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
 
 function Header () {
@@ -58,10 +63,8 @@ function Header () {
 
   return (
       <HeaderWrapper id='headerWrapper' style={{ height: `${headerHeightCurrent}px` }}>
-        <LanguagePickerDiv>
-          <LanguageMenu/>
-        </LanguagePickerDiv>
-        <TitleDiv id='titleDiv'>
+        <LanguageMenu/>
+        <TitleContainer id='titleDiv'>
           <StyledLinkHeader to="/" onClick={handleOnClick}>
             <StyledTitle>{t('mainTitle')}</StyledTitle>
             {shouldRenderSubtitles && (
@@ -71,11 +74,8 @@ function Header () {
             </>
             )}
           </StyledLinkHeader>
-        </TitleDiv>
-        <div>
-          <Navbar/>
-        </div>
-
+        </TitleContainer>
+        <Navbar/>
       </HeaderWrapper>
   );
 }

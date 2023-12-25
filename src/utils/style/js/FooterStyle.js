@@ -3,11 +3,15 @@ import styled from 'styled-components';
 
 // Import Colors
 import colors from '../colors';
-import { commonHeaderFooter } from './style';
+
+// Import Constants
 import { footerHeight } from '../../constants';
 
 export const StyledFooter = styled.div`
-    ${commonHeaderFooter};
+display: flex;
+width: 100%;
+
+background: ${colors.backgroundHeaderFooter};
     
     flex-direction: row;
     align-items:center;
