@@ -9,8 +9,9 @@ import colors from '../colors';
 
 // Import Constants
 import {
-  horizontalMargin, verticalMargin,
-  responsiveWidthMobile, responsiveWidthTablet, headerHeight, headerHeightResponsive, horizontalMarginResponsive, footerHeight
+  verticalMargin, horizontalMargin, horizontalMarginResponsive,
+  responsiveWidthMobile, responsiveWidthTablet,
+  headerHeight, headerHeightResponsive, navBarHeight, footerHeight
 } from '../../constants';
 
 export const PageWrapper = styled.div`
@@ -18,12 +19,12 @@ export const PageWrapper = styled.div`
     min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
 
     @media (max-width: ${responsiveWidthTablet}px){
-        margin: ${headerHeightResponsive + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
+        margin: ${navBarHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
         min-height: ${window.innerHeight - (headerHeightResponsive + verticalMargin * 2 + footerHeight)}px;
     }
 
     @media (max-width: ${responsiveWidthMobile}px){
-        margin: ${headerHeightResponsive * 2 + verticalMargin}px ${horizontalMarginResponsive}px ${verticalMargin}px ${horizontalMarginResponsive}px;
+        margin: ${headerHeightResponsive + verticalMargin}px ${horizontalMarginResponsive}px ${verticalMargin}px ${horizontalMarginResponsive}px;
     }
 `;
 

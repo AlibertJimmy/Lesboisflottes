@@ -9,7 +9,10 @@ import { commonLink, commonTitleStyle } from './style';
 import colors from '../colors';
 
 // Import Constants
-import { responsiveWidthTablet, responsiveWidthMobile } from '../../constants';
+import {
+  responsiveWidthTablet, responsiveWidthMobile,
+  headerHeight, navBarHeight, titleContainerHeight, titleContainerHeightResponsive
+} from '../../constants';
 
 export const HeaderWrapper = styled.div`
     display: flex;
@@ -20,6 +23,7 @@ export const HeaderWrapper = styled.div`
     left:0;
 
     width: 100%;
+    height: ${headerHeight}px;
 
     background: ${colors.backgroundHeaderFooter};
 
@@ -29,7 +33,7 @@ export const HeaderWrapper = styled.div`
       padding-top: 5px;
     }
     @media (max-width: ${responsiveWidthMobile}px){
-      padding-top: 50px;
+      padding-top: ${navBarHeight}px;
     }
 `;
 
@@ -38,11 +42,12 @@ export const TitleContainer = styled.div`
   justify-content: center;
 
   width: 100%;
+  height: ${titleContainerHeight}px;
 
   text-align: center;
 
   @media (max-width: ${responsiveWidthTablet}px){
-    height: 50px;
+    height: ${titleContainerHeightResponsive}px;
   }
 `;
 
@@ -60,5 +65,5 @@ export const StyledTitle = styled.h1`
 export const StyledSubtitle = styled.h2`
   font-size: 20px;
 
-  margin: 5px 0;
+  margin: 2px 0;
 `;

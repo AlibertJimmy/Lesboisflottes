@@ -16,7 +16,10 @@ import {
 } from '../../utils/style/js/HeaderStyle';
 
 // Import Constants
-import { headerHeight, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
+import {
+  responsiveWidthMobile, responsiveWidthTablet,
+  headerHeight, headerHeightResponsive
+} from '../../utils/constants';
 
 function Header () {
   const { t } = useTranslation();
@@ -45,9 +48,9 @@ function Header () {
     if (window.innerWidth > responsiveWidthTablet) {
       // Display on a wide screen
       if (scrollPosition < scrollThreshold) {
-        newHeaderHeightCurrent = 160;
+        newHeaderHeightCurrent = headerHeight;
       } else {
-        newHeaderHeightCurrent = 100;
+        newHeaderHeightCurrent = headerHeightResponsive;
       }
     } else if ((responsiveWidthTablet > window.innerWidth) && (window.innerWidth > responsiveWidthMobile)) {
       // Display on a tablet
