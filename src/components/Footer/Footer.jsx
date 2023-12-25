@@ -1,29 +1,27 @@
 // Import React Libraries
 import React from 'react';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 // Import Functions
 import { scrollToTop } from '../../utils/functions/General';
 
-// Import Assets
-import ArrowUp from '../../assets/icon/arrowUp.png';
-import { StyledFooter, StyledP, StyledText } from '../../utils/style/js/FooterStyle';
+// Import Styles
+import {
+  StyledFooter,
+  FooterSideContainer, FooterIcon,
+  FooterTextContainer, StyledP
+} from '../../utils/style/js/FooterStyle';
 
 function Footer () {
-  const handleGoToTop = () => {
-    scrollToTop();
-  };
-
   return (
     <StyledFooter>
-        <div></div>
-        <StyledText>
+        <FooterSideContainer></FooterSideContainer>
+        <FooterTextContainer id='footerTextContainer'>
             <StyledP>Copyright © 2023 Les Bois Flottés</StyledP>
-        </StyledText>
-        <div>
-            <button id="goToTopButton" onClick={handleGoToTop}>
-            <img src={ArrowUp} alt='arrowUp' style={{ height: '20px', width: '20px' }}></img>
-            </button>
-        </div>
+        </FooterTextContainer>
+        <FooterSideContainer onClick={() => scrollToTop()}>
+            <FooterIcon id="scrollToTopChevron" icon={faChevronUp} />
+        </FooterSideContainer>
     </StyledFooter>
   );
 }

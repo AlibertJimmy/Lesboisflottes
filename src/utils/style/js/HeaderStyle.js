@@ -44,7 +44,6 @@ export const TitleContainer = styled.div`
   @media (max-width: ${responsiveWidthTablet}px){
     height: 50px;
   }
-  border: 1px solid red;
 `;
 
 export const StyledLinkHeader = styled(Link)`
