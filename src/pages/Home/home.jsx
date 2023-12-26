@@ -2,11 +2,12 @@
 import React from 'react';
 
 // Import Component
-import GallerySample from '../../components/Gallery/myGallery';
+// import GallerySample from '../../components/Gallery/myGallery';
+import GallerySampleGrid from '../../components/Gallery/GallerySampleGrid';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
 // Import Datas
-import { photosSample } from '../../datas/photos';
+// import { photosSample } from '../../datas/photos';
 
 // Import Style
 import styled from 'styled-components';
@@ -51,6 +52,7 @@ const GalleryContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 45%;
+  transition: none;
 
   @media (max-width: ${responsiveWidthTablet}px) {
     width: 100%;
@@ -69,7 +71,7 @@ function Home () {
           <CommentScrollingBanner/>
         </CommentScrollingBannerWrapper>
         <GalleryContainer id='galleryContainer'>
-          <GallerySample photos={photosSample}/>
+          <GallerySampleGrid/>
         </GalleryContainer>
       </HomeWrapper>
     </PageWrapper>
@@ -77,3 +79,4 @@ function Home () {
 }
 
 export default Home;
+// <GallerySample photos={photosSample}/>

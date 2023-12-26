@@ -193,34 +193,25 @@ export { photos };
 
 const photosSample = [
   {
-    src: Picture22,
-    width: 2,
-    height: 1
+    src: Picture22
   },
   {
-    src: Picture4,
-    width: 1,
-    height: 1
+    src: Picture4
   },
   {
-    src: Picture6,
-    width: 2,
-    height: 1
+    src: Picture3
   },
   {
-    src: Picture2,
-    width: 4,
-    height: 3
+    src: Picture9
   },
   {
-    src: Picture1,
-    width: 2,
-    height: 1
+    src: Picture1
   },
   {
-    src: Picture3,
-    width: 2,
-    height: 1
+    src: Picture6
+  },
+  {
+    src: Picture2
   }
 
 ];

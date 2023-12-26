@@ -1,6 +1,7 @@
 .galleryPhotos{
     width: 70%;
     height: auto;
+    transition: none;
 }
 
 .galleryPhotos img {
