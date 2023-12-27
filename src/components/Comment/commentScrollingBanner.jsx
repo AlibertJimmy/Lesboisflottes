@@ -1,7 +1,6 @@
 // Import React Libraries
 import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
 // Import Component
 import CommentItem from './comment';
@@ -14,20 +13,7 @@ import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr';
 import { commentListEnAirBnB } from '../../datas/review_AirBNB_en';
 import { commentListFrBooking } from '../../datas/review_Booking_fr';
 import { commentListEnBooking } from '../../datas/review_Booking_en';
-
-// Import Style
-import styled from 'styled-components';
-
-const CommentScrollingBannerContainer = styled.div`
-  height: fit-content;
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 5px rgba(0.1, 0, 0.1, 0.2);
-`;
-
-const StyldLink = styled(Link)`
-  text-decoration: none;
-`;
+import { CommentScrollingBannerContainer, StyledLink } from '../../utils/style/js/CommentStyle';
 
 function CommentScrollingBanner () {
   const { i18n } = useTranslation();
@@ -93,9 +79,9 @@ function CommentScrollingBanner () {
 
   return (
     <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
-      <StyldLink onClick={handleOnClick} to='/Comment'>
+      <StyledLink onClick={handleOnClick} to='/Comment'>
           <CommentItem comment={reviews[currentIndex]}/>
-      </StyldLink>
+      </StyledLink>
     </CommentScrollingBannerContainer>
   );
 }

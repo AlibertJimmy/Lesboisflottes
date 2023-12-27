@@ -75,16 +75,9 @@ export const StyledH2 = styled.h2`
     }  
 `;
 
-export const StyledH3 = styled.h3`
-    ${commonTitleStyle};
-    font-size: 25px;
-
-    color: ${colors.title} ;
-`;
-
 export const StyledP = styled.p`
     font-size: 15px;
-    font-family: Candassa;
+    font-family: cursive;
     margin: 5px;
 
     @media (max-width: ${responsiveWidthMobile}px){

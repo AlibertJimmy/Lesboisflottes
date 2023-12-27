@@ -16,10 +16,11 @@ import { commentListEnBooking } from '../../datas/review_Booking_en';
 // Import Style
 import styled from 'styled-components';
 import { PageWrapper, StyledContainer, StyledH1 } from '../../utils/style/js/style';
-import { responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
+import { horizontalMargin, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
 
-const CommentSitePresentation = styled.div`
+const CommentSitePresentationWrapper = styled.div`
   display: flex;
+  gap: ${horizontalMargin}px;
 
   @media (max-width: ${responsiveWidthTablet}px){
   }
@@ -54,10 +55,10 @@ function Comment () {
         <StyledContainer>
           <StyledH1>{t('OurComments')}</StyledH1>
         </StyledContainer>
-        <CommentSitePresentation>
+        <CommentSitePresentationWrapper id='commentWebSitePresentationWrapper'>
               <CommentPresentation commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
               <CommentPresentation commentList={commentListFrBooking} webSite={'Booking'}/>
-        </CommentSitePresentation>
+        </CommentSitePresentationWrapper>
 
         <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
         <CommentListWrapper id='commentListWrapperAirBnB'>
