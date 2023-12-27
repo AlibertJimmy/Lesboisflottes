@@ -8,20 +8,20 @@ import { scrollToTop } from '../../utils/functions/General';
 // Import Styles
 import {
   StyledFooter,
-  FooterSideContainer, FooterIcon,
+  FooterSideContainerRight, FooterSideContainerLeft, FooterIcon,
   FooterTextContainer, StyledP
 } from '../../utils/style/js/FooterStyle';
 
 function Footer () {
   return (
     <StyledFooter>
-        <FooterSideContainer></FooterSideContainer>
+        <FooterSideContainerLeft></FooterSideContainerLeft>
         <FooterTextContainer id='footerTextContainer'>
             <StyledP>Copyright © 2023 Les Bois Flottés</StyledP>
         </FooterTextContainer>
-        <FooterSideContainer onClick={() => scrollToTop()}>
+        <FooterSideContainerRight onClick={() => scrollToTop()}>
             <FooterIcon id="scrollToTopChevron" icon={faChevronUp} />
-        </FooterSideContainer>
+        </FooterSideContainerRight>
     </StyledFooter>
   );
 }

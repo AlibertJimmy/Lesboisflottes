@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import colors from '../colors';
 
 // Import Constants
-import { footerHeight } from '../../constants';
+import { footerHeight, responsiveWidthMobile } from '../../constants';
 
 export const StyledFooter = styled.div`
     display: flex;
@@ -22,7 +22,21 @@ export const StyledFooter = styled.div`
     background: ${colors.backgroundHeaderFooter};
 `;
 
-export const FooterSideContainer = styled.div`
+export const FooterSideContainerLeft = styled.div`
+    display: flex;
+    align-items: center;
+    height: ${footerHeight}px;
+    width: 25px;
+
+    margin: 0 20px;
+
+    @media (max-width: ${responsiveWidthMobile}px){
+        width: 0;
+        margin: 0;
+    }
+`;
+
+export const FooterSideContainerRight = styled.div`
     display: flex;
     align-items: center;
     height: ${footerHeight}px;
