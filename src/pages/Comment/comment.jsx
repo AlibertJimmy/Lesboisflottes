@@ -9,10 +9,6 @@ import CommentPresentation from '../../components/Comment/commentPresentation';
 
 // Import Datas
 import { webSitesList } from '../../datas/review_WebSites';
-import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr';
-import { commentListEnAirBnB } from '../../datas/review_AirBNB_en';
-import { commentListFrBooking } from '../../datas/review_Booking_fr';
-import { commentListEnBooking } from '../../datas/review_Booking_en';
 
 // Import Style
 import styled from 'styled-components';
@@ -29,16 +25,6 @@ function Comment () {
 
   // console.log(`language : ${i18n.language}`)
 
-  let reviewsAirBnB = [];
-  let reviewsBooking = [];
-  if (i18n.language === 'fr') {
-    reviewsAirBnB = commentListFrAirBnB.reviews;
-    reviewsBooking = commentListFrBooking.reviews;
-  } else if (i18n.language === 'en') {
-    reviewsAirBnB = commentListEnAirBnB.reviews;
-    reviewsBooking = commentListEnBooking.reviews;
-  }
-
   return (
       <PageWrapper id='commentPageWrapper'>
         <StyledContainer>
@@ -47,18 +33,14 @@ function Comment () {
 
         <CommentPresentation webSitesList={webSitesList}/>
 
-        <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
-        <CommentListWrapper id='commentListWrapperAirBnB'>
-          {reviewsAirBnB.map((review, index) => (
-          <CommentItem key={index} comment={review} index={index}/>
-          ))}
-        </CommentListWrapper>
-        <CommentListWrapper id='commentListWrapperAirBooking'>
-          <AverageRatingItem commentList={commentListFrBooking} webSite={'Booking'}/>
-          {reviewsBooking.map((review, index) => (
-          <CommentItem key={index} comment={review} index={index}/>
-          ))}
-        </CommentListWrapper>
+        {webSitesList.map((webSite) => (
+          <CommentListWrapper key={webSite.name} id='commentListWrapperAirBnB'>
+            <AverageRatingItem webSite={webSite}/>
+            {webSite.reviewList[0][`reviewList${i18n.language}`].map((review, index) => (
+              <CommentItem key={index} comment={review} index={index}/>
+            ))}
+          </CommentListWrapper>
+        ))}
       </PageWrapper>
   );
 }

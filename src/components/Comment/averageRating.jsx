@@ -4,13 +4,9 @@ import { useTranslation } from 'react-i18next';
 
 // Import PropTypes
 import PropTypes from 'prop-types';
-import { CommentListPropTypes } from '../../datas/reviewDataTypes';
 
 // Import Components
 import StarScale from './starScale';
-
-// Import Functions
-import { calculateAverageRating } from '../../utils/functions/Comment';
 
 // Import Style
 import {
@@ -21,24 +17,21 @@ import {
   StarScaleContainer, StyledP1
 } from '../../utils/style/js/CommentStyle';
 
-function AverageRatingItem ({ commentList, webSite }) {
+function AverageRatingItem ({ webSite }) {
   const { t } = useTranslation();
-  console.log(`webSite : ${webSite}`);
 
   return (
-    <AverageRatingWrapper id={`averageRatingWrapper${webSite}`}>
+    <AverageRatingWrapper id={`averageRatingWrapper${webSite.name}`}>
       <div>
         <StyledLink
-          to={webSite === 'AirBnB'
-            ? 'https://www.airbnb.com/rooms/890437996290155577/reviews?_set_bev_on_new_domain=1697193598_OWU3MjQ0NWFmMzM3&locale=en&source_impression_id=p3_1698772055_msRHl3QjLZf%2Fqcso'
-            : 'https://www.booking.com/hotel/fr/les-bois-flottes-plage-de-la-verne.fr.html#tab-reviews'}
+          to={webSite.link}
           target="_blank" rel="noopener noreferrer">
-          <AverageRatingContainer id={`averageRatingContainer${webSite}`}>
-            <WebSiteNameContainer id={`webSiteNameContainer${webSite}`}>
-              <CommentTitle>{webSite}</CommentTitle>
+          <AverageRatingContainer id={`averageRatingContainer${webSite.name}`}>
+            <WebSiteNameContainer id={`webSiteNameContainer${webSite.name}`}>
+              <CommentTitle>{webSite.name}</CommentTitle>
             </WebSiteNameContainer>
-            <StarScaleContainer id={`starScaleContainer${webSite}`}>
-              <StyledP1>{t('AverageRating')} : <StarScale scaleValue={calculateAverageRating(commentList.reviews)}/></StyledP1>
+            <StarScaleContainer id={`starScaleContainer${webSite.name}`}>
+              <StyledP1>{t('AverageRating')} : <StarScale scaleValue={webSite.averageRating}/></StyledP1>
             </StarScaleContainer>
           </AverageRatingContainer>
         </StyledLink>
@@ -48,8 +41,17 @@ function AverageRatingItem ({ commentList, webSite }) {
 }
 
 AverageRatingItem.propTypes = {
-  commentList: CommentListPropTypes.isRequired,
-  webSite: PropTypes.string.isRequired
+  webSite: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    reviewList: PropTypes.arrayOf(
+      PropTypes.shape({
+        reviewListfr: PropTypes.array.isRequired,
+        reviewListen: PropTypes.array.isRequired
+      })
+    ).isRequired,
+    averageRating: PropTypes.number.isRequired
+  })
 };
 
 export default AverageRatingItem;
