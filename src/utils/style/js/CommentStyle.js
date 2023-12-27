@@ -13,7 +13,8 @@ import colors from '../colors';
 import {
   responsiveWidthMobile, responsiveWidthTablet,
   headerHeightResponsive, titleContainerHeight,
-  verticalMargin
+  verticalMargin,
+  titleContainerHeightResponsive
 } from '../../constants';
 
 // Comment Item Related
@@ -48,11 +49,32 @@ export const StyledP = styled.p`
 
 // Comment Presentation Related
 
+export const CommentSitePresentationWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+
+  width: 100%;
+
+  @media (max-width: 700px){
+    flex-direction: column;
+    margin: 0;
+    gap: ${verticalMargin}px;
+  }
+
+  @media (max-width: ${responsiveWidthMobile}px){
+    
+  }
+`;
+
 export const CommentPresentationContainer = styled.div` 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    flex: 0 0 calc(45% - 10px);
+
+    margin: 0 auto;
     width: 100%;
 
     background: ${colors.background};
@@ -70,6 +92,9 @@ export const AverageRatingWrapper = styled.div`
 padding-top: ${titleContainerHeight + verticalMargin}px;
   
   @media (max-width: ${responsiveWidthTablet}px){
+    padding-top: ${titleContainerHeightResponsive + verticalMargin}px;
+  }
+  @media (max-width: ${responsiveWidthMobile}px){
     padding-top: ${headerHeightResponsive + verticalMargin}px;
   }
 `;

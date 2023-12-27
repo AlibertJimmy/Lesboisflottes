@@ -8,6 +8,7 @@ import AverageRatingItem from '../../components/Comment/averageRating';
 import CommentPresentation from '../../components/Comment/commentPresentation';
 
 // Import Datas
+import { webSitesList } from '../../datas/review_WebSites';
 import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr';
 import { commentListEnAirBnB } from '../../datas/review_AirBNB_en';
 import { commentListFrBooking } from '../../datas/review_Booking_fr';
@@ -16,18 +17,6 @@ import { commentListEnBooking } from '../../datas/review_Booking_en';
 // Import Style
 import styled from 'styled-components';
 import { PageWrapper, StyledContainer, StyledH1 } from '../../utils/style/js/style';
-import { horizontalMargin, responsiveWidthMobile, responsiveWidthTablet } from '../../utils/constants';
-
-const CommentSitePresentationWrapper = styled.div`
-  display: flex;
-  gap: ${horizontalMargin}px;
-
-  @media (max-width: ${responsiveWidthTablet}px){
-  }
-  @media (max-width: ${responsiveWidthMobile}px){
-    flex-direction: column;
-  }
-`;
 
 const CommentListWrapper = styled.div`
   display: flex;
@@ -55,10 +44,8 @@ function Comment () {
         <StyledContainer>
           <StyledH1>{t('OurComments')}</StyledH1>
         </StyledContainer>
-        <CommentSitePresentationWrapper id='commentWebSitePresentationWrapper'>
-              <CommentPresentation commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
-              <CommentPresentation commentList={commentListFrBooking} webSite={'Booking'}/>
-        </CommentSitePresentationWrapper>
+
+        <CommentPresentation webSitesList={webSitesList}/>
 
         <AverageRatingItem commentList={commentListFrAirBnB} webSite={'AirBnB'}/>
         <CommentListWrapper id='commentListWrapperAirBnB'>

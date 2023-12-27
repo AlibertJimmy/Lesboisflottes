@@ -1,4 +1,7 @@
 export function calculateAverageRating (reviews) {
+  console.log('reviews');
+  console.log(reviews);
+
   if (reviews.length === 0) {
     return 0; // Return 0 if there are no reviews to calculate the average from
   }
