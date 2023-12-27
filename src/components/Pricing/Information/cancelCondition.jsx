@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledH2, StyledP } from '../../../utils/style/js/style';
+import { PageSubtitle, StyledP } from '../../../utils/style/js/style';
 
 // Import Constants
 import { responsiveWidthMobile } from '../../../utils/constants';
@@ -29,7 +29,7 @@ function CancelCondition () {
 
   return (
       <CancelConditionContainer>
-        <StyledH2>{t('CancelConditionTitle')}</StyledH2>
+        <PageSubtitle>{t('CancelConditionTitle')}</PageSubtitle>
         <StyledP>{t('CancelConditionText')}</StyledP>
       </CancelConditionContainer>
   );

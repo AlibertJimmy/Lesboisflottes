@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styled from 'styled-components';
-import { StyledH2, StyledP } from '../../../utils/style/js/style';
+import { PageSubtitle, StyledP } from '../../../utils/style/js/style';
 
 import { responsiveWidthMobile } from '../../../utils/constants';
 
@@ -28,7 +28,7 @@ function HostingHours () {
 
   return (
       <HostingHoursContainer>
-        <StyledH2>{t('HostingHoursTitle')}</StyledH2>
+        <PageSubtitle>{t('HostingHoursTitle')}</PageSubtitle>
         <StyledP>{t('HostingHoursText')}</StyledP>
       </HostingHoursContainer>
   );

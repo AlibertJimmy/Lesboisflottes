@@ -28,6 +28,13 @@ export const PageWrapper = styled.div`
     }
 `;
 
+export const StyledContainer = styled.div`
+    text-align: left;
+    padding: 20px;
+
+    border-radius: 15px;
+`;
+
 export const commonTitleStyle = css`
   font-family: cursive;
   font-style: italic;
@@ -61,7 +68,7 @@ export const PageTitle = styled.h1`
     text-align: center;
 `;
 
-export const StyledH2 = styled.h2`
+export const PageSubtitle = styled.h2`
     ${commonTitleStyle};    
     font-size: 25px;
 
@@ -70,7 +77,6 @@ export const StyledH2 = styled.h2`
     @media (max-width: ${responsiveWidthMobile}px){
         text-align:center;
     }  
-    border: 1px solid yellow;
 `;
 
 export const StyledP = styled.p`
@@ -79,22 +85,6 @@ export const StyledP = styled.p`
     margin: 5px;
 
     @media (max-width: ${responsiveWidthMobile}px){
-        
         padding-left:10px;
-      }
-`;
-
-export const StyledContainer = styled.div`
-    text-align: left;
-    padding: 20px;
-
-    border-radius: 15px;
-    border: 1px solid red;
-`;
-// Header & Footer
-export const commonHeaderFooter = css`
-    display: flex;
-    width: 100%;
-
-    background: ${colors.backgroundHeaderFooter};
+    }
 `;

@@ -2,9 +2,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Import Styles
 import styled from 'styled-components';
-import { StyledH2 } from '../../../utils/style/js/style';
+import { PageSubtitle } from '../../../utils/style/js/style';
 
+// Import Constant
 import { responsiveWidthMobile } from '../../../utils/constants';
 
 const PaymentMethodContainer = styled.div`
@@ -42,7 +44,7 @@ function PaymentMethod () {
 
   return (
       <PaymentMethodContainer>
-        <StyledH2>{t('PaymentMethodTitle')}</StyledH2>
+        <PageSubtitle>{t('PaymentMethodTitle')}</PageSubtitle>
           <InnerDiv>
           <ListDiv>
             <ul>

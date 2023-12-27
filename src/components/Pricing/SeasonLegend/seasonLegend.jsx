@@ -4,7 +4,9 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledH2 } from '../../../utils/style/js/style';
+import { PageSubtitle } from '../../../utils/style/js/style';
+
+// Import Colors
 import colors from '../../../utils/style/colors';
 
 // Import Constants
@@ -35,7 +37,7 @@ const LegendTDCell = styled.td`
     text-align:left;
 `;
 
-const StyledH2Responsive = styled(StyledH2)`
+const PageSubtitleResponsive = styled(PageSubtitle)`
     @media (max-width: ${responsiveWidthMobile}px){
         display:none;
     }  
@@ -46,7 +48,7 @@ function SeasonLegend () {
 
   return (
       <SeasonLegendWrapper>
-        <StyledH2Responsive>{t('Legend')}</StyledH2Responsive>
+        <PageSubtitleResponsive>{t('Legend')}</PageSubtitleResponsive>
         <div>
             <LegendTable>
                 <tr>

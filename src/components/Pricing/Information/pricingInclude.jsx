@@ -2,9 +2,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Import Style
 import styled from 'styled-components';
-import { StyledH2 } from '../../../utils/style/js/style';
+import { PageSubtitle } from '../../../utils/style/js/style';
 
+// Import Constant
 import { responsiveWidthMobile } from '../../../utils/constants';
 
 const PricingIncludeContainer = styled.div`
@@ -39,7 +41,7 @@ function PricingInclude () {
 
   return (
       <PricingIncludeContainer>
-        <StyledH2>{t('PricingIncludeTitle')}</StyledH2>
+        <PageSubtitle>{t('PricingIncludeTitle')}</PageSubtitle>
           <InnerDiv>
             <ListDiv>
               <ul>

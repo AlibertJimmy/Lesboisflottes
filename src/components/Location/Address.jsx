@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledP, StyledContainer, StyledH2 } from '../../utils/style/js/style';
+import { StyledP, StyledContainer, PageSubtitle } from '../../utils/style/js/style';
 
 // Import Constante
 import { responsiveWidthMobile } from '../../utils/constants';
@@ -39,7 +39,7 @@ function AddressDisplay () {
   return (
       <LocationWrapper>
         <StyledContainer>
-          <StyledH2>{t('Address')}</StyledH2>
+          <PageSubtitle>{t('Address')}</PageSubtitle>
           <StyledP>{t('Adress1')}</StyledP>
           <StyledP>{t('Adress2')}</StyledP>
           <StyledP>{t('Adress3')}</StyledP>

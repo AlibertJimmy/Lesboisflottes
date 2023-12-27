@@ -17,7 +17,7 @@ import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/prici
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, PageTitle, StyledH2 } from '../../utils/style/js/style';
+import { PageWrapper, PageTitle, PageSubtitle } from '../../utils/style/js/style';
 import '../../utils/style/css/react-day-picker.css';
 
 // Import Constants
@@ -166,7 +166,7 @@ function Pricing () {
         <InformationContainer>
 
           <DataDisplayWrapper>
-            <StyledH2>{t('SelectNightTitle')}</StyledH2>
+            <PageSubtitle>{t('SelectNightTitle')}</PageSubtitle>
             <ToggleButtonContainer>
               <InnerDiv>{t('SingleNight')}</InnerDiv>
               <ToggleButton onToggle={switchDaySelection} selection={selection} />
