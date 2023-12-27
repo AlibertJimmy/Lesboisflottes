@@ -70,7 +70,7 @@
 
     "//":"HOUSING EQUIPMENT",
     "TheDifferentEquipments": "Les différents équipements",
-    "Indoor": "Intérieur",
+    "IndoorEquipments": "Equipement d'intérieur",
     "Coffeemaker": "Cafetière",
     "ElectricKettle": "Bouilloire électrique",
     "Refrigerator": "Réfrigérateur",
@@ -80,7 +80,7 @@
     "Fan": "Ventilateur",
     "MosquitoRepellentPlug": "Prise anti-moustique",
 
-    "Outdoor":"Extérieur",
+    "OutdoorEquipments":"Equipement d'extérieur",
     "Sunshade": "Parasol",
     "PetanqueBall": "Boules de pétanques",
     "Molky": "Molky",

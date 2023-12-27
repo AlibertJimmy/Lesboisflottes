@@ -1,3 +1,6 @@
+// Import React Librarie
+import { useTranslation } from 'react-i18next';
+
 // Import Components
 import LocationDisplay from '../../components/Location/Location';
 import AddressDisplay from '../../components/Location/Address';
@@ -7,10 +10,12 @@ import AccessDisplay from '../../components/Location/Access';
 import React from 'react';
 
 // Import Style
-import { PageWrapper } from '../../utils/style/js/style';
+import { PageTitle, PageWrapper } from '../../utils/style/js/style';
 function Location () {
+  const { t } = useTranslation();
   return (
       <PageWrapper id='locationPageWrapper'>
+        <PageTitle>{t('Location')}</PageTitle>
         <LocationDisplay/>
         <AddressDisplay/>
         <AccessDisplay/>

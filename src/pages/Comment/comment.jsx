@@ -12,7 +12,7 @@ import { webSitesList } from '../../datas/review_WebSites';
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, StyledContainer, StyledH1 } from '../../utils/style/js/style';
+import { PageWrapper, PageTitle } from '../../utils/style/js/style';
 
 const CommentListWrapper = styled.div`
   display: flex;
@@ -27,9 +27,7 @@ function Comment () {
 
   return (
       <PageWrapper id='commentPageWrapper'>
-        <StyledContainer>
-          <StyledH1>{t('OurComments')}</StyledH1>
-        </StyledContainer>
+        <PageTitle>{t('OurComments')}</PageTitle>
 
         <CommentPresentation webSitesList={webSitesList}/>
 

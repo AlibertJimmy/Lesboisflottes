@@ -51,15 +51,14 @@ export const StyledLinkSidebar = styled(Link)`
     margin-bottom: 10px;
 `;
 
-export const StyledH1 = styled.h1`
+export const PageTitle = styled.h1`
 
     ${commonTitleStyle};
     font-size: 30px;
 
     color: ${colors.title} ;
 
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
 `;
 
 export const StyledH2 = styled.h2`
@@ -68,11 +67,10 @@ export const StyledH2 = styled.h2`
 
     color: ${colors.title} ;
 
-    text-align:center;
-
     @media (max-width: ${responsiveWidthMobile}px){
         text-align:center;
     }  
+    border: 1px solid yellow;
 `;
 
 export const StyledP = styled.p`
@@ -91,6 +89,7 @@ export const StyledContainer = styled.div`
     padding: 20px;
 
     border-radius: 15px;
+    border: 1px solid red;
 `;
 // Header & Footer
 export const commonHeaderFooter = css`

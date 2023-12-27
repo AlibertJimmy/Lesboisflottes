@@ -10,7 +10,7 @@ import { contactList } from '../../datas/contact';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledContainer, StyledH1 } from '../../utils/style/js/style';
+import { StyledContainer } from '../../utils/style/js/style';
 
 // Import Constants
 import { responsiveWidthMobile } from '../../utils/constants';
@@ -50,7 +50,6 @@ function ContactInformation () {
 
   return (
       <StyledContainer>
-        <StyledH1>{t('Contact')}</StyledH1>
         <StyledIntro>{t('ContactUs')}</StyledIntro>
         {contactList.map(contact => (
 

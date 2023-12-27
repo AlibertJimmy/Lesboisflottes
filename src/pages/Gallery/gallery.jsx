@@ -8,7 +8,7 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photos } from '../../datas/photos';
 
 // Import Style
-import { PageWrapper, StyledH1, StyledContainer } from '../../utils/style/js/style';
+import { PageWrapper, PageTitle } from '../../utils/style/js/style';
 
 function Galleryx () {
   const { t } = useTranslation();
@@ -28,9 +28,7 @@ function Galleryx () {
 
   return (
     <PageWrapper id='galleryPageWrapper'>
-      <StyledContainer>
-        <StyledH1>{t('Gallery')}</StyledH1>
-      </StyledContainer>
+        <PageTitle>{t('Gallery')}</PageTitle>
       <Gallery photos={photos} onClick={openLightbox} targetRowHeight={150} margin={5}/>
       <ModalGateway>
         {viewerIsOpen

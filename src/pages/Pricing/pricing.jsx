@@ -17,7 +17,7 @@ import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/prici
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, StyledH1, StyledH2, StyledContainer } from '../../utils/style/js/style';
+import { PageWrapper, PageTitle, StyledH2 } from '../../utils/style/js/style';
 import '../../utils/style/css/react-day-picker.css';
 
 // Import Constants
@@ -161,9 +161,7 @@ function Pricing () {
 
   return (
       <PageWrapper id='pricingPageWrapper'>
-        <StyledContainer>
-          <StyledH1>{t('Prices')}</StyledH1>
-        </StyledContainer>
+          <PageTitle>{t('Prices')}</PageTitle>
 
         <InformationContainer>
 

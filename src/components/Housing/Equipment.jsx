@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledContainer, StyledH1, StyledH2 } from '../../utils/style/js/style';
+import { StyledContainer, StyledH2 } from '../../utils/style/js/style';
 
 import { responsiveWidthMobile } from '../../utils/constants';
 
@@ -29,9 +29,8 @@ function EquipmentList () {
 
   return (
     <StyledContainer>
-      <StyledH1>{t('TheDifferentEquipments')}</StyledH1>
       <ListWrapper>
-      <StyledH2>{t('Indoor')}</StyledH2>
+      <StyledH2>{t('IndoorEquipments')} :</StyledH2>
       <ul>
         <li>{t('Coffeemaker')}</li>
         <li>{t('ElectricKettle')}</li>
@@ -42,7 +41,7 @@ function EquipmentList () {
         <li>{t('Fan')}</li>
         <li>{t('MosquitoRepellentPlug')}</li>
       </ul>
-      <StyledH2>{t('Outdoor')}</StyledH2>
+      <StyledH2>{t('OutdoorEquipments')} :</StyledH2>
       <ul>
         <li>{t('Sunshade')}</li>
         <li>{t('ElectricKettle')}</li>

@@ -3,14 +3,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { StyledContainer, StyledH1, StyledP } from '../../utils/style/js/style';
+import { StyledContainer, StyledP } from '../../utils/style/js/style';
 
 function HousingPresentation () {
   const { t } = useTranslation();
 
   return (
       <StyledContainer>
-        <StyledH1>{t('Housing')}</StyledH1>
         <StyledP>{t('PresentationHousing1')}</StyledP>
         <StyledP>{t('PresentationHousing2')}</StyledP>
         <StyledP>{t('PresentationHousing3')}</StyledP>

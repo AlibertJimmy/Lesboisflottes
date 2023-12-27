@@ -69,8 +69,7 @@
     "PresentationHousing4": "A kitchen area and a sleeping area with a queen size bed (160x200 [cm]).",
 
     "//":"HOUSING EQUIPMENT",
-    "TheDifferentEquipments": "The different equipments",
-    "Indoor": "Indoor",
+    "IndoorEquipments": "Indoor equipments",
     "Coffeemaker": "Coffeemaker",
     "ElectricKettle": "Electric kettle",
     "Refrigerator": "Refrigerator",
@@ -80,7 +79,7 @@
     "Fan": "Fan",
     "MosquitoRepellentPlug": "Mosquito repellent plug",
 
-    "Outdoor":"Outdoor",
+    "OutdoorEquipments":"Outdoor equipments",
     "Sunshade": "Sunshade",
     "PetanqueBall": "Petanque balls",
     "Molky": "Molky",

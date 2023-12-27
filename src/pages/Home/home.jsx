@@ -26,15 +26,11 @@ const HomeWrapper = styled.div`
   }
 `;
 
-const WelcomeContainer = styled.div`
-  text-align: center;
-  width: 100%;
-`;
-
 const StyledWelcome = styled.h1`
     ${commonTitleStyle};
     font-size: 40px;
     text-transform: uppercase;
+    text-align: center;
 `;
 
 const CommentScrollingBannerWrapper = styled.div`
@@ -63,9 +59,7 @@ const GalleryContainer = styled.div`
 function Home () {
   return (
     <PageWrapper id='homePageWrapper'>
-      <WelcomeContainer id='welcomeContainer'>
-        <StyledWelcome>Welcome</StyledWelcome>
-      </WelcomeContainer>
+      <StyledWelcome>Welcome</StyledWelcome>
       <HomeWrapper id='homeWrapper'>
         <CommentScrollingBannerWrapper id='commentScrollingBannerWrapper'>
           <CommentScrollingBanner/>
@@ -79,4 +73,3 @@ function Home () {
 }
 
 export default Home;
-// <GallerySample photos={photosSample}/>

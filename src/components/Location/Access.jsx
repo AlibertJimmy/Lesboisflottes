@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { StyledH1, StyledP, StyledContainer } from '../../utils/style/js/style';
+import { StyledH2, StyledP, StyledContainer } from '../../utils/style/js/style';
 
 function AccessDisplay () {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ function AccessDisplay () {
   return (
       <StyledContainer>
         <StyledP>{t('GeneralTransportProposition')}</StyledP>
-        <StyledH1>{t('ByTrain')}</StyledH1>
+        <StyledH2>{t('ByTrain')}</StyledH2>
         <ul>
           <li><StyledP>{t('TrainTransportDescription1')}</StyledP></li>
           <li style={ { listStyle: 'none' } }><StyledP>{t('TrainTransportDescription2')}</StyledP></li>
@@ -34,7 +34,7 @@ function AccessDisplay () {
               <li><StyledP>{t('TrainTransportDescription13')}</StyledP></li>
             </ul>
         </ul>
-        <StyledH1>{t('ByPlane')}</StyledH1>
+        <StyledH2>{t('ByPlane')}</StyledH2>
         <ul>
           <li><StyledP>{t('PlaneTransportDescription1')}</StyledP></li>
           <ul>
