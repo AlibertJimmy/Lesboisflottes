@@ -4,7 +4,7 @@ export const contactList = [
   {
     name: 'Julie & J.Manuel',
     telephone: '061abcd',
-    email: 'email123',
+    email: 'jussieux@free.fr',
     profilePic: julieJM
   }
 ];
