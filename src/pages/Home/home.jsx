@@ -1,5 +1,6 @@
 // Import React Libraries
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Import Component
 import GallerySampleGridResponsive from '../../components/Gallery/GallerySampleGridResponsive';
@@ -20,6 +21,8 @@ import {
 import { responsiveWidthTablet } from '../../utils/constants';
 
 function Home () {
+  const { t } = useTranslation();
+
   const [homeLayoutResponsive, setHomeLayoutResponsive] = useState(false);
 
   useEffect(() => {
@@ -43,7 +46,7 @@ function Home () {
   }, []);
   return (
     <PageWrapper id='homePageWrapper'>
-      <StyledWelcome>Welcome</StyledWelcome>
+      <StyledWelcome>{t('Welcome')}</StyledWelcome>
       <HomeWrapper id='homeWrapper'>
         {homeLayoutResponsive
           ? <>
