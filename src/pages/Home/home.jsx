@@ -1,72 +1,71 @@
 // Import React Libraries
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Import Component
-// import GallerySample from '../../components/Gallery/myGallery';
-import GallerySampleGrid from '../../components/Gallery/GallerySampleGrid';
+import GallerySampleGridResponsive from '../../components/Gallery/GallerySampleGridResponsive';
+import GallerySampleGridLeft from '../../components/Gallery/GallerySampleGridLeft';
+import GallerySampleGridRight from '../../components/Gallery/GallerySampleGridRight';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
-// Import Datas
-// import { photosSample } from '../../datas/photos';
-
 // Import Style
-import styled from 'styled-components';
-import { PageWrapper, commonTitleStyle } from '../../utils/style/js/style';
+import { PageWrapper } from '../../utils/style/js/style';
+import {
+  HomeWrapper,
+  StyledWelcome,
+  CommentScrollingBannerWrapper,
+  GalleryContainer
+} from '../../utils/style/js/HomePageStyle';
 
-import { responsiveWidthTablet, verticalMargin } from '../../utils/constants';
-
-const HomeWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @media (max-width: ${responsiveWidthTablet}px) {
-    flex-direction: column;
-    gap: ${verticalMargin}px;
-  }
-`;
-
-const StyledWelcome = styled.h1`
-    ${commonTitleStyle};
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
-`;
-
-const CommentScrollingBannerWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  
-  width: 45%;
-
-  @media (max-width: ${responsiveWidthTablet}px) {
-    width: 100%;
-  }
-`;
-
-const GalleryContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 45%;
-  transition: none;
-
-  @media (max-width: ${responsiveWidthTablet}px) {
-    width: 100%;
-  }
-
-`;
+// Import Constants
+import { responsiveWidthTablet } from '../../utils/constants';
 
 function Home () {
+  const [homeLayoutResponsive, setHomeLayoutResponsive] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      console.log('Window resized!');
+      if (window.innerWidth <= responsiveWidthTablet) {
+        setHomeLayoutResponsive(true);
+      } else {
+        setHomeLayoutResponsive(false);
+      }
+    };
+    if (window.innerWidth <= responsiveWidthTablet) {
+      setHomeLayoutResponsive(true);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <PageWrapper id='homePageWrapper'>
       <StyledWelcome>Welcome</StyledWelcome>
       <HomeWrapper id='homeWrapper'>
-        <CommentScrollingBannerWrapper id='commentScrollingBannerWrapper'>
-          <CommentScrollingBanner/>
-        </CommentScrollingBannerWrapper>
-        <GalleryContainer id='galleryContainer'>
-          <GallerySampleGrid/>
-        </GalleryContainer>
+        {homeLayoutResponsive
+          ? <>
+            <CommentScrollingBannerWrapper id='commentScrollingBannerWrapper'>
+              <CommentScrollingBanner/>
+            </CommentScrollingBannerWrapper>
+            <GalleryContainer id='galleryContainerResponsive'>
+              <GallerySampleGridResponsive/>
+            </GalleryContainer>
+          </>
+          : <>
+            <GalleryContainer id='galleryContainerLeft'>
+              <GallerySampleGridLeft/>
+            </GalleryContainer>
+            <CommentScrollingBannerWrapper id='commentScrollingBannerWrapper'>
+              <CommentScrollingBanner/>
+            </CommentScrollingBannerWrapper>
+            <GalleryContainer id='galleryContainerRight'>
+              <GallerySampleGridRight/>
+            </GalleryContainer>
+          </>
+        }
       </HomeWrapper>
     </PageWrapper>
   );

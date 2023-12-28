@@ -6,25 +6,42 @@ import styled, { css } from 'styled-components';
 import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants';
 
 export const GridWrapper = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
+
+  margin: 0 auto;
 `;
-// grid-template-areas: 'one two four' 'one two four-low';
-export const GridContainer = styled.div`
+
+const CommonGridContainer = css`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'one one two three' 'one one six six' 'four five six six' 'four seven seven seven';
-  gap: 0.5rem;
 
   height: 400px;
 
-  @media (max-width:750px) {
-        grid-gap: 13px;
-        gap: 13px;
-  }
+  gap: 0.5rem;
+
+`;
+
+export const GridContainerResponsive = styled.div`
+  ${CommonGridContainer};
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'one one two three' 'one one six six' 'four five six six' 'four seven seven seven';
+  
+`;
+
+export const GridContainerLeft = styled.div`
+  ${CommonGridContainer};
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'one one' 'one one' 'four five' 'four five';
+`;
+
+export const GridContainerRight = styled.div`
+  ${CommonGridContainer};
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'two three' 'six six' 'six six' 'seven seven';
 `;
 
 export const FeaturedGrid = css`

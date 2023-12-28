@@ -212,6 +212,9 @@ const photosSample = [
   },
   {
     src: Picture2
+  },
+  {
+    src: Picture16
   }
 
 ];
@@ -219,9 +222,7 @@ const photosSample = [
 export { photosSample };
 
 export const PhotoPropTypes = PropTypes.shape({
-  src: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  src: PropTypes.string.isRequired
 });
 
 export const PhotosPropTypes = PropTypes.arrayOf(PhotoPropTypes).isRequired;
