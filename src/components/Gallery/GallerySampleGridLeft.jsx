@@ -1,5 +1,6 @@
 // Import React Libraries
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Import Datas
 import { photosSample } from '../../datas/photos';
@@ -18,17 +19,19 @@ function GallerySampleGridLeft () {
   console.log(photosSample[0]);
   return (
     <GridWrapper id='gridWrapper'>
-      <GridContainerLeft id='gridContainer'>
-        <GridOne id='gridOne'>
-            <CategoryImg src={photosSample[0].src} alt="img1" />
-        </GridOne>
-        <GridFour id='gridFour'>
-            <CategoryImg src={photosSample[3].src} alt="img4" />
-        </GridFour>
-        <GridFive id='gridFive'>
-            <CategoryImg src={photosSample[7].src} alt="img5" />
-        </GridFive>
-      </GridContainerLeft>
+      <Link to="/Gallery">
+        <GridContainerLeft id='gridContainer'>
+          <GridOne id='gridOne'>
+              <CategoryImg src={photosSample[0].src} alt="img1" />
+          </GridOne>
+          <GridFour id='gridFour'>
+              <CategoryImg src={photosSample[3].src} alt="img4" />
+          </GridFour>
+          <GridFive id='gridFive'>
+              <CategoryImg src={photosSample[7].src} alt="img5" />
+          </GridFive>
+        </GridContainerLeft>
+      </Link>
     </GridWrapper>
   );
 }
