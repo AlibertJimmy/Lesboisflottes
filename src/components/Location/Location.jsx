@@ -9,7 +9,7 @@ function LocationDisplay () {
   const { t } = useTranslation();
 
   return (
-      <StyledContainer>
+      <StyledContainer id='locationContainer'>
           <StyledP>{t('PresentationSituation1')}</StyledP>
           <StyledP>{t('PresentationSituation2')}</StyledP>
           <StyledP>{t('PresentationSituation3')}</StyledP>

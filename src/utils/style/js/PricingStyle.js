@@ -101,7 +101,6 @@ export const InformationWrapper = styled.div`
       flex-direction:column;
       
     }
-    border: 1px solid red;
 `;
 
 export const InformationContainer = styled.div`
@@ -114,5 +113,4 @@ export const InformationContainer = styled.div`
   @media (max-width: ${responsiveWidthMobile}px){
     width:100%;
   }
-  border: 1px solid green;
 `;
