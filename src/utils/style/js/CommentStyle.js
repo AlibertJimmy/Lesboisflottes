@@ -1,6 +1,6 @@
 // Import Style
 import styled from 'styled-components';
-import { commonTitleStyle } from './style';
+import { commonTitleStyle } from './GlobalStyle';
 
 // Import Colors
 import colors from '../colors';

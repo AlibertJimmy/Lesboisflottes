@@ -10,7 +10,7 @@ import AccessDisplay from '../../components/Location/Access';
 import React from 'react';
 
 // Import Style
-import { PageTitle, PageWrapper } from '../../utils/style/js/style';
+import { PageTitle, PageWrapper } from '../../utils/style/js/GlobalStyle';
 function Location () {
   const { t } = useTranslation();
   return (

@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Styles
-import { PageSubtitle, StyledP } from '../../../utils/style/js/style';
+import { PageSubtitle, StyledP } from '../../../utils/style/js/GlobalStyle';
 import { InformationContainer } from '../../../utils/style/js/PricingStyle';
 
 function PaymentMethod () {

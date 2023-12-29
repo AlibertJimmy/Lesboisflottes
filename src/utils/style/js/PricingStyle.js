@@ -2,7 +2,7 @@
 import styled, { css } from 'styled-components';
 
 // Import Constants
-import { PageSubtitle } from './style';
+import { PageSubtitle } from './GlobalStyle';
 import { marginBetweenPageComponent, responsiveWidthMobile, selectionInformationWrapper, verticalMargin } from '../../constants';
 
 // Pricing Page Related

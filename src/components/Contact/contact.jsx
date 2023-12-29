@@ -9,7 +9,7 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 // Import Style
-import { StyledP } from '../../utils/style/js/style';
+import { StyledP } from '../../utils/style/js/GlobalStyle';
 import { ContactWrapper, ProfilePic } from '../../utils/style/js/ContactStyle';
 
 function ContactInformation () {

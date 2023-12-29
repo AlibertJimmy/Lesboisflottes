@@ -12,7 +12,7 @@ import { webSitesList } from '../../datas/review_WebSites';
 
 // Import Style
 import styled from 'styled-components';
-import { PageWrapper, PageTitle } from '../../utils/style/js/style';
+import { PageWrapper, PageTitle } from '../../utils/style/js/GlobalStyle';
 
 const CommentListWrapper = styled.div`
   display: flex;

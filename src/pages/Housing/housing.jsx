@@ -7,7 +7,7 @@ import HousingPresentation from '../../components/Housing/Housing';
 import EquipmentList from '../../components/Housing/Equipment';
 
 // Import Style
-import { PageTitle, PageWrapper } from '../../utils/style/js/style';
+import { PageTitle, PageWrapper } from '../../utils/style/js/GlobalStyle';
 
 function Housing () {
   const { t } = useTranslation();

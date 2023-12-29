@@ -9,7 +9,7 @@ import GallerySampleGridRight from '../../components/Gallery/GallerySampleGridRi
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
 // Import Style
-import { PageWrapper } from '../../utils/style/js/style';
+import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import {
   HomeWrapper,
   StyledWelcome,

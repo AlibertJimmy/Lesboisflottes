@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { PageSubtitle, StyledP } from '../../utils/style/js/style';
+import { PageSubtitle, StyledP } from '../../utils/style/js/GlobalStyle';
 import { EquipmentListWrapper } from '../../utils/style/js/HousingStyle';
 
 function EquipmentList () {

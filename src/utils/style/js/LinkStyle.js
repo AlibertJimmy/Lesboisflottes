@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 
 // Import Style
 import styled, { css } from 'styled-components';
-import { commonTitleStyle } from './style';
+import { commonTitleStyle } from './GlobalStyle';
 
 // Import Colors
 import colors from '../colors';

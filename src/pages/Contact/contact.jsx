@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import ContactInformation from '../../components/Contact/contact';
 
 // Import Style
-import { PageTitle, PageWrapper } from '../../utils/style/js/style';
+import { PageTitle, PageWrapper } from '../../utils/style/js/GlobalStyle';
 
 function Contact () {
   const { t } = useTranslation();

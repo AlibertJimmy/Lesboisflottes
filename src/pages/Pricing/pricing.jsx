@@ -16,7 +16,7 @@ import InformationDisplay from '../../components/Pricing/Information/information
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing';
 
 // Import Style
-import { PageWrapper, PageTitle, PageSubtitle } from '../../utils/style/js/style';
+import { PageWrapper, PageTitle, PageSubtitle } from '../../utils/style/js/GlobalStyle';
 import '../../utils/style/css/react-day-picker.css';
 import { DataDisplayWrapper, DayPickerContainer, InnerDiv, SelectionInformationWrapper, ToggleButtonContainer } from '../../utils/style/js/PricingStyle';
 

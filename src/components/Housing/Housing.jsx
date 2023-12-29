@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { StyledContainer, StyledP } from '../../utils/style/js/style';
+import { StyledContainer, StyledP } from '../../utils/style/js/GlobalStyle';
 
 function HousingPresentation () {
   const { t } = useTranslation();
