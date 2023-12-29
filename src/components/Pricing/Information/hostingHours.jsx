@@ -2,35 +2,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import styled from 'styled-components';
+// Import Style
 import { PageSubtitle, StyledP } from '../../../utils/style/js/style';
-
-import { responsiveWidthMobile } from '../../../utils/constants';
-
-const HostingHoursContainer = styled.div`
-    margin: 0 10px;
-
-    border-radius: 15px;
-    width: 350px;
-    height: 170px;
-
-    @media (max-width: ${responsiveWidthMobile}px){
-      
-      margin:0;
-      width:100%;
-      text-align: center;
-      
-    }
-`;
+import { InformationContainer } from '../../../utils/style/js/Information.Style';
 
 function HostingHours () {
   const { t } = useTranslation();
 
   return (
-      <HostingHoursContainer>
+      <InformationContainer id='hostingHoursContainer'>
         <PageSubtitle>{t('HostingHoursTitle')}</PageSubtitle>
         <StyledP>{t('HostingHoursText')}</StyledP>
-      </HostingHoursContainer>
+      </InformationContainer>
   );
 }
 

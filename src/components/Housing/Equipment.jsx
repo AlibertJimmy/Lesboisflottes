@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledContainer, PageSubtitle } from '../../utils/style/js/style';
+import { StyledContainer, PageSubtitle, StyledP } from '../../utils/style/js/style';
 
 import { responsiveWidthMobile } from '../../utils/constants';
 
@@ -32,22 +32,22 @@ function EquipmentList () {
       <ListWrapper>
       <PageSubtitle>{t('IndoorEquipments')} :</PageSubtitle>
       <ul>
-        <li>{t('Coffeemaker')}</li>
-        <li>{t('ElectricKettle')}</li>
-        <li>{t('Refrigerator')}</li>
-        <li>{t('Microwave')}</li>
-        <li>{t('HairDryer')}</li>
-        <li>{t('Wardrobe')}</li>
-        <li>{t('Fan')}</li>
-        <li>{t('MosquitoRepellentPlug')}</li>
+        <li><StyledP>{t('Coffeemaker')}</StyledP></li>
+        <li><StyledP>{t('ElectricKettle')}</StyledP></li>
+        <li><StyledP>{t('Refrigerator')}</StyledP></li>
+        <li><StyledP>{t('Microwave')}</StyledP></li>
+        <li><StyledP>{t('HairDryer')}</StyledP></li>
+        <li><StyledP>{t('Wardrobe')}</StyledP></li>
+        <li><StyledP>{t('Fan')}</StyledP></li>
+        <li><StyledP>{t('MosquitoRepellentPlug')}</StyledP></li>
       </ul>
       <PageSubtitle>{t('OutdoorEquipments')} :</PageSubtitle>
       <ul>
-        <li>{t('Sunshade')}</li>
-        <li>{t('ElectricKettle')}</li>
-        <li>{t('PetanqueBall')}</li>
-        <li>{t('Molky')}</li>
-        <li>{t('VintageBicycle')}</li>
+        <li><StyledP>{t('Sunshade')}</StyledP></li>
+        <li><StyledP>{t('ElectricKettle')}</StyledP></li>
+        <li><StyledP>{t('PetanqueBall')}</StyledP></li>
+        <li><StyledP>{t('Molky')}</StyledP></li>
+        <li><StyledP>{t('VintageBicycle')}</StyledP></li>
       </ul>
     </ListWrapper>
     </StyledContainer>
