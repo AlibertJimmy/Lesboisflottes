@@ -53,7 +53,7 @@
 
     "ByPlane": "En avion",
     "PlaneTransportDescription1": "Aéroport de Toulon/Hyères :",
-    "PlaneTransportDescription2": "Location de voiture ou taxis.",
+    "PlaneTransportDescription2": "Location de voiture ou taxi.",
     "PlaneTransportDescription3": "Aéroport de Marignane :",
     "PlaneTransportDescription4": "Bus vers la gare St Charles puis TER vers la gare de la Seyne sur Mer/ Six-Fours.",
     "PlaneTransportDescription5": "Aéroport de Toulon/Hyères :",
@@ -64,7 +64,7 @@
 
     "//":"HOUSING",
     "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussée d'une villa, ancienne batisse de caractère datant de 1949.",
-    "PresentationHousing2": "Orienté plein Ouest, il bénéficie d'une vue sur le jardin et d'un accès aux terasses.",
+    "PresentationHousing2": "Orienté plein Ouest, il bénéficie d'une vue sur le jardin et d'un accès aux terrasses.",
     "PresentationHousing3": "L'hébergement comprend une salle de bain avec cabine de douche et lavabo, de toilettes indépendantes",
     "PresentationHousing4": "Un coin cuisine et d'un coin nuit avec un lit queen size (160x200 [cm]).",
 
@@ -82,7 +82,7 @@
 
     "OutdoorEquipments":"Equipement d'extérieur",
     "Sunshade": "Parasol",
-    "PetanqueBall": "Boules de pétanques",
+    "PetanqueBall": "Boules de pétanque",
     "Molky": "Molky",
     "VintageBicycle": "Vélo Vintage",
 
