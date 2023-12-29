@@ -1,6 +1,3 @@
-// Import React Libraries
-import { Link } from 'react-router-dom';
-
 // Import Style
 import styled, { css } from 'styled-components';
 
@@ -39,23 +36,6 @@ export const commonTitleStyle = css`
   font-family: cursive;
   font-style: italic;
   color: ${colors.title};
-`;
-
-export const commonLink = css`
-    color: ${colors.link} ;
-    text-decoration: none;
-
-    &:hover {
-        color: ${colors.linkHover};
-    }
-`;
-
-export const StyledLinkSidebar = styled(Link)`
-    ${commonTitleStyle};
-    ${commonLink};
-    font-size: 20px;    
-
-    margin-bottom: 10px;
 `;
 
 export const PageTitle = styled.h1`

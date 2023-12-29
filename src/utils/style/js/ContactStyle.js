@@ -12,7 +12,6 @@ export const ContactWrapper = styled.div`
   gap: ${verticalMargin}px;
 
   width: 100%;
-  border: 1px solid red;
 `;
 
 export const ProfilePic = styled.img`

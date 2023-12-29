@@ -12,8 +12,9 @@ import { scrollToTop } from '../../utils/functions/General';
 // Import Style
 import {
   HeaderWrapper,
-  TitleContainer, StyledLinkHeader, StyledTitle, StyledSubtitle
+  TitleContainer, StyledTitle, StyledSubtitle
 } from '../../utils/style/js/HeaderStyle';
+import { HeaderLink } from '../../utils/style/js/LinkStyle';
 
 // Import Constants
 import {
@@ -68,7 +69,7 @@ function Header () {
       <HeaderWrapper id='headerWrapper' style={{ height: `${headerHeightCurrent}px` }}>
         <LanguageMenu/>
         <TitleContainer id='titleDiv'>
-          <StyledLinkHeader to="/" onClick={handleOnClick}>
+          <HeaderLink to="/" onClick={handleOnClick}>
             <StyledTitle>{t('mainTitle')}</StyledTitle>
             {shouldRenderSubtitles && (
             <>
@@ -76,7 +77,7 @@ function Header () {
               <StyledSubtitle>{t('subtitle2')}</StyledSubtitle>
             </>
             )}
-          </StyledLinkHeader>
+          </HeaderLink>
         </TitleContainer>
         <Navbar/>
       </HeaderWrapper>

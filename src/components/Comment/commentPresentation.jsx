@@ -13,9 +13,9 @@ import {
   CommentPresentationContainer,
   CommentSitePresentationWrapper,
   CommentTitle,
-  StyledHashLink,
   StyledP1
 } from '../../utils/style/js/CommentStyle';
+import { StyledHashLink } from '../../utils/style/js/LinkStyle';
 
 function CommentPresentation ({ webSitesList }) {
   const { i18n, t } = useTranslation();

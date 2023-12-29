@@ -1,9 +1,5 @@
-// Import React Libraries
-import { Link } from 'react-router-dom';
-
 // Import Style
 import styled from 'styled-components';
-import { commonLink, commonTitleStyle } from './style';
 
 // Import Colors
 import colors from '../colors';
@@ -49,11 +45,6 @@ export const TitleContainer = styled.div`
   @media (max-width: ${responsiveWidthTablet}px){
     height: ${titleContainerHeightResponsive}px;
   }
-`;
-
-export const StyledLinkHeader = styled(Link)`
-    ${commonTitleStyle};
-    ${commonLink}
 `;
 
 export const StyledTitle = styled.h1`

@@ -1,9 +1,5 @@
-// Import React Libraries
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-
 // Import Style
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { commonTitleStyle } from './style';
 
 // Import Colors
@@ -153,20 +149,4 @@ export const CommentScrollingBannerContainer = styled.div`
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 10px 5px rgba(0.1, 0, 0.1, 0.2);
-`;
-
-// Link Related
-const LinkStyle = css`
-  text-decoration: none;
-  color: inherit ;
-`;
-
-export const StyledLink = styled(Link)`
-  ${LinkStyle};
-  width: fit-content;
-  height: fit-content;
-`;
-
-export const StyledHashLink = styled(HashLink)`
-  ${LinkStyle};
 `;

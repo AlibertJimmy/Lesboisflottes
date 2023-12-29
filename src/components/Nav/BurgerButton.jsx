@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // Import Component
-import RightNav from './LeftNav';
+import SideNav from './SideNav';
 
 // Import Style
 import styled from 'styled-components';
@@ -92,7 +92,7 @@ function Burger () {
                 <div />
                 <div />
             </StyledBurger>
-            <RightNav open={open} handleCloseBurger={handleCloseBurger}/>
+            <SideNav open={open} handleCloseBurger={handleCloseBurger}/>
         </div>
   );
 }

@@ -10,8 +10,9 @@ import { scrollToTop } from '../../utils/functions/General';
 
 // Import Style
 import styled from 'styled-components';
-import { StyledLinkSidebar } from '../../utils/style/js/style';
+import { StyledLinkSidebar } from '../../utils/style/js/LinkStyle';
 
+// Import Colors
 import colors from '../../utils/style/colors';
 
 // Import constantes
@@ -58,7 +59,7 @@ const StyledUl = styled.ul`
     }
 `;
 
-function RightNav ({ open, handleCloseBurger }) {
+function SideNav ({ open, handleCloseBurger }) {
   const { t } = useTranslation();
 
   function handleLinkClick () {
@@ -79,9 +80,9 @@ function RightNav ({ open, handleCloseBurger }) {
   );
 }
 
-RightNav.propTypes = {
+SideNav.propTypes = {
   open: PropTypes.bool.isRequired,
   handleCloseBurger: PropTypes.func.isRequired
 };
 
-export default RightNav;
+export default SideNav;

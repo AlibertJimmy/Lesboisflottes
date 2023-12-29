@@ -13,7 +13,10 @@ import { commentListFrAirBnB } from '../../datas/review_AirBNB_fr';
 import { commentListEnAirBnB } from '../../datas/review_AirBNB_en';
 import { commentListFrBooking } from '../../datas/review_Booking_fr';
 import { commentListEnBooking } from '../../datas/review_Booking_en';
-import { CommentScrollingBannerContainer, StyledLink } from '../../utils/style/js/CommentStyle';
+
+// Import Styles
+import { CommentScrollingBannerContainer } from '../../utils/style/js/CommentStyle';
+import { StyledLink } from '../../utils/style/js/LinkStyle';
 
 function CommentScrollingBanner () {
   const { i18n } = useTranslation();

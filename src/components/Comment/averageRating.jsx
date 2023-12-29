@@ -11,11 +11,11 @@ import StarScale from './starScale';
 // Import Style
 import {
   AverageRatingWrapper,
-  StyledLink,
   AverageRatingContainer,
   WebSiteNameContainer, CommentTitle,
   StarScaleContainer, StyledP1
 } from '../../utils/style/js/CommentStyle';
+import { StyledLink } from '../../utils/style/js/LinkStyle';
 
 function AverageRatingItem ({ webSite }) {
   const { t } = useTranslation();
