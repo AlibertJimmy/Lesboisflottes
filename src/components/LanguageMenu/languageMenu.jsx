@@ -7,22 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { LANGUAGES } from '../../constants/language';
 
 // Import Style
-import styled from 'styled-components';
-
-// Import Constantes
-import { responsiveWidthMobile } from '../../utils/constants';
-
-const StyledSelect = styled.div`
-  width: 100px;
-  position: fixed;
-  right:8px; 
-  top: 10px;
-
-  @media (max-width: ${responsiveWidthMobile}px){
-    position: fixed;
-    
-  }
-`;
+import { LanguageMenuContainer } from '../../utils/style/js/LanguageMenuStyle';
 
 export const LanguageMenu = () => {
   const { i18n } = useTranslation();
@@ -54,13 +39,13 @@ export const LanguageMenu = () => {
   const selectedLang = customSelectRender.find((option) => option.value === i18n.language);
 
   return (
-    <StyledSelect>
+    <LanguageMenuContainer id='languageMenuContainer'>
       <Select
         options={customOptions}
 
         value={selectedLang}
         onChange={onChangeLang}
       />
-    </StyledSelect>
+    </LanguageMenuContainer>
   );
 };
