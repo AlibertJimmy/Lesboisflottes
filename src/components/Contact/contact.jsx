@@ -9,62 +9,19 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 // Import Style
-import styled from 'styled-components';
-import { StyledContainer } from '../../utils/style/js/style';
-
-// Import Constants
-import { responsiveWidthMobile } from '../../utils/constants';
-
-const ContactContainer = styled.div`
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-
-    border-radius: 15px;
-
-    @media (max-width: ${responsiveWidthMobile}px) {
-        flex-direction: column;
-    }
-`;
-
-const ContactInfoContainer = styled.div`
-    padding: 20px;
-    min-width: 200px;
-`;
-
-const ProfilePicContainer = styled.img`
-    max-width: 300px;
-    max-height: 300px;
-    margin-left: 30px;
-
-`;
-
-const StyledIntro = styled.p`
-    padding-left: 20px;
-    font-family: cursive;
-    font-size: 20px;
-`;
+import { StyledP } from '../../utils/style/js/style';
+import { ContactWrapper, ProfilePic } from '../../utils/style/js/ContactStyle';
 
 function ContactInformation () {
   const { t } = useTranslation();
 
   return (
-      <StyledContainer>
-        <StyledIntro>{t('ContactUs')}</StyledIntro>
-        {contactList.map(contact => (
-
-            <ContactContainer key={contact.name}>
-                <div>
-                    <ProfilePicContainer src={contact.profilePic} alt="PIC"></ProfilePicContainer>
-                </div>
-                <ContactInfoContainer>
-                    <StyledIntro style={ { fontFamily: 'cursive', fontSize: '20px' } }>{contact.name}</StyledIntro>
-                    <StyledIntro style={ { fontFamily: 'cursive', fontSize: '20px' } }>{t('Email')} : <CopyEmailLink email={contact.email} /></StyledIntro>
-                </ContactInfoContainer>
-            </ContactContainer>
-
-        ))}
-      </StyledContainer>
+      <ContactWrapper id='contactWrapper'>
+        <StyledP>{t('ContactUs')}</StyledP>
+        <StyledP >{contactList[0].name}</StyledP>
+        <StyledP >{t('Email')} : <CopyEmailLink email={contactList[0].email} /></StyledP>
+        <ProfilePic src={contactList[0].profilePic} alt="PIC"/>
+      </ContactWrapper>
   );
 }
 
