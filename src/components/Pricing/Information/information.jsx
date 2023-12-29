@@ -8,7 +8,7 @@ import PaymentMethod from './paymentMethod';
 import PricingInclude from './pricingInclude';
 
 // Import Style
-import { InformationWrapper } from '../../../utils/style/js/Information.Style';
+import { InformationWrapper } from '../../../utils/style/js/PricingStyle';
 
 function InformationDisplay () {
   return (

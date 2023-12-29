@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Styles
 import { PageSubtitle, StyledP } from '../../../utils/style/js/style';
-import { InformationContainer } from '../../../utils/style/js/Information.Style';
+import { InformationContainer } from '../../../utils/style/js/PricingStyle';
 
 function PaymentMethod () {
   const { t } = useTranslation();
