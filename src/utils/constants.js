@@ -21,3 +21,6 @@ export const headerHeightResponsive = titleContainerHeightResponsive + navBarHei
 export const footerHeight = 50;
 
 export const marginBetweenPageComponent = 5;
+
+// Pricing
+export const selectionInformationWrapper = 250;

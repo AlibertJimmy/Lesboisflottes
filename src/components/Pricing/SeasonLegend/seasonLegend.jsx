@@ -12,9 +12,8 @@ function SeasonLegend () {
   const { t } = useTranslation();
 
   return (
-      <SeasonLegendWrapper>
+      <SeasonLegendWrapper id='seasonPriceLegendWrapper'>
         <PageSubtitleResponsive>{t('Legend')}</PageSubtitleResponsive>
-        <div>
             <LegendTable>
                 <tr>
                     <LegendTDCellColor style={{ backgroundColor: colors.lowSeason }}></LegendTDCellColor>
@@ -29,7 +28,6 @@ function SeasonLegend () {
                     <LegendTDCellText>{t('HighSeason')}</LegendTDCellText>
                 </tr>
             </LegendTable>
-        </div>
       </SeasonLegendWrapper>
   );
 }

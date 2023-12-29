@@ -16,69 +16,9 @@ import InformationDisplay from '../../components/Pricing/Information/information
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing';
 
 // Import Style
-import styled from 'styled-components';
 import { PageWrapper, PageTitle, PageSubtitle } from '../../utils/style/js/style';
 import '../../utils/style/css/react-day-picker.css';
-
-// Import Constants
-import { marginBetweenPageComponent, responsiveWidthMobile } from '../../utils/constants';
-
-const InformationContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  align-items: center;
-
-  margin: ${marginBetweenPageComponent}px 0;
-
-
-  @media (max-width: ${responsiveWidthMobile}px){
-    flex-direction:column-reverse;
-    padding: 0;
-  }
-  border-radius: 15px;
-`;
-
-const DataDisplayWrapper = styled.div`
-
-  padding: 10px;
-  text-align: center;
-  height: 250px;
-
-  border-radius: 15px;
-`;
-
-const ToggleButtonContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 15px;
-`;
-
-const DayPickerContainer = styled.div`
-  display: flex;
-  justify-content:center;
-  margin: ${marginBetweenPageComponent}px 0;
-
-  border-radius: 15px;
-
-`;
-
-const InnerDiv = styled.div`
-  margin: 10px;
-`;
-
-const LegendDisplayContainer = styled.div`
-  display: flex;
-  height: 250px;
-  border-radius: 15px;
-
-  @media (max-width: ${responsiveWidthMobile}px){
-    height: 210px;
-    align-items: center;
-  }
-  
-`;
+import { DataDisplayWrapper, DayPickerContainer, InnerDiv, SelectionInformationWrapper, ToggleButtonContainer } from '../../utils/style/js/PricingStyle';
 
 function Pricing () {
   const { i18n, t } = useTranslation();
@@ -153,19 +93,18 @@ function Pricing () {
   }, []);
 
   const css = `
-      .my-selected:not([disabled]) { 
-        font-weight: bold; 
-        border: 2px solid #000000;
-      }
-    `;
+  .my-selected:not([disabled]) { 
+    font-weight: bold; 
+    border: 2px solid #000000;
+  }
+`;
 
   return (
       <PageWrapper id='pricingPageWrapper'>
           <PageTitle>{t('Prices')}</PageTitle>
 
-        <InformationContainer>
-
-          <DataDisplayWrapper>
+        <SelectionInformationWrapper id='selectionInformationWrapper'>
+          <DataDisplayWrapper id='dataDisplayWrapper'>
             <PageSubtitle>{t('SelectNightTitle')}</PageSubtitle>
             <ToggleButtonContainer>
               <InnerDiv>{t('SingleNight')}</InnerDiv>
@@ -175,13 +114,10 @@ function Pricing () {
             <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
           </DataDisplayWrapper>
 
-          <LegendDisplayContainer>
-            <SeasonLegend />
-          </LegendDisplayContainer>
+          <SeasonLegend />
+        </SelectionInformationWrapper>
 
-        </InformationContainer>
-
-        <DayPickerContainer>
+        <DayPickerContainer id='dayPickerContainer'>
           <style>{css}</style>
           <DayPicker
             mode={selection}

@@ -3,13 +3,57 @@ import styled, { css } from 'styled-components';
 
 // Import Constants
 import { PageSubtitle } from './style';
-import { responsiveWidthMobile, verticalMargin } from '../../constants';
+import { marginBetweenPageComponent, responsiveWidthMobile, selectionInformationWrapper, verticalMargin } from '../../constants';
+
+// Pricing Page Related
+export const SelectionInformationWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+
+  margin: ${marginBetweenPageComponent}px 0;
+
+
+  @media (max-width: ${responsiveWidthMobile}px){
+    flex-direction:column-reverse;
+    padding: 0;
+  }
+`;
+
+export const DataDisplayWrapper = styled.div`
+  text-align: center;
+  height: ${selectionInformationWrapper}px;
+`;
+
+export const ToggleButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 15px;
+`;
+
+export const InnerDiv = styled.div`
+  margin: 10px;
+`;
+
+export const DayPickerContainer = styled.div`
+  display: flex;
+  justify-content:center;
+  margin: ${marginBetweenPageComponent}px 0;
+`;
 
 // Legend Related
 export const SeasonLegendWrapper = styled.div`
   display:flex;
   flex-direction: column;
   align-items:center;
+
+  height: ${selectionInformationWrapper}px;
+
+  @media (max-width: ${responsiveWidthMobile}px){
+    height: 120px;
+  }
 `;
 
 export const PageSubtitleResponsive = styled(PageSubtitle)`
