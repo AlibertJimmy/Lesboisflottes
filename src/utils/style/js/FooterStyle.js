@@ -1,6 +1,5 @@
 // Import Style
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import Colors
 import colors from '../colors';
@@ -43,12 +42,6 @@ export const FooterSideContainerRight = styled.div`
     width: 25px;
 
     margin: 0 20px;
-`;
-
-export const FooterIcon = styled(FontAwesomeIcon)`
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
 `;
 
 export const FooterTextContainer = styled.div`

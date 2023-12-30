@@ -49,7 +49,6 @@ export const CommentSitePresentationWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-
   width: 100%;
 
   @media (max-width: 700px){
@@ -69,6 +68,8 @@ export const CommentPresentationContainer = styled.div`
     justify-content: space-between;
 
     flex: 0 0 calc(45% - 10px);
+
+    position: relative;
 
     margin: 0 auto;
     width: 100%;
@@ -107,6 +108,7 @@ export const AverageRatingContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
+
   padding: 5px;
   margin-bottom: ${verticalMargin}px;
 
@@ -115,10 +117,14 @@ export const AverageRatingContainer = styled.div`
 
   @media (max-width: ${responsiveWidthMobile}px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const WebSiteNameContainer = styled.div`
+  position: relative;
+  width: fit-content;
+
   @media (max-width: ${responsiveWidthMobile}px) {
     display: flex;
     justify-content: center;

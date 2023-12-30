@@ -1,6 +1,7 @@
 // Import React Libraries
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 
 // Import PropTypes
 import PropTypes from 'prop-types';
@@ -16,6 +17,7 @@ import {
   StarScaleContainer, StyledP1
 } from '../../utils/style/js/CommentStyle';
 import { StyledLink } from '../../utils/style/js/LinkStyle';
+import { IconContainerOut, StyledIcon } from '../../utils/style/js/IconStyle';
 
 function AverageRatingItem ({ webSite }) {
   const { t } = useTranslation();
@@ -28,6 +30,7 @@ function AverageRatingItem ({ webSite }) {
           target="_blank" rel="noopener noreferrer">
           <AverageRatingContainer id={`averageRatingContainer${webSite.name}`}>
             <WebSiteNameContainer id={`webSiteNameContainer${webSite.name}`}>
+              <IconContainerOut><StyledIcon icon={faExternalLink}/></IconContainerOut>
               <CommentTitle>{webSite.name}</CommentTitle>
             </WebSiteNameContainer>
             <StarScaleContainer id={`starScaleContainer${webSite.name}`}>

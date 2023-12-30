@@ -8,9 +8,10 @@ import { scrollToTop } from '../../utils/functions/General';
 // Import Styles
 import {
   StyledFooter,
-  FooterSideContainerRight, FooterSideContainerLeft, FooterIcon,
+  FooterSideContainerRight, FooterSideContainerLeft,
   FooterTextContainer, StyledP
 } from '../../utils/style/js/FooterStyle';
+import { StyledIcon } from '../../utils/style/js/IconStyle';
 
 function Footer () {
   return (
@@ -20,7 +21,7 @@ function Footer () {
             <StyledP>Copyright © 2023 Les Bois Flottés</StyledP>
         </FooterTextContainer>
         <FooterSideContainerRight onClick={() => scrollToTop()}>
-            <FooterIcon id="scrollToTopChevron" icon={faChevronUp} />
+            <StyledIcon id="scrollToTopChevron" icon={faChevronUp} />
         </FooterSideContainerRight>
     </StyledFooter>
   );
