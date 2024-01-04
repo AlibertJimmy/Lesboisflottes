@@ -24,3 +24,7 @@ export const marginBetweenPageComponent = 5;
 
 // Pricing
 export const selectionInformationWrapper = 250;
+
+// StarScale
+export const starHeight = 20;
+export const starWidth = starHeight;
