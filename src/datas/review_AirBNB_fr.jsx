@@ -169,6 +169,7 @@ export const commentListFrAirBnB = {
       reviewer: {
         firstName: 'G'
       },
+      localizedDate: 'septembre 2023',
       rating: 5,
       translatedFrom: 'Allemand'
     },

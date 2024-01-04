@@ -7,7 +7,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Selena'
       },
-      localizedDate: 'aout 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -18,7 +18,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Pedro'
       },
-      localizedDate: 'aout 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -29,7 +29,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Gregory'
       },
-      localizedDate: 'juillet 2023',
+      localizedDate: 'july 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -40,7 +40,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Olivier'
       },
-      localizedDate: 'juin 2023',
+      localizedDate: 'june 2023',
       rating: 10,
       translatedFrom: 'French'
     },
@@ -51,7 +51,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Florence'
       },
-      localizedDate: 'juin 2023',
+      localizedDate: 'june 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -62,7 +62,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Irina'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: ''
     },
@@ -73,7 +73,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Lars'
       },
-      localizedDate: 'septembre 2023',
+      localizedDate: 'september 2023',
       rating: 5,
       translatedFrom: 'Deutch'
     },
@@ -84,7 +84,7 @@ export const commentListEnBooking = {
       reviewer: {
         firstName: 'Karin'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'Deutch'
     }

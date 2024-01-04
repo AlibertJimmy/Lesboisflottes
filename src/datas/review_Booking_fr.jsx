@@ -7,7 +7,7 @@ export const commentListFrBooking = {
       reviewer: {
         firstName: 'Selena'
       },
-      localizedDate: 'aout 2023',
+      localizedDate: 'août 2023',
       rating: 5,
       translatedFrom: ''
     },
@@ -18,7 +18,7 @@ export const commentListFrBooking = {
       reviewer: {
         firstName: 'Pedro'
       },
-      localizedDate: 'aout 2023',
+      localizedDate: 'août 2023',
       rating: 5,
       translatedFrom: ''
     },

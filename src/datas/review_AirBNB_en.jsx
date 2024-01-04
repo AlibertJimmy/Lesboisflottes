@@ -8,7 +8,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Sandrine'
       },
-      localizedDate: 'octobre 2023',
+      localizedDate: 'october 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -19,7 +19,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Coleen'
       },
-      localizedDate: 'septembre 2023',
+      localizedDate: 'september 2023',
       localizedRespondedDate: null,
       localizedReviewerLocation: null,
       localizedReview: null,
@@ -33,7 +33,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Patricia'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -44,7 +44,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Emilien'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -55,7 +55,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Yann'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -66,7 +66,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Harmony'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -77,7 +77,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Jerome'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -88,7 +88,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Melanie'
       },
-      localizedDate: 'juillet 2023',
+      localizedDate: 'july 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -99,7 +99,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Iannis'
       },
-      localizedDate: 'juillet 2023',
+      localizedDate: 'july 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -110,7 +110,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Nicolas'
       },
-      localizedDate: 'juillet 2023',
+      localizedDate: 'july 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -121,7 +121,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Kim'
       },
-      localizedDate: 'juillet 2023',
+      localizedDate: 'july 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -132,7 +132,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Monique'
       },
-      localizedDate: 'juin 2023',
+      localizedDate: 'june 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -145,7 +145,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Christian'
       },
-      localizedDate: 'juin 2023',
+      localizedDate: 'june 2023',
       rating: 5,
       translatedFrom: 'French'
     },
@@ -156,7 +156,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Natalie'
       },
-      localizedDate: 'octobre 2023',
+      localizedDate: 'october 2023',
       rating: 5,
       translatedFrom: 'Deutch'
     },
@@ -167,7 +167,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'G'
       },
-      localizedDate: 'septembre 2023',
+      localizedDate: 'september 2023',
       rating: 5,
       translatedFrom: 'Deutch'
     },
@@ -178,7 +178,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Kyra'
       },
-      localizedDate: 'septembre 2023',
+      localizedDate: 'september 2023',
       rating: 5,
       translatedFrom: ''
 
@@ -190,7 +190,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Tanel'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: ''
 
@@ -202,7 +202,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Dominik'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: ''
     },
@@ -213,7 +213,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Martin'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'Deutch'
     },
@@ -224,7 +224,7 @@ export const commentListEnAirBnB = {
       reviewer: {
         firstName: 'Naila'
       },
-      localizedDate: 'août 2023',
+      localizedDate: 'august 2023',
       rating: 5,
       translatedFrom: 'Deutch'
     }
