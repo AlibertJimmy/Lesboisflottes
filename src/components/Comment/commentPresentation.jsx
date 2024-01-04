@@ -29,7 +29,7 @@ function CommentPresentation ({ webSitesList }) {
           <StyledHashLink to={`#averageRatingWrapper${webSite.name}`}>
             <IconContainerIn><StyledIcon icon={faArrowDown}/></IconContainerIn>
             <CommentTitle style={{ textAlign: 'center' }}>{webSite.name}</CommentTitle>
-            <CommentTitle style={{ textAlign: 'center' }}>{t('AmountOfVotes')} : {webSite.reviewList[0][`reviewList${i18n.language}`].length}</CommentTitle>
+            <CommentTitle style={{ textAlign: 'center' }}>{t('AmountOfVotes')} : {webSite[`reviewList${i18n.language}`].length}</CommentTitle>
             <StyledP1>{t('AverageRating')} : <StarScale scaleValue={webSite.averageRating}/></StyledP1>
           </StyledHashLink>
         </CommentPresentationContainer>

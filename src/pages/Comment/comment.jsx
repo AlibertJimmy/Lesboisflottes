@@ -23,7 +23,8 @@ const CommentListWrapper = styled.div`
 function Comment () {
   const { i18n, t } = useTranslation();
 
-  // console.log(`language : ${i18n.language}`)
+  console.log('Comment Page');
+  console.log(`language : ${i18n.language}`);
 
   return (
       <PageWrapper id='commentPageWrapper'>
@@ -34,7 +35,7 @@ function Comment () {
         {webSitesList.map((webSite) => (
           <CommentListWrapper key={webSite.name} id='commentListWrapperAirBnB'>
             <AverageRatingItem webSite={webSite}/>
-            {webSite.reviewList[0][`reviewList${i18n.language}`].map((review, index) => (
+            {webSite[`reviewList${i18n.language}`].map((review, index) => (
               <CommentItem key={index} comment={review} index={index}/>
             ))}
           </CommentListWrapper>

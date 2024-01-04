@@ -20,13 +20,15 @@ import { StyledLink } from '../../utils/style/js/LinkStyle';
 import { IconContainerOut, StyledIcon } from '../../utils/style/js/IconStyle';
 
 function AverageRatingItem ({ webSite }) {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  console.log('webSite');
+  console.log(webSite);
 
   return (
     <AverageRatingWrapper id={`averageRatingWrapper${webSite.name}`}>
       <div>
         <StyledLink
-          to={webSite.link}
+          to={i18n.language === 'en' ? webSite.linken : webSite.linkfr}
           target="_blank" rel="noopener noreferrer">
           <AverageRatingContainer id={`averageRatingContainer${webSite.name}`}>
             <WebSiteNameContainer id={`webSiteNameContainer${webSite.name}`}>
@@ -46,7 +48,8 @@ function AverageRatingItem ({ webSite }) {
 AverageRatingItem.propTypes = {
   webSite: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
+    linken: PropTypes.string.isRequired,
+    linkfr: PropTypes.string.isRequired,
     reviewList: PropTypes.arrayOf(
       PropTypes.shape({
         reviewListfr: PropTypes.array.isRequired,
