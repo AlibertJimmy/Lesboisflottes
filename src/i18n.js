@@ -5,7 +5,7 @@ import { initReactI18next } from 'react-i18next';
 const getCurrentHost =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://main.d2litbm81rf027.amplifyapp.com';
+    : 'https://www.lesboisflotteslaverne.fr/';
 
 console.log(`process.env.NODE_ENV : ${process.env.NODE_ENV}`);
 console.log(`getCurrentHost : ${getCurrentHost}`);
