@@ -1,3 +1,23 @@
+// Langage
+import flagFr from '../assets/flag/flag_fr.png';
+import flagEn from '../assets/flag/flag_en.png';
+
+export const LANGUAGES = [
+  {
+    label: 'FR',
+    code: 'fr',
+    flag: flagFr
+  },
+  {
+    label: 'EN',
+    code: 'en',
+    flag: flagEn
+  }
+];
+
+export const webSiteDevUrl = 'http://localhost:3000';
+export const webSiteProdUrl = 'https://www.lesboisflotteslaverne.fr/';
+
 // Page Wrapper
 export const verticalMargin = 20;
 

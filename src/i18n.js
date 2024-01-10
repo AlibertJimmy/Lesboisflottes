@@ -1,11 +1,15 @@
+// Import React Libraries
 import i18n from 'i18next';
 import i18nBackend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
+// Import Constants
+import { webSiteDevUrl, webSiteProdUrl } from './utils/constants';
+
 const getCurrentHost =
   process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : 'https://www.lesboisflotteslaverne.fr/';
+    ? webSiteDevUrl
+    : webSiteProdUrl;
 
 console.log(`process.env.NODE_ENV : ${process.env.NODE_ENV}`);
 console.log(`getCurrentHost : ${getCurrentHost}`);

@@ -4,7 +4,7 @@ import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 
 // Import Datas
-import { LANGUAGES } from '../../constants/language';
+import { LANGUAGES } from '../../utils/constants';
 
 // Import Style
 import { LanguageMenuContainer } from '../../utils/style/js/LanguageMenuStyle';
