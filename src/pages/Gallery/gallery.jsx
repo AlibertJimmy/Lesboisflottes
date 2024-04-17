@@ -51,3 +51,6 @@ function Galleryx () {
 }
 
 export default Galleryx;
+
+// Carousel prop :
+// showNavigationOnTouchDevice
