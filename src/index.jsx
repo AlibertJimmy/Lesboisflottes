@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // Import Component
 import Header from './components/Header/Header';
@@ -37,6 +38,8 @@ const ContentWrapper = styled.div`
 `;
 
 function App () {
+  const { t, i18n } = useTranslation();
+
   return (
     <NavContextProvider>
       <React.StrictMode>
@@ -45,13 +48,13 @@ function App () {
           <HomeWrapper>
             <ContentWrapper>
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Comment" element={<Comment />} />
-                <Route path="/Contact" element={<Contact />} />
-                <Route path="/Gallery" element={<Galleryx />} />
-                <Route path="/Housing" element={<Housing />} />
-                <Route path="/Pricing" element={<Pricing />} />
-                <Route path="/Location" element={<Location />} />
+                <Route path={`/${i18n.language}/`} element={<Home />} />
+                <Route path={`/${i18n.language}/${t('Comments')}`} element={<Comment />} />
+                <Route path={`/${i18n.language}/${t('Contact')}`} element={<Contact />} />
+                <Route path={`/${i18n.language}/${t('Gallery')}`} element={<Galleryx />} />
+                <Route path={`/${i18n.language}/${t('Housing')}`} element={<Housing />} />
+                <Route path={`/${i18n.language}/${t('Prices')}`} element={<Pricing />} />
+                <Route path={`/${i18n.language}/${t('Location')}`} element={<Location />} />
               </Routes>
             </ContentWrapper>
           </HomeWrapper>

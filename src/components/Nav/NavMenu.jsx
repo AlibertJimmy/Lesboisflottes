@@ -13,7 +13,7 @@ import Dropdown from '../Dropdown/Dropdown';
 import { scrollToTop } from '../../utils/functions/General';
 
 // Import Json
-import navBarList from '../../datas/NavBarList.json';
+import { navigationBarContent } from '../../datas/navBarContent';
 
 // Import Style
 import '../../utils/style/css/NavStyles.css';
@@ -29,7 +29,7 @@ function NavMenu () {
 
   useEffect(() => {
     // Perform your operations here and update navItems
-    const updatedNavItems = navBarList.map((item, index) => {
+    const updatedNavItems = navigationBarContent.map((item, index) => {
       const pageLinkPath = `/${i18n.language}/${t(item.pageLink)}`;
       let pageLinkDropDownPath = false;
       if (item.dropDownOptionsLinks) {
