@@ -3,11 +3,13 @@ import styled, { css } from 'styled-components';
 
 // Import Constants
 import { PageSubtitle } from './GlobalStyle';
+
+import { selectionInformationWrapper } from '../../constants/Prices_Contants';
+
 import {
-  marginBetweenPageComponent,
   responsiveWidthMobile,
-  selectionInformationWrapper,
-  verticalMargin
+  verticalMargin,
+  marginBetweenPageComponent
 } from '../../constants/Global_Constants';
 
 // Pricing Page Related

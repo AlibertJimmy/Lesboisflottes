@@ -2,7 +2,6 @@
 import styled, { css } from 'styled-components';
 
 // Import Constants
-// import { responsiveWidthMobile, responsiveWidthTablet } from '../../utils/Constant';
 import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants/Global_Constants';
 
 export const GridWrapper = styled.div`

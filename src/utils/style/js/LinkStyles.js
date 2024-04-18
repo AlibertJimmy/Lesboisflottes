@@ -8,7 +8,7 @@ import { commonWriting } from './GlobalStyles';
 import colors from '../../colors/colors';
 
 // Import Constants
-import { horizontalMarginTablet } from '../../constants/Constant';
+import { horizontalMarginTablet } from '../../constants/Global_Constants';
 import { underlineEffect } from './NavStyle';
 
 // Link Related

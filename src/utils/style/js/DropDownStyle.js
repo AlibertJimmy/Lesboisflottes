@@ -9,7 +9,7 @@ import { commonWriting } from './GlobalStyles';
 // Import Colors
 import colors from '../../colors/colors';
 import { underlineEffect } from './NavStyle';
-import { dropDownLinkHeight } from '../../constants/Constant';
+import { dropDownLinkHeight } from '../../constants/Global_Constants';
 
 export const DropdownContainer = styled.div`
   

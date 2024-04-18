@@ -11,7 +11,6 @@ import StarScale from './starScale';
 
 // Import Style
 import {
-  AverageRatingWrapper,
   AverageRatingContainer,
   WebSiteNameContainer, CommentTitle,
   StarScaleContainer, StyledP1
@@ -25,7 +24,6 @@ function AverageRatingItem ({ webSite }) {
   console.log(webSite);
 
   return (
-    <AverageRatingWrapper id={`averageRatingWrapper${webSite.name}`}>
       <div>
         <StyledLink
           to={i18n.language === 'en' ? webSite.linken : webSite.linkfr}
@@ -41,7 +39,6 @@ function AverageRatingItem ({ webSite }) {
           </AverageRatingContainer>
         </StyledLink>
       </div>
-    </AverageRatingWrapper>
   );
 }
 

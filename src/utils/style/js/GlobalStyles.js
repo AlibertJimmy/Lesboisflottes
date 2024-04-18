@@ -9,7 +9,7 @@ import {
   horizontalMargin, verticalMargin,
   responsiveWidthTablet, responsiveWidthMobile,
   horizontalMarginTablet, horizontalMarginMobile, generalTextFontSize
-} from '../../constants/Constant';
+} from '../../constants/Global_Constants';
 
 export const PageWrapper = styled.div`
 

@@ -6,7 +6,7 @@ import { commonHeaderFooter } from '../../../utils/style/js/GlobalStyles';
 import colors from '../../colors/colors';
 
 // Import Constants
-import { headerHeight, horizontalMargin, zIndexHeader } from '../../constants/Constant';
+import { headerHeight, horizontalMargin, zIndexHeader } from '../../constants/Global_Constants';
 
 const sideMargin = 20;
 

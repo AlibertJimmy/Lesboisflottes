@@ -7,10 +7,8 @@ import colors from '../../colors/colors';
 
 // Import Constants
 import {
-  responsiveWidthMobile, responsiveWidthTablet,
-  headerHeightResponsive, titleContainerHeight,
-  verticalMargin,
-  titleContainerHeightResponsive
+  responsiveWidthMobile,
+  verticalMargin
 } from '../../constants/Global_Constants';
 
 // Comment Item Related
@@ -84,18 +82,6 @@ export const CommentPresentationContainer = styled.div`
 `;
 
 // Average Rating Related
-
-export const AverageRatingWrapper = styled.div`
-padding-top: ${titleContainerHeight + verticalMargin}px;
-  
-  @media (max-width: ${responsiveWidthTablet}px){
-    padding-top: ${titleContainerHeightResponsive + verticalMargin}px;
-  }
-  @media (max-width: ${responsiveWidthMobile}px){
-    padding-top: ${headerHeightResponsive + verticalMargin}px;
-  }
-`;
-
 export const CommentTitle = styled.h3`
     ${commonTitleStyle};
     font-size: 25px;

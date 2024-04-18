@@ -15,7 +15,7 @@ import {
   responsiveWidthTablet, zIndexBurgerButton,
   headerHeight, zIndexNavBar,
   zIndexSideNav
-} from '../../constants/Constant';
+} from '../../constants/Global_Constants';
 
 const BaseNav = ({ className, children }) => <nav className={className} id='navBar'>{children}</nav>;
 

@@ -6,9 +6,10 @@ import colors from '../../colors/colors';
 
 // Import Constants
 import {
-  verticalMargin, horizontalMargin, horizontalMarginResponsive,
   responsiveWidthMobile, responsiveWidthTablet,
-  headerHeight, headerHeightResponsive, navBarHeight, footerHeight
+  headerHeight, footerHeight,
+  verticalMargin, horizontalMargin,
+  horizontalMarginMobile
 } from '../../constants/Global_Constants';
 
 export const PageWrapper = styled.div`
@@ -16,12 +17,12 @@ export const PageWrapper = styled.div`
     min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
 
     @media (max-width: ${responsiveWidthTablet}px){
-        margin: ${navBarHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
-        min-height: ${window.innerHeight - (headerHeightResponsive + verticalMargin * 2 + footerHeight)}px;
+        margin: ${headerHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
+        min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
     }
 
     @media (max-width: ${responsiveWidthMobile}px){
-        margin: ${headerHeightResponsive + verticalMargin}px ${horizontalMarginResponsive}px ${verticalMargin}px ${horizontalMarginResponsive}px;
+        margin: ${headerHeight + verticalMargin}px ${horizontalMarginMobile}px ${verticalMargin}px ${horizontalMarginMobile}px;
     }
 `;
 

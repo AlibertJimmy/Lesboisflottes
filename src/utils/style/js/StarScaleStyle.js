@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // Import Constant
-import { starWidth } from '../../constants/Global_Constants';
+import { starWidth } from '../../constants/StarScale_Constants';
 
 export const StarSpan = styled.span`
   display: inline-block;
