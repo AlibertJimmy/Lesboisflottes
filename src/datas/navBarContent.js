@@ -19,12 +19,27 @@ export const navigationBarContent = [
   */
   {
     pageLinkTitle: 'Location',
-    pageLink: 'Rental',
+    pageLink: 'Location',
     dropDown: false
   },
   {
-    pageLinkTitle: 'About-title',
-    pageLink: 'About',
+    pageLinkTitle: 'Housing',
+    pageLink: 'Housing',
+    dropDown: false
+  },
+  {
+    pageLinkTitle: 'Gallery',
+    pageLink: 'Gallery',
+    dropDown: false
+  },
+  {
+    pageLinkTitle: 'Comments',
+    pageLink: 'Comments',
+    dropDown: false
+  },
+  {
+    pageLinkTitle: 'Prices',
+    pageLink: 'Prices',
     dropDown: false
   },
   {
