@@ -2,13 +2,16 @@
 import styled from 'styled-components';
 
 // Import Colors
-import colors from '../colors';
+import colors from '../../colors/colors';
 
 // Import Constants
 import {
   responsiveWidthTablet, responsiveWidthMobile,
   headerHeight, navBarHeight, titleContainerHeight, titleContainerHeightResponsive
 } from '../../constants';
+import { Link } from 'react-router-dom';
+import { commonTitleStyle } from './GlobalStyle';
+import { CommonLink } from './LinkStyle';
 
 export const HeaderWrapper = styled.div`
     display: flex;
@@ -51,6 +54,11 @@ export const StyledTitle = styled.h1`
   font-size: 30px;
   
   margin: 0 0 5px 0;
+`;
+
+export const HeaderLink = styled(Link)`
+  ${commonTitleStyle};
+  ${CommonLink};
 `;
 
 export const StyledSubtitle = styled.h2`

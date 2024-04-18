@@ -7,9 +7,9 @@ import styled, { css } from 'styled-components';
 import { commonTitleStyle } from './GlobalStyle';
 
 // Import Colors
-import colors from '../colors';
+import colors from '../../colors/colors';
 
-const CommonLink = css`
+export const CommonLink = css`
   text-decoration: none;
   color: ${colors.link};
 
@@ -26,10 +26,6 @@ export const StyledLinkSidebar = styled(Link)`
 `;
 
 // Header
-export const HeaderLink = styled(Link)`
-  ${commonTitleStyle};
-  ${CommonLink}
-`;
 
 // Comment
 export const StyledLink = styled(Link)`

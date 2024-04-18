@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { commonTitleStyle } from './GlobalStyle';
 
 // Import Colors
-import colors from '../colors';
+import colors from '../../colors/colors';
 
 // Import Constants
 import {

@@ -1,7 +1,7 @@
 // Import Style
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import colors from '../colors';
+import colors from '../../colors/colors';
 
 const IconDimension = css`
   height: 25px;

@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 // Import Constant
 import { navBarHeight } from '../../utils/constants';
-import colors from '../../utils/style/colors';
+import colors from '../../utils/colors/colors';
 
 const Nav = styled.nav`
   display: flex;

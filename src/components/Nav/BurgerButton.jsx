@@ -6,7 +6,7 @@ import SideNav from './SideNav';
 
 // Import Style
 import styled from 'styled-components';
-import colors from '../../utils/style/colors';
+import colors from '../../utils/colors/colors';
 
 // Import Constante
 import { responsiveWidthTablet } from '../../utils/constants';

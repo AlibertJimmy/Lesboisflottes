@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import { StyledLinkSidebar } from '../../utils/style/js/LinkStyle';
 
 // Import Colors
-import colors from '../../utils/style/colors';
+import colors from '../../utils/colors/colors';
 
 // Import constantes
 import { responsiveWidthTablet } from '../../utils/constants';

@@ -14,6 +14,7 @@ import {
   FieldContainerMessageWidth,
   FieldContainerMessageHeight
 } from '../../constants/ContactForm_Constants';
+import colors from '../../colors/colors';
 
 export const ContactFormWrapper = styled.div`
   display: flex;
@@ -75,6 +76,14 @@ export const ContactFormFieldCommon = css`
 
   font-family: cursive;
   font-size: 16px;
+  color: ${colors.eerieBlack};
+
+  border: 1px solid black;
+  border-radius: 2px;
+
+  &:focus {
+    outline: 1px solid #8c8a89;
+  }
 `;
 
 export const ContactFormField = styled.input`

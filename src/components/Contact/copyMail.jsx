@@ -6,7 +6,7 @@ import { t } from 'i18next';
 import PropTypes from 'prop-types';
 
 // Import Colors
-import colors from '../../utils/style/colors';
+import colors from '../../utils/colors/colors';
 
 class CopyEmailLink extends React.Component {
   constructor (props) {

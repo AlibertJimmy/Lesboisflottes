@@ -12,9 +12,9 @@ import { scrollToTop } from '../../utils/functions/General';
 // Import Style
 import {
   HeaderWrapper,
-  TitleContainer, StyledTitle, StyledSubtitle
+  TitleContainer, StyledTitle, StyledSubtitle,
+  HeaderLink
 } from '../../utils/style/js/HeaderStyle';
-import { HeaderLink } from '../../utils/style/js/LinkStyle';
 
 // Import Constants
 import {

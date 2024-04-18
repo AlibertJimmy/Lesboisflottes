@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { LegendTDCellColor, LegendTDCellText, LegendTable, PageSubtitleResponsive, SeasonLegendWrapper } from '../../../utils/style/js/PricingStyle';
 
 // Import Colors
-import colors from '../../../utils/style/colors';
+import colors from '../../../utils/colors/colors';
 
 function SeasonLegend () {
   const { t } = useTranslation();

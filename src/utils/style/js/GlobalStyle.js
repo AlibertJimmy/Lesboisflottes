@@ -2,7 +2,7 @@
 import styled, { css } from 'styled-components';
 
 // Import Colors
-import colors from '../colors';
+import colors from '../../colors/colors';
 
 // Import Constants
 import {
@@ -60,9 +60,14 @@ export const PageSubtitle = styled.h2`
     }  
 `;
 
-export const StyledP = styled.p`
-    font-size: 15px;
+export const CommonText = css`
+    font-size: 16px;
     font-family: cursive;
+    color: ${colors.text};
+`;
+
+export const StyledP = styled.p`
+    ${CommonText};
     margin: 5px;
 
     @media (max-width: ${responsiveWidthMobile}px){
