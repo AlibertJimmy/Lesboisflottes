@@ -7,7 +7,7 @@ const colors =
     mediumSeason: '#f5a82c',
     highSeason: '#db2a1a',
 
-    navLinks: '#FFFFFF',
+    navLinks: colorsPalette.antiFlashWhite,
     link: colorsPalette.uranianBlue,
     linkHover: colorsPalette.yinMnBlue,
 
@@ -16,7 +16,7 @@ const colors =
 
     backgroundHeaderFooter: colorsPalette.antiFlashWhite,
 
-    interactifElement: '##FAF03D'
+    interactifElement: colorsPalette.rosyBrown
   };
 
 export default colors;

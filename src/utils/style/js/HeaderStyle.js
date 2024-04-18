@@ -29,7 +29,7 @@ export const HeaderWrapper = styled.div`
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   
-  background-color: ${({ isScrolled }) => (isScrolled ? `${colorsPalette.battleShipGray}` : 'transparent')};
+  background-color: ${({ isScrolled }) => (isScrolled ? `${colorsPalette.battleShipGray}` : `${colorsPalette.battleShipGray}`)};
   color: ${({ isScrolled }) => (isScrolled ? 'black' : 'white')};
 
 `;

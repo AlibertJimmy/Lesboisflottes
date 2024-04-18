@@ -9,7 +9,9 @@ const colorsPalette =
     airSuperiorityBlue: '#6096BA',
     uranianBlue: '#A3CEF1',
     battleShipGray: '#8B8C89',
-    eerieBlack: '#262421'
+    eerieBlack: '#262421',
+    rosyBrown: '#BD897E',
+    prussianBlue: '#0D324D'
   };
 
 export default colorsPalette;

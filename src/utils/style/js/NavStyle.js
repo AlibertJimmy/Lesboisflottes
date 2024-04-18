@@ -158,7 +158,7 @@ export const underlineEffect = css`
       height: 2px; 
       left: 50%;
       transform: translateX(-50%);
-      background-color: ${colors.navLinkUnderline}; 
+      background-color: ${colors.interactifElement}; 
       transition: width 0.3s ease-out;
     }
 

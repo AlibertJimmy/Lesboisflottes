@@ -22,15 +22,13 @@ import styled from 'styled-components';
 // Import Translation index
 import './i18n';
 import { NavContextProvider } from './context/NavContext';
-
-const HomeWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  
-`;
+import { headerHeight } from './utils/constants/Global_Constants';
 
 const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  padding-top: ${headerHeight}px;
   
 `;
 
@@ -42,7 +40,6 @@ function App () {
       <React.StrictMode>
         <Router>
           <Header />
-          <HomeWrapper id='homeWrapper'>
             <ContentWrapper id='contentWrapper'>
               <Routes>
                 <Route path={`/${i18n.language}/`} element={<Home />} />
@@ -54,7 +51,6 @@ function App () {
                 <Route path={`/${i18n.language}/${t('Location')}`} element={<Location />} />
               </Routes>
             </ContentWrapper>
-          </HomeWrapper>
           <Footer />
       </Router>
     </React.StrictMode>
