@@ -3,7 +3,12 @@ import styled, { css } from 'styled-components';
 
 // Import Constants
 import { PageSubtitle } from './GlobalStyle';
-import { marginBetweenPageComponent, responsiveWidthMobile, selectionInformationWrapper, verticalMargin } from '../../constants';
+import {
+  marginBetweenPageComponent,
+  responsiveWidthMobile,
+  selectionInformationWrapper,
+  verticalMargin
+} from '../../constants/Global_Constants';
 
 // Pricing Page Related
 export const SelectionInformationWrapper = styled.div`

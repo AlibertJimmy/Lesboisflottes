@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // Import Constants
-import { verticalMargin } from '../../constants';
+import { verticalMargin } from '../../constants/Global_Constants';
 
 export const ContactWrapper = styled.div`
   display: flex;

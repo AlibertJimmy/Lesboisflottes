@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { commonTitleStyle } from './GlobalStyle';
 
 // Import Constants
-import { responsiveWidthTablet, verticalMargin } from '../../constants';
+import { responsiveWidthTablet, verticalMargin } from '../../constants/Global_Constants';
 
 export const HomeWrapper = styled.div`
   display: flex;

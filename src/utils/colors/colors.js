@@ -15,7 +15,7 @@ const colors =
 
     backgroundHeaderFooter: colorsPalette.antiFlashWhite,
 
-    interactifElement: colorsPalette.lightGray
+    interactifElement: '##FAF03D'
   };
 
 export default colors;

@@ -18,7 +18,7 @@ import {
 } from '../../utils/style/js/HomePageStyle';
 
 // Import Constants
-import { responsiveWidthTablet } from '../../utils/constants';
+import { responsiveWidthTablet } from '../../utils/constants/Global_Constants';
 
 function Home () {
   const { t } = useTranslation();

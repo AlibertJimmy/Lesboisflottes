@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // Import Constant
-import { responsiveWidthTablet } from '../../constants';
+import { responsiveWidthTablet } from '../../constants/Global_Constants';
 
 export const EquipmentListWrapper = styled.div`
     display: flex;

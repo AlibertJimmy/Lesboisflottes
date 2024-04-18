@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import colors from '../../colors/colors';
 
 // Import Constants
-import { footerHeight, responsiveWidthMobile } from '../../constants';
+import { footerHeight, responsiveWidthMobile } from '../../constants/Global_Constants';
 
 export const StyledFooter = styled.div`
     display: flex;

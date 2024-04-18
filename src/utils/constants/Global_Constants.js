@@ -1,6 +1,6 @@
 // Langage
-import flagFr from '../assets/flag/flag_fr.png';
-import flagEn from '../assets/flag/flag_en.png';
+import flagFr from '../../assets/flag/flag_fr.png';
+import flagEn from '../../assets/flag/flag_en.png';
 
 export const LANGUAGES = [
   {

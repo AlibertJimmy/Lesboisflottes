@@ -5,29 +5,14 @@ import React from 'react';
 import Burger from './BurgerButton';
 
 // Import Style
-import styled from 'styled-components';
+import { StyledNavBar } from '../../utils/style/js/NavStyle';
 
-// Import Constant
-import { navBarHeight } from '../../utils/constants';
-import colors from '../../utils/colors/colors';
-
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  width: 100%;
-
-  height: ${navBarHeight}px;
-  background: ${colors.backgroundHeaderFooter};
-`;
-//
 function Navbar () {
   return (
-        <Nav>
+        <StyledNavBar id='navBar'>
             <Burger/>
-        </Nav>
+        </StyledNavBar>
   );
-}
+};
 
 export default Navbar;

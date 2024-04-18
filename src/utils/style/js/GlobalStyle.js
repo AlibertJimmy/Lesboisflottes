@@ -9,7 +9,7 @@ import {
   verticalMargin, horizontalMargin, horizontalMarginResponsive,
   responsiveWidthMobile, responsiveWidthTablet,
   headerHeight, headerHeightResponsive, navBarHeight, footerHeight
-} from '../../constants';
+} from '../../constants/Global_Constants';
 
 export const PageWrapper = styled.div`
     margin: ${headerHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;

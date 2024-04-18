@@ -4,7 +4,7 @@ import i18nBackend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
 // Import Constants
-import { webSiteDevUrl, webSiteProdUrl } from './utils/constants';
+import { webSiteDevUrl, webSiteProdUrl } from './utils/constants/Global_Constants';
 
 const getCurrentHost =
   process.env.NODE_ENV === 'development'

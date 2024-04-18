@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // Import Constants
-import { responsiveWidthMobile } from '../../constants';
+import { responsiveWidthMobile } from '../../constants/Global_Constants';
 
 export const AddressWrapper = styled.div`
   display: flex;

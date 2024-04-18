@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import Constants
-import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants';
+import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants/Global_Constants';
 import {
   ContactFormWidth,
   ContactFormGap,

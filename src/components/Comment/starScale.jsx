@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 // Import Style
 import { StarSpan } from '../../utils/style/js/StarScaleStyle';
-import { starHeight, starWidth } from '../../utils/constants';
+import { starHeight, starWidth } from '../../utils/constants/Global_Constants';
 
 function StarScale ({ scaleValue }) {
   let fullStars = Math.floor(scaleValue);

@@ -11,7 +11,7 @@ import {
   headerHeightResponsive, titleContainerHeight,
   verticalMargin,
   titleContainerHeightResponsive
-} from '../../constants';
+} from '../../constants/Global_Constants';
 
 // Comment Item Related
 
