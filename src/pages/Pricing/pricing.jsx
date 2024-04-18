@@ -1,5 +1,6 @@
 // Import react libraries
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 import { fr, enUS } from 'date-fns/locale';
@@ -14,6 +15,7 @@ import InformationDisplay from '../../components/Pricing/Information/information
 
 // Import Datas
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing';
+import { pricesPageContent } from '../../datas/pageContent/pricesPageContent';
 
 // Import Style
 import { PageWrapper, PageTitle, PageSubtitle } from '../../utils/style/js/GlobalStyle';
@@ -100,6 +102,14 @@ function Pricing () {
 `;
 
   return (
+    <>
+    <Helmet>
+        <title>{t(`${pricesPageContent.pageTitle}`)}</title>
+        <meta
+          name="description"
+          content={`${pricesPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
+        />
+      </Helmet>
       <PageWrapper id='pricingPageWrapper'>
           <PageTitle>{t('Prices')}</PageTitle>
 
@@ -139,7 +149,7 @@ function Pricing () {
         <InformationDisplay />
 
       </PageWrapper>
-
+      </>
   );
 }
 

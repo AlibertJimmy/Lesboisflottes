@@ -18,6 +18,7 @@
     "react-day-picker": "^8.8.2",
     "react-dom": "^18.2.0",
     "react-focus-on": "^3.9.1",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^13.3.0",
     "react-images": "^1.2.0-beta.7",
     "react-photo-gallery": "^8.0.0",

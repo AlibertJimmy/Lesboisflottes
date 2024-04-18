@@ -1,5 +1,6 @@
 // Import React Libraries
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 // Import Component
@@ -7,6 +8,9 @@ import GallerySampleGridResponsive from '../../components/Gallery/GallerySampleG
 import GallerySampleGridLeft from '../../components/Gallery/GallerySampleGridLeft';
 import GallerySampleGridRight from '../../components/Gallery/GallerySampleGridRight';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
+
+// Import Datas
+import { homePageContent } from '../../datas/pageContent/homePageContent';
 
 // Import Image
 import homeIllustration from '../../assets/topIllustrations/HomeTopIllustration.jpg';
@@ -50,6 +54,13 @@ function Home () {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>{t(`${homePageContent.pageTitle}`)}</title>
+        <meta
+          name="description"
+          content={`${homePageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
+        />
+      </Helmet>
     <TopIllustration image={homeIllustration}/>
     <PageWrapper id='homePageWrapper'>
       <StyledWelcome>{t('Welcome')}</StyledWelcome>

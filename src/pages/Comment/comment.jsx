@@ -1,5 +1,6 @@
 // Import React Libraries
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 // Import Components
@@ -9,6 +10,7 @@ import CommentPresentation from '../../components/Comment/commentPresentation';
 
 // Import Datas
 import { webSitesList } from '../../datas/review_WebSites';
+import { commentsPageContent } from '../../datas/pageContent/commentsPageContent';
 
 // Import Style
 import styled from 'styled-components';
@@ -27,6 +29,15 @@ function Comment () {
   console.log(`language : ${i18n.language}`);
 
   return (
+    <>
+      <Helmet>
+        <title>{t(`${commentsPageContent.pageTitle}`)}</title>
+        <meta
+          name="description"
+          content={`${commentsPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
+        />
+      </Helmet>
+
       <PageWrapper id='commentPageWrapper'>
         <PageTitle>{t('OurComments')}</PageTitle>
 
@@ -41,6 +52,7 @@ function Comment () {
           </CommentListWrapper>
         ))}
       </PageWrapper>
+      </>
   );
 }
 
