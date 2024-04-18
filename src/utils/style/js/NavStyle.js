@@ -16,6 +16,8 @@ import {
   headerHeight, zIndexNavBar,
   zIndexSideNav
 } from '../../constants/Global_Constants';
+import { commonWriting } from './GlobalStyles';
+import { Link } from 'react-router-dom';
 
 const BaseNav = ({ className, children }) => <nav className={className} id='navBar'>{children}</nav>;
 
@@ -83,8 +85,8 @@ export const BurgerButton = styled.div`
 // NavBar
 
 export const StyledNavBar = styled(BaseNav)`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   height: ${headerHeight}px;
   z-index: ${zIndexNavBar};
 `;
@@ -145,7 +147,6 @@ export const StyledUlMenu = styled.ul`
 `;
 
 // NavLi
-
 export const underlineEffect = css`
     position: relative;
 
@@ -164,4 +165,12 @@ export const underlineEffect = css`
     &:hover::after {
       width: 100%;
     }
+`;
+
+// Links
+export const NavLink = styled(Link)`
+text-decoration: none;
+  ${commonWriting};
+  ${underlineEffect};
+  color: ${colors.navLinks}
 `;

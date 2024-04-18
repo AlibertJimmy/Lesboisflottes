@@ -26,14 +26,11 @@ import { NavContextProvider } from './context/NavContext';
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
   
 `;
 
 const ContentWrapper = styled.div`
-  
   width: 100%;
-  padding: 20px 0 ;
   
 `;
 
@@ -45,8 +42,8 @@ function App () {
       <React.StrictMode>
         <Router>
           <Header />
-          <HomeWrapper>
-            <ContentWrapper>
+          <HomeWrapper id='homeWrapper'>
+            <ContentWrapper id='contentWrapper'>
               <Routes>
                 <Route path={`/${i18n.language}/`} element={<Home />} />
                 <Route path={`/${i18n.language}/${t('Comments')}`} element={<Comment />} />

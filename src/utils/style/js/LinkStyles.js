@@ -9,7 +9,6 @@ import colors from '../../colors/colors';
 
 // Import Constants
 import { horizontalMarginTablet } from '../../constants/Global_Constants';
-import { underlineEffect } from './NavStyle';
 
 // Link Related
 export const NavCommonWriting = css`
@@ -31,13 +30,6 @@ export const StyledLink = styled(Link)`
     ${commonWriting};
     ${commonLink};
     color:inherit;
-`;
-
-export const NavLink = styled(Link)`
-  ${commonLink};
-  ${commonWriting};
-  ${underlineEffect};
-  color: ${colors.navLink}
 `;
 
 export const ExternalLink = styled(Link)`

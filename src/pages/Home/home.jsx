@@ -8,6 +8,9 @@ import GallerySampleGridLeft from '../../components/Gallery/GallerySampleGridLef
 import GallerySampleGridRight from '../../components/Gallery/GallerySampleGridRight';
 import CommentScrollingBanner from '../../components/Comment/commentScrollingBanner';
 
+// Import Image
+import homeIllustration from '../../assets/topIllustrations/HomeTopIllustration.jpg';
+
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import {
@@ -19,6 +22,7 @@ import {
 
 // Import Constants
 import { responsiveWidthTablet } from '../../utils/constants/Global_Constants';
+import TopIllustration from '../../components/TopIllustration/TopIllustration';
 
 function Home () {
   const { t } = useTranslation();
@@ -45,6 +49,8 @@ function Home () {
     };
   }, []);
   return (
+    <>
+    <TopIllustration image={homeIllustration}/>
     <PageWrapper id='homePageWrapper'>
       <StyledWelcome>{t('Welcome')}</StyledWelcome>
       <HomeWrapper id='homeWrapper'>
@@ -71,6 +77,7 @@ function Home () {
         }
       </HomeWrapper>
     </PageWrapper>
+    </>
   );
 }
 

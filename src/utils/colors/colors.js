@@ -7,6 +7,7 @@ const colors =
     mediumSeason: '#f5a82c',
     highSeason: '#db2a1a',
 
+    navLinks: '#FFFFFF',
     link: colorsPalette.uranianBlue,
     linkHover: colorsPalette.yinMnBlue,
 

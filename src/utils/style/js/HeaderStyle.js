@@ -4,6 +4,7 @@ import { commonHeaderFooter } from '../../../utils/style/js/GlobalStyles';
 
 // Import Colors
 import colors from '../../colors/colors';
+import colorsPalette from '../../colors/colors_palette';
 
 // Import Constants
 import { headerHeight, horizontalMargin, zIndexHeader } from '../../constants/Global_Constants';
@@ -27,6 +28,10 @@ export const HeaderWrapper = styled.div`
   z-index: ${zIndexHeader};
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+  background-color: ${({ isScrolled }) => (isScrolled ? `${colorsPalette.battleShipGray}` : 'transparent')};
+  color: ${({ isScrolled }) => (isScrolled ? 'black' : 'white')};
+
 `;
 
 export const LogoDiv = styled.div`

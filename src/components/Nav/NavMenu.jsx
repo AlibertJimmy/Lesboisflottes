@@ -17,8 +17,7 @@ import { navigationBarContent } from '../../datas/navBarContent';
 
 // Import Style
 import '../../utils/style/css/NavStyles.css';
-import { StyledUlMenu } from '../../utils/style/js/NavStyle';
-import { NavLink } from '../../utils/style/js/LinkStyles';
+import { StyledUlMenu, NavLink } from '../../utils/style/js/NavStyle';
 import { LanguageMenu } from '../LanguageMenu/languageMenu';
 
 function NavMenu () {
