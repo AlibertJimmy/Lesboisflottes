@@ -11,10 +11,10 @@ import colors from '../../colors/colors';
 
 export const CommonLink = css`
   text-decoration: none;
-  color: ${colors.link};
+  color: ${colors.interactifElement};
 
   &:hover {
-      color: ${colors.linkHover};
+      color: ${colors.interactifElementHover};
   }
 `;
 

@@ -13,7 +13,7 @@ import StarScale from './starScale';
 import {
   AverageRatingContainer,
   WebSiteNameContainer, CommentTitle,
-  StarScaleContainer, StyledP1
+  StarScaleContainer
 } from '../../utils/style/js/CommentStyle';
 import { StyledLink } from '../../utils/style/js/LinkStyle';
 import { IconContainerOut, StyledIcon } from '../../utils/style/js/IconStyle';
@@ -31,10 +31,10 @@ function AverageRatingItem ({ webSite }) {
           <AverageRatingContainer id={`averageRatingContainer${webSite.name}`}>
             <WebSiteNameContainer id={`webSiteNameContainer${webSite.name}`}>
               <IconContainerOut><StyledIcon icon={faExternalLink}/></IconContainerOut>
-              <CommentTitle>{webSite.name}</CommentTitle>
+              <CommentTitle id={`commentTitle-${webSite.name}`}>{webSite.name}</CommentTitle>
             </WebSiteNameContainer>
             <StarScaleContainer id={`starScaleContainer${webSite.name}`}>
-              <StyledP1>{t('AverageRating')} : <StarScale scaleValue={webSite.averageRating}/></StyledP1>
+              <CommentTitle>{t('AverageRating')} : <StarScale scaleValue={webSite.averageRating}/></CommentTitle>
             </StarScaleContainer>
           </AverageRatingContainer>
         </StyledLink>

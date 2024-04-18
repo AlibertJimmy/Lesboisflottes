@@ -1,5 +1,6 @@
 // Import Style
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import Colors
 import colors from '../../colors/colors';
@@ -17,7 +18,7 @@ export const StyledFooter = styled.div`
     width: 100%;
     height: ${footerHeight}px;
 
-    color: ${colors.link};
+    color: ${colors.navLinks};
     background: ${colors.backgroundHeaderFooter};
 `;
 
@@ -50,4 +51,14 @@ export const FooterTextContainer = styled.div`
 export const StyledP = styled.p`
     font-family: cursive;
     font-size: 15px;
+`;
+
+// Icon
+export const StyledIcon = styled(FontAwesomeIcon)`
+    height: 25px;
+    width: 25px;
+  cursor: pointer;
+  &:hover{
+    color: ${colors.linkHover};
+  }
 `;

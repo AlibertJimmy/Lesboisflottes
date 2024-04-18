@@ -130,8 +130,8 @@ export const commonHeaderFooter = css`
 
 // Common Writing
 export const commonWriting = css`
-  font-family:  sans-serif;
-  font-weight:bold;
+  font-family: sans-serif;
+  font-weight: bold;
 
   @media (max-width: ${responsiveWidthTablet}px){
     color: ${colors.linkResponsive};

@@ -25,7 +25,8 @@ export const IconContainerOut = styled.div`
 export const StyledIcon = styled(FontAwesomeIcon)`
   ${IconDimension};
   cursor: pointer;
+  color: ${colors.interactifElement};
   &:hover{
-    color: ${colors.linkHover};
+    color: ${colors.interactifElementHover};
   }
 `;

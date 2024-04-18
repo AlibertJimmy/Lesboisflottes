@@ -1,5 +1,6 @@
 // Import React Libraries
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Import PropTypes
 import PropTypes from 'prop-types';
@@ -16,8 +17,6 @@ import {
   headerHeight, zIndexNavBar,
   zIndexSideNav
 } from '../../constants/Global_Constants';
-import { commonWriting } from './GlobalStyles';
-import { Link } from 'react-router-dom';
 
 const BaseNav = ({ className, children }) => <nav className={className} id='navBar'>{children}</nav>;
 
@@ -169,8 +168,9 @@ export const underlineEffect = css`
 
 // Links
 export const NavLink = styled(Link)`
-text-decoration: none;
-  ${commonWriting};
   ${underlineEffect};
+  
+  font-family: cursive;
+  text-decoration: none;
   color: ${colors.navLinks}
 `;

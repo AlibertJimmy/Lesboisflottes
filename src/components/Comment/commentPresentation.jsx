@@ -13,8 +13,7 @@ import StarScale from './starScale';
 import {
   CommentPresentationContainer,
   CommentSitePresentationWrapper,
-  CommentTitle,
-  StyledP1
+  CommentTitle
 } from '../../utils/style/js/CommentStyle';
 import { StyledHashLink } from '../../utils/style/js/LinkStyle';
 import { IconContainerIn, StyledIcon } from '../../utils/style/js/IconStyle';
@@ -28,9 +27,9 @@ function CommentPresentation ({ webSitesList }) {
         <CommentPresentationContainer key={index} id='commentPresentationContainer'>
           <StyledHashLink to={`#averageRatingWrapper${webSite.name}`}>
             <IconContainerIn><StyledIcon icon={faArrowDown}/></IconContainerIn>
-            <CommentTitle style={{ textAlign: 'center' }}>{webSite.name}</CommentTitle>
-            <CommentTitle style={{ textAlign: 'center' }}>{t('AmountOfVotes')} : {webSite[`reviewList${i18n.language}`].length}</CommentTitle>
-            <StyledP1>{t('AverageRating')} : <StarScale scaleValue={webSite.averageRating}/></StyledP1>
+            <CommentTitle id={`commentTitle-${webSite.name}`} style={{ textAlign: 'center' }}>{webSite.name}</CommentTitle>
+            <CommentTitle id={`commentTitle-${webSite.name}-AmountOfVotes`} style={{ textAlign: 'center' }}>{t('AmountOfVotes')} : {webSite[`reviewList${i18n.language}`].length}</CommentTitle>
+            <CommentTitle id={`commentTitle-${webSite.name}-AverageRating`} style={{ textAlign: 'center' }}>{t('AverageRating')}: <StarScale scaleValue={webSite.averageRating}/></CommentTitle>
           </StyledHashLink>
         </CommentPresentationContainer>
       ))}

@@ -21,7 +21,7 @@ export const CommentWrapper = styled.div`
   border-radius: 15px;
   box-shadow: 2px 2px 5px 2px rgba(0.1, 0, 0.1, 0.2);
 
-  background-color: ${(props) => (props.even ? colors.backgroundHeaderFooter : 'inherit')};
+  background-color: ${(props) => (props.even ? colors.section : 'inherit')};
 `;
 
 export const CommentContainer = styled.div`
@@ -79,6 +79,12 @@ export const CommentPresentationContainer = styled.div`
     @media (max-width: ${responsiveWidthMobile}px){
       margin: 10px 0;
     }
+
+    color: ${colors.interactifElement};
+
+    &:hover {
+      color: ${colors.interactifElementHover};
+    }
 `;
 
 // Average Rating Related
@@ -86,8 +92,7 @@ export const CommentTitle = styled.h3`
     ${commonTitleStyle};
     font-size: 25px;
     margin: 5px;
-
-    color: ${colors.title} ;
+    color: inherit;
 `;
 
 export const AverageRatingContainer = styled.div`

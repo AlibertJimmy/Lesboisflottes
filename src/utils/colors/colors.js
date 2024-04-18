@@ -8,15 +8,16 @@ const colors =
     highSeason: '#db2a1a',
 
     navLinks: colorsPalette.antiFlashWhite,
-    link: colorsPalette.uranianBlue,
-    linkHover: colorsPalette.yinMnBlue,
 
-    title: colorsPalette.airSuperiorityBlue,
+    title: colorsPalette.onyx,
     text: colorsPalette.dimGray,
 
-    backgroundHeaderFooter: colorsPalette.antiFlashWhite,
+    backgroundHeaderFooter: colorsPalette.battleShipGray,
 
-    interactifElement: colorsPalette.rosyBrown
+    interactifElement: colorsPalette.rosyBrown,
+    interactifElementHover: colorsPalette.mulberry,
+
+    section: colorsPalette.seaShell
   };
 
 export default colors;
