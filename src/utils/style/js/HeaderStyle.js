@@ -1,6 +1,5 @@
 // Import Style
 import styled from 'styled-components';
-import { commonHeaderFooter } from '../../../utils/style/js/GlobalStyles';
 
 // Import Colors
 import colors from '../../colors/colors';
@@ -11,8 +10,8 @@ import { headerHeight, horizontalMargin, zIndexHeader } from '../../constants/Gl
 const sideMargin = 20;
 
 export const HeaderWrapper = styled.div`
-  ${commonHeaderFooter};
   display: flex;
+  width: 100%;
 
   justify-content: space-between;
 

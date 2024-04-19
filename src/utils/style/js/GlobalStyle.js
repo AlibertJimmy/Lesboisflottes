@@ -13,7 +13,12 @@ import {
 } from '../../constants/Global_Constants';
 
 export const PageWrapper = styled.div`
-    margin: ${headerHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
+
+    display: flex;
+    flex-direction: column;
+    gap: ${verticalMargin}px;
+
+    margin: ${verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
     min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
 
     @media (max-width: ${responsiveWidthTablet}px){
@@ -24,6 +29,19 @@ export const PageWrapper = styled.div`
     @media (max-width: ${responsiveWidthMobile}px){
         margin: ${headerHeight + verticalMargin}px ${horizontalMarginMobile}px ${verticalMargin}px ${horizontalMarginMobile}px;
     }
+
+    border: 1px solid red;
+`;
+
+export const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  padding: ${horizontalMargin}px;
+
+  box-sizing: border-box;
 `;
 
 export const StyledContainer = styled.div`
@@ -31,6 +49,16 @@ export const StyledContainer = styled.div`
     padding: 20px;
 
     border-radius: 15px;
+`;
+
+// Common Writing
+export const commonWriting = css`
+  font-family: sans-serif;
+  font-weight: bold;
+
+  @media (max-width: ${responsiveWidthTablet}px){
+    color: ${colors.linkResponsive};
+  }
 `;
 
 export const commonTitleStyle = css`

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import Style
 import styled from 'styled-components';
-import { commonWriting } from './GlobalStyles';
+import { commonWriting } from './GlobalStyle';
 
 // Import Colors
 import colors from '../../colors/colors';
