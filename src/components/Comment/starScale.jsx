@@ -5,7 +5,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Import Style
-import { StarSpan } from '../../utils/style/js/StarScaleStyle';
+import { StarSpan } from '../../utils/style/js/StarScale_Style';
+
+// Import Constants
 import { starHeight, starWidth } from '../../utils/constants/StarScale_Constants';
 
 function StarScale ({ scaleValue }) {
