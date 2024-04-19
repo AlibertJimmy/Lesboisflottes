@@ -22,6 +22,7 @@ import {
 // Comment Presentation Related
 export const CommentSitePresentationWrapper = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   width: 100%;
@@ -43,11 +44,11 @@ export const CommentPresentationContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    flex: 0 0 calc(45% - 10px);
+    flex: 0 0 calc(45%);
 
     position: relative;
 
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     height: ${commentPresentationContainerHeight}px;
 
