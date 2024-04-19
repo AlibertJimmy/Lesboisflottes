@@ -36,7 +36,7 @@ function Comment () {
           content={`${commentsPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
-      <TopIllustration image={commentIllustration}/>
+      <TopIllustration image={commentIllustration} title={'OurComments'}/>
       <PageWrapper id='commentPageWrapper'>
         <PageTitle>{t('OurComments')}</PageTitle>
 
