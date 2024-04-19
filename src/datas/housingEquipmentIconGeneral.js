@@ -1,4 +1,4 @@
-export const iconsListDataIndoor = [
+export const iconsListDataGeneral = [
   {
     icon: 'faWifi',
     iconColor: 'icons',
@@ -13,5 +13,10 @@ export const iconsListDataIndoor = [
     icon: 'faEye',
     iconColor: 'icons',
     iconText: 'View'
+  },
+  {
+    icon: 'faVectorSquare',
+    iconColor: 'icons',
+    iconText: 'Area'
   }
 ];

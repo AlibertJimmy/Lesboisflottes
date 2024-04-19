@@ -10,7 +10,9 @@ import HousingGallery from '../../components/Housing/Housing_Gallery';
 
 // Import Data
 import { housingPageContent } from '../../datas/pageContent/housingPageContent';
-import { iconsListDataIndoor } from '../../datas/housingEquipmentIconList';
+import { iconsListDataGeneral } from '../../datas/housingEquipmentIconGeneral';
+import { iconsListDataIndoor } from '../../datas/housingEquipmentIconIndoor';
+import { iconsListDataOutdoor } from '../../datas/housingEquipmentIconOutdoor';
 
 // Import TopIllustration
 import housingTopIllustration from '../../assets/topIllustrations/HousingTopIllustration.jpg';
@@ -41,8 +43,10 @@ function Housing () {
         <HousingPageWarper id='housingPageWrapper'>
           <HousingPageContainer>
             <HousingPresentation/>
+            <HousingEquipmentIcon iconsList={iconsListDataGeneral}/>
             <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
             <HousingEquipmentList/>
+            <HousingEquipmentIcon iconsList={iconsListDataOutdoor}/>
           </HousingPageContainer>
           <HousingGallery/>
         </HousingPageWarper>

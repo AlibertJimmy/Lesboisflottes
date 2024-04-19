@@ -20,3 +20,15 @@ export const SwitchCaseIcon = styled(FontAwesomeIcon)`
       transform: scale(1.1);
   }
 `;
+
+export const SwitchCaseImage = styled.img`
+  height: 45px;
+  width: 45px;
+
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+  }
+`;

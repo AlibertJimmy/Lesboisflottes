@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Import Constant
 import { responsiveWidthTablet } from '../../../constants/Global_Constants';
 
-export const HousingEquipmentListWrapper = styled.div`
+export const HousingEquipmentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -18,11 +18,17 @@ export const HousingEquipmentListWrapper = styled.div`
   }
 `;
 
-export const HousingEquipmentListContainer = styled.div`
+export const HousingEquipmentContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const HousingEquipmentIconContainer = styled.div`
+export const HousingEquipmentListWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
 
+export const HousingEquipmentListContainer = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
