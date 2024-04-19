@@ -40,6 +40,6 @@ export const TopPageTitle = styled.h1`
   color: ${colors.navLinks};
   text-transform: uppercase;
   font-size: 50px;
-  transform: translate(0%, calc(${topIllustrationHeight}px * 0.3));
+  transform: translate(0%, calc(${topIllustrationHeight}px * 0.05));
   text-align: center;
 `;

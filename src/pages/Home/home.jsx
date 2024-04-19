@@ -19,7 +19,6 @@ import homeIllustration from '../../assets/topIllustrations/HomeTopIllustration.
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import {
   HomeWrapper,
-  StyledWelcome,
   CommentScrollingBannerWrapper,
   GalleryContainer
 } from '../../utils/style/js/HomePageStyle';
@@ -61,9 +60,8 @@ function Home () {
           content={`${homePageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
-    <TopIllustration image={homeIllustration}/>
+    <TopIllustration image={homeIllustration} title={'Welcome'}/>
     <PageWrapper id='homePageWrapper'>
-      <StyledWelcome>{t('Welcome')}</StyledWelcome>
       <HomeWrapper id='homeWrapper'>
         {homeLayoutResponsive
           ? <>
