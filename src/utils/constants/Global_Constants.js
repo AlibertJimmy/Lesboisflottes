@@ -9,7 +9,7 @@ export const headerHeight = 50;
 export const footerHeight = 50;
 export const marginBetweenPageComponent = 5;
 
-export const verticalMargin = 50;
+export const verticalMargin = 100;
 
 export const horizontalMargin = 50;
 export const horizontalMarginTablet = 15;

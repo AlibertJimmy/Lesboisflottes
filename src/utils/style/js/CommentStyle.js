@@ -10,6 +10,7 @@ import {
   responsiveWidthMobile
 } from '../../constants/Global_Constants';
 import {
+  commentGap,
   commentListWrapperMarginTop, commentListWrapperPaddingTop
 } from '../../constants/Comment_Constants';
 
@@ -60,7 +61,7 @@ export const CommentScrollingBannerContainer = styled.div`
 export const CommentListWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: ${commentGap}px;
   padding-top: ${commentListWrapperPaddingTop}px;
   margin-top: ${commentListWrapperMarginTop}px;
 `;

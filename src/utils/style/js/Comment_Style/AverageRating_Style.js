@@ -9,7 +9,8 @@ import styled, { css } from 'styled-components';
 import { responsiveWidthMobile, verticalMargin } from '../../../constants/Global_Constants';
 import {
   averageRatingContainerVerticalPadding,
-  averageRatingContainerHorizontalPadding
+  averageRatingContainerHorizontalPadding,
+  commentGap
 } from '../../../constants/Comment_Constants';
 
 // Import Colors
@@ -22,7 +23,7 @@ export const AverageRatingContainer = styled.div`
 
 
   padding: ${averageRatingContainerVerticalPadding}px  ${averageRatingContainerHorizontalPadding}px;
-  margin-bottom: ${verticalMargin}px;
+  margin-bottom: ${verticalMargin - commentGap}px;
 
   border-radius: 15px;
 
