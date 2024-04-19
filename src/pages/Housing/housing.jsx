@@ -11,12 +11,16 @@ import HousingGallery from '../../components/Housing/Housing_Gallery';
 // Import Data
 import { housingPageContent } from '../../datas/pageContent/housingPageContent';
 
+// Import TopIllustration
+import housingTopIllustration from '../../assets/topIllustrations/HousingTopIllustration.jpg';
+
 // Import Style
 import {
   HousingPageWarper,
   HousingPageContainer
 } from '../../utils/style/js/Housing_Style/HousingPage_Style';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
+import TopIllustration from '../../components/TopIllustration/TopIllustration';
 
 function Housing () {
   const { t } = useTranslation();
@@ -30,6 +34,7 @@ function Housing () {
           content={`${housingPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
+      <TopIllustration image={housingTopIllustration} title={'Housing'}/>
       <PageWrapper>
         <HousingPageWarper id='housingPageWrapper'>
           <HousingPageContainer>
