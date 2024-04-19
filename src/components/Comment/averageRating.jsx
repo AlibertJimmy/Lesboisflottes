@@ -2,6 +2,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { faAirbnb } from '@fortawesome/free-brands-svg-icons';
 
 // Import PropTypes
 import PropTypes from 'prop-types';
@@ -9,14 +10,24 @@ import PropTypes from 'prop-types';
 // Import Components
 import StarScale from './starScale';
 
+// Import Image
+import bookingLogo from '../../assets/logo/booking_logo.svg';
+
 // Import Style
 import {
-  AverageRatingContainer,
-  WebSiteNameContainer, CommentTitle,
-  StarScaleContainer
+  CommentTitle
 } from '../../utils/style/js/CommentStyle';
-import { StyledLink } from '../../utils/style/js/LinkStyle';
-import { IconContainerOut, StyledIcon } from '../../utils/style/js/IconStyle';
+import {
+  AverageRatingContainer,
+  AverageRatingWebSiteNameContainer,
+  AverageRatingStarScaleContainer,
+  AverageRatingIconContainer,
+  AverageRatingIcon,
+  AverageRatingIconBrandContainer,
+  AverageRatingBrandIcon,
+  AverageRatingBrandImage,
+  AverageRatingLink
+} from '../../utils/style/js/Comment_Style/AverageRating_Style';
 
 function AverageRatingItem ({ webSite }) {
   const { i18n, t } = useTranslation();
@@ -25,19 +36,30 @@ function AverageRatingItem ({ webSite }) {
 
   return (
       <div>
-        <StyledLink
+        <AverageRatingLink
           to={i18n.language === 'en' ? webSite.linken : webSite.linkfr}
           target="_blank" rel="noopener noreferrer">
           <AverageRatingContainer id={`averageRatingContainer${webSite.name}`}>
-            <WebSiteNameContainer id={`webSiteNameContainer${webSite.name}`}>
-              <IconContainerOut><StyledIcon icon={faExternalLink}/></IconContainerOut>
+            <AverageRatingWebSiteNameContainer id={`webSiteNameContainer${webSite.name}`}>
+              <AverageRatingIconBrandContainer>
+              {webSite.name === 'AirBnB'
+                ? (
+                <AverageRatingBrandIcon icon={faAirbnb} />
+                  )
+                : (
+                <AverageRatingBrandImage src={bookingLogo} />
+                  )}
+              </AverageRatingIconBrandContainer>
               <CommentTitle id={`commentTitle-${webSite.name}`}>{webSite.name}</CommentTitle>
-            </WebSiteNameContainer>
-            <StarScaleContainer id={`starScaleContainer${webSite.name}`}>
+              <AverageRatingIconContainer>
+                <AverageRatingIcon icon={faExternalLink}/>
+              </AverageRatingIconContainer>
+            </AverageRatingWebSiteNameContainer>
+            <AverageRatingStarScaleContainer id={`starScaleContainer${webSite.name}`}>
               <CommentTitle>{t('AverageRating')} : <StarScale scaleValue={webSite.averageRating}/></CommentTitle>
-            </StarScaleContainer>
+            </AverageRatingStarScaleContainer>
           </AverageRatingContainer>
-        </StyledLink>
+        </AverageRatingLink>
       </div>
   );
 }

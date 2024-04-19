@@ -1,9 +1,9 @@
 // Import React Libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { HashLink } from 'react-router-hash-link';
 
 // Import Style
 import styled, { css } from 'styled-components';
-
 import { commonTitleStyle } from './Font_Style';
 
 // Import Colors
@@ -14,9 +14,18 @@ import {
   responsiveWidthMobile,
   verticalMargin
 } from '../../constants/Global_Constants';
-import { commentListWrapperMarginTop, commentListWrapperPaddingTop, commentPresentationBrandContainerHeight, commentPresentationBrandContainerPositionTop, commentPresentationContainerHeight } from '../../constants/Comment_Constants';
-import { HashLink } from 'react-router-hash-link';
+import {
+  commentListWrapperMarginTop, commentListWrapperPaddingTop,
+  commentPresentationBrandContainerHeight, commentPresentationBrandContainerPositionTop,
+  commentPresentationContainerHeight
+} from '../../constants/Comment_Constants';
 
+export const CommentTitle = styled.h3`
+    ${commonTitleStyle};
+    font-size: 25px;
+    margin: 5px;
+    color: inherit;
+`;
 // Comment Item Related
 
 export const CommentWrapper = styled.div`
@@ -146,59 +155,6 @@ export const CommentPresentationHashLink = styled(HashLink)`
   &:hover {
       color: ${colors.interactifElementHover};
   }
-`;
-
-// Average Rating Related
-export const CommentTitle = styled.h3`
-    ${commonTitleStyle};
-    font-size: 25px;
-    margin: 5px;
-    color: inherit;
-`;
-
-export const AverageRatingContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-
-  padding: 5px;
-  margin-bottom: ${verticalMargin}px;
-
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: ${responsiveWidthMobile}px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-export const WebSiteNameContainer = styled.div`
-  position: relative;
-  width: fit-content;
-
-  @media (max-width: ${responsiveWidthMobile}px) {
-    display: flex;
-    justify-content: center;
-  }
-`;
-
-export const StarScaleContainer = styled.div`
-
-`;
-
-export const StyledP1 = styled.p`
-  font-size: 25px;
-  font-family: cursive;
-  font-style: italic;
-
-  text-align: center;
-
-  margin: 5px;
-
-  color: ${colors.title};
-
-  
 `;
 
 // CommentScrolling Banner Related

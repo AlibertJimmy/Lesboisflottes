@@ -8,3 +8,7 @@ export const commentPresentationBrandContainerPositionTop = (commentPresentation
 // Comment List Wrapper
 export const commentListWrapperMarginTop = 50;
 export const commentListWrapperPaddingTop = headerHeight + 10;
+
+// Average Rating Container
+export const averageRatingContainerVerticalPadding = 20;
+export const averageRatingContainerHorizontalPadding = 30;
