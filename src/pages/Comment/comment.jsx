@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 // Import Components
+import TopIllustration from '../../components/TopIllustration/TopIllustration';
 import CommentItem from '../../components/Comment/comment';
 import AverageRatingItem from '../../components/Comment/averageRating';
 import CommentPresentation from '../../components/Comment/commentPresentation';
@@ -11,6 +12,9 @@ import CommentPresentation from '../../components/Comment/commentPresentation';
 // Import Datas
 import { webSitesList } from '../../datas/review_WebSites';
 import { commentsPageContent } from '../../datas/pageContent/commentsPageContent';
+
+// Import Image
+import commentIllustration from '../../assets/topIllustrations/CommentTopIllustration.jpg';
 
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
@@ -32,7 +36,7 @@ function Comment () {
           content={`${commentsPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
-
+      <TopIllustration image={commentIllustration}/>
       <PageWrapper id='commentPageWrapper'>
         <PageTitle>{t('OurComments')}</PageTitle>
 
