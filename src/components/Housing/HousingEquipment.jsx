@@ -3,14 +3,15 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { EquipmentListWrapper } from '../../utils/style/js/HousingStyle';
 import { PageSubtitle, StyledP } from '../../utils/style/js/Font_Style';
+import { HousingEquipmentListContainer, HousingEquipmentListWrapper } from '../../utils/style/js/Housing_Style/HousingEquipment_Style';
 
-function EquipmentList () {
+function HousingEquipmentList () {
   const { t } = useTranslation();
 
   return (
-      <EquipmentListWrapper id='equimentListWrapper'>
+    <HousingEquipmentListWrapper id='housingEquipmentListWrapper'>
+      <HousingEquipmentListContainer id='HousingEquipmentListContainer-Indoor'>
         <PageSubtitle>{t('IndoorEquipments')} :</PageSubtitle>
         <ul>
           <li><StyledP>{t('Coffeemaker')}</StyledP></li>
@@ -22,6 +23,8 @@ function EquipmentList () {
           <li><StyledP>{t('Fan')}</StyledP></li>
           <li><StyledP>{t('MosquitoRepellentPlug')}</StyledP></li>
         </ul>
+      </HousingEquipmentListContainer>
+      <HousingEquipmentListContainer id='</HousingEquipmentListContainer>-Outdoor'>
         <PageSubtitle>{t('OutdoorEquipments')} :</PageSubtitle>
         <ul>
           <li><StyledP>{t('Sunshade')}</StyledP></li>
@@ -30,9 +33,10 @@ function EquipmentList () {
           <li><StyledP>{t('Molky')}</StyledP></li>
           <li><StyledP>{t('VintageBicycle')}</StyledP></li>
         </ul>
-    </EquipmentListWrapper>
+      </HousingEquipmentListContainer>
+  </HousingEquipmentListWrapper>
 
   );
 }
 
-export default EquipmentList;
+export default HousingEquipmentList;

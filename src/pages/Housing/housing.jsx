@@ -4,16 +4,19 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 // Import Components
-import HousingPresentation from '../../components/Housing/Housing';
-import EquipmentList from '../../components/Housing/Equipment';
+import HousingPresentation from '../../components/Housing/HousingPresentation';
+import HousingEquipmentList from '../../components/Housing/HousingEquipment';
+import HousingGallery from '../../components/Housing/Housing_Gallery';
 
 // Import Data
 import { housingPageContent } from '../../datas/pageContent/housingPageContent';
 
 // Import Style
+import {
+  HousingPageWarper,
+  HousingPageContainer
+} from '../../utils/style/js/Housing_Style/HousingPage_Style';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
-import { PageTitle } from '../../utils/style/js/Font_Style';
-import HousingGallery from '../../components/Housing/Housing_Gallery';
 
 function Housing () {
   const { t } = useTranslation();
@@ -27,11 +30,14 @@ function Housing () {
           content={`${housingPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
-      <PageWrapper id='housingPageWrapper'>
-        <PageTitle>{t('Housing')}</PageTitle>
-        <HousingPresentation/>
-        <EquipmentList/>
-        <HousingGallery/>
+      <PageWrapper>
+        <HousingPageWarper id='housingPageWrapper'>
+          <HousingPageContainer>
+            <HousingPresentation/>
+            <HousingEquipmentList/>
+          </HousingPageContainer>
+          <HousingGallery/>
+        </HousingPageWarper>
       </PageWrapper>
     </>
   );
