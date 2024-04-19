@@ -1,5 +1,8 @@
+// Import React Libraries
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 // Import Style
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { commonTitleStyle } from './Font_Style';
 
@@ -153,4 +156,23 @@ export const CommentListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+`;
+
+// Icon
+const CommentPresentationIconDimension = css`
+  height: 25px;
+  width: 25px;
+`;
+
+export const CommentPresentationIconContainer = styled.div`
+  ${CommentPresentationIconDimension};
+  position: absolute;
+  top: 10px;
+  right: 10px;
+`;
+
+export const CommentPresentationIcon = styled(FontAwesomeIcon)`
+  ${CommentPresentationIconDimension};
+  cursor: pointer;
+  color: inherit;
 `;

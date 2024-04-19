@@ -8,13 +8,6 @@ const IconDimension = css`
   width: 25px;
 `;
 
-export const IconContainerIn = styled.div`
-  ${IconDimension};
-  position: absolute;
-  top: 10px;
-  right: 10px;
-`;
-
 export const IconContainerOut = styled.div`
   ${IconDimension};
   position: absolute;
