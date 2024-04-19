@@ -17,7 +17,9 @@ const colors =
     interactifElement: colorsPalette.rosyBrown,
     interactifElementHover: colorsPalette.mulberry,
 
-    section: colorsPalette.seaShell
+    section: colorsPalette.seaShell,
+
+    icons: colorsPalette.battleShipGray
   };
 
 export default colors;

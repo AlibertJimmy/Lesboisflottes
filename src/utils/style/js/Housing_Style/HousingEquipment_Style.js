@@ -16,13 +16,13 @@ export const HousingEquipmentListWrapper = styled.div`
   @media (max-width: ${responsiveWidthTablet}px) {
     flex-direction: column;
   }
-
-  border: 1px solid red;
 `;
 
 export const HousingEquipmentListContainer = styled.div`
   display: flex;
   flex-direction: column;
+`;
 
-  border: 1px solid blue;
+export const HousingEquipmentIconContainer = styled.div`
+
 `;

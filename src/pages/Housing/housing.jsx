@@ -10,6 +10,7 @@ import HousingGallery from '../../components/Housing/Housing_Gallery';
 
 // Import Data
 import { housingPageContent } from '../../datas/pageContent/housingPageContent';
+import { iconsListDataIndoor } from '../../datas/housingEquipmentIconList';
 
 // Import TopIllustration
 import housingTopIllustration from '../../assets/topIllustrations/HousingTopIllustration.jpg';
@@ -21,6 +22,7 @@ import {
 } from '../../utils/style/js/Housing_Style/HousingPage_Style';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import TopIllustration from '../../components/TopIllustration/TopIllustration';
+import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
 
 function Housing () {
   const { t } = useTranslation();
@@ -39,6 +41,7 @@ function Housing () {
         <HousingPageWarper id='housingPageWrapper'>
           <HousingPageContainer>
             <HousingPresentation/>
+            <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
             <HousingEquipmentList/>
           </HousingPageContainer>
           <HousingGallery/>
