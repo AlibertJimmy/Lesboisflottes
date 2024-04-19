@@ -29,9 +29,9 @@ export const AverageRatingContainer = styled.div`
 
   box-shadow: 0 0 10px ${colors.interactifElement};
 
-    &:hover {
-      box-shadow: 0 0 10px ${colors.interactifElementHover};
-    }
+  &:hover {
+    box-shadow: 0 0 10px ${colors.interactifElementHover};
+  }
 
   @media (max-width: ${responsiveWidthMobile}px) {
     flex-direction: column;

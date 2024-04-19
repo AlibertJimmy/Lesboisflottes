@@ -15,8 +15,10 @@ import { commentListFrBooking } from '../../datas/review_Booking_fr';
 import { commentListEnBooking } from '../../datas/review_Booking_en';
 
 // Import Styles
-import { CommentScrollingBannerContainer } from '../../utils/style/js/CommentStyle';
-import { StyledLink } from '../../utils/style/js/LinkStyle';
+import {
+  CommentScrollingBannerContainer,
+  CommentScrollingBannerLink
+} from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
 
 function CommentScrollingBanner () {
   const { i18n } = useTranslation();
@@ -82,9 +84,9 @@ function CommentScrollingBanner () {
 
   return (
     <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
-      <StyledLink onClick={handleOnClick} to='/Comment'>
+      <CommentScrollingBannerLink onClick={handleOnClick} to='/Comment'>
           <CommentItem comment={reviews[currentIndex]}/>
-      </StyledLink>
+      </CommentScrollingBannerLink>
     </CommentScrollingBannerContainer>
   );
 }
