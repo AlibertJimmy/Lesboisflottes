@@ -18,7 +18,7 @@ import commentIllustration from '../../assets/topIllustrations/CommentTopIllustr
 
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
-import { CommentListWrapper } from '../../utils/style/js/CommentStyle';
+import { CommentListWrapper } from '../../utils/style/js/Comment_Style/Comment_Style';
 
 function Comment () {
   const { i18n, t } = useTranslation();

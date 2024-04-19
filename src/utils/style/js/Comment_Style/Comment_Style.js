@@ -1,12 +1,12 @@
 // Import Style
 import styled from 'styled-components';
-import { commonTitleStyle } from './Font_Style';
+import { commonTitleStyle } from '../Font_Style';
 
 // Import Constants
 import {
   commentGap,
   commentListWrapperMarginTop, commentListWrapperPaddingTop
-} from '../../constants/Comment_Constants';
+} from '../../../constants/Comment_Constants';
 
 export const CommentTitle = styled.h3`
     ${commonTitleStyle};

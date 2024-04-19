@@ -24,7 +24,7 @@ import {
   CommentPresentationBrandImage,
   CommentPresentationHashLink
 } from '../../utils/style/js/Comment_Style/CommentPresentation_Style';
-import { CommentTitle } from '../../utils/style/js/CommentStyle';
+import { CommentTitle } from '../../utils/style/js/Comment_Style/Comment_Style';
 
 function CommentPresentation ({ webSitesList }) {
   const { i18n, t } = useTranslation();

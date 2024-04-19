@@ -16,7 +16,7 @@ import bookingLogo from '../../assets/logo/booking_logo.svg';
 // Import Style
 import {
   CommentTitle
-} from '../../utils/style/js/CommentStyle';
+} from '../../utils/style/js/Comment_Style/Comment_Style';
 import {
   AverageRatingContainer,
   AverageRatingWebSiteNameContainer,
