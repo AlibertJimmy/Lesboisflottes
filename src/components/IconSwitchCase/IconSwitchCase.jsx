@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import {
   faWifi, faSquareParking, faEye, faVectorSquare,
   faBed, faShower, faMugHot,
-  faUmbrellaBeach, faBicycle
+  faUmbrellaBeach, faBicycle,
+  faCarSide, faTrain, faPlaneDeparture
 } from '@fortawesome/free-solid-svg-icons';
 
 // Import Style
@@ -44,6 +45,12 @@ function IconSwitchCase ({ iconsName, iconsColor }) {
             return <SwitchCaseIcon icon={faBicycle} style={{ cursor: 'default', color: `${colors[iconsColor]}` }} />;
           case 'faUmbrellaBeach':
             return <SwitchCaseIcon icon={faUmbrellaBeach} style={{ cursor: 'default', color: `${colors[iconsColor]}` }} />;
+          case 'faCarSide':
+            return <SwitchCaseIcon icon={faCarSide} style={{ cursor: 'default', color: `${colors[iconsColor]}` }} />;
+          case 'faTrain':
+            return <SwitchCaseIcon icon={faTrain} style={{ cursor: 'default', color: `${colors[iconsColor]}` }} />;
+          case 'faPlaneDeparture':
+            return <SwitchCaseIcon icon={faPlaneDeparture} style={{ cursor: 'default', color: `${colors[iconsColor]}` }} />;
 
           default:
             return null;

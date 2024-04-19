@@ -9,6 +9,7 @@ import AccessDisplay from '../../components/Location/Access';
 
 // Import Data
 import { locationPageContent } from '../../datas/pageContent/locationPageContent';
+import { iconsListTransport } from '../../datas/testTransportIcons';
 
 // Import React Libraries
 import React from 'react';
@@ -16,6 +17,7 @@ import React from 'react';
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { PageTitle } from '../../utils/style/js/Font_Style';
+import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
 
 function Location () {
   const { t } = useTranslation();
@@ -34,6 +36,7 @@ function Location () {
         <LocationDisplay/>
         <AddressDisplay/>
         <AccessDisplay/>
+        <HousingEquipmentIcon iconsList={iconsListTransport}/>
       </PageWrapper>
     </>
   );
