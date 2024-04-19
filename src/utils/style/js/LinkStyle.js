@@ -1,6 +1,5 @@
 // Import React Libraries
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 
 // Import Style
 import styled, { css } from 'styled-components';
@@ -32,8 +31,4 @@ export const StyledLink = styled(Link)`
   ${CommonLink};
   width: fit-content;
   height: fit-content;
-`;
-
-export const StyledHashLink = styled(HashLink)`
-  ${CommonLink};
 `;

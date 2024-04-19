@@ -39,7 +39,7 @@ function Comment () {
         <CommentPresentation webSitesList={webSitesList}/>
 
         {webSitesList.map((webSite) => (
-          <CommentListWrapper key={webSite.name} id='commentListWrapperAirBnB'>
+          <CommentListWrapper key={webSite.name} id={`${webSite.name}`}>
             <AverageRatingItem webSite={webSite}/>
             {webSite[`reviewList${i18n.language}`].map((review, index) => (
               <CommentItem key={index} comment={review} index={index}/>

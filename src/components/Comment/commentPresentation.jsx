@@ -22,9 +22,9 @@ import {
   CommentTitle,
   CommentPresentationIconBrandContainer,
   CommentPresentationBrandIcon,
-  CommentPresentationBrandImage
+  CommentPresentationBrandImage,
+  CommentPresentationHashLink
 } from '../../utils/style/js/CommentStyle';
-import { StyledHashLink } from '../../utils/style/js/LinkStyle';
 
 function CommentPresentation ({ webSitesList }) {
   const { i18n, t } = useTranslation();
@@ -33,7 +33,7 @@ function CommentPresentation ({ webSitesList }) {
     <CommentSitePresentationWrapper id='commentWebSitePresentationWrapper'>
       {webSitesList.map((webSite, index) => (
         <CommentPresentationContainer key={index} id={`commentPresentationContainer-${webSite.name}`}>
-          <StyledHashLink to={`#averageRatingWrapper${webSite.name}`}>
+          <CommentPresentationHashLink to={`#${webSite.name}`}>
             <CommentPresentationIconContainer>
               <CommentPresentationIcon icon={faArrowDown}/>
             </CommentPresentationIconContainer>
@@ -49,7 +49,7 @@ function CommentPresentation ({ webSitesList }) {
             <CommentTitle id={`commentTitle-${webSite.name}`} style={{ textAlign: 'center' }}>{webSite.name}</CommentTitle>
             <CommentTitle id={`commentTitle-${webSite.name}-AmountOfVotes`} style={{ textAlign: 'center' }}>{t('AmountOfVotes')} : {webSite[`reviewList${i18n.language}`].length}</CommentTitle>
             <CommentTitle id={`commentTitle-${webSite.name}-AverageRating`} style={{ textAlign: 'center' }}>{t('AverageRating')}: <StarScale scaleValue={webSite.averageRating}/></CommentTitle>
-          </StyledHashLink>
+          </CommentPresentationHashLink>
         </CommentPresentationContainer>
       ))}
     </CommentSitePresentationWrapper>
