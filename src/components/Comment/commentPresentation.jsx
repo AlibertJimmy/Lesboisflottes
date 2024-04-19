@@ -2,6 +2,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faAirbnb } from '@fortawesome/free-brands-svg-icons';
 
 // Import PropTypes
 import PropTypes from 'prop-types';
@@ -9,13 +10,19 @@ import PropTypes from 'prop-types';
 // Import Components
 import StarScale from './starScale';
 
+// Import Image
+import bookingLogo from '../../assets/logo/booking_logo.svg';
+
 // Import Style
 import {
   CommentSitePresentationWrapper,
   CommentPresentationContainer,
   CommentPresentationIconContainer,
   CommentPresentationIcon,
-  CommentTitle
+  CommentTitle,
+  CommentPresentationIconBrandContainer,
+  CommentPresentationBrandIcon,
+  CommentPresentationBrandImage
 } from '../../utils/style/js/CommentStyle';
 import { StyledHashLink } from '../../utils/style/js/LinkStyle';
 
@@ -25,11 +32,20 @@ function CommentPresentation ({ webSitesList }) {
   return (
     <CommentSitePresentationWrapper id='commentWebSitePresentationWrapper'>
       {webSitesList.map((webSite, index) => (
-        <CommentPresentationContainer key={index} id='commentPresentationContainer'>
+        <CommentPresentationContainer key={index} id={`commentPresentationContainer-${webSite.name}`}>
           <StyledHashLink to={`#averageRatingWrapper${webSite.name}`}>
             <CommentPresentationIconContainer>
               <CommentPresentationIcon icon={faArrowDown}/>
             </CommentPresentationIconContainer>
+            <CommentPresentationIconBrandContainer>
+              {webSite.name === 'AirBnB'
+                ? (
+                <CommentPresentationBrandIcon icon={faAirbnb} />
+                  )
+                : (
+                <CommentPresentationBrandImage src={bookingLogo} />
+                  )}
+            </CommentPresentationIconBrandContainer>
             <CommentTitle id={`commentTitle-${webSite.name}`} style={{ textAlign: 'center' }}>{webSite.name}</CommentTitle>
             <CommentTitle id={`commentTitle-${webSite.name}-AmountOfVotes`} style={{ textAlign: 'center' }}>{t('AmountOfVotes')} : {webSite[`reviewList${i18n.language}`].length}</CommentTitle>
             <CommentTitle id={`commentTitle-${webSite.name}-AverageRating`} style={{ textAlign: 'center' }}>{t('AverageRating')}: <StarScale scaleValue={webSite.averageRating}/></CommentTitle>

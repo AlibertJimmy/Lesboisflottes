@@ -14,6 +14,7 @@ import {
   responsiveWidthMobile,
   verticalMargin
 } from '../../constants/Global_Constants';
+import { commentPresentationBrandContainerHeight, commentPresentationBrandContainerPositionTop, commentPresentationContainerHeight } from '../../constants/Comment_Constants';
 
 // Comment Item Related
 
@@ -67,7 +68,8 @@ export const CommentSitePresentationWrapper = styled.div`
 export const CommentPresentationContainer = styled.div` 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
     flex: 0 0 calc(45% - 10px);
 
@@ -75,6 +77,7 @@ export const CommentPresentationContainer = styled.div`
 
     margin: 0 auto;
     width: 100%;
+    height: ${commentPresentationContainerHeight}px;
 
     background: ${colors.background};
     border-radius: 15px;
@@ -175,4 +178,27 @@ export const CommentPresentationIcon = styled(FontAwesomeIcon)`
   ${CommentPresentationIconDimension};
   cursor: pointer;
   color: inherit;
+`;
+
+const CommentPresentationIconBrandDimension = css`
+  height: ${commentPresentationBrandContainerHeight}px;
+  width: 50px;
+`;
+
+export const CommentPresentationIconBrandContainer = styled.div`
+  ${CommentPresentationIconBrandDimension};
+  position: absolute;
+  top: ${commentPresentationBrandContainerPositionTop}px;
+  left: 20px;
+`;
+
+export const CommentPresentationBrandIcon = styled(FontAwesomeIcon)`
+  ${CommentPresentationIconBrandDimension};
+  cursor: pointer;
+  color: #FF385C;
+`;
+
+export const CommentPresentationBrandImage = styled.img`
+  ${CommentPresentationIconBrandDimension};
+  cursor: pointer;
 `;
