@@ -18,7 +18,6 @@ import commentIllustration from '../../assets/topIllustrations/CommentTopIllustr
 
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
-import { PageTitle } from '../../utils/style/js/Font_Style';
 import { CommentListWrapper } from '../../utils/style/js/CommentStyle';
 
 function Comment () {
@@ -38,7 +37,6 @@ function Comment () {
       </Helmet>
       <TopIllustration image={commentIllustration} title={'OurComments'}/>
       <PageWrapper id='commentPageWrapper'>
-        <PageTitle>{t('OurComments')}</PageTitle>
 
         <CommentPresentation webSitesList={webSitesList}/>
 

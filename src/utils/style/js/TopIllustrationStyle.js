@@ -30,8 +30,6 @@ export const AbsolutePositionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  border: 1px solid red;
 `;
 
 export const TopPageTitle = styled.h1`
