@@ -13,6 +13,7 @@ import { housingPageContent } from '../../datas/pageContent/housingPageContent';
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { PageTitle } from '../../utils/style/js/Font_Style';
+import HousingGallery from '../../components/Housing/Housing_Gallery';
 
 function Housing () {
   const { t } = useTranslation();
@@ -30,6 +31,7 @@ function Housing () {
         <PageTitle>{t('Housing')}</PageTitle>
         <HousingPresentation/>
         <EquipmentList/>
+        <HousingGallery/>
       </PageWrapper>
     </>
   );
