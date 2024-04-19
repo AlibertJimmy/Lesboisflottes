@@ -1,6 +1,7 @@
 // Import Style
 import styled from 'styled-components';
-import { commonTitleStyle } from './GlobalStyle';
+
+import { commonTitleStyle } from './Font_Style';
 
 // Import Colors
 import colors from '../../colors/colors';
@@ -146,4 +147,10 @@ export const CommentScrollingBannerContainer = styled.div`
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 10px 5px rgba(0.1, 0, 0.1, 0.2);
+`;
+
+export const CommentListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;

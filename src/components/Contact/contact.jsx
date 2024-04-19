@@ -9,8 +9,8 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 // Import Style
-import { StyledP } from '../../utils/style/js/GlobalStyle';
 import { ContactWrapper, ProfilePic } from '../../utils/style/js/ContactStyle';
+import { StyledP } from '../../utils/style/js/Font_Style';
 
 function ContactInformation () {
   const { t } = useTranslation();

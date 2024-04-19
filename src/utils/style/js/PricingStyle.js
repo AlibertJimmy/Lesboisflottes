@@ -1,9 +1,9 @@
 // Import Style
 import styled, { css } from 'styled-components';
 
-// Import Constants
-import { PageSubtitle } from './GlobalStyle';
+import { PageSubtitle } from './Font_Style';
 
+// Import Constants
 import { selectionInformationWrapper } from '../../constants/Prices_Contants';
 
 import {

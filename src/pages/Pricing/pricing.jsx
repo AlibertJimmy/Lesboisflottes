@@ -18,9 +18,10 @@ import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/prici
 import { pricesPageContent } from '../../datas/pageContent/pricesPageContent';
 
 // Import Style
-import { PageWrapper, PageTitle, PageSubtitle } from '../../utils/style/js/GlobalStyle';
 import '../../utils/style/css/react-day-picker.css';
+import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { DataDisplayWrapper, DayPickerContainer, InnerDiv, SelectionInformationWrapper, ToggleButtonContainer } from '../../utils/style/js/PricingStyle';
+import { PageTitle, PageSubtitle } from '../../utils/style/js/Font_Style';
 
 function Pricing () {
   const { i18n, t } = useTranslation();

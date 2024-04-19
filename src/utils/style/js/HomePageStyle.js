@@ -1,6 +1,7 @@
 // Import Style
 import styled from 'styled-components';
-import { commonTitleStyle } from './GlobalStyle';
+
+import { commonTitleStyle } from './Font_Style';
 
 // Import Constants
 import { responsiveWidthTablet, verticalMargin } from '../../constants/Global_Constants';

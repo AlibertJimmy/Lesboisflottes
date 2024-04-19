@@ -4,10 +4,10 @@ import { HashLink } from 'react-router-hash-link';
 
 // Import Style
 import styled, { css } from 'styled-components';
-import { commonTitleStyle } from './GlobalStyle';
 
 // Import Colors
 import colors from '../../colors/colors';
+import { commonTitleStyle } from './Font_Style';
 
 export const CommonLink = css`
   text-decoration: none;

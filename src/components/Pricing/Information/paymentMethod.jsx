@@ -3,8 +3,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Styles
-import { PageSubtitle, StyledP } from '../../../utils/style/js/GlobalStyle';
 import { InformationContainer } from '../../../utils/style/js/PricingStyle';
+import { PageSubtitle, StyledP } from '../../../utils/style/js/Font_Style';
 
 function PaymentMethod () {
   const { t } = useTranslation();

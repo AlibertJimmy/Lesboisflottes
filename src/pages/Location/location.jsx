@@ -14,9 +14,12 @@ import { locationPageContent } from '../../datas/pageContent/locationPageContent
 import React from 'react';
 
 // Import Style
-import { PageTitle, PageWrapper } from '../../utils/style/js/GlobalStyle';
+import { PageWrapper } from '../../utils/style/js/GlobalStyle';
+import { PageTitle } from '../../utils/style/js/Font_Style';
+
 function Location () {
   const { t } = useTranslation();
+
   return (
     <>
       <Helmet>

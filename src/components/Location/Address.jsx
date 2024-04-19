@@ -3,8 +3,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { StyledP, StyledContainer, PageSubtitle } from '../../utils/style/js/GlobalStyle';
+import { StyledContainer } from '../../utils/style/js/GlobalStyle';
 import { AddressWrapper, MapContainer } from '../../utils/style/js/LocationStyle';
+import { PageSubtitle, StyledP } from '../../utils/style/js/Font_Style';
 
 function AddressDisplay () {
   const { t } = useTranslation();

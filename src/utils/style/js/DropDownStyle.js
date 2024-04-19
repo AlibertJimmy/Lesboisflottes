@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import Style
 import styled from 'styled-components';
-import { commonWriting } from './GlobalStyle';
-
+import { commonWriting } from './Font_Style';
+import { underlineEffect } from './NavStyle';
 // Import Colors
 import colors from '../../colors/colors';
-import { underlineEffect } from './NavStyle';
+
+// Import Constants
 import { dropDownLinkHeight } from '../../constants/Global_Constants';
 
 export const DropdownContainer = styled.div`

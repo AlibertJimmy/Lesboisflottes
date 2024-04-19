@@ -11,7 +11,8 @@ import EquipmentList from '../../components/Housing/Equipment';
 import { housingPageContent } from '../../datas/pageContent/housingPageContent';
 
 // Import Style
-import { PageTitle, PageWrapper } from '../../utils/style/js/GlobalStyle';
+import { PageWrapper } from '../../utils/style/js/GlobalStyle';
+import { PageTitle } from '../../utils/style/js/Font_Style';
 
 function Housing () {
   const { t } = useTranslation();

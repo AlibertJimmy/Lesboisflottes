@@ -13,14 +13,9 @@ import { webSitesList } from '../../datas/review_WebSites';
 import { commentsPageContent } from '../../datas/pageContent/commentsPageContent';
 
 // Import Style
-import styled from 'styled-components';
-import { PageWrapper, PageTitle } from '../../utils/style/js/GlobalStyle';
-
-const CommentListWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
+import { PageWrapper } from '../../utils/style/js/GlobalStyle';
+import { PageTitle } from '../../utils/style/js/Font_Style';
+import { CommentListWrapper } from '../../utils/style/js/CommentStyle';
 
 function Comment () {
   const { i18n, t } = useTranslation();
