@@ -3,7 +3,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Component
-import CommentItem from './comment';
+import CommentItem from './commentItem';
 
 // Import Functions
 import { scrollToTop } from '../../utils/functions/General';

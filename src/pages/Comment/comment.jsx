@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Components
 import TopIllustration from '../../components/TopIllustration/TopIllustration';
-import CommentItem from '../../components/Comment/comment';
+import CommentItem from '../../components/Comment/commentItem';
 import AverageRatingItem from '../../components/Comment/averageRating';
 import CommentPresentation from '../../components/Comment/commentPresentation';
 

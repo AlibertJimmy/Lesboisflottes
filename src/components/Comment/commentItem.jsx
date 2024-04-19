@@ -13,7 +13,10 @@ import StarScale from './starScale';
 import { removeHtmlTags } from '../../utils/functions/Comment';
 
 // Import Style
-import { CommentContainer, CommentWrapper, StyledP } from '../../utils/style/js/CommentStyle';
+import {
+  CommentWrapper,
+  CommentContainer, StyledP
+} from '../../utils/style/js/Comment_Style/CommentItem_Style';
 
 function CommentItem ({ comment, index }) {
   const { t } = useTranslation();
