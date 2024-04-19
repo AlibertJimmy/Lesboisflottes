@@ -19,12 +19,12 @@ import {
   CommentPresentationContainer,
   CommentPresentationIconContainer,
   CommentPresentationIcon,
-  CommentTitle,
   CommentPresentationIconBrandContainer,
   CommentPresentationBrandIcon,
   CommentPresentationBrandImage,
   CommentPresentationHashLink
-} from '../../utils/style/js/CommentStyle';
+} from '../../utils/style/js/Comment_Style/CommentPresentation_Style';
+import { CommentTitle } from '../../utils/style/js/CommentStyle';
 
 function CommentPresentation ({ webSitesList }) {
   const { i18n, t } = useTranslation();
