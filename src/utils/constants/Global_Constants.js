@@ -11,7 +11,7 @@ export const marginBetweenPageComponent = 5;
 
 export const verticalMargin = 20;
 
-export const horizontalMargin = 20;
+export const horizontalMargin = 50;
 export const horizontalMarginTablet = 15;
 export const horizontalMarginMobile = 10;
 
