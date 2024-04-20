@@ -2,7 +2,7 @@ export const iconsListDataIndoor = [
   {
     icon: 'faBed',
     iconColor: 'icons',
-    iconText: 'Bed'
+    iconText: 'QueenSize'
   },
   {
     icon: 'faShower',
@@ -12,11 +12,11 @@ export const iconsListDataIndoor = [
   {
     icon: 'faMugHot',
     iconColor: 'icons',
-    iconText: 'Coffee'
+    iconText: 'Coffee&Tea'
   },
   {
     icon: 'faBlanket',
     iconColor: 'icons',
-    iconText: 'Sheet'
+    iconText: 'Towels&Sheets'
   }
 ];

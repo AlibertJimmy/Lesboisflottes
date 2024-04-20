@@ -81,6 +81,20 @@
     "PresentationHousing4": "A kitchen area and a sleeping area with a queen size bed (160x200 [cm]).",
 
     "//":"HOUSING EQUIPMENT",
+    "Wifi": "Wifi",
+    "Parking": "Parking nearby",
+    "GardenView": "Garden view",
+    "Area": "x m²",
+
+    "Bed": "Queen Size",
+    "Shower": "Private shower and toilet",
+    "Coffee&Tea": "Coffee & tea",
+    "Towels&Sheets": "Towels and sheets included",
+    
+    "Bicycle": "Vintage bicycle",
+    "Umbrella": "Umbrellas",
+
+    "//":"HOUSING EQUIPMENT",
     "IndoorEquipments": "Indoor equipments",
     "Coffeemaker": "Coffeemaker",
     "ElectricKettle": "Electric kettle",

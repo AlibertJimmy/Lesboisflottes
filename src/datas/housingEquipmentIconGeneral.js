@@ -2,7 +2,7 @@ export const iconsListDataGeneral = [
   {
     icon: 'faWifi',
     iconColor: 'icons',
-    iconText: 'Wifi'
+    iconText: 'FreeWifi'
   },
   {
     icon: 'faSquareParking',
@@ -12,7 +12,7 @@ export const iconsListDataGeneral = [
   {
     icon: 'faEye',
     iconColor: 'icons',
-    iconText: 'View'
+    iconText: 'GardenView'
   },
   {
     icon: 'faVectorSquare',

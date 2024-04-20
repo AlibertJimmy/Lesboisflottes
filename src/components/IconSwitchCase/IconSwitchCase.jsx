@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 // Import Style
-import { SwitchCaseIconContainer, SwitchCaseIcon, SwitchCaseImage } from '../../utils/style/IconSwitchCase_Style';
+import { SwitchCaseIconContainer, SwitchCaseIcon, SwitchCaseImage } from '../../utils/style/js/IconSwitchCase_Style';
 
 // Import Image
 import blanket from '../../assets/icon/blanket.png';

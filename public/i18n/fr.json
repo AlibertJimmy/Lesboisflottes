@@ -69,6 +69,22 @@
     "PresentationHousing4": "Un coin cuisine et d'un coin nuit avec un lit queen size (160x200 [cm]).",
 
     "//":"HOUSING EQUIPMENT",
+    "Wifi": "Wifi",
+    "Parking": "Stationnement à proximité",
+    "GardenView": "Vue sur le jardin",
+    "Area": "x m²",
+
+    "Bed": "Queen Size",
+    "Shower": "Douche & WC privatif",
+    "Coffee&Tea": "Café & Thé",
+    "Towels&Sheets": "Serviettes de bains et draps inclus",
+    
+    "Bicycle": "Vélo vintage",
+    "Umbrella": "Parasols",
+    
+
+
+    "//":"HOUSING EQUIPMENT",
     "TheDifferentEquipments": "Les différents équipements",
     "IndoorEquipments": "Equipement d'intérieur",
     "Coffeemaker": "Cafetière",
