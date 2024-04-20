@@ -43,49 +43,6 @@ export const GridContainerRight = styled.div`
   grid-template-areas: 'two three' 'six six' 'six six' 'seven seven';
 `;
 
-export const FeaturedGrid = css`
-  position: relative;  
-
-  overflow: hidden;
-  
-  cursor: pointer;
-`;
-
-export const GridOne = styled.div`
-  ${FeaturedGrid}
-  grid-area: one;
-`;
-
-export const GridTwo = styled.div`
-  ${FeaturedGrid}
-  grid-area: two;
-`;
-
-export const GridThree = styled.div`
-  ${FeaturedGrid}
-  grid-area: three;
-`;
-
-export const GridFour = styled.div`
-  ${FeaturedGrid}
-  grid-area: four;
-`;
-
-export const GridFive = styled.div`
-  ${FeaturedGrid}
-  grid-area: five;
-`;
-
-export const GridSix = styled.div`
-  ${FeaturedGrid}
-  grid-area: six;
-`;
-
-export const GridSeven = styled.div`
-  ${FeaturedGrid}
-  grid-area: seven;
-`;
-
 export const lilOverlay = css`
   position: absolute;
   top: 0;
@@ -123,9 +80,4 @@ export const Description = styled.p`
   @media (max-width:${responsiveWidthMobile}px) {
           left: 0.5rem;
   }
-`;
-
-export const CategoryImg = styled.img`
-  height: 100%;
-  width:100%;
 `;

@@ -7,12 +7,14 @@ import { photosSample } from '../../datas/photos';
 
 // Import Style
 import {
-  GridWrapper, GridContainerLeft,
+  GridWrapper, GridContainerLeft
+} from '../../utils/style/js/GallerySampleGridStyle';
+
+import {
   GridOne,
   GridFour, GridFive,
-  CategoryImg
-
-} from '../../utils/style/js/GallerySampleGridStyle';
+  GalleryImg
+} from '../../utils/style/js/Gallery_Style';
 
 function GallerySampleGridLeft () {
   console.log('photosSample');
@@ -22,13 +24,13 @@ function GallerySampleGridLeft () {
       <Link to="/Gallery">
         <GridContainerLeft id='gridContainer'>
           <GridOne id='gridOne'>
-              <CategoryImg src={photosSample[0].src} alt="img1" />
+              <GalleryImg src={photosSample[0].src} alt="img1" />
           </GridOne>
           <GridFour id='gridFour'>
-              <CategoryImg src={photosSample[3].src} alt="img4" />
+              <GalleryImg src={photosSample[3].src} alt="img4" />
           </GridFour>
           <GridFive id='gridFive'>
-              <CategoryImg src={photosSample[7].src} alt="img5" />
+              <GalleryImg src={photosSample[7].src} alt="img5" />
           </GridFive>
         </GridContainerLeft>
       </Link>

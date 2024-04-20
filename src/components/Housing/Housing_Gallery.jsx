@@ -4,11 +4,15 @@ import React, { useState, useCallback } from 'react';
 // Import Photos
 import { housingPhotos } from '../../datas/housing_photos';
 import {
-  HousingGridWrapper, HousingGridContainer,
+  HousingGridWrapper, HousingGridContainer
+} from '../../utils/style/js/Housing_Style/HousingGallery_Style';
+
+import {
   GridOne, GridTwo, GridThree, GridFour,
   GridFive, GridSix, GridSeven,
   GalleryImg
-} from '../../utils/style/js/Housing_Style/HousingGallery_Style';
+} from '../../utils/style/js/Gallery_Style';
+
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
 // Import Style

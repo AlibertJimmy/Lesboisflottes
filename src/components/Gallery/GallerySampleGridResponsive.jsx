@@ -7,13 +7,17 @@ import { photosSample } from '../../datas/photos';
 
 // Import Style
 import {
-  GridWrapper, GridContainerResponsive,
+  GridWrapper, GridContainerResponsive
+
+} from '../../utils/style/js/GallerySampleGridStyle';
+
+import {
   GridOne, GridTwo, GridThree,
   GridFour, GridFive,
   GridSix, GridSeven,
-  CategoryImg
+  GalleryImg
 
-} from '../../utils/style/js/GallerySampleGridStyle';
+} from '../../utils/style/js/Gallery_Style';
 
 function GallerySampleGridResponsive () {
   console.log('photosSample');
@@ -23,25 +27,25 @@ function GallerySampleGridResponsive () {
       <Link to="/Gallery">
         <GridContainerResponsive id='gridContainer'>
           <GridOne id='gridOne'>
-              <CategoryImg src={photosSample[0].src} alt="img1" />
+              <GalleryImg src={photosSample[0].src} alt="img1" />
           </GridOne>
           <GridTwo id='gridTwo'>
-              <CategoryImg src={photosSample[1].src} alt="img2" />
+              <GalleryImg src={photosSample[1].src} alt="img2" />
           </GridTwo>
           <GridThree id='gridThree'>
-              <CategoryImg src={photosSample[2].src} alt="img3" />
+              <GalleryImg src={photosSample[2].src} alt="img3" />
           </GridThree>
           <GridFour id='gridFour'>
-              <CategoryImg src={photosSample[3].src} alt="img4" />
+              <GalleryImg src={photosSample[3].src} alt="img4" />
           </GridFour>
           <GridFive id='gridFive'>
-              <CategoryImg src={photosSample[4].src} alt="img5" />
+              <GalleryImg src={photosSample[4].src} alt="img5" />
           </GridFive>
           <GridSix id='gridSix'>
-              <CategoryImg src={photosSample[5].src} alt="img6" />
+              <GalleryImg src={photosSample[5].src} alt="img6" />
           </GridSix>
           <GridSeven id='gridSeven'>
-              <CategoryImg src={photosSample[6].src} alt="img7" />
+              <GalleryImg src={photosSample[6].src} alt="img7" />
           </GridSeven>
         </GridContainerResponsive>
       </Link>
