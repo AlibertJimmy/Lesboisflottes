@@ -8,9 +8,8 @@ import {
 } from '../../utils/style/js/Housing_Style/HousingGallery_Style';
 
 import {
-  GridOne, GridTwo, GridThree, GridFour,
-  GridFive, GridSix, GridSeven,
-  GridHeight, GridNine, // GridTen,
+  GridOne, GridTwo, GridThree,
+  GridFour, GridFive, GridSix,
   GalleryImg
 } from '../../utils/style/js/Gallery_Style';
 
@@ -53,20 +52,6 @@ function HousingGallery () {
         <GridSix id='gridSix' onClick={() => openLightbox({ index: 5 })}>
           <GalleryImg src={housingPhotos[5].src} alt="img5" />
         </GridSix>
-        <GridSeven id='gridSeven' onClick={() => openLightbox({ index: 6 })}>
-          <GalleryImg src={housingPhotos[6].src} alt="img5" />
-        </GridSeven>
-        <GridHeight id='gridHeight' onClick={() => openLightbox({ index: 7 })}>
-          <GalleryImg src={housingPhotos[7].src} alt="img5" />
-        </GridHeight>
-        <GridNine id='gridNine' onClick={() => openLightbox({ index: 8 })}>
-          <GalleryImg src={housingPhotos[8].src} alt="img5" />
-        </GridNine>
-        { /*
-        <GridTen id='gridTen' onClick={() => openLightbox({ index: 6 })}>
-          <GalleryImg src={housingPhotos[9].src} alt="img5" />
-        </GridTen>
-        */ }
       </HousingGridContainer>
       <ModalGateway>
         {viewerIsOpen
