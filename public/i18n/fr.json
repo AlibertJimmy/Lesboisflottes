@@ -83,6 +83,13 @@
     "presentationHousing7": " et d'une connexion ",
     "presentationHousing7Bold": "wifi",
 
+    "presentationHousing8": "Un coin nuit équipé d'un lit ",
+    "presentationHousing8Bold": "queen size",
+    "presentationHousing9":" (160x200 [cm]), de rangements, d'une ",
+    "presentationHousing9Bold": "penderie",
+    "presentationHousing10":" et d'un espace lecture.",
+    "presentationHousing11":"Une salle de bain  avec cabine de douche et lavabo, de toilettes indépendantes.",
+
     "//":"HOUSING EQUIPMENT",
     "Wifi": "Wifi",
     "Parking": "Stationnement à proximité",

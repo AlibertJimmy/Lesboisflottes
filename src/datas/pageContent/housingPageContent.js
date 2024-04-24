@@ -26,5 +26,21 @@ export const housingPageContent = {
     'normal', 'bold',
     'normal', 'bold',
     'normal', 'bold'
+  ],
+  presentation3: [
+    'presentationHousing8', 'presentationHousing8Bold',
+    'presentationHousing9', 'presentationHousing9Bold',
+    'presentationHousing10'
+  ],
+  presentationTypoStyle3: [
+    'normal', 'bold',
+    'normal', 'bold',
+    'normal'
+  ],
+  presentation4: [
+    'presentationHousing11'
+  ],
+  presentationTypoStyle4: [
+    'normal'
   ]
 };

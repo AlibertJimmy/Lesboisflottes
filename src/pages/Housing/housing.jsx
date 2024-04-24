@@ -49,6 +49,10 @@ function Housing () {
               <HousingPresentationParagraph paragraph={housingPageContent.presentation2} paragraphTypoStyle={housingPageContent.presentationTypoStyle2}/>
             </HousingPresentationContainer>
             <HousingEquipmentIcon iconsList={iconsListDataGeneral}/>
+            <HousingPresentationContainer>
+              <HousingPresentationParagraph paragraph={housingPageContent.presentation3} paragraphTypoStyle={housingPageContent.presentationTypoStyle3}/>
+              <HousingPresentationParagraph paragraph={housingPageContent.presentation4} paragraphTypoStyle={housingPageContent.presentationTypoStyle4}/>
+            </HousingPresentationContainer>
             <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
             <HousingEquipmentList/>
             <HousingEquipmentIcon iconsList={iconsListDataOutdoor}/>

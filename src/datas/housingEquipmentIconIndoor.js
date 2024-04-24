@@ -10,11 +10,6 @@ export const iconsListDataIndoor = [
     iconText: 'Shower'
   },
   {
-    icon: 'faMugHot',
-    iconColor: 'icons',
-    iconText: 'Coffee&Tea'
-  },
-  {
     icon: 'faBlanket',
     iconColor: 'icons',
     iconText: 'Towels&Sheets'
