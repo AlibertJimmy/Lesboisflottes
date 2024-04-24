@@ -1,22 +1,17 @@
 export const iconsListDataGeneral = [
   {
-    icon: 'faWifi',
+    icon: 'faVectorSquare',
     iconColor: 'icons',
-    iconText: 'FreeWifi'
+    iconText: 'Area'
   },
   {
-    icon: 'faSquareParking',
+    icon: 'faWifi',
     iconColor: 'icons',
-    iconText: 'Parking'
+    iconText: 'Wifi'
   },
   {
     icon: 'faEye',
     iconColor: 'icons',
     iconText: 'GardenView'
-  },
-  {
-    icon: 'faVectorSquare',
-    iconColor: 'icons',
-    iconText: 'Area'
   }
 ];

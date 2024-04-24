@@ -8,7 +8,12 @@ import IconSwitchCase from '../IconSwitchCase/IconSwitchCase';
 
 // Import Style
 import { StyledP } from '../../utils/style/js/Font_Style';
-import { HousingEquipementIconContainer, HousingEquipementIconWrapper, HousingEquipmentIconTextContainer } from '../../utils/style/js/Housing_Style/HousingEquipmentIcons_Style';
+import {
+  HousingEquipementIconWrapper,
+  HousingEquipementIconTextWrapper,
+  HousingEquipementIconContainer,
+  HousingEquipmentIconTextContainer
+} from '../../utils/style/js/Housing_Style/HousingEquipmentIcons_Style';
 
 function HousingEquipmentIcon ({ iconsList }) {
   const { t } = useTranslation();
@@ -16,12 +21,14 @@ function HousingEquipmentIcon ({ iconsList }) {
   return (
       <HousingEquipementIconWrapper>
         {iconsList.map((iconData) => (
-          <HousingEquipementIconContainer id='HousingEquipmentListContainer-Indoor' key={iconData.icon}>
-            <IconSwitchCase iconsName={iconData.icon} iconsColor={iconData.iconColor}/>
+          <HousingEquipementIconTextWrapper id='HousingEquipmentListContainer-Indoor' key={iconData.icon}>
+            <HousingEquipementIconContainer>
+              <IconSwitchCase iconsName={iconData.icon} iconsColor={iconData.iconColor}/>
+            </HousingEquipementIconContainer>
             <HousingEquipmentIconTextContainer>
               <StyledP>{t(iconData.iconText)}</StyledP>
             </HousingEquipmentIconTextContainer>
-          </HousingEquipementIconContainer>
+          </HousingEquipementIconTextWrapper>
         ))}
         </HousingEquipementIconWrapper>
 

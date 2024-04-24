@@ -15,7 +15,11 @@ export const HousingGridContainer = styled.div`
   height: 500px;
 
   gap: 0.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'one two' 'three three' 'four five' 'six seven';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
+  grid-template-areas:'one one one two' 
+                      'three four four four' 
+                      'three five five six' 
+                      'seven height height six' 
+                      'seven height height nine';
 `;

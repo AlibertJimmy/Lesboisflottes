@@ -46,7 +46,17 @@ export const GridSeven = styled.div`
 
 export const GridHeight = styled.div`
   ${FeaturedGrid}
-  grid-area: seven;
+  grid-area: height;
+`;
+
+export const GridNine = styled.div`
+  ${FeaturedGrid}
+  grid-area: nine;
+`;
+
+export const GridTen = styled.div`
+  ${FeaturedGrid}
+  grid-area: ten;
 `;
 
 export const GalleryImg = styled.img`

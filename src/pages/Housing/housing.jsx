@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 // Import Components
-import HousingPresentation from '../../components/Housing/HousingPresentation';
+import HousingPresentationParagraph from '../../components/Housing/HousingPresentationParagraph';
 import HousingEquipmentList from '../../components/Housing/HousingEquipment';
 import HousingGallery from '../../components/Housing/Housing_Gallery';
 
@@ -20,7 +20,8 @@ import housingTopIllustration from '../../assets/topIllustrations/HousingTopIllu
 // Import Style
 import {
   HousingPageWarper,
-  HousingPageContainer
+  HousingPageContainer,
+  HousingPresentationContainer
 } from '../../utils/style/js/Housing_Style/HousingPage_Style';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import TopIllustration from '../../components/TopIllustration/TopIllustration';
@@ -28,6 +29,7 @@ import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon'
 
 function Housing () {
   const { t } = useTranslation();
+  console.log('housingPageContent.presentation1 : ', housingPageContent.presentation1);
 
   return (
     <>
@@ -42,7 +44,10 @@ function Housing () {
       <PageWrapper>
         <HousingPageWarper id='housingPageWrapper'>
           <HousingPageContainer>
-            <HousingPresentation/>
+            <HousingPresentationContainer>
+              <HousingPresentationParagraph paragraph={housingPageContent.presentation1} paragraphTypoStyle={housingPageContent.presentationTypoStyle1}/>
+              <HousingPresentationParagraph paragraph={housingPageContent.presentation2} paragraphTypoStyle={housingPageContent.presentationTypoStyle2}/>
+            </HousingPresentationContainer>
             <HousingEquipmentIcon iconsList={iconsListDataGeneral}/>
             <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
             <HousingEquipmentList/>
