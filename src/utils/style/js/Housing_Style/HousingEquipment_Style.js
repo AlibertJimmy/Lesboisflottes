@@ -11,7 +11,7 @@ export const HousingEquipmentWrapper = styled.div`
   font-family: Avantgarde;
 
   text-align: left;
-  padding: 0 20px;
+  padding: 20px;
 
   @media (max-width: ${responsiveWidthTablet}px) {
     flex-direction: column;
@@ -31,4 +31,6 @@ export const HousingEquipmentListWrapper = styled.div`
 export const HousingEquipmentListContainer = styled.div`
   display: flex;
   flex-direction: row;
+
+  width: 200px;
 `;

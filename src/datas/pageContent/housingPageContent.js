@@ -9,28 +9,32 @@ export const housingPageContent = {
     'presentationHousing1', 'presentationHousing1Bold',
     'presentationHousing2', 'presentationHousing2Bold',
     'presentationHousing3', 'presentationHousing3Bold',
-    'presentationHousing4', 'presentationHousing4Bold'
+    'presentationHousing4', 'presentationHousing4Bold',
+    'presentationHousing5'
   ],
   presentationTypoStyle1: [
     'normal', 'bold',
     'normal', 'bold',
     'normal', 'bold',
-    'normal', 'bold'
+    'normal', 'bold',
+    'normal'
   ],
   presentation2: [
-    'presentationHousing5', 'presentationHousing5Bold',
     'presentationHousing6', 'presentationHousing6Bold',
-    'presentationHousing7', 'presentationHousing7Bold'
+    'presentationHousing7', 'presentationHousing7Bold',
+    'presentationHousing8', 'presentationHousing8Bold',
+    'presentationHousing9'
   ],
   presentationTypoStyle2: [
     'normal', 'bold',
     'normal', 'bold',
-    'normal', 'bold'
+    'normal', 'bold',
+    'normal'
   ],
   presentation3: [
-    'presentationHousing8', 'presentationHousing8Bold',
-    'presentationHousing9', 'presentationHousing9Bold',
-    'presentationHousing10'
+    'presentationHousing10', 'presentationHousing10Bold',
+    'presentationHousing11', 'presentationHousing11Bold',
+    'presentationHousing12'
   ],
   presentationTypoStyle3: [
     'normal', 'bold',
@@ -38,7 +42,7 @@ export const housingPageContent = {
     'normal'
   ],
   presentation4: [
-    'presentationHousing11'
+    'presentationHousing13'
   ],
   presentationTypoStyle4: [
     'normal'

@@ -5,8 +5,6 @@ export const HousingEquipementIconWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   height: 100px;
-
-  border: 1px solid blue;
 `;
 
 export const HousingEquipementIconTextWrapper = styled.div`
@@ -18,8 +16,6 @@ export const HousingEquipementIconTextWrapper = styled.div`
   height: 100px;
   width: 120px;
 
-  border: 1px solid yellow;
-
 `;
 
 export const HousingEquipementIconContainer = styled.div`
@@ -30,8 +26,6 @@ export const HousingEquipementIconContainer = styled.div`
   height: 50px;
   width: 50px;
 
-  border: 1px solid yellow;
-
 `;
 
 export const HousingEquipmentIconTextContainer = styled.div`
@@ -41,6 +35,4 @@ export const HousingEquipmentIconTextContainer = styled.div`
 
   height: 50px;
   width: 120px;
-
-  border: 1px solid green;
 `;

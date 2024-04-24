@@ -75,20 +75,23 @@
     "presentationHousing3": "offrant une ",
     "presentationHousing3Bold": "température ",
     "presentationHousing4": "intérieur très ",
-    "presentationHousing4Bold": "agréable.",
-    "presentationHousing5": "Il bénéficie d'une vue sur le ",
-    "presentationHousing5Bold": "jardin",
-    "presentationHousing6": ", d'un accès aux ",
-    "presentationHousing6Bold": "terasses",
-    "presentationHousing7": " et d'une connexion ",
-    "presentationHousing7Bold": "wifi",
+    "presentationHousing4Bold": "agréable",
+    "presentationHousing5": ".",
 
-    "presentationHousing8": "Un coin nuit équipé d'un lit ",
-    "presentationHousing8Bold": "queen size",
-    "presentationHousing9":" (160x200 [cm]), de rangements, d'une ",
-    "presentationHousing9Bold": "penderie",
-    "presentationHousing10":" et d'un espace lecture.",
-    "presentationHousing11":"Une salle de bain  avec cabine de douche et lavabo, de toilettes indépendantes.",
+    "presentationHousing6": "Il bénéficie d'une vue sur le ",
+    "presentationHousing6Bold": "jardin",
+    "presentationHousing7": ", d'un accès aux ",
+    "presentationHousing7Bold": "terasses",
+    "presentationHousing8": " et d'une connexion ",
+    "presentationHousing8Bold": "wifi",
+    "presentationHousing9": ".",
+
+    "presentationHousing10": "Un coin nuit équipé d'un lit ",
+    "presentationHousing10Bold": "queen size",
+    "presentationHousing11":" (160x200 [cm]), de rangements, d'une ",
+    "presentationHousing11Bold": "penderie",
+    "presentationHousing12":" et d'un espace lecture.",
+    "presentationHousing13":"Une salle de bain  avec cabine de douche et lavabo, de toilettes indépendantes.",
 
     "//":"HOUSING EQUIPMENT",
     "Wifi": "Wifi",
@@ -102,7 +105,7 @@
     "Towels&Sheets": "Serviettes et draps inclus",
     
     "Bicycle": "Vélo vintage",
-    "Umbrella": "Parasols",
+    "Umbrella": "Parasol",
     
 
 

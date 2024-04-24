@@ -21,11 +21,14 @@ import housingTopIllustration from '../../assets/topIllustrations/HousingTopIllu
 import {
   HousingPageWarper,
   HousingPageContainer,
-  HousingPresentationContainer
+  HousingPresentationContainer,
+  HousingLateralWrapper1,
+  HousingLateralWrapper2
 } from '../../utils/style/js/Housing_Style/HousingPage_Style';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import TopIllustration from '../../components/TopIllustration/TopIllustration';
 import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
+import HousingPatioGallery from '../../components/Housing/Housing_PatioGallery';
 
 function Housing () {
   const { t } = useTranslation();
@@ -43,21 +46,35 @@ function Housing () {
       <TopIllustration image={housingTopIllustration} title={'Housing'}/>
       <PageWrapper>
         <HousingPageWarper id='housingPageWrapper'>
-          <HousingPageContainer>
-            <HousingPresentationContainer>
-              <HousingPresentationParagraph paragraph={housingPageContent.presentation1} paragraphTypoStyle={housingPageContent.presentationTypoStyle1}/>
-              <HousingPresentationParagraph paragraph={housingPageContent.presentation2} paragraphTypoStyle={housingPageContent.presentationTypoStyle2}/>
-            </HousingPresentationContainer>
-            <HousingEquipmentIcon iconsList={iconsListDataGeneral}/>
-            <HousingPresentationContainer>
-              <HousingPresentationParagraph paragraph={housingPageContent.presentation3} paragraphTypoStyle={housingPageContent.presentationTypoStyle3}/>
-              <HousingPresentationParagraph paragraph={housingPageContent.presentation4} paragraphTypoStyle={housingPageContent.presentationTypoStyle4}/>
-            </HousingPresentationContainer>
-            <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
-            <HousingEquipmentList/>
-            <HousingEquipmentIcon iconsList={iconsListDataOutdoor}/>
-          </HousingPageContainer>
-          <HousingGallery/>
+          <HousingLateralWrapper1>
+            <HousingPageContainer>
+              <HousingPresentationContainer>
+                <HousingPresentationParagraph paragraph={housingPageContent.presentation1} paragraphTypoStyle={housingPageContent.presentationTypoStyle1}/>
+                <HousingPresentationParagraph paragraph={housingPageContent.presentation2} paragraphTypoStyle={housingPageContent.presentationTypoStyle2}/>
+              </HousingPresentationContainer>
+              <HousingEquipmentIcon iconsList={iconsListDataGeneral}/>
+              <HousingPresentationContainer>
+                <HousingPresentationParagraph paragraph={housingPageContent.presentation3} paragraphTypoStyle={housingPageContent.presentationTypoStyle3}/>
+                <HousingPresentationParagraph paragraph={housingPageContent.presentation4} paragraphTypoStyle={housingPageContent.presentationTypoStyle4}/>
+              </HousingPresentationContainer>
+              <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
+            </HousingPageContainer>
+
+            <HousingPageContainer>
+              <HousingGallery/>
+            </HousingPageContainer>
+          </HousingLateralWrapper1>
+
+          <HousingLateralWrapper2>
+            <HousingPageContainer>
+                <HousingPatioGallery/>
+            </HousingPageContainer>
+            <HousingPageContainer>
+              <HousingEquipmentList/>
+              <HousingEquipmentIcon iconsList={iconsListDataOutdoor}/>
+            </HousingPageContainer>
+          </HousingLateralWrapper2>
+
         </HousingPageWarper>
       </PageWrapper>
     </>

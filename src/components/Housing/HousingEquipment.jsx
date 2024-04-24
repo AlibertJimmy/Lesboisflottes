@@ -17,17 +17,17 @@ function HousingEquipmentList () {
           <HousingEquipmentListContainer>
             <ul>
               <li><StyledP>{t('Microwave')}</StyledP></li>
-              <li><StyledP>{t('HairDryer')}</StyledP></li>
+
+              <li><StyledP>{t('Coffeemaker')}</StyledP></li>
               <li><StyledP>{t('Fan')}</StyledP></li>
-              <li><StyledP>{t('MosquitoRepellentPlug')}</StyledP></li>
+              <li><StyledP>{t('HairDryer')}</StyledP></li>
             </ul>
           </HousingEquipmentListContainer>
           <HousingEquipmentListContainer>
             <ul>
-              <li><StyledP>{t('Coffeemaker')}</StyledP></li>
-              <li><StyledP>{t('ElectricKettle')}</StyledP></li>
               <li><StyledP>{t('Refrigerator')}</StyledP></li>
-              <li><StyledP>{t('Microwave')}</StyledP></li>
+              <li><StyledP>{t('ElectricKettle')}</StyledP></li>
+              <li><StyledP>{t('MosquitoRepellentPlug')}</StyledP></li>
             </ul>
           </HousingEquipmentListContainer>
         </HousingEquipmentListWrapper>
@@ -39,13 +39,13 @@ function HousingEquipmentList () {
           <HousingEquipmentListContainer>
             <ul>
               <li><StyledP>{t('Molky')}</StyledP></li>
-              <li><StyledP>{t('VintageBicycle')}</StyledP></li>
+              <li><StyledP>{t('PetanqueBall')}</StyledP></li>
             </ul>
           </HousingEquipmentListContainer>
           <HousingEquipmentListContainer>
             <ul>
               <li><StyledP>{t('Sunshade')}</StyledP></li>
-              <li><StyledP>{t('PetanqueBall')}</StyledP></li>
+              <li><StyledP>{t('VintageBicycle')}</StyledP></li>
             </ul>
           </HousingEquipmentListContainer>
         </HousingEquipmentListWrapper>

@@ -6,7 +6,7 @@ export const HousingGridWrapper = styled.div`
   justify-content: center;
 
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
 `;
 
 export const HousingGridContainer = styled.div`
