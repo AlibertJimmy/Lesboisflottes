@@ -75,7 +75,7 @@ export const BurgerButton = styled.div`
         }
         
         @media (max-width: ${responsiveWidthTablet}px){
-          background-color: ${({ burgerButtonState }) => burgerButtonState ? `${colors.burgerButtonCloseMenu}` : `${colors.burgerButtonOpenMenu}`};
+          background-color: ${({ burgerButtonState }) => burgerButtonState ? `${colors.backgroundHeaderFooter}` : `${colors.navLinks}`};
         }
 
     }
@@ -103,7 +103,7 @@ const StyledUlNav = css`
   z-index:${zIndexSideNav};
 
   margin: 0;
-  background: ${colors.marineBlue};
+  background: ${colors.navLinks};
 
   @media (max-width: ${responsiveWidthTablet}px){
     flex-flow: column nowrap;
@@ -172,5 +172,9 @@ export const NavLink = styled(Link)`
   
   font-family: cursive;
   text-decoration: none;
-  color: ${colors.navLinks}
+  color: ${colors.navLinks};
+
+  @media (max-width: ${responsiveWidthTablet}px){
+    color: ${colors.backgroundHeaderFooter};
+  }
 `;
