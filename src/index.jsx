@@ -29,7 +29,7 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   padding-top: ${headerHeight}px;
-  
+  border: 1px solid blue;
 `;
 
 function App () {

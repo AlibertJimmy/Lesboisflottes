@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import {
   responsiveWidthMobile, responsiveWidthTablet,
   headerHeight, footerHeight,
-  verticalMargin, horizontalMargin,
+  verticalMargin, verticalMarginTablet, verticalMarginMobile,
+  horizontalMargin,
   horizontalMarginMobile
 } from '../../constants/Global_Constants';
 
@@ -19,13 +20,15 @@ export const PageWrapper = styled.div`
     min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
 
     @media (max-width: ${responsiveWidthTablet}px){
-        margin: ${headerHeight + verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
+        margin: ${headerHeight + verticalMarginTablet}px ${horizontalMargin}px ${verticalMarginTablet}px ${horizontalMargin}px;
         min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
     }
 
     @media (max-width: ${responsiveWidthMobile}px){
-        margin: ${headerHeight + verticalMargin}px ${horizontalMarginMobile}px ${verticalMargin}px ${horizontalMarginMobile}px;
+        margin: ${headerHeight + verticalMarginMobile}px ${horizontalMarginMobile}px ${verticalMarginMobile}px ${horizontalMarginMobile}px;
     }
+
+    border: 1px solid red;
 `;
 
 export const SectionWrapper = styled.div`

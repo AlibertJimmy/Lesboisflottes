@@ -6,6 +6,7 @@ import colors from '../../colors/colors';
 
 // Import Constants
 import { topIllustrationHeight } from '../../constants/TopIllustration_Constants';
+import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants/Global_Constants';
 
 export const TopIllustrationImageContainer = styled.div`
   width: 100%;
@@ -35,9 +36,20 @@ export const AbsolutePositionContainer = styled.div`
 export const TopPageTitle = styled.h1`
 
   font-family: cursive;
-  color: ${colors.navLinks};
-  text-transform: uppercase;
   font-size: 50px;
-  transform: translate(0%, calc(${topIllustrationHeight}px * 0.05));
+  text-transform: uppercase;
   text-align: center;
+
+  color: ${colors.navLinks};
+
+  transform: translate(0%, calc(${topIllustrationHeight}px * 0.05));
+
+  @media (max-width: ${responsiveWidthTablet}px){
+    font-size: 35px;
+  }
+
+  @media (max-width: ${responsiveWidthMobile}px){
+    font-size: 25px;
+    transform: translate(0%, calc(${topIllustrationHeight}px * -0.05));
+  }
 `;
