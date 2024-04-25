@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 // Import Constants
-import { responsiveWidthMobile, verticalMargin } from '../../../constants/Global_Constants';
+import { responsiveWidthMobile, responsiveWidthTablet, verticalMargin } from '../../../constants/Global_Constants';
 import {
   averageRatingContainerVerticalPadding,
   averageRatingContainerHorizontalPadding,
@@ -33,10 +33,16 @@ export const AverageRatingContainer = styled.div`
     box-shadow: 0 0 10px ${colors.interactifElementHover};
   }
 
+  @media (max-width: ${responsiveWidthTablet}px){
+    padding: ${averageRatingContainerVerticalPadding}px  5px;
+  }
+
   @media (max-width: ${responsiveWidthMobile}px) {
     flex-direction: column;
     align-items: center;
   }
+
+  
 `;
 
 export const AverageRatingWebSiteNameContainer = styled.div`

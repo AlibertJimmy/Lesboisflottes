@@ -11,9 +11,12 @@ import colors from '../../../colors/colors';
 // Import Constants
 import {
   responsiveWidthMobile,
+  responsiveWidthTablet,
   verticalMargin
 } from '../../../constants/Global_Constants';
 import {
+  CommentPresentationWrapperGapTablet,
+  commentListWrapperPaddingTopMobile,
   commentPresentationBrandContainerHeight,
   commentPresentationBrandContainerPositionTop,
   commentPresentationContainerHeight
@@ -33,8 +36,12 @@ export const CommentSitePresentationWrapper = styled.div`
     gap: ${verticalMargin}px;
   }
 
+  @media (max-width: ${responsiveWidthTablet}px){
+    gap: ${CommentPresentationWrapperGapTablet}px;
+  }
+
   @media (max-width: ${responsiveWidthMobile}px){
-    
+    gap: ${commentListWrapperPaddingTopMobile}px;
   }
 `;
 
@@ -63,12 +70,14 @@ export const CommentPresentationContainer = styled.div`
     @media (max-width: ${responsiveWidthMobile}px){
       margin: 10px 0;
     }
+
 `;
 
 // Icon
 const CommentPresentationIconDimension = css`
   height: 25px;
   width: 25px;
+
 `;
 
 export const CommentPresentationIconContainer = styled.div`
@@ -87,6 +96,14 @@ export const CommentPresentationIcon = styled(FontAwesomeIcon)`
 const CommentPresentationIconBrandDimension = css`
   height: ${commentPresentationBrandContainerHeight}px;
   width: 50px;
+
+  @media (max-width: ${responsiveWidthTablet}px){
+    height: 30px;
+    width: 30px;
+  }
+
+  @media (max-width: ${responsiveWidthMobile}px){
+  }
 `;
 
 export const CommentPresentationIconBrandContainer = styled.div`
@@ -94,6 +111,10 @@ export const CommentPresentationIconBrandContainer = styled.div`
   position: absolute;
   top: ${commentPresentationBrandContainerPositionTop}px;
   left: 20px;
+
+  @media (max-width: ${responsiveWidthTablet}px){
+    top: 5px;
+  }
 `;
 
 export const CommentPresentationBrandIcon = styled(FontAwesomeIcon)`
