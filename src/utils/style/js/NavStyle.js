@@ -103,7 +103,7 @@ const StyledUlNav = css`
   z-index:${zIndexSideNav};
 
   margin: 0;
-  background: ${colors.navLinks};
+  background: ${colors.backgroundHeaderFooter};
 
   @media (max-width: ${responsiveWidthTablet}px){
     flex-flow: column nowrap;
@@ -172,9 +172,12 @@ export const NavLink = styled(Link)`
   
   font-family: cursive;
   text-decoration: none;
-  color: ${colors.navLinks};
+  
 
   @media (max-width: ${responsiveWidthTablet}px){
     color: ${colors.backgroundHeaderFooter};
   }
+
 `;
+
+// color: ${colors.navLinks};
