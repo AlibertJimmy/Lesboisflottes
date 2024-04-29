@@ -47,7 +47,7 @@ function App () {
                 <Route path={`/${i18n.language}/${t('Gallery')}`} element={<Galleryx />} />
                 <Route path={`/${i18n.language}/${t('Housing')}`} element={<Housing />} />
                 <Route path={`/${i18n.language}/${t('Prices')}`} element={<Pricing />} />
-                <Route path={`/${i18n.language}/${t('Location')}`} element={<Location />} />
+                <Route path={`/${i18n.language}/${t('Access')}`} element={<Location />} />
               </Routes>
             </ContentWrapper>
           <Footer />

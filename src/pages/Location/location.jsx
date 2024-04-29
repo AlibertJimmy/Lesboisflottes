@@ -31,7 +31,7 @@ function Location () {
           content={`${locationPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
-      <TopIllustration image={accessIllustration} title={'Access'}/>
+      <TopIllustration image={accessIllustration} title={'Access-title'}/>
       <PageWrapper id='locationPageWrapper'>
         <AddressDisplay/>
         <AccessDisplay/>
