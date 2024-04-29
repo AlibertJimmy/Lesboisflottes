@@ -3,9 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 
 // Import Components
-import LocationDisplay from '../../components/Location/Location';
 import AddressDisplay from '../../components/Location/Address';
 import AccessDisplay from '../../components/Location/Access';
+import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
+import TopIllustration from '../../components/TopIllustration/TopIllustration';
 
 // Import Data
 import { locationPageContent } from '../../datas/pageContent/locationPageContent';
@@ -19,9 +20,6 @@ import React from 'react';
 
 // Import Style
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
-import { PageTitle } from '../../utils/style/js/Font_Style';
-import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
-import TopIllustration from '../../components/TopIllustration/TopIllustration';
 
 function Location () {
   const { t } = useTranslation();
@@ -37,8 +35,6 @@ function Location () {
       </Helmet>
       <TopIllustration image={accessIllustration} title={'Access'}/>
       <PageWrapper id='locationPageWrapper'>
-        <PageTitle>{t('Location')}</PageTitle>
-        <LocationDisplay/>
         <AddressDisplay/>
         <AccessDisplay/>
         <HousingEquipmentIcon iconsList={iconsListTransport}/>

@@ -172,6 +172,7 @@ export const NavLink = styled(Link)`
   
   font-family: cursive;
   text-decoration: none;
+  color: ${colors.navLinks};
   
 
   @media (max-width: ${responsiveWidthTablet}px){

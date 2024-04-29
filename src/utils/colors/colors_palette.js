@@ -14,7 +14,8 @@ const colorsPalette =
     prussianBlue: '#0D324D',
     seaShell: '#F1E6E4',
     mulberry: '#BF5F88',
-    onyx: '#767F7D'
+    onyx: '#767F7D',
+    purple: '#551A8B'
   };
 
 export default colorsPalette;

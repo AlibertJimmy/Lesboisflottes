@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 // Import Style
 import { AddressWrapper, AddressContainer, MapContainer } from '../../utils/style/js/Access_Style/Address_Style';
 import { PageSubtitle, StyledP } from '../../utils/style/js/Font_Style';
+import MapButton from './MapButton';
 
 function AddressDisplay () {
   const { t } = useTranslation();
@@ -17,6 +18,7 @@ function AddressDisplay () {
         <AddressContainer>
           <PageSubtitle>{t('Address')}</PageSubtitle>
           <StyledP>{`${t('Adress1')} ${t('Adress2')} ${t('Adress3')} ${t('Adress4')}`}</StyledP>
+          <MapButton/>
         </AddressContainer>
         <MapContainer id='mapContainer'>
           <iframe

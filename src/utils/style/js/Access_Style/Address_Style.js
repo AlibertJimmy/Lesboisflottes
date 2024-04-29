@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // Import Constants
 import { responsiveWidthMobile, responsiveWidthTablet } from '../../../constants/Global_Constants';
+import colors from '../../../colors/colors';
 
 export const AddressWrapper = styled.div`
   display: flex;
@@ -12,15 +13,15 @@ export const AddressWrapper = styled.div`
 
     flex-direction: column;
   }
-
-  border: 1px solid red;
 `;
 
 export const AddressContainer = styled.div`
-    text-align: center;
-    padding: 20px;
-
-    border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
 `;
 
 export const MapContainer = styled.div`
@@ -40,6 +41,26 @@ export const MapContainer = styled.div`
   @media (max-width: ${responsiveWidthMobile}px) {
     height: 200px;
   }
-
-  border: 1px solid black;
   `;
+
+export const AdressButton = styled.button`
+  height: 40px;
+  width: 75px;
+
+  font-family: cursive;
+
+  cursor: pointer;
+
+  border-radius: 15px;
+  border: none;
+
+  color: ${colors.navLinks};
+  background: ${colors.backgroundHeaderFooter};
+  box-shadow: 0 0 10px ${colors.interactifElement};
+
+  &:hover {
+    color: ${colors.backgroundHeaderFooter};
+    background: ${colors.navLinks};
+    box-shadow: 0 0 10px ${colors.interactifElementHover};
+  }
+`;
