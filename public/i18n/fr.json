@@ -18,7 +18,9 @@
     "//": "RECEPTION",
     "Welcome": "Bienvenue",
 
-    "//": "LOCATION",
+    "//": "ACCESS",
+
+    "Access": "Accès",
     "Location": "Localisation",
     "PresentationSituation1": "L'hébergement est situé sur la commune de la Seyne sur Mer, se trouve dans un quartier résidentiel très calme,",
     "PresentationSituation2": "tout proche de plusieurs plages et criques.",

@@ -11,6 +11,9 @@ import AccessDisplay from '../../components/Location/Access';
 import { locationPageContent } from '../../datas/pageContent/locationPageContent';
 import { iconsListTransport } from '../../datas/testTransportIcons';
 
+// Import Image
+import accessIllustration from '../../assets/topIllustrations/AccessTopIllustration.jpg';
+
 // Import React Libraries
 import React from 'react';
 
@@ -18,6 +21,7 @@ import React from 'react';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { PageTitle } from '../../utils/style/js/Font_Style';
 import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
+import TopIllustration from '../../components/TopIllustration/TopIllustration';
 
 function Location () {
   const { t } = useTranslation();
@@ -31,6 +35,7 @@ function Location () {
           content={`${locationPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
+      <TopIllustration image={accessIllustration} title={'Access'}/>
       <PageWrapper id='locationPageWrapper'>
         <PageTitle>{t('Location')}</PageTitle>
         <LocationDisplay/>
