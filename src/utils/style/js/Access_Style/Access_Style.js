@@ -33,8 +33,6 @@ export const AccessTransportWrapper = styled.div`
     flex-wrap: nowrap;
     flex-direction: column;
   }
-
-  border: 1px solid red;
 `;
 
 export const AccessTransportContainer = styled.div`
