@@ -3,8 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { StyledContainer } from '../../utils/style/js/GlobalStyle';
-import { AddressWrapper, MapContainer } from '../../utils/style/js/LocationStyle';
+import { AddressWrapper, AddressContainer, MapContainer } from '../../utils/style/js/Access_Style/Address_Style';
 import { PageSubtitle, StyledP } from '../../utils/style/js/Font_Style';
 
 function AddressDisplay () {
@@ -15,19 +14,16 @@ function AddressDisplay () {
 
   return (
       <AddressWrapper id='addressWrapper'>
-        <StyledContainer>
+        <AddressContainer>
           <PageSubtitle>{t('Address')}</PageSubtitle>
-          <StyledP>{t('Adress1')}</StyledP>
-          <StyledP>{t('Adress2')}</StyledP>
-          <StyledP>{t('Adress3')}</StyledP>
-          <StyledP>{t('Adress4')}</StyledP>
-        </StyledContainer>
+          <StyledP>{`${t('Adress1')} ${t('Adress2')} ${t('Adress3')} ${t('Adress4')}`}</StyledP>
+        </AddressContainer>
         <MapContainer id='mapContainer'>
           <iframe
             title = "googleMap"
             src={googleMapUrl}
             width="100%"
-            height="200"
+            height="100%"
             style={{ border: '0' }}
             allowFullScreen=""
             loading="lazy"
