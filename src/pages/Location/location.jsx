@@ -5,12 +5,10 @@ import { Helmet } from 'react-helmet';
 // Import Components
 import AddressDisplay from '../../components/Location/Address';
 import AccessDisplay from '../../components/Location/Access';
-import HousingEquipmentIcon from '../../components/Housing/HousingEquipmentIcon';
 import TopIllustration from '../../components/TopIllustration/TopIllustration';
 
 // Import Data
 import { locationPageContent } from '../../datas/pageContent/locationPageContent';
-import { iconsListTransport } from '../../datas/testTransportIcons';
 
 // Import Image
 import accessIllustration from '../../assets/topIllustrations/AccessTopIllustration.jpg';
@@ -37,7 +35,6 @@ function Location () {
       <PageWrapper id='locationPageWrapper'>
         <AddressDisplay/>
         <AccessDisplay/>
-        <HousingEquipmentIcon iconsList={iconsListTransport}/>
       </PageWrapper>
     </>
   );

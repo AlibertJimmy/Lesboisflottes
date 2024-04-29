@@ -33,13 +33,17 @@
     "Adress4": "'Les Bois Flottés' La Verne",
     "GoToAddress": "Y aller",
 
+    "ByCar": "En voiture",
+    "CarTransportDescription1":"Autoroute A50 sortie 13 ou sortie 15",
+
     "ByTrain": "En train",
-    "TrainTransportDescription1": "La gare de la Seyne sur Mer / Six-Fours :",
+
+    "TrainTransportDescription1": "Gare de la Seyne sur Mer / Six-Fours",
     "TrainTransportDescription2": "La gare se trouve à 9km du logement.",
     "TrainTransportDescription3": "Emprunter la ligne de bus n°82, arrêt 'Gare Seyne Six-Fours' situé à la sortie de la gare jusqu'à l'arrêt 'Bonaparte'.",
     "TrainTransportDescription4": "Prendre la correspondance avec la ligne de bus n° 81 jusqu'à l'arrêt 'La Verne' situé à 5min du logement.",
 
-    "TrainTransportDescription5": "La gare de Toulon :",
+    "TrainTransportDescription5": "Gare de Toulon",
     "TrainTransportDescription6": "La gare se trouve à 11km du logement, deux options s'offrent à vous.",
 
     "TrainTransportDescription7": "Rejoindre le port de Toulon à pied (10/15min de marche) ou en bus, ligne de bus n°15 jusqu'à l'arrêt 'Station Maritime'.",
@@ -55,15 +59,17 @@
 
 
     "ByPlane": "En avion",
-    "PlaneTransportDescription1": "Aéroport de Toulon/Hyères :",
+    "PlaneTransportDescription1": "Aéroport de Toulon/Hyères",
     "PlaneTransportDescription2": "Location de voiture ou taxi.",
-    "PlaneTransportDescription3": "Aéroport de Marignane :",
+    "PlaneTransportDescription3": "Aéroport de Marignane",
     "PlaneTransportDescription4": "Bus vers la gare St Charles puis TER vers la gare de la Seyne sur Mer/ Six-Fours.",
     "PlaneTransportDescription5": "Aéroport de Toulon/Hyères :",
     "PlaneTransportDescription6": "Train jusqu'à Toulon.",
 
     "GeneralTransportProposition": "Le transport depuis l'embarcadère des Sablettes ou depuis la gare de la Seyne sur Mer peut être organisé sur demande en fonction des disponibilités.",
 
+    "//":"PARKING",
+    "ParkingSpot": "Des places de parking sont disponible à poximité de l'hébergement",
 
     "//":"HOUSING",
     "PresentationHousing1": "L'hébergement proposé se trouve en rez de chaussée d'une villa, ancienne batisse de caractère datant de 1949.",
