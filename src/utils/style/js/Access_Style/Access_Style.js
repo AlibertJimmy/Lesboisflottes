@@ -66,7 +66,7 @@ export const AccessParkingContainer = styled.div`
   width: 400px;
 
   @media (max-width: ${responsiveWidthMobile}px){
-    width: 200px;
+    width: 90%;
   }
 `;
 
