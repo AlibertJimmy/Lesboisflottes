@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Style
-import { InformationContainer } from '../../../utils/style/js/PricingStyle';
+import { InformationContainer } from '../../../utils/style/js/Pricing_Style/PricingStyle';
 import { PageSubtitle, StyledP } from '../../../utils/style/js/Font_Style';
 
 function HostingHours () {

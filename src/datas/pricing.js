@@ -27,16 +27,19 @@ export const dateSeasonList = {
 export const pricingBySeasonList = [
   {
     seasonType: 'lowSeason',
+    text: 'LowSeason',
     seasonDates: dateSeasonList.lowSeason,
     price: 65
   },
   {
     seasonType: 'mediumSeason',
+    text: 'MediumSeason',
     seasonDates: dateSeasonList.mediumSeason,
     price: 75
   },
   {
     seasonType: 'highSeason',
+    text: 'HighSeason',
     seasonDates: dateSeasonList.highSeason,
     price: 90
   }

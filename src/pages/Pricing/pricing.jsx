@@ -20,7 +20,7 @@ import { pricesPageContent } from '../../datas/pageContent/pricesPageContent';
 // Import Style
 import '../../utils/style/css/react-day-picker.css';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
-import { DataDisplayWrapper, DayPickerContainer, InnerDiv, SelectionInformationWrapper, ToggleButtonContainer } from '../../utils/style/js/PricingStyle';
+import { DataDisplayWrapper, DayPickerContainer, InnerDiv, SelectionInformationWrapper, ToggleButtonContainer } from '../../utils/style/js/Pricing_Style/PricingStyle';
 import { PageTitle, PageSubtitle } from '../../utils/style/js/Font_Style';
 
 function Pricing () {

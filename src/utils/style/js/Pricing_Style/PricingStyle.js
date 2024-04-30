@@ -1,16 +1,16 @@
 // Import Style
 import styled, { css } from 'styled-components';
 
-import { PageSubtitle } from './Font_Style';
+import { PageSubtitle } from '../Font_Style';
 
 // Import Constants
-import { selectionInformationWrapper } from '../../constants/Prices_Contants';
+import { selectionInformationWrapper } from '../../../constants/Prices_Contants';
 
 import {
   responsiveWidthMobile,
   verticalMargin,
   marginBetweenPageComponent
-} from '../../constants/Global_Constants';
+} from '../../../constants/Global_Constants';
 
 // Pricing Page Related
 export const SelectionInformationWrapper = styled.div`
