@@ -28,16 +28,14 @@ export const getSeasonDatasForDate = (date) => {
 };
 
 export const getPriceForRangeDay = (range) => {
-  // console.log(`range : ${range}`);
   // console.log('function getPriceForRangeDay');
-  // console.log('range : ');
-  // console.log(range);
+  // console.log('range : ', range);
   const dates = getDatesBetween(range.from, range.to);
   let totalPrice = 0;
   let totalNights = 0;
   for (const day in dates) {
     // const date = parse(day, 'dd/MM/yyyy', new Date());
-    // console.log(`day : ${dates[day]}`);
+    console.log(`day : ${dates[day]}`);
     const dayPrice = getSeasonDatasForDate(dates[day]).price;
     // console.log(`dayPrice : ${dayPrice}`);
     totalPrice = totalPrice + dayPrice;

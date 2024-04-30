@@ -10,8 +10,7 @@ export const PricingInformationDisplayWrapper = styled.div`
   flex-direction: column;
 
   gap: 20px;
-
-  border: 1px solid red;
+  padding: 20px 0;
 `;
 
 export const PricingInformationDisplayContainer = styled.div`
@@ -24,8 +23,6 @@ export const PricingInformationDisplayContainer = styled.div`
   @media (max-width: ${responsiveWidthMobile}px){
     flex-direction:column; 
   }
-
-  border: 1px solid red;
 `;
 
 export const PricingInformationContainer = styled.div`
@@ -40,6 +37,4 @@ export const PricingInformationContainer = styled.div`
   @media (max-width: ${responsiveWidthMobile}px){
     width:100%;
   }
-
-  border: 1px solid blue;
 `;

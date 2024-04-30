@@ -6,55 +6,45 @@ import { format } from 'date-fns';
 // Import PropType
 import PropTypes from 'prop-types';
 
-// Import Datas
-import { getSeasonDatasForDate, getPriceForRangeDay } from '../../../utils/functions/Pricing';
+// Import Function
+import { getPriceForRangeDay } from '../../../utils/functions/Pricing_Functions';
 
-function DayPickerFooter ({ mode, daySelection }) {
+function DayPickerFooter ({ daySelection }) {
   const { t } = useTranslation();
 
-  // console.log(`mode : ${mode}`);
-  // console.log(`daySelection : ${daySelection}`);
-  // console.log(daySelection);
-  if (mode === 'range') {
-    // console.log('range selected');
-    if (daySelection?.from) {
-      // console.log(daySelection.from)
-    }
-  }
+  console.log('daySelection :', daySelection);
 
-  let footer = <p>{t('PleaseSelectOneNight')}</p>;
-  if (mode === 'single') {
-    if (daySelection) {
-      footer =
-            <div>
-            <p>{t('YouSelectedTheNightOfThe')} {format(daySelection, 'dd/MM/yyyy')}.</p>
-            <p>{t('Prices')} : {getSeasonDatasForDate(daySelection).price} euros</p>
-        </div>;
-    }
-  }
-
-  let footer2 = <p>{t('PleaseSelectTheDayOfYourArrival')}</p>;
-  if (daySelection?.from) {
-    if (!daySelection.to) {
-      footer2 = <p>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}</p>;
-    } else if (daySelection.to) {
-      footer2 = (
-          <div>
-            <p>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
-            <p>{t('DepartureThe')} : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
-            <p>{t('YouHaveSelected')} {getPriceForRangeDay(daySelection).totalNights}
-               {getPriceForRangeDay(daySelection).totalNights === 1 ? t('Night') : t('Nights')}</p>
-            <p>{t('PriceOfTheJourney')} : {getPriceForRangeDay(daySelection).totalPrice} euros</p>
-          </div>
+  let footer;
+  if (daySelection === undefined) {
+    footer = (
+      <>
+        <p>{t('ArrivingThe')} :</p>
+        <p>{t('DepartureThe')} :</p>
+      </>
+    );
+  } else if (daySelection) {
+    if (daySelection?.from && daySelection.to === undefined) {
+      console.log('daySelection.from :', daySelection.from);
+      footer = (
+        <>
+          <p>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
+          <p>{t('DepartureThe')} :</p>
+        </>
+      );
+    } else if (daySelection?.from && daySelection?.to) {
+      console.log('daySelection.from :', daySelection.from);
+      footer = (
+        <>
+          <p>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
+          <p>{t('DepartureThe')} : {format(daySelection.to, 'dd/MM/yyyy')}.</p>
+          <p>{t('YouHaveSelected')} {getPriceForRangeDay(daySelection).totalNights}{getPriceForRangeDay(daySelection).totalNights === 1 ? t('Night') : t('Nights')}</p>
+          <p>{t('PriceOfTheJourney')} : {getPriceForRangeDay(daySelection).totalPrice} euros</p>
+        </>
       );
     }
   }
 
-  return (
-        <div>
-            {mode === 'single' ? footer : footer2}
-        </div>
-  );
+  return footer;
 }
 
 const DateRangeShape = PropTypes.shape({
