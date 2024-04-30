@@ -24,9 +24,11 @@ function AccessTransport ({ transport }) {
           <PageSubtitle>{t(`By${transport}`)}</PageSubtitle>
         </AccessTransportTitleContainer>
         <AccesTransportListContainer>
-        <ul>
+        <ul style={{ padding: '0' }}>
           {accessPageContent.transportDescription[transport].map((description, index) => (
-                <li key={index} style={{ listStyleType: 'none' }}><StyledP>{t(`${description}`)}</StyledP></li>
+                <li key={index} style={{ listStyleType: 'none', padding: '0' }}>
+                  <StyledP style={{ padding: '0' }}>{t(`${description}`)}</StyledP>
+                </li>
           ))}
         </ul>
         </AccesTransportListContainer>

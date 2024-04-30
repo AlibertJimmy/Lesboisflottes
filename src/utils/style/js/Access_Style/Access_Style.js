@@ -41,6 +41,12 @@ export const AccessTransportContainer = styled.div`
   margin: 20px;
   flex-direction: column;
 
+  @media (max-width: ${responsiveWidthTablet}px){
+    
+  }
+
+  border: 1px solid red;
+
 `;
 
 export const AccessTransportTitleContainer = styled.div`
