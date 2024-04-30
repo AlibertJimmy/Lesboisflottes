@@ -11,7 +11,7 @@ import { DayPicker } from 'react-day-picker';
 import ToggleButton from '../../components/ToggleButton/toggleButton';
 import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter';
 import SeasonLegend from '../../components/Pricing/PricingLegend/pricingLegend';
-import InformationDisplay from '../../components/Pricing/Information/information';
+import PricingInformationDisplay from '../../components/Pricing/Information/pricingInformationDisplay';
 
 // Import Datas
 import { disabledDays, dateSeasonList, modifiersStyles } from '../../datas/pricing';
@@ -147,7 +147,7 @@ function Pricing () {
             locale={i18n.language === 'en' ? enUS : fr} />
         </DayPickerContainer>
 
-        <InformationDisplay />
+        <PricingInformationDisplay />
 
       </PageWrapper>
       </>
