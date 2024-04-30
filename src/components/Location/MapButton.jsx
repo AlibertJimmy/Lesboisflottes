@@ -9,7 +9,13 @@ function MapButton () {
   const { t } = useTranslation();
   const address = '150 boulevard garnault 83500 la seyne sur mer';
   const encodedAddress = encodeURIComponent(address);
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const userAgent = navigator.userAgent;
+
+  // Check if the device is iOS or Android
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+  const isAndroid = /Android/.test(userAgent);
+
+  // Creating URLs based on the device
   const mapUrlIOS = `comgooglemaps://?daddr=${encodedAddress}&directionsmode=driving`;
   const mapUrlAndroid = `geo:0,0?q=${encodedAddress}`;
   const mapUrlWeb = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
@@ -18,13 +24,14 @@ function MapButton () {
 
   const openMap = () => {
     if (isIOS) {
-      try {
-        window.open(mapUrlIOS, '_blank');
-      } catch (err) {
-        window.open(mapUrlWeb, '_blank'); // Fallback to web if the app isn't installed
-      }
-    } else {
+      // Attempt to open in Google Maps app on iOS devices
+      window.open(mapUrlIOS, '_blank');
+    } else if (isAndroid) {
+      // Attempt to open in Google Maps app on Android devices
       window.open(mapUrlAndroid, '_blank');
+    } else {
+      // Fallback to web URL for desktop browsers and other devices
+      window.open(mapUrlWeb, '_blank');
     }
   };
 
