@@ -15,6 +15,7 @@ export const HousingGridContainer = styled.div`
   display: grid;
 
   height: ${HousingGridContainerHeight}px;
+  width: 100%;
 
   gap: 0.5rem;
   grid-template-columns: 1fr 0.5fr 1fr 1fr 0.75fr;
