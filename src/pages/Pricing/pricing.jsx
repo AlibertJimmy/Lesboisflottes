@@ -10,7 +10,7 @@ import { DayPicker } from 'react-day-picker';
 // Import Component
 import ToggleButton from '../../components/ToggleButton/toggleButton';
 import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter';
-import SeasonLegend from '../../components/Pricing/SeasonLegend/seasonLegend';
+import SeasonLegend from '../../components/Pricing/PricingLegend/pricingLegend';
 import InformationDisplay from '../../components/Pricing/Information/information';
 
 // Import Datas

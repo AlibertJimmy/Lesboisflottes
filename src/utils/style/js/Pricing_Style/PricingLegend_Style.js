@@ -1,14 +1,12 @@
 // Import Style
 import styled, { css } from 'styled-components';
 
-import { PageSubtitle } from '../Font_Style';
-
 // Import Constants
 import { selectionInformationWrapper } from '../../../constants/Prices_Contants';
 import { responsiveWidthMobile } from '../../../constants/Global_Constants';
 
 // Legend Related
-export const SeasonLegendWrapper = styled.div`
+export const PricingLegendWrapper = styled.div`
   display:flex;
   flex-direction: column;
   align-items:center;
@@ -20,13 +18,7 @@ export const SeasonLegendWrapper = styled.div`
   }
 `;
 
-export const PageSubtitleResponsive = styled(PageSubtitle)`
-  @media (max-width: ${responsiveWidthMobile}px){
-      display:none;
-  }  
-`;
-
-export const LegendTable = styled.table`
+export const PricingLegendTable = styled.table`
   padding: 10px;
   border-spacing: 5px 10px;
 
