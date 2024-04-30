@@ -1,5 +1,7 @@
 // Import Styled
 import styled from 'styled-components';
+import { HousingGridContainerHeight, HousingGridContainerHeightTablet } from '../../../constants/HousingGallery_Constants';
+import { responsiveWidthTablet } from '../../../constants/Global_Constants';
 
 export const HousingPatioGridWrapper = styled.div`
   display: flex;
@@ -12,7 +14,7 @@ export const HousingPatioGridWrapper = styled.div`
 export const HousingPatioGridContainer = styled.div`
   display: grid;
 
-  height: 500px;
+  height: ${HousingGridContainerHeight}px;
 
   gap: 0.5rem;
   grid-template-columns: 1fr 1fr;
@@ -20,4 +22,9 @@ export const HousingPatioGridContainer = styled.div`
   grid-template-areas:'one two'
                       'three three' 
                       'three three';
+
+  @media (max-width: ${responsiveWidthTablet}px){
+
+    height: ${HousingGridContainerHeightTablet}px;
+  }
 `;

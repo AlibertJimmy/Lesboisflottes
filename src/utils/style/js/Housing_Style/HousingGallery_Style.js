@@ -1,5 +1,7 @@
 // Import Styled
 import styled from 'styled-components';
+import { responsiveWidthMobile, responsiveWidthTablet } from '../../../constants/Global_Constants';
+import { HousingGridContainerHeight, HousingGridContainerHeightTablet } from '../../../constants/HousingGallery_Constants';
 
 export const HousingGridWrapper = styled.div`
   display: flex;
@@ -12,7 +14,7 @@ export const HousingGridWrapper = styled.div`
 export const HousingGridContainer = styled.div`
   display: grid;
 
-  height: 500px;
+  height: ${HousingGridContainerHeight}px;
 
   gap: 0.5rem;
   grid-template-columns: 1fr 0.5fr 1fr 1fr 0.75fr;
@@ -21,4 +23,13 @@ export const HousingGridContainer = styled.div`
                       'one one one one two' 
                       'three three four five six' 
                       'three three four five six';
+
+  @media (max-width: ${responsiveWidthTablet}px){
+    
+    height: ${HousingGridContainerHeightTablet}px;
+  }
+
+  @media (max-width: ${responsiveWidthMobile}px){
+    
+  }
 `;

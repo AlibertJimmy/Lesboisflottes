@@ -45,8 +45,6 @@ export const AccessTransportContainer = styled.div`
     
   }
 
-  border: 1px solid red;
-
 `;
 
 export const AccessTransportTitleContainer = styled.div`
