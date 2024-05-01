@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import Constants
-import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants/Global_Constants';
+import { responsiveWidthTablet } from '../../../constants/Global_Constants';
 import {
   ContactFormWidth,
   ContactFormGap,
@@ -13,12 +13,14 @@ import {
   ContactFormFieldSetPadding,
   FieldContainerMessageWidth,
   FieldContainerMessageHeight
-} from '../../constants/ContactForm_Constants';
-import colors from '../../colors/colors';
+} from '../../../constants/ContactForm_Constants';
+import colors from '../../../colors/colors';
 
 export const ContactFormWrapper = styled.div`
   display: flex;
   justify-content: center;
+
+  width: 100%;
 `;
 
 export const ContactForm = styled.form`
@@ -95,10 +97,7 @@ export const ContactFormField = styled.input`
   height: 30px;
 
   @media (max-width: ${responsiveWidthTablet}px){
-    width: 150px;
-  }
-  @media (max-width: ${responsiveWidthMobile}px){
-    width: 100px;
+    width: 100%;
   }
 
 `;
@@ -112,10 +111,7 @@ export const ContactFormFieldMail = styled.input`
   width: ${FieldContainerMailWidth}px;
 
   @media (max-width: ${responsiveWidthTablet}px){
-    width: 150px;
-  }
-  @media (max-width: ${responsiveWidthMobile}px){
-    width: 100px;
+    width: 100%;
   }
 `;
 
@@ -133,10 +129,7 @@ export const ContactFormFieldMessage = styled.textarea`
   
 
   @media (max-width: ${responsiveWidthTablet}px){
-    width: 150px;
-  }
-  @media (max-width: ${responsiveWidthMobile}px){
-    width: 100px;
+    width: 100%;
   }
 
 `;
@@ -171,8 +164,20 @@ export const ContactFormButton = styled.button`
   justify-content: center;
   width: 150px;
 
+  border-radius: 10px;
+
   font-family: cursive;
   font-size: 16px;
+
+  color: ${colors.navLinks};
+  background: ${colors.backgroundHeaderFooter};
+  box-shadow: 0 0 10px ${colors.interactifElement};
+
+  &:hover {
+    color: ${colors.backgroundHeaderFooter};
+    background: ${colors.navLinks};
+    box-shadow: 0 0 10px ${colors.interactifElementHover};
+  }
 `;
 
 export const ContactFormButtonIconContainer = styled.div`

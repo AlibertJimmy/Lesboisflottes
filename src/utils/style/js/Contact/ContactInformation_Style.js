@@ -1,15 +1,10 @@
 // Import Style
 import styled from 'styled-components';
 
-// Import Constants
-import { verticalMargin } from '../../constants/Global_Constants';
-
-export const ContactWrapper = styled.div`
+export const ContactInformationContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  gap: ${verticalMargin}px;
 
   width: 100%;
 `;

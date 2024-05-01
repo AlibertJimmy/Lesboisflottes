@@ -51,7 +51,7 @@ export const AdressButton = styled.button`
 
   cursor: pointer;
 
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
 
   color: ${colors.navLinks};

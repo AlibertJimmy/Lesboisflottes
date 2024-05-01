@@ -9,19 +9,20 @@ import CopyEmailLink from './copyMail';
 import { contactList } from '../../datas/contact';
 
 // Import Style
-import { ContactWrapper, ProfilePic } from '../../utils/style/js/ContactStyle';
+import { ProfilePic } from '../../utils/style/js/Contact/ContactStyle';
 import { StyledP } from '../../utils/style/js/Font_Style';
+import { ContactInformationContainer } from '../../utils/style/js/Contact/ContactInformation_Style';
 
 function ContactInformation () {
   const { t } = useTranslation();
 
   return (
-      <ContactWrapper id='contactWrapper'>
+      <ContactInformationContainer id='contactInformationContainer'>
         <StyledP>{t('ContactUs')}</StyledP>
         <StyledP >{contactList[0].name}</StyledP>
         <StyledP >{t('Email')} : <CopyEmailLink email={contactList[0].email} /></StyledP>
         <ProfilePic src={contactList[0].profilePic} alt="PIC"/>
-      </ContactWrapper>
+      </ContactInformationContainer>
   );
 }
 

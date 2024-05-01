@@ -21,7 +21,7 @@ import {
   ContactFormErrorMessageContainer,
   ContactFormButtonIconContainer,
   ContactFormButtonIcon
-} from '../../utils/style/js/ContactForm_Style';
+} from '../../utils/style/js/Contact/ContactForm_Style';
 
 function ContactFormComponent () {
   const [formData, setFormData] = useState({
