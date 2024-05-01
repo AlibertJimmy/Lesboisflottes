@@ -3,20 +3,27 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns';
 
-// Import PropType
-import PropTypes from 'prop-types';
+// Import Context
+import { useDayPickerContext } from '../../../context/DayPickerContext';
 
 // Import Function
 import { getPriceForRangeDay } from '../../../utils/functions/Pricing_Functions';
-import { DayPickerInformationDisplayP, DayPickerInformationDisplayWrapper } from '../../../utils/style/js/Pricing_Style/DayPickerInformationDisplay_Style';
 
-function DayPickerInformationDisplay ({ daySelection }) {
+// Import Style
+import {
+  DayPickerInformationDisplayWrapper,
+  DayPickerInformationDisplayP
+} from '../../../utils/style/js/Pricing_Style/DayPickerInformationDisplay_Style';
+
+function DayPickerInformationDisplay () {
   const { t } = useTranslation();
 
-  console.log('daySelection :', daySelection);
+  const { range } = useDayPickerContext();
+
+  console.log('daySelection :', range);
 
   let dayPickerInformation;
-  if (daySelection === undefined) {
+  if (range === undefined || (range.from === undefined && range.to === undefined)) {
     dayPickerInformation = (
       <>
         <DayPickerInformationDisplayP>{t('ArrivingThe')} :</DayPickerInformationDisplayP>
@@ -25,25 +32,25 @@ function DayPickerInformationDisplay ({ daySelection }) {
         <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} :</DayPickerInformationDisplayP>
       </>
     );
-  } else if (daySelection) {
-    if (daySelection?.from && daySelection.to === undefined) {
-      console.log('daySelection.from :', daySelection.from);
+  } else if (range) {
+    if (range?.from && range.to === undefined) {
+      console.log('daySelection.from :', range.from);
       dayPickerInformation = (
         <>
-          <DayPickerInformationDisplayP>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
+          <DayPickerInformationDisplayP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
           <DayPickerInformationDisplayP>{t('DepartureThe')} :</DayPickerInformationDisplayP>
           <DayPickerInformationDisplayP>{t('YouHaveSelected')} :</DayPickerInformationDisplayP>
           <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} :</DayPickerInformationDisplayP>
         </>
       );
-    } else if (daySelection?.from && daySelection?.to) {
-      console.log('daySelection.from :', daySelection.from);
+    } else if (range?.from && range?.to) {
+      console.log('daySelection.from :', range.from);
       dayPickerInformation = (
         <>
-          <DayPickerInformationDisplayP>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('DepartureThe')} : {format(daySelection.to, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('YouHaveSelected')} {getPriceForRangeDay(daySelection).totalNights}{getPriceForRangeDay(daySelection).totalNights === 1 ? t('Night') : t('Nights')}</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} : {getPriceForRangeDay(daySelection).totalPrice} euros</DayPickerInformationDisplayP>
+          <DayPickerInformationDisplayP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
+          <DayPickerInformationDisplayP>{t('DepartureThe')} : {format(range.to, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
+          <DayPickerInformationDisplayP>{t('YouHaveSelected')} {getPriceForRangeDay(range).totalNights}{getPriceForRangeDay(range).totalNights === 1 ? t('Night') : t('Nights')}</DayPickerInformationDisplayP>
+          <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} : {getPriceForRangeDay(range).totalPrice} euros</DayPickerInformationDisplayP>
         </>
       );
     }
@@ -55,19 +62,5 @@ function DayPickerInformationDisplay ({ daySelection }) {
     </DayPickerInformationDisplayWrapper>
   );
 }
-
-const DateRangeShape = PropTypes.shape({
-  from: PropTypes.instanceOf(Date).isRequired,
-  to: PropTypes.instanceOf(Date).isRequired
-});
-
-DayPickerInformationDisplay.propTypes = {
-  mode: PropTypes.string.isRequired,
-  daySelection: PropTypes.oneOfType([
-    PropTypes.instanceOf(Date),
-    DateRangeShape
-  ]).isRequired
-
-};
 
 export default DayPickerInformationDisplay;

@@ -4,6 +4,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+// Import Translation index
+import './i18n';
+
+// Import Context
+import { NavContextProvider } from './context/NavContext';
+import { DayPickerContextProvider } from './context/DayPickerContext';
+
 // Import Component
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -19,9 +26,7 @@ import Location from './pages/Location/location';
 // Import Style
 import styled from 'styled-components';
 
-// Import Translation index
-import './i18n';
-import { NavContextProvider } from './context/NavContext';
+// Import Constants
 import { headerHeight } from './utils/constants/Global_Constants';
 
 const ContentWrapper = styled.div`
@@ -36,23 +41,25 @@ function App () {
 
   return (
     <NavContextProvider>
-      <React.StrictMode>
-        <Router>
-          <Header />
-            <ContentWrapper id='contentWrapper'>
-              <Routes>
-                <Route path={`/${i18n.language}/`} element={<Home />} />
-                <Route path={`/${i18n.language}/${t('Comments')}`} element={<Comment />} />
-                <Route path={`/${i18n.language}/${t('Contact')}`} element={<Contact />} />
-                <Route path={`/${i18n.language}/${t('Gallery')}`} element={<Galleryx />} />
-                <Route path={`/${i18n.language}/${t('Housing')}`} element={<Housing />} />
-                <Route path={`/${i18n.language}/${t('Prices')}`} element={<Pricing />} />
-                <Route path={`/${i18n.language}/${t('Access')}`} element={<Location />} />
-              </Routes>
-            </ContentWrapper>
-          <Footer />
-      </Router>
-    </React.StrictMode>
+      <DayPickerContextProvider>
+        <React.StrictMode>
+          <Router>
+            <Header />
+              <ContentWrapper id='contentWrapper'>
+                <Routes>
+                  <Route path={`/${i18n.language}/`} element={<Home />} />
+                  <Route path={`/${i18n.language}/${t('Comments')}`} element={<Comment />} />
+                  <Route path={`/${i18n.language}/${t('Contact')}`} element={<Contact />} />
+                  <Route path={`/${i18n.language}/${t('Gallery')}`} element={<Galleryx />} />
+                  <Route path={`/${i18n.language}/${t('Housing')}`} element={<Housing />} />
+                  <Route path={`/${i18n.language}/${t('Prices')}`} element={<Pricing />} />
+                  <Route path={`/${i18n.language}/${t('Access')}`} element={<Location />} />
+                </Routes>
+              </ContentWrapper>
+            <Footer />
+        </Router>
+      </React.StrictMode>
+    </DayPickerContextProvider>
   </NavContextProvider>
   );
 }
