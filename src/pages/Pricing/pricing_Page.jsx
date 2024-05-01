@@ -1,5 +1,5 @@
 // Import react libraries
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
@@ -20,12 +20,12 @@ import DayPickerComponent from '../../components/Pricing/DayPicker/dayPicker';
 
 function Pricing () {
   const { t } = useTranslation();
-  // const [currentLayout, setCurrentLayout] = useState(1);
-  /*
+  const [currentLayout, setCurrentLayout] = useState(window.innerWidth >= 1300 ? 'laptop' : 'responsive');
+
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      setCurrentLayout(screenWidth >= 725 ? 2 : 1);
+      setCurrentLayout(screenWidth >= 1300 ? 'laptop' : 'responsive');
     };
 
     // Initial setup
@@ -39,7 +39,6 @@ function Pricing () {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  */
 
   return (
     <>
@@ -52,12 +51,21 @@ function Pricing () {
       </Helmet>
       <PageWrapper id='pricingPageWrapper'>
           <PageTitle>{t('Prices')}</PageTitle>
-
-        <SelectionInformationWrapper id='selectionInformationWrapper'>
-          <DayPickerInformationDisplay/>
-          <SeasonLegend />
-        </SelectionInformationWrapper>
+        {currentLayout === 'laptop'
+          ? <SelectionInformationWrapper id='selectionInformationWrapper'>
+        <DayPickerInformationDisplay/>
         <DayPickerComponent/>
+        <SeasonLegend />
+      </SelectionInformationWrapper>
+          : <>
+      <SelectionInformationWrapper id='selectionInformationWrapper'>
+        <DayPickerInformationDisplay/>
+
+        <SeasonLegend />
+      </SelectionInformationWrapper>
+      <DayPickerComponent/>
+      </>
+        }
 
         <PricingInformationDisplay />
 
