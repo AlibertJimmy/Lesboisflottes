@@ -7,8 +7,10 @@ import {
   PricingLegendWrapper,
   PricingLegendTable,
   LegendTDCellColor,
-  LegendTDCellText
+  LegendTDCellText,
+  LegendColorDiv
 } from '../../../utils/style/js/Pricing_Style/PricingLegend_Style';
+import { StyledP } from '../../../utils/style/js/Font_Style';
 
 // Import Data
 import { pricingBySeasonList } from '../../../datas/pricing';
@@ -24,9 +26,9 @@ function SeasonLegend () {
       <PricingLegendTable id='pricingLegendTable'>
         {pricingBySeasonList.map((season) => (
           <tr key={season} id={`pricingLegendTR-${season.seasonType}`}>
-            <LegendTDCellColor style={{ backgroundColor: colors[season.seasonType] }}></LegendTDCellColor>
-            <LegendTDCellText>{t(season.text)}</LegendTDCellText>
-            <LegendTDCellText>{`${season.price} €`}</LegendTDCellText>
+            <LegendTDCellColor><LegendColorDiv style={{ backgroundColor: colors[season.seasonType] }}/></LegendTDCellColor>
+            <LegendTDCellText><StyledP>{t(season.text)}</StyledP></LegendTDCellText>
+            <LegendTDCellText><StyledP>{`${season.price} €`}</StyledP></LegendTDCellText>
           </tr>
         ))}
       </PricingLegendTable>

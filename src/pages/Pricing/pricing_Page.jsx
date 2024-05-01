@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 // Import Component
 import DayPickerInformationDisplay from '../../components/Pricing/DayPickerInformationDisplay/dayPickerInformationDisplay';
 import SeasonLegend from '../../components/Pricing/PricingLegend/pricingLegend';
+import DayPickerComponent from '../../components/Pricing/DayPicker/dayPicker';
 import PricingInformationDisplay from '../../components/Pricing/Information/pricingInformationDisplay';
 
 // Import Datas
@@ -16,16 +17,18 @@ import '../../utils/style/css/react-day-picker.css';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { SelectionInformationWrapper } from '../../utils/style/js/Pricing_Style/PricingStyle';
 import { PageTitle } from '../../utils/style/js/Font_Style';
-import DayPickerComponent from '../../components/Pricing/DayPicker/dayPicker';
+
+// Import Constants
+import { laptopLayoutMinimumWidth } from '../../utils/constants/Prices_Contants';
 
 function Pricing () {
   const { t } = useTranslation();
-  const [currentLayout, setCurrentLayout] = useState(window.innerWidth >= 1300 ? 'laptop' : 'responsive');
+  const [currentLayout, setCurrentLayout] = useState(window.innerWidth >= laptopLayoutMinimumWidth ? 'laptop' : 'responsive');
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      setCurrentLayout(screenWidth >= 1300 ? 'laptop' : 'responsive');
+      setCurrentLayout(screenWidth >= laptopLayoutMinimumWidth ? 'laptop' : 'responsive');
     };
 
     // Initial setup

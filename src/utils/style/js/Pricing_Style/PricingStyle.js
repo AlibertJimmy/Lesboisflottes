@@ -20,8 +20,6 @@ export const SelectionInformationWrapper = styled.div`
     flex-direction:column-reverse;
     padding: 0;
   }
-
-  border: 1px solid red;
 `;
 
 export const ToggleButtonContainer = styled.div`

@@ -11,9 +11,9 @@ import { getPriceForRangeDay } from '../../../utils/functions/Pricing_Functions'
 
 // Import Style
 import {
-  DayPickerInformationDisplayWrapper,
-  DayPickerInformationDisplayP
+  DayPickerInformationDisplayWrapper
 } from '../../../utils/style/js/Pricing_Style/DayPickerInformationDisplay_Style';
+import { StyledP } from '../../../utils/style/js/Font_Style';
 
 function DayPickerInformationDisplay () {
   const { t } = useTranslation();
@@ -26,10 +26,10 @@ function DayPickerInformationDisplay () {
   if (range === undefined || (range.from === undefined && range.to === undefined)) {
     dayPickerInformation = (
       <>
-        <DayPickerInformationDisplayP>{t('ArrivingThe')} :</DayPickerInformationDisplayP>
-        <DayPickerInformationDisplayP>{t('DepartureThe')} :</DayPickerInformationDisplayP>
-        <DayPickerInformationDisplayP>{t('YouHaveSelected')} :</DayPickerInformationDisplayP>
-        <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} :</DayPickerInformationDisplayP>
+        <StyledP>{t('ArrivingThe')} :</StyledP>
+        <StyledP>{t('DepartureThe')} :</StyledP>
+        <StyledP>{t('YouHaveSelected')} :</StyledP>
+        <StyledP>{t('PriceOfTheJourney')} :</StyledP>
       </>
     );
   } else if (range) {
@@ -37,20 +37,20 @@ function DayPickerInformationDisplay () {
       console.log('daySelection.from :', range.from);
       dayPickerInformation = (
         <>
-          <DayPickerInformationDisplayP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('DepartureThe')} :</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('YouHaveSelected')} :</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} :</DayPickerInformationDisplayP>
+          <StyledP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</StyledP>
+          <StyledP>{t('DepartureThe')} :</StyledP>
+          <StyledP>{t('YouHaveSelected')} :</StyledP>
+          <StyledP>{t('PriceOfTheJourney')} :</StyledP>
         </>
       );
     } else if (range?.from && range?.to) {
       console.log('daySelection.from :', range.from);
       dayPickerInformation = (
         <>
-          <DayPickerInformationDisplayP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('DepartureThe')} : {format(range.to, 'dd/MM/yyyy')}.</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('YouHaveSelected')} {getPriceForRangeDay(range).totalNights}{getPriceForRangeDay(range).totalNights === 1 ? t('Night') : t('Nights')}</DayPickerInformationDisplayP>
-          <DayPickerInformationDisplayP>{t('PriceOfTheJourney')} : {getPriceForRangeDay(range).totalPrice} euros</DayPickerInformationDisplayP>
+          <StyledP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</StyledP>
+          <StyledP>{t('DepartureThe')} : {format(range.to, 'dd/MM/yyyy')}.</StyledP>
+          <StyledP>{t('YouHaveSelected')} {getPriceForRangeDay(range).totalNights}{getPriceForRangeDay(range).totalNights === 1 ? t('Night') : t('Nights')}</StyledP>
+          <StyledP>{t('PriceOfTheJourney')} : {getPriceForRangeDay(range).totalPrice} euros</StyledP>
         </>
       );
     }

@@ -52,9 +52,5 @@ export const CommonText = css`
 
 export const StyledP = styled.p`
     ${CommonText};
-    margin: 5px;
-
-    @media (max-width: ${responsiveWidthMobile}px){
-        padding-left:10px;
-    }
+    margin: 5px 0;
 `;

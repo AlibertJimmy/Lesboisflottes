@@ -33,11 +33,20 @@ const LegendTCCellCommonStyle = css`
   padding: 5px;
   border-radius: 5px;
   text-align:left;
+  height: 32px;
 `;
 
 export const LegendTDCellColor = styled.td`
-    ${LegendTCCellCommonStyle};
-    width: 40px;
+  display: flex;
+  align-items: center;    
+  ${LegendTCCellCommonStyle};
+  width: 50px;
+`;
+
+export const LegendColorDiv = styled.div`
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
 `;
 
 export const LegendTDCellText = styled.td`

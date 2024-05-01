@@ -14,10 +14,4 @@ export const DayPickerInformationDisplayWrapper = styled.div`
   width: 200px;
 
   padding: 0 20px;
-
-  border: 1px solid blue;
-`;
-
-export const DayPickerInformationDisplayP = styled.p`
-  margin: 5px 0;
 `;
