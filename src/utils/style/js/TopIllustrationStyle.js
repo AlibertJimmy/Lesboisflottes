@@ -5,19 +5,18 @@ import styled from 'styled-components';
 import colors from '../../colors/colors';
 
 // Import Constants
-import { topIllustrationHeight } from '../../constants/TopIllustration_Constants';
 import { responsiveWidthMobile, responsiveWidthTablet } from '../../constants/Global_Constants';
 
 export const TopIllustrationImageContainer = styled.div`
   width: 100%;
-  height: ${topIllustrationHeight}px;
+  height: 41.67vw;
   position: relative;
 
 `;
 
 export const TopIllustrationImage = styled.img`
   width: 100%;
-  height: ${topIllustrationHeight}px;
+  height: 41.67vw;
 `;
 
 export const AbsolutePositionContainer = styled.div`
@@ -25,10 +24,11 @@ export const AbsolutePositionContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: ${topIllustrationHeight}px;
+  height: 41.67vw;
 
   background-color: transparent ;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 1rem;
 `;
@@ -40,9 +40,13 @@ export const TopPageTitle = styled.h1`
   text-transform: uppercase;
   text-align: center;
 
-  color: ${colors.navLinks};
+  color: ${colors.backgroundHeaderFooter};
+  text-shadow: 
+    -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,  
+    -1px 1px 0 #FFF,  
+    1px 1px 0 #FFF; // Black outline
 
-  transform: translate(0%, calc(${topIllustrationHeight}px * 0.05));
 
   @media (max-width: ${responsiveWidthTablet}px){
     font-size: 35px;
@@ -50,6 +54,5 @@ export const TopPageTitle = styled.h1`
 
   @media (max-width: ${responsiveWidthMobile}px){
     font-size: 25px;
-    transform: translate(0%, calc(${topIllustrationHeight}px * -0.05));
   }
 `;

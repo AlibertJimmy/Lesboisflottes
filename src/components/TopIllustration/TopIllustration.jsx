@@ -6,10 +6,9 @@ import { useTranslation } from 'react-i18next';
 // Import Style
 import { AbsolutePositionContainer, TopIllustrationImage, TopIllustrationImageContainer, TopPageTitle } from '../../utils/style/js/TopIllustrationStyle';
 
-// Import Styles
-
 function TopIllustration ({ image, title }) {
   const { t } = useTranslation();
+
   return (
     <TopIllustrationImageContainer>
       <TopIllustrationImage src={image} />
