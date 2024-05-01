@@ -1,5 +1,6 @@
 // Import React Libraries
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 // Import PropTypes
 import PropTypes from 'prop-types';
@@ -7,6 +8,7 @@ import PropTypes from 'prop-types';
 const DayPickerContext = createContext();
 
 export const DayPickerContextProvider = ({ children }) => {
+  const location = useLocation();
   const [range, setRange] = useState(() => {
     // Initialize state from localStorage or set a default
     const json = localStorage.getItem('range');
@@ -29,6 +31,11 @@ export const DayPickerContextProvider = ({ children }) => {
     const json = JSON.stringify(range);
     localStorage.setItem('range', json);
   }, [range]);
+
+  useEffect(() => {
+    // Reset the range whenever the location changes and we are on the specific page
+    setRange(undefined);
+  }, [location.pathname]);
 
   const contextValue = {
     range,

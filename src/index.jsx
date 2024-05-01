@@ -41,9 +41,9 @@ function App () {
 
   return (
     <NavContextProvider>
-      <DayPickerContextProvider>
-        <React.StrictMode>
-          <Router>
+      <React.StrictMode>
+        <Router>
+          <DayPickerContextProvider>
             <Header />
               <ContentWrapper id='contentWrapper'>
                 <Routes>
@@ -57,10 +57,10 @@ function App () {
                 </Routes>
               </ContentWrapper>
             <Footer />
+          </DayPickerContextProvider>
         </Router>
       </React.StrictMode>
-    </DayPickerContextProvider>
-  </NavContextProvider>
+    </NavContextProvider>
   );
 }
 
