@@ -2,16 +2,17 @@
 import styled, { css } from 'styled-components';
 
 // Import Constants
-import { selectionInformationWrapper } from '../../../constants/Prices_Contants';
+import { dayPickerLegendInformationWrapperHeight } from '../../../constants/Prices_Contants';
 import { responsiveWidthMobile } from '../../../constants/Global_Constants';
 
 // Legend Related
 export const PricingLegendWrapper = styled.div`
   display:flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
+  justify-content: center;
 
-  height: ${selectionInformationWrapper}px;
+  height: ${dayPickerLegendInformationWrapperHeight}px;
 
   @media (max-width: ${responsiveWidthMobile}px){
     height: 120px;

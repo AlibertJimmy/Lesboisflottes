@@ -8,7 +8,7 @@ import { fr, enUS } from 'date-fns/locale';
 import { DayPicker } from 'react-day-picker';
 
 // Import Component
-import DayPickerInformationDisplay from '../../components/Pricing/DayPickerFooter/dayPickerFooter';
+import DayPickerInformationDisplay from '../../components/Pricing/DayPickerInformationDisplay/dayPickerInformationDisplay';
 import SeasonLegend from '../../components/Pricing/PricingLegend/pricingLegend';
 import PricingInformationDisplay from '../../components/Pricing/Information/pricingInformationDisplay';
 
@@ -21,7 +21,6 @@ import '../../utils/style/css/react-day-picker.css';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { DayPickerContainer, SelectionInformationWrapper } from '../../utils/style/js/Pricing_Style/PricingStyle';
 import { PageTitle } from '../../utils/style/js/Font_Style';
-import { DayPickerInformationDisplayWrapper } from '../../utils/style/js/Pricing_Style/DayPickerInformationDisplay_Style';
 
 function Pricing () {
   const { i18n, t } = useTranslation();
@@ -96,10 +95,7 @@ function Pricing () {
           <PageTitle>{t('Prices')}</PageTitle>
 
         <SelectionInformationWrapper id='selectionInformationWrapper'>
-          <DayPickerInformationDisplayWrapper id='dataDisplayWrapper'>
-            <DayPickerInformationDisplay mode={selection} daySelection={range} />
-          </DayPickerInformationDisplayWrapper>
-
+          <DayPickerInformationDisplay mode={selection} daySelection={range} />
           <SeasonLegend />
         </SelectionInformationWrapper>
 

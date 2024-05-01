@@ -1,2 +1,2 @@
 // Pricing
-export const selectionInformationWrapper = 250;
+export const dayPickerLegendInformationWrapperHeight = 150;
