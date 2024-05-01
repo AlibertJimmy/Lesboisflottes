@@ -1,9 +1,6 @@
 // Import Style
 import styled from 'styled-components';
 
-// Import Constants
-import { selectionInformationWrapper } from '../../../constants/Prices_Contants';
-
 import {
   responsiveWidthMobile,
   marginBetweenPageComponent
@@ -23,11 +20,8 @@ export const SelectionInformationWrapper = styled.div`
     flex-direction:column-reverse;
     padding: 0;
   }
-`;
 
-export const DataDisplayWrapper = styled.div`
-  text-align: center;
-  height: ${selectionInformationWrapper}px;
+  border: 1px solid red;
 `;
 
 export const ToggleButtonContainer = styled.div`

@@ -8,8 +8,7 @@ import { fr, enUS } from 'date-fns/locale';
 import { DayPicker } from 'react-day-picker';
 
 // Import Component
-import ToggleButton from '../../components/ToggleButton/toggleButton';
-import DayPickerFooter from '../../components/Pricing/DayPickerFooter/dayPickerFooter';
+import DayPickerInformationDisplay from '../../components/Pricing/DayPickerFooter/dayPickerFooter';
 import SeasonLegend from '../../components/Pricing/PricingLegend/pricingLegend';
 import PricingInformationDisplay from '../../components/Pricing/Information/pricingInformationDisplay';
 
@@ -20,34 +19,16 @@ import { pricesPageContent } from '../../datas/pageContent/pricesPageContent';
 // Import Style
 import '../../utils/style/css/react-day-picker.css';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
-import { DataDisplayWrapper, DayPickerContainer, InnerDiv, SelectionInformationWrapper, ToggleButtonContainer } from '../../utils/style/js/Pricing_Style/PricingStyle';
-import { PageTitle, PageSubtitle } from '../../utils/style/js/Font_Style';
+import { DayPickerContainer, SelectionInformationWrapper } from '../../utils/style/js/Pricing_Style/PricingStyle';
+import { PageTitle } from '../../utils/style/js/Font_Style';
+import { DayPickerInformationDisplayWrapper } from '../../utils/style/js/Pricing_Style/DayPickerInformationDisplay_Style';
 
 function Pricing () {
   const { i18n, t } = useTranslation();
-  const [selection, setAsSelection] = useState('single');
   const [numberOfMonthToDisplay, setNumberOfMonthToDisplay] = useState(1);
   const [selectedDay, setSelectedDay] = useState();
   const [range, setRange] = useState();
-
-  const switchDaySelection = () => {
-    if (selection === 'single') {
-      // transfer the selectedDay to the first day of the range
-      if (selectedDay !== undefined) {
-        const newRange = {
-          from: new Date(selectedDay)
-        };
-        setRange(newRange);
-        console.log(range);
-      }
-    } else if (selection === 'range') {
-      if (range !== undefined) {
-        // copy the starting day of the range into selectedDay
-        setSelectedDay(range.from);
-      }
-    }
-    setAsSelection(selection === 'single' ? 'range' : 'single');
-  };
+  const selection = 'range';
 
   const setNewRange = (date) => {
     console.log('setNewRange');
@@ -115,15 +96,9 @@ function Pricing () {
           <PageTitle>{t('Prices')}</PageTitle>
 
         <SelectionInformationWrapper id='selectionInformationWrapper'>
-          <DataDisplayWrapper id='dataDisplayWrapper'>
-            <PageSubtitle>{t('SelectNightTitle')}</PageSubtitle>
-            <ToggleButtonContainer>
-              <InnerDiv>{t('SingleNight')}</InnerDiv>
-              <ToggleButton onToggle={switchDaySelection} selection={selection} />
-              <InnerDiv>{t('MultipleNights')}</InnerDiv>
-            </ToggleButtonContainer>
-            <DayPickerFooter mode={selection} daySelection={selection === 'single' ? selectedDay : range} />
-          </DataDisplayWrapper>
+          <DayPickerInformationDisplayWrapper id='dataDisplayWrapper'>
+            <DayPickerInformationDisplay mode={selection} daySelection={range} />
+          </DayPickerInformationDisplayWrapper>
 
           <SeasonLegend />
         </SelectionInformationWrapper>

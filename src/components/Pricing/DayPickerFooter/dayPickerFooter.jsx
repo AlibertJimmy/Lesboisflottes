@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 // Import Function
 import { getPriceForRangeDay } from '../../../utils/functions/Pricing_Functions';
 
-function DayPickerFooter ({ daySelection }) {
+function DayPickerInformationDisplay ({ daySelection }) {
   const { t } = useTranslation();
 
   console.log('daySelection :', daySelection);
@@ -20,6 +20,8 @@ function DayPickerFooter ({ daySelection }) {
       <>
         <p>{t('ArrivingThe')} :</p>
         <p>{t('DepartureThe')} :</p>
+        <p>{t('YouHaveSelected')} :</p>
+        <p>{t('PriceOfTheJourney')} :</p>
       </>
     );
   } else if (daySelection) {
@@ -29,6 +31,8 @@ function DayPickerFooter ({ daySelection }) {
         <>
           <p>{t('ArrivingThe')} : {format(daySelection.from, 'dd/MM/yyyy')}.</p>
           <p>{t('DepartureThe')} :</p>
+          <p>{t('YouHaveSelected')} :</p>
+          <p>{t('PriceOfTheJourney')} :</p>
         </>
       );
     } else if (daySelection?.from && daySelection?.to) {
@@ -52,7 +56,7 @@ const DateRangeShape = PropTypes.shape({
   to: PropTypes.instanceOf(Date).isRequired
 });
 
-DayPickerFooter.propTypes = {
+DayPickerInformationDisplay.propTypes = {
   mode: PropTypes.string.isRequired,
   daySelection: PropTypes.oneOfType([
     PropTypes.instanceOf(Date),
@@ -61,4 +65,4 @@ DayPickerFooter.propTypes = {
 
 };
 
-export default DayPickerFooter;
+export default DayPickerInformationDisplay;
