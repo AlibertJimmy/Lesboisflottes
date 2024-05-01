@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 // Import Component
+import TopIllustration from '../../components/TopIllustration/TopIllustration';
 import DayPickerInformationDisplay from '../../components/Pricing/DayPickerInformationDisplay/dayPickerInformationDisplay';
 import SeasonLegend from '../../components/Pricing/PricingLegend/pricingLegend';
 import DayPickerComponent from '../../components/Pricing/DayPicker/dayPicker';
@@ -11,6 +12,9 @@ import PricingInformationDisplay from '../../components/Pricing/Information/pric
 
 // Import Datas
 import { pricesPageContent } from '../../datas/pageContent/pricesPageContent';
+
+// Import Illustration
+import pricingTopIllustration from '../../assets/topIllustrations/PricingTopIllustration.jpg';
 
 // Import Style
 import '../../utils/style/css/react-day-picker.css';
@@ -52,6 +56,7 @@ function Pricing () {
           content={`${pricesPageContent.referencement.map((keyWords) => (keyWords)).join(', ')} `}
         />
       </Helmet>
+      <TopIllustration image={pricingTopIllustration} title={'Prices-title'}/>
       <PageWrapper id='pricingPageWrapper'>
           <PageTitle>{t('Prices')}</PageTitle>
         {currentLayout === 'laptop'

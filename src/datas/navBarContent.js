@@ -29,7 +29,7 @@ export const navigationBarContent = [
   },
   {
     pageLinkTitle: 'Prices',
-    pageLink: 'Prices',
+    pageLink: 'Prices-title',
     dropDown: false
   },
   {
