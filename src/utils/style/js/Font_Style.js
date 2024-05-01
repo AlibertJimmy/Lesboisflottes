@@ -36,6 +36,7 @@ export const PageSubtitle = styled.h2`
     ${commonTitleStyle};    
     font-size: 25px;
     margin: 0;
+    margin-bottom: 10px;
 
     color: ${colors.title} ;
 

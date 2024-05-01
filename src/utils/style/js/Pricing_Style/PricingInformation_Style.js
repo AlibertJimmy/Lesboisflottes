@@ -25,13 +25,24 @@ export const PricingInformationDisplayContainer = styled.div`
   }
 `;
 
-export const PricingInformationContainer = styled.div`
+export const PricingInformationContainerWrapped = styled.div`
   display: flex;
   flex-direction: column;
 
   align-items: center;
   flex: 1 0 calc(45% - 10px);
-  border-radius: 15px;
+  height: 120px;
+
+  @media (max-width: ${responsiveWidthMobile}px){
+    width:100%;
+  }
+`;
+
+export const PricingInformationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   height: 120px;
 
   @media (max-width: ${responsiveWidthMobile}px){

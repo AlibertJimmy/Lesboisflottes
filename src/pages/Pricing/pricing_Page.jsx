@@ -20,7 +20,6 @@ import pricingTopIllustration from '../../assets/topIllustrations/PricingTopIllu
 import '../../utils/style/css/react-day-picker.css';
 import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 import { SelectionInformationWrapper } from '../../utils/style/js/Pricing_Style/PricingStyle';
-import { PageTitle } from '../../utils/style/js/Font_Style';
 
 // Import Constants
 import { laptopLayoutMinimumWidth } from '../../utils/constants/Prices_Contants';
@@ -58,7 +57,6 @@ function Pricing () {
       </Helmet>
       <TopIllustration image={pricingTopIllustration} title={'Prices-title'}/>
       <PageWrapper id='pricingPageWrapper'>
-          <PageTitle>{t('Prices')}</PageTitle>
         {currentLayout === 'laptop'
           ? <SelectionInformationWrapper id='selectionInformationWrapper'>
         <DayPickerInformationDisplay/>

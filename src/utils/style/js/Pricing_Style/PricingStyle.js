@@ -13,8 +13,7 @@ export const SelectionInformationWrapper = styled.div`
   justify-content:space-evenly;
   align-items: center;
 
-  margin: ${marginBetweenPageComponent}px 0;
-
+  padding: 20px 0;
 
   @media (max-width: ${responsiveWidthMobile}px){
     flex-direction:column-reverse;
