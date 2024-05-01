@@ -4,21 +4,28 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 // Import PropTypes
 import PropTypes from 'prop-types';
 
-// Nav Context
 const DayPickerContext = createContext();
 
 export const DayPickerContextProvider = ({ children }) => {
-  const [range, setRange] = useState();
-
-  useEffect(() => {
+  const [range, setRange] = useState(() => {
+    // Initialize state from localStorage or set a default
     const json = localStorage.getItem('range');
-    const savedRange = JSON.parse(json);
-    if (savedRange) {
-      setRange(savedRange);
+    if (json !== null) {
+      try {
+        // Attempt to parse the stored JSON
+        const savedRange = JSON.parseISO(json);
+        return savedRange || undefined;
+      } catch (error) {
+        // Handle JSON parsing errors, if any
+        console.error('Error parsing range from localStorage:', error);
+        return undefined; // Return undefined or a sensible default
+      }
     }
-  }, []);
+    return undefined; // Default value if nothing in localStorage
+  });
 
   useEffect(() => {
+    // Effect to update localStorage when range changes
     const json = JSON.stringify(range);
     localStorage.setItem('range', json);
   }, [range]);

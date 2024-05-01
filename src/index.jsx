@@ -20,7 +20,7 @@ import Comment from './pages/Comment/comment';
 import Contact from './pages/Contact/contact';
 import Galleryx from './pages/Gallery/gallery';
 import Housing from './pages/Housing/housing';
-import Pricing from './pages/Pricing/pricing';
+import Pricing from './pages/Pricing/pricing_Page';
 import Location from './pages/Location/location';
 
 // Import Style
