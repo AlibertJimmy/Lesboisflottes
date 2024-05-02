@@ -13,4 +13,6 @@ export const ProfilePic = styled.img`
     max-width: 300px;
     max-height: 300px;
 
+    margin: 5px 0;
+
 `;

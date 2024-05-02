@@ -1,5 +1,5 @@
 // Import React Libraries
-import React from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ import { LanguageMenuContainer } from '../../utils/style/js/LanguageMenuStyle';
 export const LanguageMenu = () => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const onChangeLang = (selectedOption) => {
     const langCode = selectedOption.value;
@@ -46,6 +47,13 @@ export const LanguageMenu = () => {
     console.log('newPathname : ', newPathname);
     // Navigate to the new path
     navigate(newPathname, { replace: true });
+    setMenuIsOpen(false);
+  };
+
+  const toggleMenu = () => {
+    if (window.innerWidth <= 768) { // Assuming 768px is your mobile breakpoint
+      setMenuIsOpen(!menuIsOpen);
+    }
   };
 
   // Create an array of custom options with images
@@ -70,7 +78,7 @@ export const LanguageMenu = () => {
   const selectedLang = customSelectRender.find((option) => option.value === i18n.language);
 
   return (
-    <LanguageMenuContainer id='languageMenuContainer'>
+    <LanguageMenuContainer id='languageMenuContainer' onClick={toggleMenu}>
       <Select
         options={customOptions}
 

@@ -162,6 +162,9 @@ export const ContactFormButton = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+
+  height: 40px;
   width: 150px;
 
   border-radius: 10px;
