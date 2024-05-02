@@ -47,10 +47,21 @@ export const LanguageMenu = () => {
     console.log('newPathname : ', newPathname);
     // Navigate to the new path
     navigate(newPathname, { replace: true });
+    setMenuIsOpen(false); // Close the menu after selection
   };
 
-  const toggleMenu = () => {
-    setMenuIsOpen(!menuIsOpen);
+  const handleClick = (event) => {
+    // Prevent opening and closing on the same event on desktop
+    console.log('handle click');
+    event.preventDefault();
+    setMenuIsOpen(current => !current); // Toggle based on previous state
+  };
+
+  const handleTouchEnd = (event) => {
+    console.log('handle touch');
+    // Handle for mobile devices to avoid double-trigger from mouse events
+    event.stopPropagation(); // Stop the click event from firing
+    setMenuIsOpen(current => !current);
   };
 
   // Create an array of custom options with images
@@ -58,7 +69,7 @@ export const LanguageMenu = () => {
     value: code,
     label: (
       <div key={code} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <img src={flag} alt={label} style={{ height: `${flagHeight}px`, width: `${flagWidth}px` }} /><span>{label}</span>
+        <img src={flag} alt={label} style={{ height: `${flagHeight}px`, width: `${flagWidth}px` }} /><span style={{ color: 'black' }}>{label}</span>
       </div>
     )
   }));
@@ -75,7 +86,7 @@ export const LanguageMenu = () => {
   const selectedLang = customSelectRender.find((option) => option.value === i18n.language);
 
   return (
-    <LanguageMenuContainer id='languageMenuContainer' onClick={toggleMenu}>
+    <LanguageMenuContainer id='languageMenuContainer' onClick={handleClick} onTouchEnd={handleTouchEnd}>
       <Select
         options={customOptions}
 
