@@ -1,7 +1,7 @@
 // Import Styled
 import styled from 'styled-components';
 import { responsiveWidthMobile, responsiveWidthTablet } from '../../../constants/Global_Constants';
-import { HousingGridContainerHeight, HousingGridContainerHeightTablet } from '../../../constants/HousingGallery_Constants';
+// import { HousingGridContainerHeight, HousingGridContainerHeightTablet } from '../../../constants/HousingGallery_Constants';
 
 export const HousingGridWrapper = styled.div`
   display: flex;
@@ -10,11 +10,12 @@ export const HousingGridWrapper = styled.div`
   margin: 0 auto;
   width: 100%;
 `;
-
+// height: ${HousingGridContainerHeight}px;
+// height: ${HousingGridContainerHeightTablet}px;
 export const HousingGridContainer = styled.div`
   display: grid;
 
-  height: ${HousingGridContainerHeight}px;
+  
   width: 100%;
 
   gap: 0.5rem;
@@ -27,7 +28,7 @@ export const HousingGridContainer = styled.div`
 
   @media (max-width: ${responsiveWidthTablet}px){
     
-    height: ${HousingGridContainerHeightTablet}px;
+    
   }
 
   @media (max-width: ${responsiveWidthMobile}px){

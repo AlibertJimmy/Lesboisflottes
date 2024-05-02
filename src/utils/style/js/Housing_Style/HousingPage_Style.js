@@ -11,6 +11,8 @@ export const HousingPageWarper = styled.div`
 export const HousingLateralWrapper1 = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 
   @media (max-width: ${responsiveWidthTablet}px) {
@@ -21,6 +23,8 @@ export const HousingLateralWrapper1 = styled.div`
 export const HousingLateralWrapper2 = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 
   @media (max-width: ${responsiveWidthTablet}px) {

@@ -1,6 +1,5 @@
 // Import Styled
 import styled from 'styled-components';
-import { HousingGridContainerHeight, HousingGridContainerHeightTablet } from '../../../constants/HousingGallery_Constants';
 import { responsiveWidthTablet } from '../../../constants/Global_Constants';
 
 export const HousingPatioGridWrapper = styled.div`
@@ -14,7 +13,6 @@ export const HousingPatioGridWrapper = styled.div`
 export const HousingPatioGridContainer = styled.div`
   display: grid;
 
-  height: ${HousingGridContainerHeight}px;
   width: 100%;
 
   gap: 0.5rem;
@@ -26,6 +24,5 @@ export const HousingPatioGridContainer = styled.div`
 
   @media (max-width: ${responsiveWidthTablet}px){
 
-    height: ${HousingGridContainerHeightTablet}px;
   }
 `;
