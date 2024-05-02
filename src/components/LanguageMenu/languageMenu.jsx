@@ -81,9 +81,9 @@ export const LanguageMenu = () => {
     <LanguageMenuContainer id='languageMenuContainer' onClick={toggleMenu}>
       <Select
         options={customOptions}
-
         value={selectedLang}
         onChange={onChangeLang}
+        menuIsOpen={menuIsOpen}
       />
     </LanguageMenuContainer>
   );
