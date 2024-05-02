@@ -32,7 +32,7 @@ import HousingPatioGallery from '../../components/Housing/Housing_PatioGallery';
 
 function Housing () {
   const { t } = useTranslation();
-  console.log('housingPageContent.presentation1 : ', housingPageContent.presentation1);
+  // console.log('housingPageContent.presentation1 : ', housingPageContent.presentation1);
 
   return (
     <>

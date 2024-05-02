@@ -17,8 +17,8 @@ import {
 } from '../../utils/style/js/Gallery_Style';
 
 function GallerySampleGridRight () {
-  console.log('photosSample');
-  console.log(photosSample[0]);
+  // console.log('photosSample');
+  // console.log(photosSample[0]);
   return (
     <GridWrapper id='gridWrapper'>
       <Link to="/Gallery">

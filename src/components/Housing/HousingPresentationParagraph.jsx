@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 import { StyledP } from '../../utils/style/js/Font_Style';
 
 function HousingPresentationParagraph ({ paragraph, paragraphTypoStyle }) {
-  console.log('paragraph : ', paragraph);
+  // console.log('paragraph : ', paragraph);
   const { t } = useTranslation();
 
   return (

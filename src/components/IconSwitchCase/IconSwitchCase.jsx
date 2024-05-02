@@ -18,8 +18,8 @@ import blanket from '../../assets/icon/blanket.png';
 import colors from '../../utils/colors/colors';
 
 function IconSwitchCase ({ iconsName, iconsColor }) {
-  console.log('iconsName : ', iconsName);
-  console.log('iconColor : ', iconsColor);
+  // console.log('iconsName : ', iconsName);
+  // console.log('iconColor : ', iconsColor);
 
   return (
     <SwitchCaseIconContainer>

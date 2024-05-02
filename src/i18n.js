@@ -11,8 +11,8 @@ const getCurrentHost =
     ? webSiteDevUrl
     : webSiteProdUrl;
 
-console.log(`process.env.NODE_ENV : ${process.env.NODE_ENV}`);
-console.log(`getCurrentHost : ${getCurrentHost}`);
+// console.log(`process.env.NODE_ENV : ${process.env.NODE_ENV}`);
+// console.log(`getCurrentHost : ${getCurrentHost}`);
 
 i18n
   .use(i18nBackend)

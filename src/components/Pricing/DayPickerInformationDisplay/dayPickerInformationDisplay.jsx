@@ -20,7 +20,7 @@ function DayPickerInformationDisplay () {
 
   const { range } = useDayPickerContext();
 
-  console.log('daySelection :', range);
+  // console.log('daySelection :', range);
 
   let dayPickerInformation;
   if (range === undefined || (range.from === undefined && range.to === undefined)) {

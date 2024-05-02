@@ -23,9 +23,6 @@ import { CommentListWrapper } from '../../utils/style/js/Comment_Style/Comment_S
 function Comment () {
   const { i18n, t } = useTranslation();
 
-  console.log('Comment Page');
-  console.log(`language : ${i18n.language}`);
-
   return (
     <>
       <Helmet>

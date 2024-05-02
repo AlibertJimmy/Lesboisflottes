@@ -31,8 +31,8 @@ import {
 
 function AverageRatingItem ({ webSite }) {
   const { i18n, t } = useTranslation();
-  console.log('webSite');
-  console.log(webSite);
+  // console.log('webSite');
+  // console.log(webSite);
 
   return (
       <div>
