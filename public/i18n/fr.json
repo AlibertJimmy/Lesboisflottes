@@ -99,10 +99,11 @@
 
     "presentationHousing10": "Un coin nuit équipé d'un lit ",
     "presentationHousing10Bold": "queen size",
-    "presentationHousing11":" (160x200 [cm]), de rangements, d'une ",
+    "presentationHousing11": " (160x200 [cm]), de rangements, d'une ",
     "presentationHousing11Bold": "penderie",
-    "presentationHousing12":" et d'un espace lecture.",
-    "presentationHousing13":"Une salle de bain  avec cabine de douche et lavabo, de toilettes indépendantes.",
+    "presentationHousing12": " et d'un espace lecture.",
+    "presentationHousing13": "Une salle de bain  avec cabine de douche et lavabo, de toilettes indépendantes.",
+    "presentationHousing14": "Un coin cuisine avec thé et café à disposition.",
 
     "//":"HOUSING EQUIPMENT",
     "Wifi": "Wifi",

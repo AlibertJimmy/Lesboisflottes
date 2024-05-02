@@ -12,10 +12,12 @@ export const DayPickerContextProvider = ({ children }) => {
   const [range, setRange] = useState(() => {
     // Initialize state from localStorage or set a default
     const json = localStorage.getItem('range');
-    if (json !== null) {
+    // console.log(`json : ${json}`);
+    if (json !== null || json !== undefined) {
       try {
         // Attempt to parse the stored JSON
         const savedRange = JSON.parseISO(json);
+        // console.log(`savedRange : ${savedRange}`);
         return savedRange || undefined;
       } catch (error) {
         // Handle JSON parsing errors, if any

@@ -56,6 +56,7 @@ function Housing () {
               <HousingPresentationContainer>
                 <HousingPresentationParagraph paragraph={housingPageContent.presentation3} paragraphTypoStyle={housingPageContent.presentationTypoStyle3}/>
                 <HousingPresentationParagraph paragraph={housingPageContent.presentation4} paragraphTypoStyle={housingPageContent.presentationTypoStyle4}/>
+                <HousingPresentationParagraph paragraph={housingPageContent.presentation5} paragraphTypoStyle={housingPageContent.presentationTypoStyle5}/>
               </HousingPresentationContainer>
               <HousingEquipmentIcon iconsList={iconsListDataIndoor}/>
             </HousingPageContainer>

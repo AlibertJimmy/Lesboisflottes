@@ -46,5 +46,11 @@ export const housingPageContent = {
   ],
   presentationTypoStyle4: [
     'normal'
+  ],
+  presentation5: [
+    'presentationHousing14'
+  ],
+  presentationTypoStyle5: [
+    'normal'
   ]
 };
