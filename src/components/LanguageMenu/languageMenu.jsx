@@ -58,10 +58,11 @@ export const LanguageMenu = () => {
   };
 
   const handleTouchEnd = (event) => {
-    console.log('handle touch');
-    // Handle for mobile devices to avoid double-trigger from mouse events
-    event.stopPropagation(); // Stop the click event from firing
-    setMenuIsOpen(current => !current);
+    // Prevent closing menu on touch if it's already open
+    if (!menuIsOpen) {
+      event.stopPropagation(); // Only stop propagation if menu is not open
+      setMenuIsOpen(true);
+    }
   };
 
   // Create an array of custom options with images
