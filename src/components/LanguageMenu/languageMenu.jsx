@@ -47,13 +47,10 @@ export const LanguageMenu = () => {
     console.log('newPathname : ', newPathname);
     // Navigate to the new path
     navigate(newPathname, { replace: true });
-    setMenuIsOpen(false);
   };
 
   const toggleMenu = () => {
-    if (window.innerWidth <= 768) { // Assuming 768px is your mobile breakpoint
-      setMenuIsOpen(!menuIsOpen);
-    }
+    setMenuIsOpen(!menuIsOpen);
   };
 
   // Create an array of custom options with images
@@ -81,9 +78,14 @@ export const LanguageMenu = () => {
     <LanguageMenuContainer id='languageMenuContainer' onClick={toggleMenu}>
       <Select
         options={customOptions}
+
         value={selectedLang}
         onChange={onChangeLang}
+        onMenuOpen={() => setMenuIsOpen(true)}
+        onMenuClose={() => setMenuIsOpen(false)}
         menuIsOpen={menuIsOpen}
+        menuShouldBlockScroll={true}
+        isSearchable={false}
       />
     </LanguageMenuContainer>
   );
