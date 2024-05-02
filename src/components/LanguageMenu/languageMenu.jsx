@@ -86,7 +86,7 @@ export const LanguageMenu = () => {
   const selectedLang = customSelectRender.find((option) => option.value === i18n.language);
 
   return (
-    <LanguageMenuContainer id='languageMenuContainer' onClick={handleClick} onTouchEnd={handleTouchEnd}>
+    <LanguageMenuContainer id='languageMenuContainer' onMouseDown={handleClick} onTouchEnd={handleTouchEnd}>
       <Select
         options={customOptions}
 
