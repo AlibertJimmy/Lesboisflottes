@@ -50,7 +50,7 @@ function DayPickerInformationDisplay () {
           <StyledP>{t('ArrivingThe')} : {format(range.from, 'dd/MM/yyyy')}.</StyledP>
           <StyledP>{t('DepartureThe')} : {format(range.to, 'dd/MM/yyyy')}.</StyledP>
           <StyledP>{t('YouHaveSelected')} {getPriceForRangeDay(range).totalNights}{getPriceForRangeDay(range).totalNights === 1 ? t('Night') : t('Nights')}</StyledP>
-          <StyledP>{t('PriceOfTheJourney')} : {getPriceForRangeDay(range).totalPrice} euros</StyledP>
+          <StyledP>{t('PriceOfTheJourney')} : <b>{getPriceForRangeDay(range).totalPrice}</b>  €</StyledP>
         </>
       );
     }
