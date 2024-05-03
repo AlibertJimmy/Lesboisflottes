@@ -17,7 +17,8 @@ const CommonGridContainer = css`
   gap: 0.5rem;
 
   @media (max-width: ${responsiveWidthMobile}px){
-    height: 60vw;
+    width: 100%;
+    height: 90vw;
   }
 `;
 
