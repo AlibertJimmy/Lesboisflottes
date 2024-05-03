@@ -41,7 +41,7 @@ function Comment () {
           <CommentListWrapper key={webSite.name} id={`${webSite.name}`}>
             <AverageRatingItem webSite={webSite}/>
             {webSite[`reviewList${i18n.language}`].map((review, index) => (
-              <CommentItem key={index} comment={review} index={index}/>
+              <CommentItem key={index} comment={review} index={index} scrollingBanner={false}/>
             ))}
           </CommentListWrapper>
         ))}

@@ -14,27 +14,22 @@ import { removeHtmlTags } from '../../utils/functions/Comment';
 
 // Import Style
 import {
-  CommentWrapper,
   CommentContainer, StyledP
 } from '../../utils/style/js/Comment_Style/CommentItem_Style';
-import { CommentScrollingBannerP } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
+import { CommentItemScrollingBannerWrapper, CommentScrollingBannerP } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
 
-function CommentItem ({ comment, index, scrollingBanner }) {
+function CommentItemScrollingBanner ({ comment, index }) {
   const { t } = useTranslation();
   const isEven = index % 2 === 0;
 
   return (
-        <CommentWrapper id='commentWrapper' even={isEven}>
+        <CommentItemScrollingBannerWrapper id='commentItemScrollingBannerWrapper' even={isEven}>
           <CommentContainer id='commentContainerGuestRating'>
             <StyledP>{t('Guest')} : {comment.reviewer.firstName}</StyledP>
             <StyledP>{t('Rating')} : <StarScale scaleValue = {comment.rating}/></StyledP>
           </CommentContainer>
           <CommentContainer id='commentContainerComment'>
-            { scrollingBanner
-              ? <CommentScrollingBannerP>{t('Comment')} : {removeHtmlTags(comment.comments)}</CommentScrollingBannerP>
-              : <StyledP>{t('Comment')} : {removeHtmlTags(comment.comments)}</StyledP>
-            }
-
+            <CommentScrollingBannerP>{t('Comment')} : {removeHtmlTags(comment.comments)}</CommentScrollingBannerP>
           </CommentContainer>
           <CommentContainer id='commentContainerDateTranslation'>
             <StyledP>{t('Date')} : {comment.localizedDate}</StyledP>
@@ -42,13 +37,13 @@ function CommentItem ({ comment, index, scrollingBanner }) {
               <StyledP>{t('TranslatedFrom')} : {comment.translatedFrom}</StyledP>
             )}
           </CommentContainer>
-        </CommentWrapper>
+        </CommentItemScrollingBannerWrapper>
   );
 }
 
-export default CommentItem;
+export default CommentItemScrollingBanner;
 
-CommentItem.propTypes = {
+CommentItemScrollingBanner.propTypes = {
   comment: ReviewDataTypes.isRequired,
   index: PropTypes.number.isRequired,
   scrollingBanner: PropTypes.bool.isRequired

@@ -3,7 +3,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Component
-import CommentItem from './commentItem';
+import CommentItemScrollingBanner from './commentItemScrollingBanner';
 
 // Import Functions
 import { scrollToTop } from '../../utils/functions/General';
@@ -21,9 +21,10 @@ import {
 } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
 
 function CommentScrollingBanner () {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  console.log(currentIndex);
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -84,11 +85,11 @@ function CommentScrollingBanner () {
 
   return (
     <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
-      <CommentScrollingBannerLink onClick={handleOnClick} to='/Comment'>
-          <CommentItem comment={reviews[currentIndex]}/>
+      <CommentScrollingBannerLink onClick={handleOnClick} to={`/${i18n.language}/${t('Comments')}`}>
+          <CommentItemScrollingBanner comment={commentListFrAirBnB.reviews[0]} scrollingBanner={true}/>
       </CommentScrollingBannerLink>
     </CommentScrollingBannerContainer>
   );
 }
-
+// reviews[currentIndex]
 export default CommentScrollingBanner;
