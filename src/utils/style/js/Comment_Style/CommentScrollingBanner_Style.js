@@ -9,7 +9,7 @@ import { CommonText } from '../Font_Style';
 import colors from '../../../colors/colors';
 
 // Import Constants
-import { responsiveWidthMobile } from '../../../constants/Global_Constants';
+import { responsiveWidthMobile, responsiveWidthTablet } from '../../../constants/Global_Constants';
 
 // CommentScrolling Banner Related
 export const CommentScrollingBannerContainer = styled.div`
@@ -63,7 +63,7 @@ export const CommentScrollingBannerP = styled.p`
 
   height: 45px;
 
-  @media (max-width: ${responsiveWidthMobile}px){
+  @media (max-width: ${responsiveWidthTablet}px){
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
