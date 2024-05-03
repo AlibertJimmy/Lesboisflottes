@@ -14,7 +14,8 @@ import { removeHtmlTags } from '../../utils/functions/Comment';
 
 // Import Style
 import {
-  CommentContainer
+  CommentContainer,
+  StyledPCenter
 } from '../../utils/style/js/Comment_Style/CommentItem_Style';
 import { CommentItemScrollingBannerWrapper, CommentScrollingBannerP } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
 import { StyledP } from '../../utils/style/js/Font_Style';
@@ -26,8 +27,8 @@ function CommentItemScrollingBanner ({ comment, index }) {
   return (
         <CommentItemScrollingBannerWrapper id='commentItemScrollingBannerWrapper' even={isEven}>
           <CommentContainer id='commentContainerGuestRating'>
-            <StyledP>{t('Guest')} : {comment.reviewer.firstName}</StyledP>
-            <StyledP>{t('Rating')} : <StarScale scaleValue = {comment.rating}/></StyledP>
+            <StyledPCenter>{t('Guest')} : {comment.reviewer.firstName}</StyledPCenter>
+            <StyledPCenter>{t('Rating')} : <StarScale scaleValue = {comment.rating}/></StyledPCenter>
           </CommentContainer>
           <CommentContainer id='commentContainerComment'>
             <CommentScrollingBannerP>{t('Comment')} : {removeHtmlTags(comment.comments)}</CommentScrollingBannerP>
