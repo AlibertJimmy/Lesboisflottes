@@ -85,7 +85,7 @@ function CommentScrollingBanner () {
   return (
     <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
       <CommentScrollingBannerLink onClick={handleOnClick} to={`/${i18n.language}/${t('Comments')}`}>
-          <CommentItemScrollingBanner comment={commentListFrAirBnB.reviews[0]} scrollingBanner={true}/>
+          <CommentItemScrollingBanner comment={commentListFrAirBnB.reviews[10]} scrollingBanner={true}/>
       </CommentScrollingBannerLink>
     </CommentScrollingBannerContainer>
   );

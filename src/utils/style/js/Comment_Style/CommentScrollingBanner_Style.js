@@ -15,7 +15,7 @@ import { responsiveWidthMobile } from '../../../constants/Global_Constants';
 export const CommentScrollingBannerContainer = styled.div`
   height: fit-content;
   width: 100%;
-  height: 140px;
+  height: 170px;
   border-radius: 15px;
 
   box-shadow: 0 0 10px ${colors.interactifElement};
@@ -26,7 +26,7 @@ export const CommentScrollingBannerContainer = styled.div`
 
   @media (max-width: ${responsiveWidthMobile}px){
     
-    height: 170px;
+    height: 200px;
   }
 `;
 
