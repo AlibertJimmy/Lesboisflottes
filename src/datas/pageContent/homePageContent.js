@@ -1,3 +1,7 @@
+// Import Assets
+import LaVernePhoto from '../../assets/photos/pic2.jpg';
+import FabregasPhoto from '../../assets/photos/pic6.jpg';
+
 export const homePageContent = {
   pageTitle: 'Home',
   referencement: [
@@ -64,3 +68,12 @@ export const homePageContent = {
     'normal'
   ]
 };
+
+export const landingPageBeachGalleryPhotos = [
+  {
+    src: LaVernePhoto
+  },
+  {
+    src: FabregasPhoto
+  }
+];

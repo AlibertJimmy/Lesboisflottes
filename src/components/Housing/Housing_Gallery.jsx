@@ -1,8 +1,11 @@
 // Import React Libraries
 import React, { useState, useCallback } from 'react';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 // Import Photos
 import { housingPhotos } from '../../datas/housing_photos';
+
+// Import Styles
 import {
   HousingGridWrapper, HousingGridContainer
 } from '../../utils/style/js/Housing_Style/HousingGallery_Style';
@@ -12,8 +15,6 @@ import {
   GridFour, GridFive, GridSix,
   GalleryImg
 } from '../../utils/style/js/Gallery_Style';
-
-import Carousel, { Modal, ModalGateway } from 'react-images';
 
 // Import Style
 

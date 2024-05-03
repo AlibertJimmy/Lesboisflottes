@@ -18,6 +18,7 @@ import { PageWrapper } from '../../utils/style/js/GlobalStyle';
 // Import Constants
 import TopIllustration from '../../components/TopIllustration/TopIllustration';
 import LandingPagePresentationComponent from '../../components/LandingPage/LandingPagePresentation_Component';
+import LandingPageBeachGallery from '../../components/LandingPage/LandingPageBeachGallery';
 
 function Home () {
   const { t } = useTranslation();
@@ -34,6 +35,7 @@ function Home () {
       <TopIllustration image={homeIllustration} title={'Welcome'}/>
       <PageWrapper id='homePageWrapper'>
           <LandingPagePresentationComponent/>
+          <LandingPageBeachGallery/>
           <CommentScrollingBanner/>
       </PageWrapper>
     </>
