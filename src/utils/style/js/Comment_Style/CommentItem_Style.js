@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import colors from '../../../colors/colors';
 
 // Import Constants
-import { responsiveWidthMobile } from '../../../constants/Global_Constants';
+import { CommonText, StyledP } from '../Font_Style';
 
 // Comment Item
 export const CommentWrapper = styled.div`
@@ -22,16 +22,14 @@ export const CommentWrapper = styled.div`
 export const CommentContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: fit-content;
 `;
 
-export const StyledP = styled.p`
-    font-size: 15px;
-    font-family: cursive;
-    margin: 5px;
-
-    @media (max-width: ${responsiveWidthMobile}px){
-        
-        padding-left:10px;
-      }
+export const StyledPCenter = styled.p`
+  ${CommonText};
+  ${StyledP};
+  display: flex;
+  gap: 5px;
+  align-items: center;
 `;

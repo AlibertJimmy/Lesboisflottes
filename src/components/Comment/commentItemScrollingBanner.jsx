@@ -14,9 +14,10 @@ import { removeHtmlTags } from '../../utils/functions/Comment';
 
 // Import Style
 import {
-  CommentContainer, StyledP
+  CommentContainer
 } from '../../utils/style/js/Comment_Style/CommentItem_Style';
 import { CommentItemScrollingBannerWrapper, CommentScrollingBannerP } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
+import { StyledP } from '../../utils/style/js/Font_Style';
 
 function CommentItemScrollingBanner ({ comment, index }) {
   const { t } = useTranslation();

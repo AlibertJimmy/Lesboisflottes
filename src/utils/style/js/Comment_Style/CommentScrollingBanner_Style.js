@@ -44,7 +44,7 @@ export const CommentScrollingBannerLink = styled(Link)`
 
 export const CommentItemScrollingBannerWrapper = styled.div`
   text-align: left;
-  padding: 10px 0;
+  padding: 10px;
   height: 120px;
 
   @media (max-width: ${responsiveWidthMobile}px){
@@ -55,7 +55,7 @@ export const CommentItemScrollingBannerWrapper = styled.div`
 
 export const CommentScrollingBannerP = styled.p`
   ${CommonText};
-  margin: 5px 10px;
+  margin: 5px 0px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
