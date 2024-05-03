@@ -24,7 +24,6 @@ function CommentScrollingBanner () {
   const { t, i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  console.log(currentIndex);
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -52,9 +51,9 @@ function CommentScrollingBanner () {
     }
 
     // Filter short comments only when screen width is below 768px
-    const shortComments = screenWidth < 768 ? allReviews.filter(comment => comment.comments.length < 150) : allReviews;
+    // const shortComments = screenWidth < 768 ? allReviews.filter(comment => comment.comments.length < 150) : allReviews;
 
-    return shortComments;
+    return allReviews;
   }, [i18n.language, screenWidth]);
 
   // Add temporisatin and randomize the picked review index
@@ -86,10 +85,10 @@ function CommentScrollingBanner () {
   return (
     <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
       <CommentScrollingBannerLink onClick={handleOnClick} to={`/${i18n.language}/${t('Comments')}`}>
-          <CommentItemScrollingBanner comment={commentListFrAirBnB.reviews[0]} scrollingBanner={true}/>
+          <CommentItemScrollingBanner comment={reviews[currentIndex]} scrollingBanner={true}/>
       </CommentScrollingBannerLink>
     </CommentScrollingBannerContainer>
   );
 }
-// reviews[currentIndex]
+
 export default CommentScrollingBanner;
