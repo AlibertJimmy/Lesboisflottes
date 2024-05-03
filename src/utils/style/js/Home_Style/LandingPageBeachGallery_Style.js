@@ -9,8 +9,6 @@ export const LandingPageBeachGalleryGridWrapper = styled.div`
   justify-content: center;
 
   margin: 0 auto;
-
-  border: 1px solid red;
 `;
 
 const CommonGridContainer = css`

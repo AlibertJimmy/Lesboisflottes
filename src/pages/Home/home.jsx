@@ -34,9 +34,9 @@ function Home () {
       </Helmet>
       <TopIllustration image={homeIllustration} title={'Welcome'}/>
       <PageWrapper id='homePageWrapper'>
-          <LandingPagePresentationComponent/>
-          <LandingPageBeachGallery/>
-          <CommentScrollingBanner/>
+        <LandingPagePresentationComponent/>
+        <LandingPageBeachGallery/>
+        <CommentScrollingBanner/>
       </PageWrapper>
     </>
   );

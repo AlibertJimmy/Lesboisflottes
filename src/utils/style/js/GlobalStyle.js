@@ -14,7 +14,7 @@ export const PageWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 30px;
 
     margin: ${verticalMargin}px ${horizontalMargin}px ${verticalMargin}px ${horizontalMargin}px;
     min-height: ${window.innerHeight - (headerHeight + verticalMargin * 2 + footerHeight)}px;
