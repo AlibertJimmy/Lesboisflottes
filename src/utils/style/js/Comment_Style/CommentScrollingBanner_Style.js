@@ -64,7 +64,11 @@ export const CommentScrollingBannerP = styled.p`
   height: 45px;
 
   @media (max-width: ${responsiveWidthMobile}px){
+    display: -webkit-box;
     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    
     height: 67px;
   }
 `;
