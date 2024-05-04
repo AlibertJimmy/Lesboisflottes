@@ -13,7 +13,6 @@ import { responsiveWidthMobile, responsiveWidthTablet } from '../../../constants
 
 // CommentScrolling Banner Related
 export const CommentScrollingBannerContainer = styled.div`
-  height: fit-content;
   width: 100%;
   height: 170px;
   border-radius: 15px;
@@ -31,7 +30,6 @@ export const CommentScrollingBannerContainer = styled.div`
 `;
 
 export const CommentScrollingBannerLink = styled(Link)`
-  
   text-decoration: none;  
   color: ${colors.interactifElement};
 
@@ -55,7 +53,7 @@ export const CommentItemScrollingBannerWrapper = styled.div`
 
 export const CommentScrollingBannerP = styled.p`
   ${CommonText};
-  margin: 5px 0px;
+  margin: 0px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  

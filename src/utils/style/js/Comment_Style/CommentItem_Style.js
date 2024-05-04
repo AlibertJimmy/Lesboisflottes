@@ -24,6 +24,7 @@ export const CommentContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: fit-content;
+  margin: 10px;
 `;
 
 export const StyledPCenter = styled.p`
@@ -32,4 +33,5 @@ export const StyledPCenter = styled.p`
   display: flex;
   gap: 5px;
   align-items: center;
+  margin: 0;
 `;
