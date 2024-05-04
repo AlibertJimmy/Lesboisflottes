@@ -62,4 +62,5 @@ export const CommentScrollingBannerP = styled.p`
   overflow: hidden;
 
   height: 45px;
+  }
 `;
