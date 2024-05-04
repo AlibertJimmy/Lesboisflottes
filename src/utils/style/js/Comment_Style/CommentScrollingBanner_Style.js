@@ -67,9 +67,7 @@ export const CommentScrollingBannerP = styled.p`
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
-    overflow: hidden;
     
-    height: 64px;
+    height: 61px;
   }
-  border: 1px solid blue;
 `;
