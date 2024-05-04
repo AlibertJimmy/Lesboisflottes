@@ -24,7 +24,7 @@ function CommentScrollingBanner () {
   const { t, i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  console.log(currentIndex);
+
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
   };
@@ -85,10 +85,10 @@ function CommentScrollingBanner () {
   return (
     <CommentScrollingBannerContainer id='commentScrollingBannerContainer'>
       <CommentScrollingBannerLink onClick={handleOnClick} to={`/${i18n.language}/${t('Comments')}`}>
-          <CommentItemScrollingBanner comment={commentListFrAirBnB.reviews[10]} scrollingBanner={true}/>
+          <CommentItemScrollingBanner comment={reviews[currentIndex]} scrollingBanner={true}/>
       </CommentScrollingBannerLink>
     </CommentScrollingBannerContainer>
   );
 }
-// reviews[currentIndex]
+
 export default CommentScrollingBanner;
