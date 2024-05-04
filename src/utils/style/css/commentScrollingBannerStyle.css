@@ -1,0 +1,9 @@
+@media (max-width: 768px) { /* Replace 768px with your 'responsiveWidthTablet' value */
+  .comment-scrolling-banner-p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 65px;
+  }
+}

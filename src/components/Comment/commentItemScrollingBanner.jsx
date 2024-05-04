@@ -19,6 +19,7 @@ import {
 } from '../../utils/style/js/Comment_Style/CommentItem_Style';
 import { CommentItemScrollingBannerWrapper, CommentScrollingBannerP } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
 import { StyledP } from '../../utils/style/js/Font_Style';
+import '../../utils/style/css/commentScrollingBannerStyle.css';
 
 function CommentItemScrollingBanner ({ comment, index }) {
   const { t } = useTranslation();
@@ -31,7 +32,7 @@ function CommentItemScrollingBanner ({ comment, index }) {
             <StyledPCenter>{t('Rating')} : <StarScale scaleValue = {comment.rating}/></StyledPCenter>
           </CommentContainer>
           <CommentContainer id='commentContainerComment'>
-            <CommentScrollingBannerP>{t('Comment')} : {removeHtmlTags(comment.comments)}</CommentScrollingBannerP>
+            <CommentScrollingBannerP className='comment-scrolling-banner-p' >{t('Comment')} : {removeHtmlTags(comment.comments)}</CommentScrollingBannerP>
           </CommentContainer>
           <CommentContainer id='commentContainerDateTranslation'>
             <StyledP>{t('Date')} : {comment.localizedDate}</StyledP>
