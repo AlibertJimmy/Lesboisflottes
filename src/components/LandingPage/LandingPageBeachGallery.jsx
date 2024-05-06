@@ -13,7 +13,7 @@ import {
 import {
   LandingPageBeachGalleryGridContainer,
   LandingPageBeachGalleryGridWrapper
-} from '../../utils/style/js/Home_Style/LandingPageBeachGallery_Style';
+} from '../../utils/style/js/LandingPage_Style/LandingPageBeachGallery_Style';
 
 function LandingPageBeachGallery () {
   const [currentImage, setCurrentImage] = useState(0);
