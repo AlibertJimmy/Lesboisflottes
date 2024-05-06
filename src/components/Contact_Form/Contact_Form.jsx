@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 // Import Functions
-import { isValidPhoneNumber, isValidEmail } from '../../utils/functions/ContactForm_Functions';
+import { handleFormDataErrorMessages } from '../../utils/functions/ContactForm_Functions';
 
 // Import Style
 import {
@@ -24,6 +25,7 @@ import {
 } from '../../utils/style/js/Contact/ContactForm_Style';
 
 function ContactFormComponent () {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -56,41 +58,9 @@ function ContactFormComponent () {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const isPhoneValid = isValidPhoneNumber(formData.phone);
-    const isEmailValid = isValidEmail(formData.email);
+    const isFormValid = handleFormDataErrorMessages(formDataErrorMessages, setFormDataErrorMessages, formData);
 
-    if (!isPhoneValid) {
-      console.log('Invalid Phone Number');
-      setFormDataErrorMessages(prevState => ({
-        ...prevState,
-        phone: 'Invalid phone number format.'
-      }));
-    } else {
-      console.log('Valid Phone Number');
-      setFormDataErrorMessages(prevState => ({
-        ...prevState,
-        phone: ''
-      }));
-    }
-
-    console.log('formDataErrorMessages : ', formDataErrorMessages);
-
-    if (!isEmailValid) {
-      setFormDataErrorMessages(prevState => ({
-        ...prevState,
-        email: 'Invalid email format.'
-      }));
-    } else {
-      console.log('Valid Email');
-      setFormDataErrorMessages(prevState => ({
-        ...prevState,
-        email: ''
-      }));
-    }
-
-    console.log('formDataErrorMessages : ', formDataErrorMessages);
-
-    if (isEmailValid && isPhoneValid) {
+    if (isFormValid) {
       alert('Message Sent');
       console.log('form : ', formData);
       clearForm();
@@ -110,9 +80,16 @@ function ContactFormComponent () {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Name"
+                placeholder={t('Name')}
                 required
               />
+              {formDataErrorMessages.name && (
+                <ContactFormErrorMessageContainer className="error-message">
+                  <ContactFormErrorMessage>
+                    {t(formDataErrorMessages.name)}
+                  </ContactFormErrorMessage>
+                </ContactFormErrorMessageContainer>
+              )}
               </ContactFormFieldContainer>
             <ContactFormFieldContainer id='ContactFormFieldContainer-Phone' style={formDataErrorMessages.phone ? { height: '60px' } : { height: '30px' }}>
               <ContactFormField
@@ -121,13 +98,13 @@ function ContactFormComponent () {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Phone"
+                placeholder={t('Phone')}
                 required
               />
               {formDataErrorMessages.phone && (
                 <ContactFormErrorMessageContainer className="error-message">
                   <ContactFormErrorMessage>
-                    {formDataErrorMessages.phone}
+                    {t(formDataErrorMessages.phone)}
                   </ContactFormErrorMessage>
                 </ContactFormErrorMessageContainer>
               )}
@@ -141,13 +118,13 @@ function ContactFormComponent () {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Email"
+              placeholder={t('Email')}
               required
             />
             {formDataErrorMessages.email && (
                 <ContactFormErrorMessageContainer className="error-message">
                   <ContactFormErrorMessage>
-                    {formDataErrorMessages.email}
+                    {t(formDataErrorMessages.email)}
                   </ContactFormErrorMessage>
                 </ContactFormErrorMessageContainer>
             )}
@@ -169,7 +146,7 @@ function ContactFormComponent () {
               <ContactFormButtonIconContainer>
                 <ContactFormButtonIcon icon={faPaperPlane}/>
               </ContactFormButtonIconContainer>
-              Send
+              {t('Send')}
             </ContactFormButton>
           </ContactFormButtonContainer>
 

@@ -237,10 +237,20 @@
 
 
     "//": "CONTACT",
+    "Name": "Nom",
     "Phone": "Téléphone",
     "Email": "Email",
     "EmailCopiedToClipboard": "Adresse mail copié dans le presse papier",
     "ContactUs": "Contactez nous par mail, nous serons ravis d'échanger avec vous !",
+    "Send": "Envoyer",
+
+    "//":"ERROR MESSAGE",
+    "PhoneMissing": "Numéro de téléphone recquis",
+    "EmailMissing": "eMail recquis",
+    "NameMissing": "Nom recquis",
+    "PhoneFormat": "Format incorrect",
+    "EmailFormat": "Format incorrect",
+    "NameFormat": "Format incorrect",
 
     "//": "FOOTER",
     "WebSiteRealizedBy": "Site Web Réalisé par Alibert Jimmy",

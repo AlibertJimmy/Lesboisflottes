@@ -179,10 +179,20 @@
 
 
     "//": "CONTACT",
+    "Name": "Name",
     "Phone": "Phone",
     "Email": "Email",
     "EmailCopiedToClipboard": "Email address copied to clipboard",
     "ContactUs": "Contact us by email, we will be delighted to discuss with you!",
+    "Send": "Send",
+
+    "//":"ERROR MESSAGE",
+    "PhoneMissing": "Number phone required",
+    "EmailMissing": "eMail required",
+    "NameMissing": "Name required",
+    "PhoneFormat": "Incorrect format",
+    "EmailFormat": "Incorrect format",
+    "NameFormat": "Incorrect format",
 
     "//": "FOOTER",
     "WebSiteRealizedBy": "Website realized by Alibert Jimmy",
