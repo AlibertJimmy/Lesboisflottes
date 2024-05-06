@@ -16,7 +16,8 @@ import { removeHtmlTags } from '../../utils/functions/Comment';
 import {
   CommentWrapper,
   CommentContainer,
-  StyledPCenter
+  StyledPCenter,
+  CommentAnnexDataContainer
 } from '../../utils/style/js/Comment_Style/CommentItem_Style';
 import { CommentScrollingBannerP } from '../../utils/style/js/Comment_Style/CommentScrollingBanner_Style';
 import { StyledP } from '../../utils/style/js/Font_Style';
@@ -27,10 +28,10 @@ function CommentItem ({ comment, index, scrollingBanner }) {
 
   return (
         <CommentWrapper id='commentWrapper' even={isEven}>
-          <CommentContainer id='commentContainerGuestRating'>
+          <CommentAnnexDataContainer id='commentContainerGuestRating'>
             <StyledP>{t('Guest')} : {comment.reviewer.firstName}</StyledP>
             <StyledPCenter>{t('Rating')} : <StarScale scaleValue = {comment.rating}/></StyledPCenter>
-          </CommentContainer>
+          </CommentAnnexDataContainer>
           <CommentContainer id='commentContainerComment'>
             { scrollingBanner
               ? <CommentScrollingBannerP>{t('Comment')} : {removeHtmlTags(comment.comments)}</CommentScrollingBannerP>
@@ -38,12 +39,12 @@ function CommentItem ({ comment, index, scrollingBanner }) {
             }
 
           </CommentContainer>
-          <CommentContainer id='commentContainerDateTranslation'>
+          <CommentAnnexDataContainer id='commentContainerDateTranslation'>
             <StyledP>{t('Date')} : {comment.localizedDate}</StyledP>
             {comment.translatedFrom !== '' && (
               <StyledP>{t('TranslatedFrom')} : {comment.translatedFrom}</StyledP>
             )}
-          </CommentContainer>
+          </CommentAnnexDataContainer>
         </CommentWrapper>
   );
 }

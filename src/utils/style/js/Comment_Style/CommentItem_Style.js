@@ -24,7 +24,15 @@ export const CommentContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  margin: 10px;
+  margin: 20px 10px;
+`;
+
+export const CommentAnnexDataContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  margin: 5px;
 `;
 
 export const StyledPCenter = styled.p`
