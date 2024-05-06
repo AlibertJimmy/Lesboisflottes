@@ -16,7 +16,7 @@ export const LANGUAGES = [
 ];
 
 export const webSiteDevUrl = 'http://localhost:3000';
-export const webSiteProdUrl = 'https://lesboisflotteslaverne.fr';
+export const webSiteProdUrl = 'https://www.lesboisflotteslaverne.fr';
 
 // Function to detect if it's a langage code
 export const isLanguageCode = (codeToCheck) => {
