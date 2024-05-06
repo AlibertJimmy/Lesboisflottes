@@ -8,7 +8,7 @@ export const LandingPageBeachGalleryGridWrapper = styled.div`
   display: flex;
   justify-content: center;
 
-  margin: 0 auto;
+  margin: 40px auto;
 `;
 
 const CommonGridContainer = css`

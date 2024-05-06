@@ -32,6 +32,43 @@
 
     "//": "RECEPTION",
     "Welcome": "Welcome",
+    "presentationHome1": "The accommodation offered is on the ground floor of a ",
+    "presentationHome1Bold": "villa",
+    "presentationHome2": ", an old building of ",
+    "presentationHome2Bold": "character",
+    "presentationHome3": " dating from 1949.",
+
+    "presentationHome4": "The accommodation is located in the town of ",
+    "presentationHome4Bold": "Seyne sur Mer",
+    "presentationHome5": ", is in a very quiet ",
+    "presentationHome5Bold": "residential area",
+    "presentationHome6": ".",
+
+    "presentationHome7": "Very ",
+    "presentationHome7Bold": "close",
+    "presentationHome8": " to several ",
+    "presentationHome8Bold": "beaches",
+    "presentationHome9": " and numerous ",
+    "presentationHome9Bold": "coves",
+    "presentationHome10": ".",
+
+    "presentationHome11": "The ",
+    "presentationHome11Bold": "Verne",
+    "presentationHome12": " beach is accessible on foot in 2 minutes, ",
+    "presentationHome12Bold": "Fabregas",
+    "presentationHome13": " beach in 10 minutes and ",
+    "presentationHome13Bold": "Sablettes",
+    "presentationHome14": " beach in 20 minutes using the ",
+    "presentationHome14Bold": "coastal path",
+    "presentationHome15": ".",
+
+    "presentationHome16": "With over ",
+    "presentationHome16Bold": "10 years",
+    "presentationHome17": " of experience in hospitality. We will be delighted to help you ",
+    "presentationHome17Bold": "discover",
+    "presentationHome18": " the surrounding area through our ",
+    "presentationHome18Bold": "advice",
+    "presentationHome19": ".",
 
     "//": "LOCATION",
     "Situation": "Location",
@@ -49,14 +86,16 @@
     "GoToAddress": "Go",
 
     "ByCar": "By car",
+    "CarTransportDescription1":"A50 highway exit 13 or exit 15",
+    
 
     "ByTrain": "By train",
-    "TrainTransportDescription1": "La Seyne sur Mer / Six-Fours train station:",
+    "TrainTransportDescription1": "La Seyne sur Mer / Six-Fours train station",
     "TrainTransportDescription2": "The station is located 9km from the accommodation.",
     "TrainTransportDescription3": "Take bus line #82, stop at 'Gare Seyne Six-Fours' located outside the station to the 'Bonaparte' stop.",
     "TrainTransportDescription4": "Transfer to bus line #81 to the 'La Verne' stop, which is 5 minutes from the accommodation.",
 
-    "TrainTransportDescription5": "Toulon train station:",
+    "TrainTransportDescription5": "Toulon train station",
     "TrainTransportDescription6": "The station is located 11km from the accommodation, and you have two options.",
 
     "TrainTransportDescription7": "Walk to the Toulon port (10/15 minutes on foot) or take bus line #15 to the 'Station Maritime' stop.",
@@ -70,9 +109,9 @@
 
 
     "ByPlane": "By plane",
-    "PlaneTransportDescription1": "Airport of Toulon/Hyères :",
+    "PlaneTransportDescription1": "Airport of Toulon/Hyères",
     "PlaneTransportDescription2": "Car rental or taxi.",
-    "PlaneTransportDescription3": "Airport of Marignane :",
+    "PlaneTransportDescription3": "Airport of Marignane",
     "PlaneTransportDescription4": "Bus to St Charles station then TER to Seyne sur Mer/ Six-Fours station.",
     "PlaneTransportDescription5": "Airport of Toulon/Hyères :",
     "PlaneTransportDescription6": "Train to Toulon.",
@@ -80,7 +119,7 @@
     "GeneralTransportProposition": "Transport from the Sablettes pier or from the Seyne sur Mer station can be organized on request depending on availability.",
 
     "//":"PARKING",
-    "ParkingSpot": "Des places de parking sont disponible à poximité de l'hébergement",
+    "ParkingSpot": "Parking spaces are available near the accommodation.",
 
     "//":"HOUSING",
     "PresentationHousing1": "The accommodation offered is on the ground floor of a villa, an old building of character dating from 1949.",
@@ -88,11 +127,37 @@
     "PresentationHousing3": "The accommodation includes a bathroom with shower cubicle and sink, separate WC.",
     "PresentationHousing4": "A kitchen area and a sleeping area with a queen size bed (160x200 [cm]).",
 
+    "presentationHousing1": "With an area of 20m², located on the ground floor, the accommodation faces ",
+    "presentationHousing1Bold": "West",
+    "presentationHousing2":"t and benefits from ",
+    "presentationHousing2Bold": "natural air conditioning",
+    "presentationHousing3": " offering a very pleasant interior ",
+    "presentationHousing3Bold": "temperature",
+    "presentationHousing4": ".",
+    "presentationHousing4Bold": "",
+    "presentationHousing5": "",
+
+    "presentationHousing6": "It benefits from a view of the ",
+    "presentationHousing6Bold": "garden",
+    "presentationHousing7": ", access to the ",
+    "presentationHousing7Bold": "terraces",
+    "presentationHousing8": " and a ",
+    "presentationHousing8Bold": "wifi",
+    "presentationHousing9": " connection.",
+
+    "presentationHousing10": "A sleeping area equipped with a ",
+    "presentationHousing10Bold": "queen size",
+    "presentationHousing11": "bed  (160x200 [cm]), storage space, a ",
+    "presentationHousing11Bold": "wardrobe",
+    "presentationHousing12": " and a reading area.",
+    "presentationHousing13": "A bathroom with shower cubicle and sink, separate toilet.",
+    "presentationHousing14": "A kitchen area with tea and coffee available.",
+
     "//":"HOUSING EQUIPMENT",
     "Wifi": "Wifi",
     "Parking": "Parking nearby",
     "GardenView": "Garden view",
-    "Area": "x m²",
+    "Area": "20 m²",
 
     "Bed": "Queen Size",
     "Shower": "Private shower and toilet",
@@ -100,7 +165,7 @@
     "Towels&Sheets": "Towels and sheets included",
     
     "Bicycle": "Vintage bicycle",
-    "Umbrella": "Umbrellas",
+    "Umbrella": "Umbrella",
 
     "//":"HOUSING EQUIPMENT",
     "IndoorEquipments": "Indoor equipments",
