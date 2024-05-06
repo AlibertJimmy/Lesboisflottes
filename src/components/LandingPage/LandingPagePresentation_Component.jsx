@@ -1,12 +1,14 @@
 // Import React Libraries
 import React from 'react';
 
+// Import Component
+import HousingPresentationParagraph from '../Housing/HousingPresentationParagraph';
+
 // Import Datas
 import { homePageContent } from '../../datas/pageContent/homePageContent';
 
 // Import Style
-import { HomePresentationContainer } from '../../utils/style/js/Home_Style/HomePresentation_Style';
-import HousingPresentationParagraph from '../Housing/HousingPresentationParagraph';
+import { HomePresentationContainer } from '../../utils/style/js/LandingPage_Style/LandingPagePresentation_Style';
 
 function LandingPagePresentationComponent () {
   return (
