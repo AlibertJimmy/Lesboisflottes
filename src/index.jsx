@@ -15,7 +15,7 @@ import { DayPickerContextProvider } from './context/DayPickerContext';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 // import Sidebar from './components/Sidebar/sidebar'
-import Home from './pages/Home/home';
+import LandingPage from './pages/LandingPage/landingPage';
 import Comment from './pages/Comment/comment';
 import Contact from './pages/Contact/contact';
 import Galleryx from './pages/Gallery/gallery';
@@ -47,7 +47,7 @@ function App () {
             <Header />
               <ContentWrapper id='contentWrapper'>
                 <Routes>
-                  <Route path={`/${i18n.language}/`} element={<Home />} />
+                  <Route path={`/${i18n.language}/`} element={<LandingPage />} />
                   <Route path={`/${i18n.language}/${t('Comments')}`} element={<Comment />} />
                   <Route path={`/${i18n.language}/${t('Contact')}`} element={<Contact />} />
                   <Route path={`/${i18n.language}/${t('Gallery')}`} element={<Galleryx />} />

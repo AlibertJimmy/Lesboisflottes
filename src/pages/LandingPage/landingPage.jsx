@@ -20,7 +20,7 @@ import TopIllustration from '../../components/TopIllustration/TopIllustration';
 import LandingPagePresentationComponent from '../../components/LandingPage/LandingPagePresentation_Component';
 import LandingPageBeachGallery from '../../components/LandingPage/LandingPageBeachGallery';
 
-function Home () {
+function LandingPage () {
   const { t } = useTranslation();
 
   return (
@@ -42,4 +42,4 @@ function Home () {
   );
 }
 
-export default Home;
+export default LandingPage;
