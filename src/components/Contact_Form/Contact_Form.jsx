@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Import Functions
 import { handleFormDataErrorMessages } from '../../utils/functions/ContactForm_Functions';
+import { APIContactForm } from '../../API/API_Contact_Function';
 
 // Import Style
 import {
@@ -61,6 +62,7 @@ function ContactFormComponent () {
     const isFormValid = handleFormDataErrorMessages(formDataErrorMessages, setFormDataErrorMessages, formData);
 
     if (isFormValid) {
+      APIContactForm(formData);
       alert('Message Sent');
       console.log('form : ', formData);
       clearForm();
