@@ -1,1 +1,1 @@
-export const WebServerIPAddress = '172.31.32.196';
+export const WebServerIPAddress = '16.171.172.199';
