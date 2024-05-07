@@ -2,7 +2,7 @@
 import { WebServerIPAddress } from '../utils/constants/IP_Contants';
 
 export function APIContactForm (formData) {
-  fetch(`http://${WebServerIPAddress}/contact`, {
+  fetch(`http://${WebServerIPAddress}/contact/lesboisflottes`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
