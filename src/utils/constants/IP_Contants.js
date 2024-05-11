@@ -1,2 +1,2 @@
-export const WebServerIPAddress = '16.171.172.199';
+export const WebServerIPAddress = '13.49.95.163';
 export const WebServerContactPort = 3000;
