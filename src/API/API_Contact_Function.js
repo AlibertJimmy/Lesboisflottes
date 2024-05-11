@@ -1,8 +1,12 @@
 // Import IP Address
-import { WebServerIPAddress, WebServerContactPort } from '../utils/constants/IP_Contants';
+import {
+  WebServerIPAddress
+  // WebServerContactPort
+} from '../utils/constants/IP_Contants';
 
 export function APIContactForm (formData) {
-  fetch(`https://${WebServerIPAddress}:${WebServerContactPort}/contact/lesboisflottes`, {
+  // fetch(`https://${WebServerIPAddress}:${WebServerContactPort}/contact/lesboisflottes`, {
+  fetch(`https://${WebServerIPAddress}/contact/lesboisflottes`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
