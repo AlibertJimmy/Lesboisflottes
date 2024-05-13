@@ -2,10 +2,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Import Components
+import MapButton from './MapButton';
+
 // Import Style
 import { AddressWrapper, AddressContainer, MapContainer } from '../../utils/style/js/Access_Style/Address_Style';
 import { PageSubtitle, StyledP } from '../../utils/style/js/Font_Style';
-import MapButton from './MapButton';
 
 function AddressDisplay () {
   const { t } = useTranslation();
@@ -17,7 +19,8 @@ function AddressDisplay () {
       <AddressWrapper id='addressWrapper'>
         <AddressContainer>
           <PageSubtitle>{t('Address')}</PageSubtitle>
-          <StyledP>{`${t('Adress1')} ${t('Adress2')} ${t('Adress3')} ${t('Adress4')}`}</StyledP>
+          <StyledP>{`${t('Adress4')}`}</StyledP>
+          <StyledP>{`${t('Adress1')} ${t('Adress2')} ${t('Adress3')}`}</StyledP>
           <MapButton/>
         </AddressContainer>
         <MapContainer id='mapContainer'>
