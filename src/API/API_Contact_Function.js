@@ -21,10 +21,14 @@ export function APIContactForm (formData) {
     })
     .then(data => {
       console.log(data); // Log server response
-      // Optionally, display a success message to the user
+      if (data === 'Message sent successfully') {
+        return true; // Return true if message sent successfully
+      } else {
+        return false; // Return false otherwise
+      }
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
-      // Optionally, display an error message to the user
+      return false;
     });
 };

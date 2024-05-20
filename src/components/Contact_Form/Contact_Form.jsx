@@ -62,10 +62,11 @@ function ContactFormComponent () {
     const isFormValid = handleFormDataErrorMessages(formDataErrorMessages, setFormDataErrorMessages, formData);
 
     if (isFormValid) {
-      APIContactForm(formData);
-      alert('Message Sent');
-      console.log('form : ', formData);
-      clearForm();
+      const messageSentSuccessfully = APIContactForm(formData);
+      if (messageSentSuccessfully === true) {
+        alert('Message Sent');
+        clearForm();
+      }
     }
   };
 
@@ -75,7 +76,7 @@ function ContactFormComponent () {
         <ContactFormFieldSet>
         <ContactFormContainer>
           <ContactFormFieldWrapper id='ContactFormFieldWrapper-Name-Phone'>
-            <ContactFormFieldContainer id='ContactFormFieldContainer-Name' >
+            <ContactFormFieldContainer id='ContactFormFieldContainer-Name' style={formDataErrorMessages.name ? { height: '60px' } : { height: '30px' }}>
               <ContactFormField
                 type="text"
                 id="name"
@@ -100,16 +101,17 @@ function ContactFormComponent () {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder={t('Phone')}
+                placeholder={`${t('Phone')} ${t('Optional')}`}
                 required
               />
-              {formDataErrorMessages.phone && (
+              { /*
+              formDataErrorMessages.phone && (
                 <ContactFormErrorMessageContainer className="error-message">
                   <ContactFormErrorMessage>
                     {t(formDataErrorMessages.phone)}
                   </ContactFormErrorMessage>
                 </ContactFormErrorMessageContainer>
-              )}
+              ) */ }
             </ContactFormFieldContainer>
           </ContactFormFieldWrapper>
 

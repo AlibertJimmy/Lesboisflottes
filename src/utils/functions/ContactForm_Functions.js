@@ -34,10 +34,11 @@ export function isValidName (name) {
 }
 
 export function handleFormDataErrorMessages (formDataErrorMessages, setFormDataErrorMessages, formData) {
-  const isPhoneValid = isValidPhoneNumber(formData.phone);
+  // const isPhoneValid = isValidPhoneNumber(formData.phone);
   const isEmailValid = isValidEmail(formData.email);
   const isNameValid = isValidName(formData.name);
 
+  /*
   if (isPhoneValid === true) {
     console.log('Valid phone');
     setFormDataErrorMessages(prevState => ({
@@ -57,6 +58,7 @@ export function handleFormDataErrorMessages (formDataErrorMessages, setFormDataE
       }));
     }
   }
+  */
 
   if (isEmailValid === true) {
     console.log('Valid Email');
@@ -100,7 +102,8 @@ export function handleFormDataErrorMessages (formDataErrorMessages, setFormDataE
 
   console.log('formDataErrorMessages : ', formDataErrorMessages);
 
-  if (isEmailValid === true && isPhoneValid === true && isNameValid === true) {
+  // if (isEmailValid === true && isPhoneValid === true && isNameValid === true) {
+  if (isEmailValid === true && isNameValid === true) {
     return true;
   } else {
     return false;
