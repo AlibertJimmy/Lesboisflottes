@@ -56,17 +56,27 @@ function ContactFormComponent () {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const isFormValid = handleFormDataErrorMessages(formDataErrorMessages, setFormDataErrorMessages, formData);
 
     if (isFormValid) {
-      const messageSentSuccessfully = APIContactForm(formData);
-      if (messageSentSuccessfully === true) {
-        alert('Message Sent');
-        clearForm();
+      try {
+        const messageSentSuccessfully = await APIContactForm(formData);
+        console.log(`messageSentSuccessfully : ${messageSentSuccessfully}`);
+        if (messageSentSuccessfully) {
+          console.log('Message sent successfully');
+          alert('MessageSent');
+          clearForm();
+        } else {
+          console.log('Failed to send message');
+        }
+      } catch (error) {
+        console.error('Error during form submission:', error);
       }
+    } else {
+      console.log('Form validation failed');
     }
   };
 

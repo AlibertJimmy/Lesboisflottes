@@ -244,6 +244,7 @@
     "EmailCopiedToClipboard": "Adresse mail copié dans le presse papier",
     "ContactUs": "Contactez nous par mail, nous serons ravis d'échanger avec vous !",
     "Send": "Envoyer",
+    "MessageSent": "Message envoyé",
 
     "//":"ERROR MESSAGE",
     "PhoneMissing": "Numéro de téléphone recquis",

@@ -251,6 +251,7 @@
     "EmailCopiedToClipboard": "Email address copied to clipboard",
     "ContactUs": "Contact us by email, we will be delighted to discuss with you!",
     "Send": "Send",
+    "MessageSent": "Message sent",
 
     "//":"ERROR MESSAGE",
     "PhoneMissing": "Number phone required",
